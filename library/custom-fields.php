@@ -9,7 +9,6 @@ function dogium_add_dog_select_friends($field) {
 	// this will fall back to current user if author is not yet defined -LH
 	$author = get_post_field('post_author', $post->ID);
 	$friend_ids = friends_get_friend_user_ids($author);
-	$friend_ids[] = $author;
 	
 	foreach($friend_ids as $friend_id) {
 
@@ -25,7 +24,6 @@ function dogium_add_dog_select_friends($field) {
 		}
 	}
 
-	$field['default_value'] = $author;
 	return $field;
 }
 
