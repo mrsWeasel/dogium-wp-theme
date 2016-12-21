@@ -32,15 +32,15 @@
   .menu a {
     height: 45px;
     line-height: 45px;
-    color: #e6e6e6;
+    color: $primary-color;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      background-color: initial;
     }
   }
 
@@ -49,7 +49,7 @@
   }
 
   .menu li:not(:last-child) {
-    border-right: 1px solid #4e4e4e;
+    //border-right: 1px solid #4e4e4e;
   }
 
   .dropdown.menu .submenu {

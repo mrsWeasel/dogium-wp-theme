@@ -47,8 +47,11 @@ require_once( 'library/sticky-posts.php' );
 /** Configure responsive image sizes */
 require_once( 'library/responsive-images.php' );
 
-/** Customize BuddyPress Tabs */
-require_once( 'library/buddypress-tabs.php' );
+/** Add custom post types */
+require_once( 'library/custom-post-types.php' );
+
+/** Add cp metaboxes */
+require_once( 'library/custom-fields.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );

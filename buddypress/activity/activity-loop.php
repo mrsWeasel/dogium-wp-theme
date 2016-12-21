@@ -4,6 +4,7 @@
  *
  * @package BuddyPress
  * @subpackage bp-legacy
+ * Modified by Laura Heino
  */
 
 /**
@@ -18,7 +19,14 @@ do_action( 'bp_before_activity_loop' ); ?>
 $parameters = '';
 
 if ( is_front_page() ) {
-	$parameters .= '&scope=just-me,friends,groups';
+	if ( is_user_logged_in() ) {
+		// For logged in users, only show activity from friends and groups
+		$parameters .= '&scope=just-me,friends,groups';
+	}
+	// Standard activity updates + activity updates with rtmedia image attachment
+	$parameters .= '&action=rtmedia_update,activity_update';
+	// Only show 5 entries
+	$parameters .= '&max=5';
 }
 
 ?>
