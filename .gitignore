@@ -1,6 +1,7 @@
 .DS_Store
 *.sass-cache*
 *.log
+changelog.txt
 node_modules/
 assets/stylesheets/
 assets/components/
