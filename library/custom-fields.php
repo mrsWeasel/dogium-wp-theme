@@ -26,7 +26,7 @@ function dogium_add_dog_select_friends($field) {
 	// Populate ACF select menu
 	if (is_array($data)) {
 		foreach($data as $key=>$val) {
-			$choice = $val['id'];
+			$choice = $val['email'];
 			$field['choices'][$choice] = $val['name'] . ' | ' . $val['email'];
 		}
 	}

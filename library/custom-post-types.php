@@ -29,7 +29,7 @@ if ( ! function_exists('dogium_register_dog_post_type') ) {
 			'supports' => array('title', 'editor', 'author', 'thumbnail', 'comments', 'page-attributes'),
 	 	);
 
-	 	register_post_type('dogium-dog', $args);
+	 	register_post_type('dogium_dog', $args);
 
 	}
 }
@@ -38,8 +38,8 @@ if ( ! function_exists('dogium_register_dog_post_type') ) {
 if (! function_exists('dogium_register_breed_taxonomy')) {
 	function dogium_register_breed_taxonomy() {
 		register_taxonomy(
-			'dogium-breed',
-			'dogium-dog',
+			'dogium_breed',
+			'dogium_dog',
 			array(
 				'label' => __('Breed', 'dogium'),
 				'hierarchical' => true,

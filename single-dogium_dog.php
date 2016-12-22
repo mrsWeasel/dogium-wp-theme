@@ -41,7 +41,7 @@ get_header(); ?>
 							echo '<li>' . bp_core_get_userlink( $owner ) . '</li>';
 						}
 						?>
-					
+						<?php the_meta() ?>
 						<?php the_content(); ?>
 
 					<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
