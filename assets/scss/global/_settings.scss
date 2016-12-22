@@ -55,7 +55,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-$light-gray: #e6e6e6;
+$light-gray: #f2f2f2;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -558,8 +558,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: $white;
-$topbar-submenu-background: $topbar-background;
+$topbar-background: #fff;
+$topbar-submenu-background: #fff;
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
