@@ -21,7 +21,9 @@
           <?php if ( is_user_logged_in() ) :
           bp_get_template_part( 'activity/post-form' ); 
           endif; ?>
-         <?php get_template_part( 'buddypress/activity/activity-loop' ); ?> 
+         <div class="activity">
+         <?php get_template_part( 'buddypress/activity/activity-loop' ); ?>
+         </div> 
       </div>
       <?php do_action( 'foundationpress_before_content' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
