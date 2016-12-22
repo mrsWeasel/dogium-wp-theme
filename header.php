@@ -45,7 +45,9 @@
 			</div>
 			<div class="top-bar-right">
 				<?php foundationpress_top_bar_r(); ?>
-
+				<button id="search-toggle" role="button">
+					<i class="fa fa-search"></i>
+				</button>
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
