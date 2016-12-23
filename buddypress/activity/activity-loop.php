@@ -18,7 +18,7 @@ do_action( 'bp_before_activity_loop' ); ?>
 
 $parameters = '';
 
-if ( is_front_page() ) {
+//if ( is_front_page() ) {
 	if ( is_user_logged_in() ) {
 		// For logged in users, only show activity from friends and groups
 		$parameters .= '&scope=just-me,friends,groups';
@@ -27,7 +27,7 @@ if ( is_front_page() ) {
 	$parameters .= '&action=rtmedia_update,activity_update';
 	// Only show 5 entries
 	$parameters .= '&max=5';
-}
+//}
 
 ?>
 
