@@ -1,0 +1,54 @@
+// Login widget
+.widget_bp_core_login_widget {
+	background: $light-gray;
+	padding: 1em;
+	text-align: center;
+	.bp-login-widget-user-links>div {
+		padding-left: 0 !important;
+	}
+	.bp-login-widget-user-avatar {
+		float: none !important;
+		display: inline-block;
+		img {
+			width: 50px;
+			height: 50px;
+		}
+	}
+	.bp-login-widget-user-link {
+		display: inline-block;
+	}
+	.logout, input[type="submit"] {
+		@extend .button;
+		@extend .expanded;
+	}
+}
+
+.widget_thechamplogin {
+	background: $light-gray;
+	padding: 0 1em 1em;
+}
+
+.buddypress.widget {
+	.avatar-block {
+		@extend .row;
+		.item-avatar {
+		@extend .columns;
+		@extend .small-4;
+		text-align: center;
+		}
+		img {
+			float: none !important;
+			margin: 0 !important;
+			height: auto !important; 
+			width: 100%!important;
+			max-width: 80px;
+		}
+	}
+}
+
+.widget_bp_core_members_widget {
+	margin-top: 1rem;
+	.item-options {
+		text-align: center;
+	}
+}
