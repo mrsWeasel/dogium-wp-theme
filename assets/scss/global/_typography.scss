@@ -1,0 +1,15 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Secondary typography
+
+.widget .widget-title {
+	@include font-size(1.25);
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: $primary-color;
+}
