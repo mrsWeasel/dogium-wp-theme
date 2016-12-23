@@ -75,6 +75,10 @@
   Add your scss files below to structure your project styles
 */
 
+// Typography
+@import "global/typography";
+
+
 // Modules
 @import "modules/navigation";
 @import "modules/footer";
@@ -87,6 +91,7 @@
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
+@import "components/widgets";
 
 // Templates
 @import "templates/front";
