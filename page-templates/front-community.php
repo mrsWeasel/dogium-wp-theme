@@ -1,22 +1,39 @@
 <?php
+/*
+Template Name: Front Page Community
+*/
 /**
- * The template for displaying the front page.
+ * The template for displaying the community front page.
  *
  * This template includes BP activity stream and some custom fields specific to this page only.
- *
+ * 
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
 
  get_header(); ?>
+  <?php
+    if (get_field('dgm_background')) {
+        $bg_url = esc_url(get_field('dgm_background'));
+    }
+  ?>
+  <header id="front-page-header" style="background-image: url(<?php echo $bg_url; ?>);">
+    <div class="row">
+      <div class="medium-8 medium-centered columns">
+        <?php
+        if (get_field('dgm_fp_heading')) : ?>
+          <h1 class="text-center">
+          <?php echo esc_html( get_field('dgm_fp_heading') );?>
+          </h1>
+        <?php endif;
+        ?>
+      </div>
 
+    </div>
+   </header> 
  <div id="page" role="main">
    <div class="extended row">
-     <div class="medium-3 columns">
-       <?php dynamic_sidebar('home-left-sidebar'); ?>
-     </div>
-   
-   <div class="medium-6 columns">
+   <div class="medium-6 medium-push-3 columns">
       <div id="buddypress">
           <?php if ( is_user_logged_in() ) :
           bp_get_template_part( 'activity/post-form' ); 
@@ -45,9 +62,12 @@
 
    <?php do_action( 'foundationpress_after_content' ); ?>
    </div>
-   <div class="medium-3 columns">
+   <div class="medium-3 medium-push-3 columns">
      <?php dynamic_sidebar('home-right-sidebar'); ?>
    </div>
+    <div class="medium-3 medium-pull-9 columns">
+       <?php dynamic_sidebar('home-left-sidebar'); ?>
+    </div>
   </div>
  </div>
 
