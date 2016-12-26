@@ -22,10 +22,17 @@ Template Name: Front Page Community
       <div class="medium-8 medium-centered columns">
         <?php
         if (get_field('dgm_fp_heading')) : ?>
-          <h1 class="text-center">
+          <h1 class="text-center white text-shadow">
           <?php echo esc_html( get_field('dgm_fp_heading') );?>
           </h1>
-        <?php endif;
+        <?php 
+        endif;
+        if (get_field('dgm_fp_tagline')) : ?>
+          <p class="intro text-center white text-shadow">
+          <?php echo esc_html( get_field('dgm_fp_tagline') );?> 
+          </p>
+        <?php
+        endif;
         ?>
       </div>
 
@@ -33,7 +40,7 @@ Template Name: Front Page Community
    </header> 
  <div id="page" role="main">
    <div class="extended row">
-   <div class="medium-6 medium-push-3 columns">
+   <div class="medium-6 large-6 large-push-3 columns">
       <div id="buddypress">
           <?php if ( is_user_logged_in() ) :
           bp_get_template_part( 'activity/post-form' ); 
@@ -62,10 +69,10 @@ Template Name: Front Page Community
 
    <?php do_action( 'foundationpress_after_content' ); ?>
    </div>
-   <div class="medium-3 medium-push-3 columns">
+   <div class="medium-6 large-3 large-push-3 columns">
      <?php dynamic_sidebar('home-right-sidebar'); ?>
    </div>
-    <div class="medium-3 medium-pull-9 columns">
+    <div class="medium-12 large-3 large-pull-9 columns">
        <?php dynamic_sidebar('home-left-sidebar'); ?>
     </div>
   </div>
