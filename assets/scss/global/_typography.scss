@@ -13,3 +13,45 @@
 	text-align: center;
 	color: $primary-color;
 }
+
+// Header intro paragraph
+.intro {
+	@include font-size(1.75);
+  	font-weight: bold;
+  	padding: 0 1rem;
+}
+
+// Footer typography
+
+#footer {
+	font-weight: $global-weight-bold;
+	.widget-title {
+		text-align: left;
+		color: $black;
+	}
+	a {
+		color: $black;
+	}
+}
+
+// Helper classes
+.white {
+	color: $white;
+}
+
+.blue {
+	color: $primary-color;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+// Button text 
+.button {
+	font-weight: $global-weight-bold;
+}
