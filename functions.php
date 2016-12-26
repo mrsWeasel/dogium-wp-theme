@@ -52,6 +52,5 @@ require_once( 'library/custom-post-types.php' );
 
 /** Add cp metaboxes */
 require_once( 'library/custom-fields.php' );
-
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
