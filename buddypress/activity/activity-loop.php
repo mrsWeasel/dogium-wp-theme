@@ -25,8 +25,12 @@ $parameters = '';
 	}
 	// Standard activity updates + activity updates with rtmedia image attachment
 	$parameters .= '&action=rtmedia_update,activity_update';
-	// Only show 5 entries
-	$parameters .= '&max=5';
+	// Only show 5 entries for front page, 8 for community page
+	if ( is_front_page() ) {
+		$parameters .= '&per_page=5';
+	} else {
+		$parameters .= '&per_page=8';
+	}
 //}
 
 ?>
@@ -46,7 +50,7 @@ $parameters = '';
 	<?php endwhile; ?>
 
 	
-	<?php if ( bp_activity_has_more_items() ) : ?>
+	<?php if ( bp_activity_has_more_items(  ) ) : ?>
 
 
 		<?php if ( !is_front_page() ) :?>

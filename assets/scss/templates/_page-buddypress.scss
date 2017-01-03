@@ -1,0 +1,175 @@
+#page-buddypress {
+
+  // This is used for groups header as well
+  #dogium-member-cover {
+  	position: relative;
+  	padding: 6rem 0 3rem;
+  	background: $light-gray;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center center;
+
+  }
+  #item-header-container {
+  	float: left;
+  	padding: 1em;
+  	background: rgba(255,255,255,0.8);
+  }
+  #item-header-avatar {
+  	float: left;
+  }
+  #item-header-content {
+  	float: left;
+  	margin-left: 1rem;
+  }
+  #item-actions {
+    float: left;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    h2 {
+      @include font-size(1);
+    }
+  }
+  #template-notices {
+    margin-top: 1rem;
+    #message {
+      @extend .columns;
+      @extend .medium-10;
+      @extend .medium-centered;
+    }
+    p {
+      @extend .callout;
+      @extend .primary;
+    }
+  }
+  #change-cover-link {
+  	position: absolute;
+  	top: rem-calc(15);
+  	left: rem-calc(15);
+  	z-index: 2;
+  	width: 4rem;
+  	height: 4rem;
+  	border-radius: 50%;
+  	background: rgba(255,255,255,0.6);
+  	border: 1px solid $medium-gray;
+  	text-align: center;
+  	.fa {
+  		color: $black;
+  		line-height: 4rem;
+  		font-size: 1.75rem;
+  	}
+  	&:hover, &:focus {
+  		background: rgba(255,255,255,0.9);
+  		transition: background 0.3s ease-in;
+  	}
+  }
+  #item-nav, #item-body {
+      @extend .columns;
+      @extend .medium-10;
+      @extend .medium-centered;
+  }
+  #group-admins {
+    margin-left: 0;
+    li {
+      display: inline-block;
+    }
+    .avatar {
+      width: rem-calc(40);
+      height: rem-calc(40);
+    }
+  }
+  .group-button {
+    a {
+      @extend .button; 
+      @extend .small;
+    }
+    .leave-group {
+      @extend .hollow;
+      @extend .alert;
+    }
+  }
+  #item-buttons {
+    @extend .button-group;
+    div {
+      display: inline-block;
+    }
+    a {
+      @extend .button;
+      @extend .tiny;
+    }
+    .friendship-button.add {
+      @extend .success;
+    }
+    .friendship-button.remove {
+      @extend .alert;
+    }
+    #post-mention a, #send-private-message a {
+      @extend .hollow;
+      @extend .secondary;
+    }
+  }
+  #subnav {
+  	ul {
+  		margin-left: 0;
+  		@extend .clearfix;
+  	}
+  	li {
+  		float: left;
+  		padding: 0.5em 0.75em;
+  	}
+  	#activity-filter-select {
+  		float: right;
+  	}
+  }
+	.activity {
+		margin-top: 4rem;
+		.load-more a {
+			@extend .button;
+			@extend .hollow;
+			&:after {
+				content: "\f055";
+				font-family: FontAwesome;
+				margin-left: 0.5rem;
+			}
+		}
+	}	
+	#object-nav {
+		ul {
+			margin-left: 0;
+		}
+		li {
+			float: left;
+			padding: 0.5em 0.75em;
+
+		}
+		.current {
+			background: $light-gray;
+		}
+		a {
+			font-weight: bold;
+			color: $black;
+		}
+		span {
+			width: 1.75rem;
+			height: 1.75rem;
+			display: inline-block;
+			border-radius: 50%;
+			text-align: center;
+      background: $primary-color;
+      color: $white;
+		}
+		.count {
+			background: $primary-color;
+			color: $white;
+		}
+		.no-count {
+			background: $medium-gray;
+			color: $dark-gray;
+		}
+	}	
+	#subnav {
+		ul {
+			margin-left: 0;
+		}
+	}
+}

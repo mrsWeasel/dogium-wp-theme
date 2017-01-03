@@ -38,22 +38,32 @@ Template Name: Front Page Community
 
     </div>
    </header> 
- <div id="page" role="main">
+ <div id="page-full-width" role="main">
+ 
    <div class="extended row">
    <div class="medium-6 large-6 large-push-3 columns">
-      <div id="buddypress">
+     
+      <?php do_action( 'foundationpress_before_content' ); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+      <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+         <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
+          <div id="buddypress">
           <?php if ( is_user_logged_in() ) :
           bp_get_template_part( 'activity/post-form' ); 
           endif; ?>
          <div class="activity">
          <?php get_template_part( 'buddypress/activity/activity-loop' ); ?>
-         </div> 
-      </div>
-      <?php do_action( 'foundationpress_before_content' ); ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-      <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-         <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-         <div class="entry-content">
+         </div>
+        
+        </div>
+         <div class="entry-content clearfix">
+             <?php
+             $link_text = esc_html( get_field('dgm_community_link_text') );
+             $link_url = esc_url( get_field('dgm_community_page_link_url') );
+             if ( !empty($link_text) && !empty($link_url) ) {  
+              echo "<a id='community-link' class='button float-right' href='{$link_url}'>{$link_text} <i class='fa fa-arrow-right' aria-hidden='true'></i></a>";
+             }
+              ?>
              <?php the_content(); ?>
              <?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
          </div>
@@ -70,7 +80,7 @@ Template Name: Front Page Community
    <?php do_action( 'foundationpress_after_content' ); ?>
    </div>
    <div class="medium-6 large-3 large-push-3 columns">
-     <?php dynamic_sidebar('home-right-sidebar'); ?>
+     <?php dynamic_sidebar('community-sidebar'); ?>
    </div>
     <div class="medium-12 large-3 large-pull-9 columns">
        <?php dynamic_sidebar('home-left-sidebar'); ?>

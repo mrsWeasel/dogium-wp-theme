@@ -1,6 +1,73 @@
 #buddypress {
+	// Pages
+	#header-cover-image {
+		background-color: $light-gray;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: 0;
+		display: block;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	// Activity stream
+	.bp-screen-reader-text {
+		@extend .screen-reader-text;
+	}
+	.acomment-options {
+    	float: none;
+    	margin-bottom: 1rem;
+    	ul {
+    		margin-left: 0;
+    	}
+	}
+	.button {
+		@extend .small;
+		@extend .hollow;
+		@extend .secondary;
+		padding: 0.5em 1em;
+	}
+	.fav {
+		&:before {
+		content: "\f087";
+		font-family: FontAwesome;
+		margin-right: 0.5rem;
+		}
+	}
+
+	.unfav {
+		&:before {
+		content: "\f164";
+		font-family: FontAwesome;
+		color: $primary-color;
+		margin-right: 0.5rem;
+		}
+	}
+
+	.delete-activity {
+		&:before {
+			content: "\f014";
+			font-family: FontAwesome;
+			margin-right: 0.5rem;
+		}
+	}
+
+	.buddyboss_privacy_filter {
+		&:before {
+			content: "\f023";
+			font-family: FontAwesome;
+			margin-right: 0.5rem;
+		}
+	}
+
+	#bbwall-privacy-selectbox {
+    	height: auto;
+	}
+
 	ul {
 		list-style-type: none;
+		@extend .clearfix;
 	}
 	.activity-item {
 		background: $light-gray;
@@ -19,20 +86,61 @@
 		}
 	}
 	.activity-content {
-		padding: 0 1em 1em;
+		padding: 0 1em;
 		margin-top: rem-calc(-40);
 	}
 	.activity-comments {
 		margin-left: 0 !important;
+		.activity-like-count {
+			margin-bottom: 1rem;
+			@include font-size(0.8);
+		}
+		.activity-like-count:first-child:before {
+    			content: "\f164";
+				font-family: FontAwesome;
+				color: $primary-color;
+				margin-right: 0.5rem;
+    		}
 		.acomment-avatar img {
 			width: rem-calc(40) !important;
 			height: rem-calc(40) !important;
 		}
 	}
+
 }
 
 .avatar {
 	border-radius: 50%;
+}
+#buddypress .home-page form#whats-new-form {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+#buddypress form#whats-new-form #whats-new-avatar {
+	float: left;
+}
+#buddypress form#whats-new-form #whats-new-content {
+	margin-left: 55px;
+	padding: 0 0 20px 20px;
+}
+#buddypress form#whats-new-form p.activity-greeting {
+	line-height: 0.5em;
+	margin-bottom: 15px;
+	margin-left: 75px;
+}
+#buddypress form#whats-new-form textarea {
+	background: #fff;
+	box-sizing: border-box;
+	color: #555;
+	font-family: inherit;
+	font-size: medium;
+	height: 2.2em;
+	line-height: 1.4;
+	padding: 6px;
+	width: 100%;
+}
+body.no-js #buddypress form#whats-new-form textarea {
+	height: 50px;
 }
 
 #whats-new-form {
@@ -43,6 +151,12 @@
 		padding-top: 1.5em;
 		margin-left: 0 !important;
 		text-align: center;
+		&:after {
+			content: "\f040";
+			color: $primary-color;
+			font-family: FontAwesome;
+			margin-left: 0.5rem;
+		}
 	}
 }
 
@@ -54,6 +168,8 @@
 	width: rem-calc(40) !important;
 	height: rem-calc(40) !important;
 	border-width: 0;
+
+
 }
 
 #whats-new-content {
