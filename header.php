@@ -48,6 +48,7 @@
 				<button id="search-toggle" role="button">
 					<i class="fa fa-search"></i>
 				</button>
+				<?php dogium_display_unread_notifications(); ?>
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
