@@ -28,3 +28,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 	add_action( 'wp_enqueue_scripts', 'foundationpress_scripts' );
 endif;
+function dogium_dequeue_bp_styles() {
+	wp_dequeue_style( 'bp-legacy-css' );
+}
+add_action( 'wp_enqueue_scripts', 'dogium_dequeue_bp_styles', 20 );
