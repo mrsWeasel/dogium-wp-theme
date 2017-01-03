@@ -81,9 +81,11 @@
 
 // Modules
 @import "modules/navigation";
+@import "modules/header";
 @import "modules/footer";
 @import "modules/sidebar";
 @import "modules/editor-style";
+//@import "modules/buddypress-legacy";
 @import "modules/buddypress";
 @import "modules/geodirectory";
 
@@ -100,4 +102,5 @@
 @import "templates/page-default";
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
+@import "templates/page-buddypress";
 @import "templates/single-post";
