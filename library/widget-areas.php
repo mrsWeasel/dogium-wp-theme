@@ -19,8 +19,8 @@ function foundationpress_sidebar_widgets() {
 	));
 
 	register_sidebar(array(
-	  'id' => 'home-right-sidebar',
-	  'name' => __( 'Home Right Sidebar', 'foundationpress' ),
+	  'id' => 'community-sidebar',
+	  'name' => __( 'Community Sidebar', 'foundationpress' ),
 	  'description' => __( 'Drag widgets to this sidebar container.', 'foundationpress' ),
 	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
 	  'after_widget' => '</article>',

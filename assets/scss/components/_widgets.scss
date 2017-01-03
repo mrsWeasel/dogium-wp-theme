@@ -1,3 +1,7 @@
+.widget ul {
+	list-style-type: none;
+}
+
 // Login widget
 .widget_bp_core_login_widget {
 	background: $light-gray;
@@ -28,28 +32,7 @@
 	padding: 0 1em 1em;
 }
 
-.buddypress.widget {
-	.avatar-block {
-		@extend .row;
-		.item-avatar {
-		@extend .columns;
-		@extend .small-3;
-		@extend .medium-4;
-		text-align: center;
-		&:last-child {
-			@extend .end;
-		}
-		}
-		img {
-			float: none !important;
-			margin: 0 !important;
-			height: auto !important; 
-			width: 100%!important;
-			max-width: 80px;
-		}
 
-	}
-}
 
 // BP Members
 .widget_bp_core_members_widget {
@@ -69,6 +52,7 @@
 	}
 	.item-options {
 		text-align: center;
+		margin-bottom: 1rem;
 	}
 	.item-meta {
 		display: none;
@@ -88,6 +72,9 @@
 // BP Groups
 .widget_bp_groups_widget {
 	text-align: center;
+	.item-options {
+		margin-bottom: 1rem;
+	}
 	#groups-list {
 		@extend .row;
 		.bp-single-group {
@@ -153,6 +140,15 @@
 		&:before {
 		content: " ";
 		}
+	}
+	.rpwe-thumb {
+		margin-bottom: 1rem;
+	}
+	.rpwe-title {
+		@include font-size(1.25);
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $primary-color;
 	}
 }
 
