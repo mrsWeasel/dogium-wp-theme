@@ -3,10 +3,43 @@
 }
 
 // Login widget
+// BP Login Widget
+#bp-login-widget-form {
+	position: relative;
+	>label {
+		position: relative;
+		height: rem-calc(40);
+		z-index: 1;
+		color: $dark-gray;
+		text-align: left;
+		line-height: rem-calc(40);
+		padding-left: 1rem;
+	}
+	>input[type="text"],
+	>input[type="password"] {
+		position: relative;
+		height: rem-calc(40);
+		transform: translateY(rem-calc(-40));
+		margin-bottom: rem-calc(-30);
+		&:focus {
+			z-index: 2;
+		}
+	}
+	.focused {
+		z-index: 2;
+	}
+}
 .widget_bp_core_login_widget {
 	background: $light-gray;
 	padding: 1em;
 	text-align: center;
+	.widget-title {
+		&:before {
+			content: "\f023";
+			font-family: FontAwesome;
+			margin-right: 0.5rem;
+		}
+	}
 	.bp-login-widget-user-links>div {
 		padding-left: 0 !important;
 	}
@@ -30,6 +63,9 @@
 .widget_thechamplogin {
 	background: $light-gray;
 	padding: 0 1em 1em;
+	>h3 {
+		@extend .screen-reader-text;
+	}
 }
 
 
@@ -151,4 +187,3 @@
 		color: $primary-color;
 	}
 }
-
