@@ -32,3 +32,14 @@ function dogium_dequeue_bp_styles() {
 	wp_dequeue_style( 'bp-legacy-css' );
 }
 add_action( 'wp_enqueue_scripts', 'dogium_dequeue_bp_styles', 20 );
+
+// disable acf css on front-end acf forms
+add_action( 'wp_enqueue_scripts', 'dogium_deregister_styles', 100 );
+ 
+function dogium_deregister_styles() {
+  wp_deregister_style( 'acf' );
+  wp_deregister_style( 'acf-field-group' );
+  wp_deregister_style( 'acf-global' );
+  wp_deregister_style( 'acf-input' );
+  wp_deregister_style( 'acf-datepicker' );
+}
