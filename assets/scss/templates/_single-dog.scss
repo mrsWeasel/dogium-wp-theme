@@ -1,0 +1,18 @@
+#single-dog {
+  @include grid-row();
+  margin-top: 3rem;
+
+  .main-content {
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
+  }
+
+  // Dog meta fields
+  span.owners:first-child {
+  	&:after {
+  		content: ", ";
+  	}
+  }
+
+}
