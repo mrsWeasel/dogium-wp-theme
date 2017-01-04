@@ -28,6 +28,9 @@
 	.focused {
 		z-index: 2;
 	}
+	input[type="submit"] {
+		margin-bottom: 0;
+	}
 }
 .widget_bp_core_login_widget {
 	background: $light-gray;
@@ -63,6 +66,13 @@
 .widget_thechamplogin {
 	background: $light-gray;
 	padding: 0 1em 1em;
+	.the_champ_login_container {
+		margin-top: 0;
+		margin-bottom: 0;
+		.the_champ_login_ul {
+			margin: 0 !important;
+		}
+	}
 	>h3 {
 		@extend .screen-reader-text;
 	}
