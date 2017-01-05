@@ -1,13 +1,12 @@
 {
-    "name": "olefredrik/foundationpress",
-    "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+    "name": "mrsWeasel/dogium-wp-theme",
+    "description": "Custom WP theme built on Foundationpress framework",
     "type": "wordpress-theme",
     "minimum-stability" : "dev",
-    "license": "MIT",
     "authors": [
         {
-            "name": "Ole Fredrik Lie",
-            "email": "mail@olefredrik.com"
+            "name": "Laura Heino",
+            "email": "laura@lauraheino.com"
         }
     ],
     "require": {
