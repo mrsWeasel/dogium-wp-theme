@@ -19,7 +19,7 @@ do_action( 'bp_before_activity_loop' ); ?>
 $parameters = '';
 
 //if ( is_front_page() ) {
-	if ( is_user_logged_in() ) {
+	if ( is_user_logged_in() && !bp_is_user() && !bp_is_group() ) {
 		// For logged in users, only show activity from friends and groups
 		$parameters .= '&scope=just-me,friends,groups';
 	}
@@ -27,9 +27,9 @@ $parameters = '';
 	$parameters .= '&action=rtmedia_update,activity_update';
 	// Only show 5 entries for front page, 8 for community page
 	if ( is_front_page() ) {
-		$parameters .= '&per_page=5';
+		$parameters .= '&max=5';
 	} else {
-		$parameters .= '&per_page=8';
+		$parameters .= '';
 	}
 //}
 

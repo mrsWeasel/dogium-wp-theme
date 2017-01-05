@@ -21,6 +21,9 @@
   #item-header-content {
   	float: left;
   	margin-left: 1rem;
+    .highlight {
+      @extend .label;
+    }
   }
   #item-actions {
     float: left;
@@ -122,7 +125,6 @@
   	}
   }
 	.activity {
-		margin-top: 4rem;
 		.load-more a {
 			@extend .button;
 			@extend .hollow;
@@ -173,3 +175,4 @@
 		}
 	}
 }
+

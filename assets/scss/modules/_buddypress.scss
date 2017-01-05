@@ -1,3 +1,7 @@
+body.no-js #buddypress form#whats-new-form textarea {
+	height: 50px;
+}
+
 #buddypress {
 	// Pages
 	#header-cover-image {
@@ -105,6 +109,17 @@
 			width: rem-calc(40) !important;
 			height: rem-calc(40) !important;
 		}
+		.ac-form {
+			margin-top: 1rem;
+			margin-left: rem-calc(40);
+			.ac-reply-avatar {
+				display: inline-block;
+				transform: translate(-50%,-50%);
+			}
+			.ac-reply-content {
+				margin-top: rem-calc(-40);
+			}
+		}
 	}
 
 }
@@ -112,41 +127,23 @@
 .avatar {
 	border-radius: 50%;
 }
-#buddypress .home-page form#whats-new-form {
-	border-bottom: none;
-	padding-bottom: 0;
-}
-#buddypress form#whats-new-form #whats-new-avatar {
-	float: left;
-}
-#buddypress form#whats-new-form #whats-new-content {
-	margin-left: 55px;
-	padding: 0 0 20px 20px;
-}
-#buddypress form#whats-new-form p.activity-greeting {
-	line-height: 0.5em;
-	margin-bottom: 15px;
-	margin-left: 75px;
-}
-#buddypress form#whats-new-form textarea {
-	background: #fff;
-	box-sizing: border-box;
-	color: #555;
-	font-family: inherit;
-	font-size: medium;
-	height: 2.2em;
-	line-height: 1.4;
-	padding: 6px;
-	width: 100%;
-}
-body.no-js #buddypress form#whats-new-form textarea {
-	height: 50px;
-}
+
 
 #whats-new-form {
 	background: $light-gray;
 	margin-bottom: 4rem;
 	margin-left: 0.5rem;
+	textarea {
+		background: #fff;
+		box-sizing: border-box;
+		color: #555;
+		font-family: inherit;
+		font-size: medium;
+		height: 2.2em;
+		line-height: 1.4;
+		padding: 6px;
+		width: 100%;
+	}
 	.activity-greeting {
 		padding-top: 1.5em;
 		margin-left: 0 !important;
@@ -168,11 +165,25 @@ body.no-js #buddypress form#whats-new-form textarea {
 	width: rem-calc(40) !important;
 	height: rem-calc(40) !important;
 	border-width: 0;
-
-
 }
 
 #whats-new-content {
-		padding: 1em 2em !important;
-		margin-left: 0 !important;
+	@extend .clearfix;
+	padding: 1em 2em !important;
+	margin-left: 0 !important;
+	#whats-new-options {
+		display: none;
+		@extend .clearfix;
+		//overflow: hidden;
+		//height: auto !important;
 	}
+}
+
+#buddypress div.activity-comments form.ac-form {
+	display: none;
+	padding: 10px;
+}
+#buddypress div.activity-comments li form.ac-form {
+	margin-right: 15px;
+	clear: both;
+}
