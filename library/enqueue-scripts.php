@@ -38,9 +38,9 @@ add_action( 'wp_enqueue_scripts', 'dogium_deregister_styles', 100 );
  
 function dogium_deregister_styles() {
   wp_deregister_style( 'wp-admin' );		
-  wp_deregister_style( 'acf' );
-  wp_deregister_style( 'acf-field-group' );
-  wp_deregister_style( 'acf-global' );
-  wp_deregister_style( 'acf-input' );
-  wp_deregister_style( 'acf-datepicker' );
+  //wp_deregister_style( 'acf' );
+  //wp_deregister_style( 'acf-field-group' );
+  //wp_deregister_style( 'acf-global' );
+  //wp_deregister_style( 'acf-input' );
+  //wp_deregister_style( 'acf-datepicker' );
 }
