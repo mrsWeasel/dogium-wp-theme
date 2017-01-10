@@ -12,7 +12,7 @@ get_header();
 
 ?>
 
-<header id="page-header">
+<header id="page-header" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/koiraprofiili_bg.jpg'; ?>);">
     <div class="row">
         <div class="medium-8 medium-centered columns">
             <?php 
@@ -22,7 +22,7 @@ get_header();
           		$official_name = ' <span class="subheader white">' . esc_html($official_name) . '</span>';
         	}
         	?>
-        	<h1 class="text-center white text-shadow"><?php the_title();?><?php echo $official_name; ?></h1>
+        	<h1 class="text-center white text-shadow"><i class="fa fa-paw" aria-hidden="true"></i> <?php the_title();?><?php echo $official_name; ?></h1>
         </div>
     </div>
 
@@ -33,36 +33,80 @@ get_header();
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-		<div class="extended row">
-			<div class="medium-5 columns">
-			<?php if (has_post_thumbnail($post)) {
-				the_post_thumbnail('featured-small');
-			} ?>
+		<div class="row">
+			<div class="medium-6 columns">
+				<div class="row collapse">
+				<?php if (has_post_thumbnail($post)) : ?>
+					<div class="small-12 columns">
+						<a id="featured-001" class="thumbnail" href="#" data-featherlight="#featured-001">
+						<?php the_post_thumbnail('featured-medium');?>
+						</a>
+					</div>
+				<?php endif; ?>
+				</div>
+				<div class="row collapse">
+				<?php 
+				$gallery = get_field('dgm_image_gallery');
+				$counter = 1;
+				foreach ( $gallery as $gallery_item ) : ?>
+					<?php
+					$id = 'gallery-00' . $counter; 
+					?>
+					<?php 
+					$row_start = $row_end = '';
+
+					if ($counter % 4 == 0) {
+						$row_start = '<div class="row collapse">';
+						$row_end = '</div>';
+					}
+					?>
+					<?php echo $row_end; ?>
+					<?php echo $row_start; ?>
+						<div class="small-4 columns end">
+						<a class="thumbnail" href="#" data-featherlight="<?php echo $id; ?>">
+							<img src="<?php echo $gallery_item['sizes']['fp-xsmall']; ?>">
+						</a>
+						</div>
+					<?php $counter++; ?>
+					<?php endforeach; ?>
+					
+				</div>
 			</div>
-			<div class="medium-7 columns">
+			<div class="medium-6 columns">
 				
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 					<div class="entry-content">
+						<table>
+						<tbody>
 						<?php
 
 						$term_other = dogium_get_dog_terms($post->ID);
 						$breed = get_post_meta($post->ID, 'dgm_breed', true);
 						if ( '' != $breed && $term_other ) : ?>
-							<p><strong><?php esc_html_e('Breed:', 'dogium'); ?></strong> <?php echo esc_html($breed); ?></p>
+						<tr>
+							<th><i class="fa fa-paw" aria-hidden="true"></i> <?php esc_html_e('Breed:', 'dogium'); ?></th> <td><?php echo esc_html($breed); ?></td>
+						</tr>
 						<?php endif; ?>
 
 						<?php
 						$date_of_birth = get_post_meta($post->ID, 'dgm_date_of_birth', true);
-							if (!empty($date_of_birth)) {
-								$date_of_birth = new DateTime($date_of_birth);
-								$date_of_birth = $date_of_birth->format('j.n.Y');
-								?>
-								<p><strong><?php esc_html_e('Date of birth:', 'dogium'); ?></strong> <?php echo $date_of_birth; ?></p>
-								<?php } ?>
+							if (!empty($date_of_birth)) : ?>
+								<?php $date_of_birth = new DateTime($date_of_birth); ?>
+								<?php $date_of_birth = $date_of_birth->format('j.n.Y'); ?>
+								
+								<tr>
+								<th><i class="fa fa-birthday-cake" aria-hidden="true"></i> <?php esc_html_e('Date of birth:', 'dogium'); ?></th>
+								<td><?php echo $date_of_birth; ?></td>
+								</tr>
+
+							<?php endif; ?>
 						<?php
 						$gender = get_post_meta($post->ID, 'dgm_gender', true);
 						if ( !empty($gender) ) : ?>
-							<p><?php echo esc_html( $gender ); ?></p>
+							<tr>
+							<th><i class="fa fa-venus-mars" aria-hidden="true"></i> <?php esc_html_e('Gender', 'dogium'); ?></th>
+							<td><?php echo esc_html( $gender ); ?></td>
+							</tr>
 						<?php endif; ?>	
 						<?php
 						// Check if field exists and if not, create a new array
@@ -88,7 +132,10 @@ get_header();
 						}
 						$all_owners = implode(', ', $all_owners);
 						?>
-						<p><strong><?php esc_html_e('Owners:', 'dogium');?></strong> <?php echo $all_owners; ?></p>
+						<tr>
+						<th><i class="fa fa-group" aria-hidden="true"></i> <?php esc_html_e('Owners:', 'dogium');?></th> 
+						<td><?php echo $all_owners; ?></td>
+						</tr>
 						<?php
 						// Check if friends / groups have been added as breeders, if not, create an empty array to avoid errors
 						$breeder_friends = get_post_meta($post->ID, 'dgm_friends_as_breeders', true);
@@ -126,8 +173,13 @@ get_header();
 
 						$all_breeders = implode(', ', $all_breeders);
 						if ('' != $all_breeders) : ?>
-							<p><strong><?php esc_html_e('Breeders:' , 'dogium'); ?></strong> <?php echo $all_breeders; ?></p>
+						<tr>
+							<th><i class="fa fa-group" aria-hidden="true"></i> <?php esc_html_e('Breeders:' , 'dogium'); ?></th> 
+							<td><?php echo $all_breeders; ?></td>
+						</tr>
 						<?php endif; ?>
+						</tbody>
+						</table>
 						<?php
 						$author = $post->post_author;
 	    				$user_domain = bp_core_get_user_domain( $author ) . 'dogs';
@@ -141,7 +193,7 @@ get_header();
 								<a class="button small" data-open="edit-dog-modal"><i class="fa fa-pencil" aria-hidden="true"></i> <?php esc_html_e('Edit', 'dogium'); ?></a>
 								<a class="button small alert" data-open="delete-dog-modal"><i class="fa fa-trash" aria-hidden="true"></i> <?php esc_html_e('Delete', 'dogium'); ?></a>
 							<?php endif; ?>
-						
+								
 				</div>
 			</div>
 		</div>
@@ -152,9 +204,14 @@ get_header();
 		<?php $edit_form = new DogForms; ?>
 		<?php $edit_form->print_delete_confirm(); ?>
 		<?php $edit_form->print_edit_form(); ?>
-		<?php do_action( 'foundationpress_before_comments' ); ?>
-		<?php comments_template(); ?>
-		<?php do_action( 'foundationpress_after_comments' ); ?>
+		<div class="row">
+			<div class="medium-8 columns">
+				<?php do_action( 'foundationpress_before_comments' ); ?>
+				<?php comments_template(); ?>
+				<?php do_action( 'foundationpress_after_comments' ); ?>
+			</div>
+		</div>
+
 		<?php
 		?>
 	</article>
