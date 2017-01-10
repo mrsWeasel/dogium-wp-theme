@@ -24,23 +24,29 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	// We're only using gallery slider on single dog view
+	if ( is_singular('dogium_dog') ) {
+		wp_enqueue_style('featherlight', get_template_directory_uri() . '/assets/stylesheets/featherlight/featherlight.css');
+		wp_enqueue_style('featherlight', get_template_directory_uri() . '/assets/stylesheets/featherlight/featherlight.gallery.css', array('featherlight'));
+		wp_enqueue_script('featherlight', get_template_directory_uri() . '/assets/javascript/featherlight/featherlight.js', array('jquery'));
+		wp_enqueue_script('featherlight-gallery', get_template_directory_uri() . '/assets/javascript/featherlight/featherlight.gallery.js', array('featherlight'));
 	}
 
-	add_action( 'wp_enqueue_scripts', 'foundationpress_scripts' );
+}
+
+add_action( 'wp_enqueue_scripts', 'foundationpress_scripts' );
 endif;
+
 function dogium_dequeue_bp_styles() {
 	wp_dequeue_style( 'bp-legacy-css' );
 }
+
 add_action( 'wp_enqueue_scripts', 'dogium_dequeue_bp_styles', 20 );
 
-// disable acf css on front-end acf forms
+// disable wp-admin css on front-end acf forms
 add_action( 'wp_enqueue_scripts', 'dogium_deregister_styles', 100 );
  
+
 function dogium_deregister_styles() {
   wp_deregister_style( 'wp-admin' );		
-  //wp_deregister_style( 'acf' );
-  //wp_deregister_style( 'acf-field-group' );
-  //wp_deregister_style( 'acf-global' );
-  //wp_deregister_style( 'acf-input' );
-  //wp_deregister_style( 'acf-datepicker' );
 }
