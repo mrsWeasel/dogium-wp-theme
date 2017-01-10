@@ -61,6 +61,15 @@ function show_more_posts($query) {
 	}
 	return $query;
 }
+
+// Testing: remove medialibrary tab
+function remove_medialibrary_tab($tabs) {
+    if ( !current_user_can( 'administrator' ) ) {
+        unset($tabs["mediaLibraryTitle"]);
+    }
+    return $tabs;
+}
+add_filter('media_view_strings', 'remove_medialibrary_tab');
 //add_filter( 'pre_get_posts' , 'show_more_posts' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
