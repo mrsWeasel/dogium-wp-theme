@@ -5,21 +5,27 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
+
+// TODO: Check if this is needed (user can edit form)
 acf_form_head();
-get_header();?>
+get_header();
+
+?>
 
 <header id="page-header">
     <div class="row">
         <div class="medium-8 medium-centered columns">
             <?php 
-        	$official_name = '';
-        	if ( get_field('dgm_official_name') ) {
-          		$official_name = ' <span class="subheader white">' . esc_html(get_field('dgm_official_name')) . '</span>';
+        	$official_name = get_post_meta($post->ID, 'dgm_official_name', true);
+
+        	if ( !empty($official_name) ) {
+          		$official_name = ' <span class="subheader white">' . esc_html($official_name) . '</span>';
         	}
         	?>
         	<h1 class="text-center white text-shadow"><?php the_title();?><?php echo $official_name; ?></h1>
         </div>
     </div>
+
 </header> 
 
 <div id="single-dog" role="main">
@@ -40,39 +46,34 @@ get_header();?>
 						<?php
 
 						$term_other = dogium_get_dog_terms($post->ID);
-						
-						if ( get_field('dgm_breed') && $term_other ) : ?>
-							<?php
-							$breed = esc_html( get_field('dgm_breed') );	
-							?>
-							<p><strong><?php esc_html_e('Breed:', 'dogium'); ?></strong> <?php echo $breed; ?></p>
+						$breed = get_post_meta($post->ID, 'dgm_breed', true);
+						if ( '' != $breed && $term_other ) : ?>
+							<p><strong><?php esc_html_e('Breed:', 'dogium'); ?></strong> <?php echo esc_html($breed); ?></p>
 						<?php endif; ?>
 
 						<?php
-						if ( get_field('dgm_date_of_birth') ) : ?>
-							<?php 
-							$date_of_birth = esc_html( get_field('dgm_date_of_birth') ); 
-							$date_of_birth = new DateTime($date_of_birth);
-							$date_of_birth = $date_of_birth->format('j.n.Y');
-							?>
-							<p><strong><?php esc_html_e('Date of birth:', 'dogium'); ?></strong> <?php echo $date_of_birth; ?></p>
-						<?php endif; ?>
-
+						$date_of_birth = get_post_meta($post->ID, 'dgm_date_of_birth', true);
+							if (!empty($date_of_birth)) {
+								$date_of_birth = new DateTime($date_of_birth);
+								$date_of_birth = $date_of_birth->format('j.n.Y');
+								?>
+								<p><strong><?php esc_html_e('Date of birth:', 'dogium'); ?></strong> <?php echo $date_of_birth; ?></p>
+								<?php } ?>
 						<?php
-						if ( get_field('dgm_gender') ) : ?>
-							<?php $gender = esc_html( get_field('dgm_gender') ); ?>
-							<p><?php echo $gender; ?></p>
+						$gender = get_post_meta($post->ID, 'dgm_gender', true);
+						if ( !empty($gender) ) : ?>
+							<p><?php echo esc_html( $gender ); ?></p>
 						<?php endif; ?>	
 						<?php
 						// Check if field exists and if not, create a new array
 						$owners = '' !== get_field('dgm_owners') ? get_field('dgm_owners') : array();
-						$other_owners = '';
 						$all_owners = array();
 
-						if ( get_field('dgm_other_owners') ) {
-							$other_owners_string = trim( get_field('dgm_other_owners') );
+						$other_owners_string = get_post_meta($post->ID, 'dgm_other_owners', true);
+						if ('' != ($other_owners_string)) {
+						
+							$other_owners_string = trim( $other_owners_string );
 							$other_owners = explode("\n", $other_owners_string );
-							$other_owners = array_filter($other_owners, 'trim');
 						}
 
 						array_unshift($owners, get_the_author_meta('ID'));
@@ -80,9 +81,9 @@ get_header();?>
 							array_push ( $all_owners, bp_core_get_userlink( $owner ) );
 						}
 						
-						if ( '' != $other_owners ) {
+						if ( ! empty( $other_owners ) ) {
 							foreach($other_owners as $other_owner) {
-								array_push( $all_owners, trim($other_owner) );
+								array_push( $all_owners, trim( $other_owner ) );
 							}
 						}
 						$all_owners = implode(', ', $all_owners);
@@ -90,9 +91,12 @@ get_header();?>
 						<p><strong><?php esc_html_e('Owners:', 'dogium');?></strong> <?php echo $all_owners; ?></p>
 						<?php
 						// Check if friends / groups have been added as breeders, if not, create an empty array to avoid errors
-						$breeder_friends = '' != get_field('dgm_friends_as_breeders') ? get_field('dgm_friends_as_breeders') : array();
-						$breeder_groups = '' != get_field('dgm_groups_as_breeders') ? get_field('dgm_groups_as_breeders') : array();
-						$other_breeders = '';
+						$breeder_friends = get_post_meta($post->ID, 'dgm_friends_as_breeders', true);
+						$breeder_friends = !empty($breeder_friends) ? $breeder_friends : array();
+						$breeder_groups = get_post_meta($post->ID, 'dgm_groups_as_breeders');
+						$breeder_groups = !empty($breeder_groups) ? $breeder_groups : array();
+						$other_breeders_string = get_post_meta($post->ID, 'dgm_other_breeders', true);
+
 						$all_breeders = array();
 
 						// First, add breeder friends
@@ -110,52 +114,53 @@ get_header();?>
 						}
 
 						// Lastly, other breeders
-						if ( get_field('dgm_other_breeders') ) {
-							$other_breeders_string = trim( get_field('dgm_other_breeders') );
+						if ( !empty($other_breeders_string) ) {
+							$other_breeders_string = trim( $other_breeders_string );
 							$other_breeders = explode("\n", $other_breeders_string );
-							$other_breeders = array_filter($other_breeders, 'trim');
-						}
-						if ( '' != $other_breeders ) {
-							foreach($other_breeders as $other_breeder) {
-								array_push( $all_breeders, trim($other_breeder) );
+							if ( '' != ( $other_breeders ) ) {
+								foreach($other_breeders as $other_breeder) {
+									array_push( $all_breeders, trim( $other_breeder ) );
+								}
 							}
 						}
 
 						$all_breeders = implode(', ', $all_breeders);
-
-						?>
-						<p><strong><?php esc_html_e('Breeders:' , 'dogium'); ?></strong> <?php echo $all_breeders; ?></p>
+						if ('' != $all_breeders) : ?>
+							<p><strong><?php esc_html_e('Breeders:' , 'dogium'); ?></strong> <?php echo $all_breeders; ?></p>
+						<?php endif; ?>
+						<?php
+						$author = $post->post_author;
+	    				$user_domain = bp_core_get_user_domain( $author ) . 'dogs';
+	    				?>
 						<?php the_content(); ?>
-						<?php
-						$current_user_id = get_current_user_id();
-						$post_author_id = get_post_field('post_author', $post);
-							if ($current_user_id == $post_author_id) {
-								// tähän muokkaus / poisto + wp-nonce
-							}
-						?>
-
-						<?php acf_form(); ?>
-
-						<?php
-						if (current_user_can('administrator')) {
-							edit_post_link( __( 'Backend editor', 'dogium' ), '<span class="edit-link">', '</span>' );
-						}
-						?>
+						
+							
+							<?php 
+								// Check if current user has ability to edit / delete post
+								if (current_user_can('edit_post', $post->ID)) : ?>
+								<a class="button small" data-open="edit-dog-modal"><i class="fa fa-pencil" aria-hidden="true"></i> <?php esc_html_e('Edit', 'dogium'); ?></a>
+								<a class="button small alert" data-open="delete-dog-modal"><i class="fa fa-trash" aria-hidden="true"></i> <?php esc_html_e('Delete', 'dogium'); ?></a>
+							<?php endif; ?>
+						
 				</div>
 			</div>
 		</div>
 		
 		<footer>
 			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-			<p><?php the_tags(); ?></p>
 		</footer>
-
-		<?php do_action( 'foundationpress_post_before_comments' ); ?>
+		<?php $edit_form = new DogForms; ?>
+		<?php $edit_form->print_delete_confirm(); ?>
+		<?php $edit_form->print_edit_form(); ?>
+		<?php do_action( 'foundationpress_before_comments' ); ?>
 		<?php comments_template(); ?>
-		<?php do_action( 'foundationpress_post_after_comments' ); ?>
+		<?php do_action( 'foundationpress_after_comments' ); ?>
+		<?php
+		?>
 	</article>
 <?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
 </div>
+
 <?php get_footer();
