@@ -38,7 +38,6 @@ do_action('geodir_before_main_content', 'details-page');
 
 ?>
 
-<div class="container-fluid">
 <div class="row">
 
 <?php
@@ -52,7 +51,7 @@ if (get_option('geodir_detail_sidebar_left_section')) {
      */
     // Bootstrap column wrapper for left sidebar if exists -Laura
     ?>
-    <div class="col-sm-4">
+    <div class="medium-4 columns">
     <?php
     do_action('geodir_detail_sidebar');
     ?>
@@ -62,7 +61,7 @@ if (get_option('geodir_detail_sidebar_left_section')) {
 
 // Bootstrap column wrapper for main content -Laura
 ?>
-<div class="col-sm-8">
+<div class="medium-7 columns">
 <?php
 
 ###### MAIN CONTENT WRAPPERS OPEN ######
@@ -146,9 +145,10 @@ if (!get_option('geodir_detail_sidebar_left_section')) {
     /** This action is documented in geodirectory-templates/listing-detail.php */
     // Bootstrap column wrapper for right sidebar if exists -Laura
     ?>
-    <div class="col-md-4">
+    <div class="medium-4 columns">
     <?php
     do_action('geodir_detail_sidebar');
+    var_dump($post);
     ?>
     </div>
     <?php

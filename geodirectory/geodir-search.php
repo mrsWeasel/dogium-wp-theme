@@ -37,9 +37,9 @@ do_action('geodir_before_main_content', 'search-page');
  * @since 1.1.0
  */
 ?>
-<div class="container-fluid">
+
 <div class="row">
-<div class="col-xs-12">
+<div class="small-12 columns">
 <?php
 do_action('geodir_search_page_title');
 /**
@@ -65,7 +65,7 @@ do_action('geodir_search_page_description');
 do_action('geodir_search_sidebar_left');
 
 ?>
-<div class="col-md-8">
+<div class="medium-8 columns">
 <?php
 ###### MAIN CONTENT WRAPPERS OPEN ######
 /** This action is documented in geodirectory-templates/add-listing.php */
@@ -96,13 +96,13 @@ do_action('geodir_wrapper_content_close', 'search-page');
  */
 
 ?>
-<div class="col-md-4">
+<div class="medium-4 columns">
 <?php
 do_action('geodir_search_sidebar_right');
 ?>
 </div>
 </div>
-</div>
+
 <?php
 ###### WRAPPER CLOSE ######	
 /** This action is documented in geodirectory-templates/add-listing.php */
