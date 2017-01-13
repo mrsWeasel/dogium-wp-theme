@@ -36,9 +36,8 @@ do_action('geodir_before_main_content', 'listings-page');
  * @since 1.1.0
  */
 ?>
-<div class="container-fluid">
 <div class="row">
-<div class="col-xs-12">
+<div class="small-12 columns">
 <?php
 do_action('geodir_listings_page_title');
 /**
@@ -63,7 +62,7 @@ do_action('geodir_listings_sidebar_left');
 
 // Bootstrap column wrapper for main content -Laura
 ?>
-<div class="col-md-8">
+<div class="medium-8 columns">
 <?php
 
 ###### MAIN CONTENT WRAPPERS OPEN ######
@@ -96,7 +95,7 @@ do_action('geodir_wrapper_content_close', 'listings-page');
  * @since 1.1.0
  */
 ?>
-<div class="col-md-4">
+<div class="medium-4 columns">
 <?php
 do_action('geodir_listings_sidebar_right');
 ?>
@@ -118,7 +117,6 @@ do_action('geodir_sidebar_listings_bottom_section');
 ?>
 
 </div><!-- .row -->
-</div><!-- .container -->
 
 <?php
 
