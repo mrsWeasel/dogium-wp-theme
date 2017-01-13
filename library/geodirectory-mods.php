@@ -6,7 +6,6 @@
   * @author Laura Heino
   */
 
-
 function dogium_geodir_list_output() {
 	global $geodir_post_category_str, $cat_count;
 	$term_icons = geodir_get_term_icon();
@@ -35,32 +34,49 @@ remove_action('geodir_detail_sidebar_inside', 'geodir_details_sidebar_place_deta
 // remove listing detail page slider
 remove_action( 'geodir_details_main_content','geodir_action_details_slider',30);
 
-// add featured image to listing detail page
-add_action( 'geodir_details_main_content','dogium_action_details_slider',30);
-
-function dogium_action_details_slider() {
-
-	if ( has_post_thumbnail() ) : ?>
-		<div class="thumbnail">
-			<?php the_post_thumbnail('featured-small'); ?>
-		</div>
-	<?php endif;
-
-	global $post;
-	echo 'TESTI!!!';
-	echo $post->post_address;
-	echo $post->post_zip;
-	echo $post->post_city;
-	echo $post->geodir_website;
-	echo 'TESTI LOPPUU!!!';
-}
-
 // remove listing detail page tabs
 remove_action( 'geodir_details_main_content', 'geodir_show_detail_page_tabs',60);
 
-// add post content to listing detail page
-add_action( 'geodir_details_main_content', 'dogium_show_detail_page_content',60);
+// add featured image to listing detail page
+add_action( 'geodir_details_main_content','dogium_details',30);
 
-function dogium_show_detail_page_content() {
-	the_content();
+function dogium_details($post) {
+	global $post;
+	
+	$phone = esc_attr( $post->post_contact );
+	$address = esc_html( $post->post_address );
+	$zip = $post->post_zip;
+	$city = $post->post_city;
+	$website = esc_url( $post->geodir_website );
+
+	// Generate output for listing detail page
+	ob_start();
+	$output = '';
+	$output .= '<div class="row collapse">';
+	$output .= '<div class="medium-9 columns">';
+	$output .= '<div class="thumbnail">';
+	if ( has_post_thumbnail($post) ) :
+		$output .= get_the_post_thumbnail($post, 'featured-small');
+	endif;
+	$output .= '</div>';
+	$output .= '</div>';
+	$output .= '<div class="medium-3 columns">';
+	$output .= '<div class="callout">';
+	$output .= apply_filters('the_content', get_the_content() );
+	$output .= sprintf('<strong>%s</strong>', __('Contact information', 'dogium'));
+	$output .= '<ul class="geodir-detail-list">';
+	$output .= '' != $phone ? sprintf( '<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:%s">%s </a></li>', $phone, $phone) : '';
+	
+	$output .= '' != $address ? sprintf( '<li>%s</li>', $address) : '';
+	$output .= '' != $zip ? sprintf( '<li>%s</li>', $zip) : '';
+	$output .= '' != $city ? sprintf( '<li>%s</li>', $city) : '';
+	$output .= '' != $website ? sprintf( '<li><i class="fa fa-globe" aria-hidden="true"></i> <a href="%s">%s</a></li>', $website, __('Website', 'dogium')) : '';
+	$output .= '</ul>';
+	$output .= '</div>';
+	$output .= '</div>';
+	$output .= '</div>';
+	ob_get_clean();
+
+	echo $output;
+	
 }

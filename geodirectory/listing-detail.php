@@ -61,7 +61,7 @@ if (get_option('geodir_detail_sidebar_left_section')) {
 
 // Bootstrap column wrapper for main content -Laura
 ?>
-<div class="medium-7 columns">
+<div class="medium-8 columns">
 <?php
 
 ###### MAIN CONTENT WRAPPERS OPEN ######
@@ -118,12 +118,6 @@ if (have_posts() && !$preview) {
 /** This action is documented in geodirectory-templates/geodir-home.php */
 do_action('geodir_add_page_content', 'after', 'details-page');
 
-?>
-
-</div>
-
-<?php
-
 ###### MAIN CONTENT WRAPPERS CLOSE ######
 /**
  * Adds the closing HTML wrapper for the article on the details page.
@@ -140,6 +134,13 @@ do_action('geodir_after_main_content');
 /** This action is documented in geodirectory-templates/add-listing.php */
 do_action('geodir_wrapper_content_close', 'details-page');
 
+?>
+
+</div>
+
+<?php
+
+
 ###### SIDEBAR ON RIGHT ######
 if (!get_option('geodir_detail_sidebar_left_section')) {
     /** This action is documented in geodirectory-templates/listing-detail.php */
@@ -148,7 +149,7 @@ if (!get_option('geodir_detail_sidebar_left_section')) {
     <div class="medium-4 columns">
     <?php
     do_action('geodir_detail_sidebar');
-    var_dump($post);
+    
     ?>
     </div>
     <?php
