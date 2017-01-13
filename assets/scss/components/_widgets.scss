@@ -189,6 +189,7 @@
 	}
 	.rpwe-thumb {
 		margin-bottom: 1rem;
+		@extend .thumbnail;
 	}
 	.rpwe-title {
 		@include font-size(1.25);
