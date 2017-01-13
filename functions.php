@@ -53,6 +53,12 @@ require_once( 'library/notifications.php' );
 /** Modify BuddyBoss Privacy options */
 require_once( 'library/buddyboss-mods.php' );
 
+/** Geodirectory Cat Listing */
+require_once( 'library/geodirectory-mods.php' );
+
+
+
+
 function show_more_posts($query) {
 	if ( empty( $query->query_vars['suppress_filters'] ) ) {
 		if( geodir_is_page('listing') || geodir_is_page('author') || geodir_is_page('search') ) {
