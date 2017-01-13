@@ -14,6 +14,11 @@
 	color: $primary-color;
 }
 
+.geodir_category_list_view h3 {
+	@include font-size(1.25);
+	text-transform: uppercase !important;
+}
+
 // Header intro paragraph
 .intro {
 	@include font-size(1.75);
