@@ -46,9 +46,7 @@
 	}
 }
 
-.map_category input[type="text"] {
-	display: none;
-}
+
 
 body .geodir-listing-search.gd-search-bar-style .geodir-loc-bar .geodir-filter-container .geodir-advance-search {
 	width: initial;
@@ -60,7 +58,7 @@ body .geodir-listing-search.gd-search-bar-style .geodir-loc-bar .geodir-filter-c
 	position:unset;
 	width:100% !important;
 	word-wrap: break-word;
-	float: left;
+	float: none;
 }
 #geodir-sidebar, #geodir-sidebar-left {
 	position:unset;
@@ -72,44 +70,23 @@ body .geodir-listing-search.gd-search-bar-style .geodir-loc-bar .geodir-filter-c
 	width:100% !important;
 }
 
-.geodir-map-listing-page{width:100% !important;}
-.geodir-cat-list ul li {
-	clear:left;
-	border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 3px 5px;
-    margin: 5px 0px;
-    width: auto !important;
-}
-.geodir-popular-cat-list{list-style:none;}
-.geodir-pcat-show img{
-	/*height: 22px !important;*/
-    width: 22px !important;
-}
-.geodir-pcat-show span{
-	color:#367bb7;
-	font-size: 14px;
+.geodir-map-listing-page {
+	width: 100% !important;
 }
 
-.geodir-pcat-show a {
-	color: #888;
-    text-decoration: none;
+// Detail page 'more info' box
+.geodir-detail-list {
+	list-style-type: none;
+	margin-left: 0;
+	li {
+		margin-left: 0;
+	}
 }
 
-.geodir-category-list-in {
-	background: #fff none repeat scroll 0 0;
-    border: medium none;
-	padding:4px;
-}
-.geodir-cat-list h3{
-	color:#000;
-	margin-top:0px;
+.geodir_full_page {
+	margin-bottom: 3rem;
 }
 
-#geodir-sidebar-right .geodir-post-img {width:40% !important;}
-#geodir-sidebar .geodir-post-img {width:40% !important;}
-#geodir-sidebar-left .geodir-post-img {width:40% !important;}
 .geodir-loc-bar{
 		border-bottom: 0px solid #e1e1e1 !important;
 		border-top: 0px solid #e1e1e1 !important;
