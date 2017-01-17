@@ -46,6 +46,26 @@
 	}
 }
 
+.map_category input[type="text"] {
+	display: none;
+}
+
+.geodir-custom-cat-list {
+	.widget-title {
+		text-align: left;
+	}
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+	}
+	li {
+		margin-left: 0;
+		padding: 0.25em 0;
+		img {
+			max-width: rem-calc(24);
+		}
+	}
+}
 
 
 body .geodir-listing-search.gd-search-bar-style .geodir-loc-bar .geodir-filter-container .geodir-advance-search {
