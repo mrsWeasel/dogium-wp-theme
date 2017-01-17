@@ -53,11 +53,29 @@ require_once( 'library/notifications.php' );
 /** Modify BuddyBoss Privacy options */
 require_once( 'library/buddyboss-mods.php' );
 
+/** Modify BBPress forum output */
+require_once( 'library/bbpress-mods.php' );
+
 /** Geodirectory Cat Listing */
 require_once( 'library/geodirectory-mods.php' );
 
 
+add_filter( 'ajax_query_attachments_args', 'show_users_own_attachments', 1, 1 );
+function show_users_own_attachments( $query ) 
+{
+ $id = get_current_user_id();
+ if( !current_user_can('manage_options') )
+ $query['author'] = $id;
+ return $query;
+}
 
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+	if (!current_user_can('manage_options') && !is_admin()) {
+	  show_admin_bar(false);
+	}
+}
 
 function show_more_posts($query) {
 	if ( empty( $query->query_vars['suppress_filters'] ) ) {
@@ -70,12 +88,12 @@ function show_more_posts($query) {
 
 // Testing: remove medialibrary tab
 function remove_medialibrary_tab($tabs) {
-    if ( !current_user_can( 'administrator' ) ) {
-        unset($tabs["mediaLibraryTitle"]);
+    if ( !current_user_can( 'level_5' ) ) {
+        unset($tabs['library']);
     }
     return $tabs;
 }
-add_filter('media_view_strings', 'remove_medialibrary_tab');
+add_filter('media_upload_tabs', 'remove_medialibrary_tab');
 //add_filter( 'pre_get_posts' , 'show_more_posts' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
