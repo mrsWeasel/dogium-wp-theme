@@ -39,8 +39,7 @@ get_header();
 					<p><?php
 					$dog_name = get_the_title();
 						echo sprintf(
-							esc_html("Hello %s! Your dog %s has been saved as a draft, meaning it's not visible to other users. You can add images, basic information like date of birth, gender etc. You can also add additional owners to %s. Have fun and once you're ready to go live, hit '%s'.", "dogium"),
-							get_the_author_meta('login'),
+							esc_html("Your dog %s has been saved as a draft, meaning it's not visible to other users. You can add images, basic information like date of birth, gender etc. You can also add additional owners to %s. Have fun and once you're ready to go live, hit '%s'.", "dogium"),
 							$dog_name,
 							$dog_name,
 							esc_html('Publish', 'dogium')
@@ -71,7 +70,7 @@ get_header();
 
 					<?php
 					
-					$counter = 1;
+					$counter = 0;
 					foreach ( $gallery as $gallery_item ) : ?>
 						<?php
 						$id = 'gallery-00' . $counter; 
@@ -79,14 +78,14 @@ get_header();
 						<?php 
 						$row_start = $row_end = '';
 
-						if ($counter % 4 == 0) {
+						if ($counter % 3 == 0) {
 							$row_start = '<div class="row collapse">';
 							$row_end = '</div>';
 						}
 						?>
 						<?php echo $row_end; ?>
 						<?php echo $row_start; ?>
-							<div class="small-4 columns end">
+							<div class="large-4 columns end">
 							<div class="thumbnail" id="<?php echo $id; ?>">
 								<img src="<?php echo $gallery_item['sizes']['fp-xsmall']; ?>">
 							</div>
@@ -226,7 +225,13 @@ get_header();
 						$author = $post->post_author;
 	    				$user_domain = bp_core_get_user_domain( $author ) . 'dogs';
 	    				?>
-						<?php the_content(); ?>
+						<?php 
+
+						$content = esc_html( get_post_meta($post->ID, 'dgm_description', true) ); 
+						if ('' != $content) {
+							echo apply_filters('the_content', $content);
+						}
+						?>
 						
 							
 							<?php 
