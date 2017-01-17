@@ -1,3 +1,39 @@
+#masthead {
+  position: relative;
+  z-index: 999;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+#dogium-notifications {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 1.5rem 1rem 0;
+  font-weight: bold;
+  img {
+    max-width: rem-calc(25);
+    height: auto;
+  }
+  span {
+    display: inline-block;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    height: rem-calc(20);
+    width: rem-calc(20);
+    @include font-size(0.8);
+    text-align: center;
+    background: $primary-color;
+    color: $white;
+    border-radius: 50%;
+  }
+}
+
+.top-bar-left img {
+	padding: 0.5rem;
+	max-width: 220px;
+}
+
 #page-header {
 	padding: rem-calc(40) 0;
 	background: $medium-gray;
