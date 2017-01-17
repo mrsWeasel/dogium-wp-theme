@@ -9,6 +9,10 @@
 ?>
 <aside class="sidebar">
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
-	<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
-	<?php do_action( 'foundationpress_after_sidebar' ); ?>
+	<?php if (bbp_is_forum_archive()) {
+		dynamic_sidebar( 'community-sidebar' );
+	} else {
+		dynamic_sidebar( 'sidebar-widgets' );
+	}
+	?>
 </aside>
