@@ -4,7 +4,6 @@
  *
  * @package BuddyPress
  * @subpackage bp-legacy
- * Modified by Laura Heino
  */
 
 /**
@@ -24,12 +23,12 @@ $parameters = '';
 		$parameters .= '&scope=just-me,friends,groups';
 	}
 	// Standard activity updates + activity updates with rtmedia image attachment
-	$parameters .= '&action=rtmedia_update,activity_update';
+	$parameters .= '&action=activity_update';
 	// Only show 5 entries for front page, 8 for community page
 	if ( is_front_page() ) {
 		$parameters .= '&max=5';
 	} else {
-		$parameters .= '';
+		$parameters .= '&per_page=8';
 	}
 //}
 
@@ -39,7 +38,7 @@ $parameters = '';
 
 	<?php if ( empty( $_POST['page'] ) ) : ?>
 
-		<ul id="activity-stream" class="list-blog">
+		<ul id="activity-stream" class="activity-list item-list">
 
 	<?php endif; ?>
 
@@ -49,17 +48,13 @@ $parameters = '';
 
 	<?php endwhile; ?>
 
-	
-	<?php if ( bp_activity_has_more_items(  ) ) : ?>
-
-
-		<?php if ( !is_front_page() ) :?>
+	<?php if ( bp_activity_has_more_items() ) : ?>
+		<?php if (! is_front_page()) : ?>
 		<li class="load-more">
 			<a href="<?php bp_activity_load_more_link() ?>"><?php _e( 'Load More', 'buddypress' ); ?></a>
 		</li>
 		<?php endif; ?>
-
-	<?php endif; ?>	
+	<?php endif; ?>
 
 	<?php if ( empty( $_POST['page'] ) ) : ?>
 
@@ -69,7 +64,7 @@ $parameters = '';
 
 <?php else : ?>
 
-	<div id="message" class="info">
+	<div id="message" class="callout warning info">
 		<p><?php _e( 'Sorry, there was no activity found. Please try a different filter.', 'buddypress' ); ?></p>
 	</div>
 
