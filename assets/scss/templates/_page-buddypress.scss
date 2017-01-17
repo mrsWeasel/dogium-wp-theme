@@ -71,6 +71,16 @@
       @extend .medium-10;
       @extend .medium-centered;
   }
+
+  #item-body {
+    #message {
+      margin-bottom: 4rem;
+      p {
+        @extend .callout;
+        @extend .warning;
+      }
+    }
+  }
   #group-admins {
     margin-left: 0;
     li {
