@@ -15,6 +15,11 @@ function dogium_geodir_list_output() {
 	));
 
 	if ( !empty($terms) ) {
+		echo '<div class="widget geodir-custom-cat-list">';
+		echo '<h3 class="widget-title">';
+		esc_html_e('Place categories', 'dogium');
+		echo '</h3>';
+		echo '<ul>';
 		foreach ($terms as $term) {
 			$term_link = get_term_link($term);
 			$term_id = $term->term_id;
@@ -23,6 +28,8 @@ function dogium_geodir_list_output() {
 			<li><a href="<?php echo esc_url($term_link); ?>"><img src="<?php echo esc_url($term_icons[$term_id]);?>"> <?php echo esc_html($term->name) . ' (' . $term_count . ')'; ?><a></li>
 			<?php
 		}
+		echo '</ul>';
+		echo '</div>';
 	}
 }
 

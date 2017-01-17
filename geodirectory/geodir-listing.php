@@ -76,6 +76,7 @@ do_action('geodir_wrapper_content_open', 'listings-page', 'geodir-wrapper-conten
  *
  * @since 1.1.0
  */
+
 do_action('geodir_listings_content');
 
 ?>
@@ -86,6 +87,7 @@ do_action('geodir_listings_content');
 
 ###### MAIN CONTENT WRAPPERS CLOSE ######
 /** This action is documented in geodirectory-templates/add-listing.php */
+
 do_action('geodir_wrapper_content_close', 'listings-page');
 
 ###### SIDEBAR ######
