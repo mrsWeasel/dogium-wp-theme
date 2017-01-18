@@ -1,12 +1,18 @@
-/*GEODIRECTORY RESPONSIVE STYLESHEETS*/
-
-/*FONTS*/
-/*------------------------------------*\
-	TYPOGRAPHY
-\*------------------------------------*/
-
-
 .geodir_list_heading h1, .geodir_list_heading h2, .geodir_list_heading h3, .geodir_list_heading h4, .geodir_list_heading h5 {
+	display: none;
+}
+
+.geodir_map_container {
+	margin-bottom: 0;
+}
+
+.treeview {
+	input[type="checkbox"] {
+		margin-bottom: 0;
+	}
+}
+
+.geodir-category {
 	display: none;
 }
 
@@ -16,33 +22,74 @@
 	display: none;
 }
 
-
-
 .geodir-loc-bar {
+
 	@extend .row;
+	@extend .collapse;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: 0;
+	background: $light-gray;
 }
 
 .geodir-loc-bar-in {
 	@extend .columns;
-	@extend .medium-6;
+	@extend .large-5;
+	background: initial;
+	border: none;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .geodir-filter-container {
 	@extend .columns;
-	@extend .medium-6;
-	.cat_select {
-		width: rem-calc(160);
-		height: rem-calc(40);
-	}
-	.geodir-advance-search {
-		@extend .columns;
-		@extend .medium-6;
-		.geodir_submit_search {
-			flex: 0 0 auto;
-			width: rem-calc(40) !important;
-			height: rem-calc(40) !important;
+	@extend .large-5;
+	.customize_filter {
+		padding: 0;
+		@extend .row;
+		@extend .collapse;
+		background-color: initial;
+		border: none;
+		.customize_filter_inner {
+			@extend .columns;
+			//@extend .large-6;
+			@extend .small-6;
+			padding-left: 0;
+			padding-right: 0;
 		}
-	}	
+
+	}
+	.geodir-filter-cat {
+		padding: 0;
+		ul {
+			margin-left: 0;
+			margin-bottom: 0;
+			li {
+				border-bottom: none;
+				padding: 5px;
+			}
+		}
+	}
+	.cat_select {
+		//width: rem-calc(200) !important;
+		height: rem-calc(38) !important;
+	}
+}
+
+.geodir-addtofav-icon {
+	display: none;
+}
+
+#geodir-wrapper .geodir-loc-bar .geodir-filter-container .geodir-advance-search {
+    @extend .columns;
+	@extend .small-6;
+	background: none;
+	.geodir_submit_search {
+		background: $primary-color;
+		color: $white;
+		font-weight: bold;
+		margin: 5px;
+	}
 }
 
 .geodir-filter-cat {

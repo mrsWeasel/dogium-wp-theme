@@ -6,6 +6,17 @@
   * @author Laura Heino
   */
 
+function dogium_add_geodir_listing_button() {
+	$output = '';
+	$output .= '<div class="large-2 columns"><div style="padding: 5px">';
+	$output .= '<a class="button primary hollow float-right" href="#"><i class="fa fa-plus" aria-hidden="true"></i> ';
+	$output .= __('Add new listing', 'dogium');
+	$output .= '</a></div></div>';
+	echo $output;
+}
+
+add_action('geodir_after_search_form', 'dogium_add_geodir_listing_button');
+
 function dogium_geodir_list_output() {
 	global $geodir_post_category_str, $cat_count;
 	$term_icons = geodir_get_term_icon();
