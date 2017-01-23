@@ -33,6 +33,7 @@
 	}
 }
 .widget_bp_core_login_widget {
+	@include show-for(large);
 	background: $light-gray;
 	padding: 1em;
 	text-align: center;
@@ -64,6 +65,7 @@
 }
 
 .widget_thechamplogin {
+	@include show-for(large);
 	background: $light-gray;
 	padding: 0 1em 1em;
 	.the_champ_login_container {
@@ -196,5 +198,8 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		color: $primary-color;
+	}
+	.rpwe-summary {
+		margin-bottom: rem-calc(20);
 	}
 }
