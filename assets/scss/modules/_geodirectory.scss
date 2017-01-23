@@ -4,6 +4,9 @@
 
 .geodir_map_container {
 	margin-bottom: 0;
+	img {
+		opacity: 1 !important;
+	}
 }
 
 .treeview {
@@ -20,6 +23,11 @@
 .geodir-breadcrumb,
 .geodir_list_heading {
 	display: none;
+}
+
+// Latest places widget
+.geodir_category_list_view li {
+	border-bottom: 0;
 }
 
 .geodir-loc-bar {

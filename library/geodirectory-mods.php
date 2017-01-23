@@ -9,7 +9,7 @@
 function dogium_add_geodir_listing_button() {
 	$output = '';
 	$output .= '<div class="large-2 columns"><div style="padding: 5px">';
-	$output .= '<a class="button primary hollow float-right" href="#"><i class="fa fa-plus" aria-hidden="true"></i> ';
+	$output .= '<a class="button primary hollow float-right" href="http://dogium.com/palvelut/lisaa-palvelu"><i class="fa fa-plus" aria-hidden="true"></i> ';
 	$output .= __('Add new listing', 'dogium');
 	$output .= '</a></div></div>';
 	echo $output;
@@ -36,7 +36,7 @@ function dogium_geodir_list_output() {
 			$term_id = $term->term_id;
 			$term_count = $term->count;
 			?>
-			<li><a href="<?php echo esc_url($term_link); ?>"><img src="<?php echo esc_url($term_icons[$term_id]);?>"> <?php echo esc_html($term->name) . ' (' . $term_count . ')'; ?><a></li>
+			<li><a href="<?php echo esc_url($term_link); ?>"><img src="<?php echo esc_url($term_icons[$term_id]);?>"> <?php echo esc_html($term->name); ?><a></li>
 			<?php
 		}
 		echo '</ul>';
@@ -45,6 +45,7 @@ function dogium_geodir_list_output() {
 }
 
 add_action('geodir_home_sidebar_left', 'dogium_geodir_list_output', 1);
+add_action('geodir_detail_sidebar_inside', 'dogium_geodir_list_output', 1);
 
 // remove place details from sidebar
 remove_action('geodir_detail_sidebar_inside', 'geodir_details_sidebar_place_details', 10);
@@ -77,11 +78,10 @@ function dogium_details($post) {
 		$output .= get_the_post_thumbnail($post, 'featured-small');
 	endif;
 	$output .= '</div>';
+	$output .= apply_filters('the_content', get_the_content() );
 	$output .= '</div>';
 	$output .= '<div class="medium-3 columns">';
-	$output .= '<div class="callout">';
-	$output .= apply_filters('the_content', get_the_content() );
-	$output .= sprintf('<strong>%s</strong>', __('Contact information', 'dogium'));
+	$output .= '<div class="callout" style="border:none;">';
 	$output .= '<ul class="geodir-detail-list">';
 	$output .= '' != $phone ? sprintf( '<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:%s">%s </a></li>', $phone, $phone) : '';
 	
