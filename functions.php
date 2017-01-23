@@ -59,6 +59,12 @@ require_once( 'library/bbpress-mods.php' );
 /** Geodirectory Cat Listing */
 require_once( 'library/geodirectory-mods.php' );
 
+/** Classifieds WP Plugin mods **/
+require_once( 'library/classifieds-wp-mods.php' );
+
+/** Custom form for handling classifieds seller messages **/
+require_once( 'library/contact-seller-custom-form.php' );
+
 
 add_filter( 'ajax_query_attachments_args', 'show_users_own_attachments', 1, 1 );
 function show_users_own_attachments( $query ) 
