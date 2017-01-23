@@ -41,7 +41,7 @@ Template Name: Front Page Community
  <div id="page-full-width" role="main">
  
    <div class="extended row">
-   <div class="medium-6 large-6 large-push-3 columns">
+   <div class="medium-7 large-6 large-push-3 columns">
      
       <?php do_action( 'foundationpress_before_content' ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
@@ -79,7 +79,7 @@ Template Name: Front Page Community
 
    <?php do_action( 'foundationpress_after_content' ); ?>
    </div>
-   <div class="medium-6 large-3 large-push-3 columns">
+   <div class="medium-5 large-3 large-push-3 columns">
      <?php dynamic_sidebar('community-sidebar'); ?>
    </div>
     <div class="medium-12 large-3 large-pull-9 columns">
