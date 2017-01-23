@@ -1,0 +1,64 @@
+.classified_listings {
+	border: none;
+	article.classified_listing {
+		border: 1px solid $light-gray;
+		a {
+			padding: 0;
+			position: relative;
+		}
+		.classified_featured_image {
+
+		}
+		.label {
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include font-size(1.25);
+			font-weight: bold;
+		}
+	}
+	.classified_filters {
+		@extend .row;
+		@extend .column;
+		margin-bottom: rem-calc(40);
+	}
+}
+
+.single-classified_listing {
+	.classified-price {
+		@include font-size(2);
+		background: $light-gray;
+		font-weight: bold;
+		padding: 0.5rem;
+		color: $primary-color;
+
+	}
+	
+	.classified_featured_image {
+		@extend .thumbnail;
+	}
+	.classified_images {
+		border: none;
+	}
+	.classified_images_gallery {
+		border: none;
+	}
+	.classified_contact {
+		margin-top: rem-calc(20);
+	}
+	.contact-details {
+		background: $light-gray;
+		padding: 1rem;
+		margin-bottom: rem-calc(20);
+	}
+	.classified-listing-meta {
+		border: none;
+	}
+	.meta {
+		li {
+			display: block;
+			float: none;
+		}
+	}
+}
+
