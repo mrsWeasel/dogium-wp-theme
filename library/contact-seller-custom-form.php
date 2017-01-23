@@ -71,8 +71,15 @@ class DogiumContactSellerForm {
 
 
 		if ( ! $validation['subject_error'] && ! $validation['name_error'] && ! $validation['email_error'] && ! $validation['message_error'] && ! $validation['question_error'] ) {
+
+
+			$message .= "\n----\n";
+			$message .= sprintf( __('This email was sent from your classified ad "%s" contact form (%s)', 'dogium'), $subject, get_permalink($post_id) );
+			$headers = "Reply-To: <{$sender_email}>";
+
 			$validation['message_sent'] = true;
-			wp_mail( $author_email, $subject, $message);
+
+			wp_mail( $author_email, $subject, $message, $headers);
 			$url = add_query_arg($validation, $redirect);
 			
 		} else {
@@ -105,7 +112,7 @@ class DogiumContactSellerForm {
 			$error_messages[] = !empty($_GET['email_error']) ? __('Email is required and it needs to be a valid email address.', 'dogium') : '';
 			$error_messages[] = !empty($_GET['message_error']) ? __('Message field cannot be empty.', 'dogium') : '';
 
-			$error_messages[] = !empty($_GET['question_error']) ? __('You need to answer the question correctly. This is necessary to avoid spam.', 'dogium') : '';
+			$error_messages[] = !empty($_GET['question_error']) ? __('You need to answer the math question correctly. This is necessary to avoid spam.', 'dogium') : '';
 			
 			$class_names = 'callout alert';
 		}
