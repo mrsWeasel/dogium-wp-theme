@@ -25,8 +25,9 @@
 			<label for="sender-email"><?php esc_html_e('Your email (required)', 'dogium'); ?></label>
 			<input id="sender-email" name="sender-email" type="email"/>
 			<label for="sender-message"><?php esc_html_e('Message (required)', 'dogium'); ?></label>
-			<textarea id="sender-message"></textarea>
+			<textarea id="sender-message" name="sender-message"></textarea>
 			<input type="submit" class="button success" name="submit" value="<?php esc_attr_e('Submit', 'dogium'); ?>"/>
+			<?php wp_nonce_field( 'seller-message_' . $post->ID, '_seller-message' ); ?>
 			<input type="hidden" name="action" value="seller_message">
 			<input type="hidden" name="post_id" value="<?php echo esc_attr($post->ID) ?>">
 		</form>
