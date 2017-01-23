@@ -1,6 +1,7 @@
 <?php if ( $contact = get_the_classified_contact_method() ) :
 	wp_enqueue_script( 'wp-classified-manager-classified-contact' );
 	global $post;
+	print_r($_GET);
 	?>
 	<div class="classified_contact contact">
 		<?php do_action( 'classified_contact_start', $contact ); ?>
@@ -26,6 +27,8 @@
 			<input id="sender-email" name="sender-email" type="email"/>
 			<label for="sender-message"><?php esc_html_e('Message (required)', 'dogium'); ?></label>
 			<textarea id="sender-message" name="sender-message"></textarea>
+			<label for="sender-question"><?php esc_html_e('How much is 1 + 1?', 'dogium'); ?></label>
+			<input id="sender-question" name="sender-question" type="text"/>
 			<input type="submit" class="button success" name="submit" value="<?php esc_attr_e('Submit', 'dogium'); ?>"/>
 			<?php wp_nonce_field( 'seller-message_' . $post->ID, '_seller-message' ); ?>
 			<input type="hidden" name="action" value="seller_message">
