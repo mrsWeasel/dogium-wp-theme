@@ -28,6 +28,18 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div id="login-bar">
+			<div class="row">
+				<div class="small-12 columns">
+					<?php if (! is_user_logged_in()) : ?>
+					<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="<?php esc_attr_e('Login', 'dogium'); ?>"><?php esc_html_e('Login', 'dogium')?></a>
+					| <a href="<?php echo wp_registration_url(); ?> " title="<?php esc_attr_e('Register', 'dogium'); ?>"><?php esc_html_e('Register', 'dogium'); ?></a>
+					<?php else : ?>
+						<p><?php esc_html_e('Logged in as', 'dogium'); ?> <a href="<?php echo bp_loggedin_user_domain(); ?>"><?php echo bp_core_get_user_displayname( get_current_user_id() ); ?></a>. <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php esc_attr_e('Logout', 'dogium'); ?>"><?php esc_html_e('Logout?', 'dogium'); ?></a></p>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
