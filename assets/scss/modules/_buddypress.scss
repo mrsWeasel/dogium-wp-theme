@@ -148,7 +148,7 @@ body.no-js #buddypress form#whats-new-form textarea {
 		width: 100%;
 	}
 	.activity-greeting {
-		padding-top: 1.5em;
+		//padding-top: 1.5em;
 		margin-left: 0 !important;
 		text-align: center;
 		&:after {
@@ -171,14 +171,18 @@ body.no-js #buddypress form#whats-new-form textarea {
 }
 
 #whats-new-content {
-	@extend .clearfix;
 	padding: 1em 2em !important;
 	margin-left: 0 !important;
 	#whats-new-options {
-		display: none;
-		@extend .clearfix;
 		//overflow: hidden;
-		//height: auto !important;
+	}
+}
+
+.active {
+	#whats-new-options {
+		//display: block;
+		height: auto !important;
+		//overflow: visible;
 	}
 }
 
