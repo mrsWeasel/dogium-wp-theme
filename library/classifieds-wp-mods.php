@@ -32,10 +32,14 @@ function dogium_remove_classified_listing_meta_display(){
 }
 add_action( 'single_classified_listing_start', 'dogium_remove_classified_listing_meta_display' );
 
-
 function dogium_get_classified_featured_image_src() {
 	return get_template_directory_uri() . '/assets/images/paw.jpg';
 }
 
 add_filter( 'classified_manager_default_classified_featured_image', 'dogium_get_classified_featured_image_src' );
 
+function dogium_get_share_links() {
+	echo do_shortcode('[TheChamp-Sharing]');
+}
+
+add_action('single_classified_listing_end', 'dogium_get_share_links');
