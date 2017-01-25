@@ -22,14 +22,17 @@
   }
 
   ?>
-        <header id="page-header" style="background-image: url(<?php echo $bg_url; ?>);">
-          <div class="row">
-              <div class="medium-8 medium-centered columns">
-                
-                <h1 class="text-center white text-shadow entry-title"><?php echo esc_html($page_title); ?></h1>
-                <?php if ('' != $page_subtitle) : ?>
-                 <p class="intro text-center white text-shadow"><?php echo esc_html($page_subtitle);?></p>
-                <?php endif; ?> 
-              </div>
-          </div>
-        </header> 
+<?php if ('' != $bg_url) : ?>
+<header id="page-header" style="background-image: url(<?php echo $bg_url; ?>);">
+<?php else : ?>
+<header id="page-header">  
+<?php endif; ?>
+    <div class="row">
+        <div class="medium-8 medium-centered columns">    
+            <h1 class="text-center white text-shadow entry-title"><?php echo esc_html($page_title); ?></h1>
+            <?php if ('' != $page_subtitle) : ?>
+            <p class="intro text-center white text-shadow"><?php echo esc_html($page_subtitle);?></p>
+            <?php endif; ?> 
+        </div>
+    </div>
+</header> 
