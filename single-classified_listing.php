@@ -3,7 +3,7 @@
 
 <div id="classified-manager-single" <?php classified_listing_class('classified-manager-single'); ?>">
 	<div class="row">
-		<div class="medium-8 columns">
+		<div class="medium-7 columns">
 			<main id="classified-manager-main">
 			<?php
 		// Start the loop.

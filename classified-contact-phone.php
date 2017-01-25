@@ -1,1 +1,1 @@
-<p><?php _e( 'To contact the listing author, please phone:', 'classifieds-wp' ); ?> <a href="<?php echo esc_url( 'tel:' . $contact->url ); ?>" target="_blank" rel="nofollow"><?php echo esc_html( $contact->url ); ?></a></p>
+<a class="button secondary" href="<?php echo esc_url( 'tel:' . $contact->url ); ?>" target="_blank" rel="nofollow"><span class="screen-reader-text"><?php _e( 'To contact the listing author, please phone:', 'classifieds-wp' ); ?></span> <i class="fa fa-phone" aria-hidden="true"></i> <?php echo esc_html( $contact->url ); ?></a>

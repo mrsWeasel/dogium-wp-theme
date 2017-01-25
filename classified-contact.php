@@ -5,9 +5,18 @@
 	<div class="classified_contact contact">
 		<?php do_action( 'classified_contact_start', $contact ); ?>
 
-		<input type="button" class="contact_button button" value="<?php esc_attr_e( 'Contact Information', 'classifieds-wp' ); ?>" />
-
 		<div class="contact_details">
+			<h2 class="widget-title"><?php esc_html_e('Contact seller', 'dogium'); ?></h2>
+			<!-- Get author avatar, name + profile link -->
+			<?php 
+			$id = get_the_author_meta('ID');
+			$display_name = bp_core_get_user_displayname($id);
+			$avatar = bp_core_fetch_avatar( array('item_id' => $id) );
+			$user_link = bp_core_get_user_domain($id);
+			?>
+			<div class="seller-profile">
+				<a href="<?php echo esc_url( $user_link ); ?>"><?php echo $avatar . ' ' . $display_name;?></a>
+			</div>
 			<?php
 				/**
 				 * classified_manager_contact_details_email or classified_manager_contact_details_url hook
@@ -28,10 +37,10 @@
 				<textarea id="sender-message" name="sender-message"></textarea>
 				<label for="sender-question"><?php esc_html_e('How much is 1 + 1?', 'dogium'); ?></label>
 				<input id="sender-question" name="sender-question" type="text"/>
-				<input type="submit" class="button success" name="submit" value="<?php esc_attr_e('Submit', 'dogium'); ?>"/>
+				<input type="submit" class="button secondary" name="submit" value="<?php esc_attr_e('Submit', 'dogium'); ?>"/>
 				<?php wp_nonce_field( 'seller-message_' . $post->ID, '_seller-message' ); ?>
 				<input type="hidden" name="action" value="seller_message">
-				<input type="hidden" name="post_id" value="<?php echo esc_attr($post->ID) ?>">
+				<input type="hidden" name="post_id" value="<?php echo esc_attr($post->ID); ?>">
 			</form>
 
 			<button class="close-button" data-close aria-label="<?php esc_attr_e('Close modal', 'dogium');?>" type="button">

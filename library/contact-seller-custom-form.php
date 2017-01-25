@@ -5,19 +5,64 @@
  * @since 1.0.0
  */
 
-class DogiumContactSellerForm {
+class DogiumClassifiedForms {
 
 	public function __construct() {
 		// Allow posting for both logged in / not logged in users
 		add_action('admin_post_nopriv_seller_message', array($this, 'seller_form_handler'));
 		add_action('admin_post_seller_message', array($this, 'seller_form_handler'));
-		add_action('classified_contact_start', array($this, 'output_validation_notice'));
+		add_action('admin_post_nopriv_flag_unappropriate', array($this, 'flag_unappropriate_ad'));
+		add_action('admin_post_flag_unappropriate', array($this, 'flag_unappropriate_ad'));
+		add_action('single_classified_listing_start', array($this, 'output_validation_notice'));
+
+	}
+
+	public function flag_unappropriate_ad() {
+		$post_id = $_POST['post_id'];
+
+		$nonce = $_REQUEST['_flag-unappropriate'];
+		if ( !isset( $nonce ) || ! wp_verify_nonce( $nonce, 'flag-unappropriate_' . $post_id ) ) {
+			die( 'Security check failed.' );
+		}
+
+		$post_permalink = esc_url( get_permalink($post_id) );
+		$redirect = empty($_POST['_wp_http_referer']) ? $post_permalink : $_POST['_wp_http_referer'];
+
+		$validation = array();
+		$message = $_POST['flag-message'];
+		if ( '' == $message ) {
+			$validation['message_error'] = true;
+		} else {
+			$validation['message_error'] = false;
+		}
+
+		$question = $_POST['flag-question'];
+		if ($question != 2) {
+			$validation['question_error'] = true;
+		} else {
+			$validation['question_error'] = false;
+		}
+
+
+		if (! $validation['message_error'] && ! $validation['question_error']) {
+			$message = esc_html($message);
+			$message .= "\n----\n";
+			$message .= sprintf( __('Link to the classified ad in question: %s', 'dogium'), $post_permalink );
+
+			wp_mail( 'laura@lauraheino.com', esc_html('Reporting inappropriate item (dogium.com)', 'dogium'), $message);
+			$validation['message_sent'] = true;
+
+		} else {
+			$validation['message_sent'] = false;
+		}	
+		$url = add_query_arg($validation, $redirect);
+		wp_safe_redirect( $url, 302 );
+		exit;
 	}
 
 	public function seller_form_handler() {
 		$post_id = $_POST['post_id'];
 		
-		// Todo: nonce checking
 		$nonce = $_REQUEST['_seller-message'];
 		if ( !isset( $nonce ) || ! wp_verify_nonce( $nonce, 'seller-message_' . $post_id ) ) {
 			die( 'Security check failed.' );
@@ -72,7 +117,7 @@ class DogiumContactSellerForm {
 
 		if ( ! $validation['subject_error'] && ! $validation['name_error'] && ! $validation['email_error'] && ! $validation['message_error'] && ! $validation['question_error'] ) {
 
-
+			$message = esc_html($message);
 			$message .= "\n----\n";
 			$message .= sprintf( __('This email was sent from your classified ad "%s" contact form (%s)', 'dogium'), $subject, get_permalink($post_id) );
 			$headers = "Reply-To: <{$sender_email}>";
@@ -103,7 +148,7 @@ class DogiumContactSellerForm {
 		$error_messages = array();
 		$error_msg_output = '';
 
-		if ( $_GET['message_sent'] ) {
+		if ( isset($_GET['message_sent']) && $_GET['message_sent'] ) {
 			$output .= __('Message sent!', 'dogium');
 			$class_names = 'callout success';
 		} else {
@@ -132,4 +177,4 @@ class DogiumContactSellerForm {
 
 }
 
-new DogiumContactSellerForm;
+new DogiumClassifiedForms;

@@ -22,6 +22,11 @@
 		@extend .column;
 		margin-bottom: rem-calc(40);
 	}
+	.no_classified_listings_found {
+		@extend .callout;
+		@extend .warning;
+		list-style-type: none;
+	}
 }
 
 .single-classified_listing {
@@ -33,9 +38,14 @@
 		color: $primary-color;
 
 	}
+
+	h2.widget-title {
+		text-align: left;
+	}
 	
 	.classified_featured_image {
 		@extend .thumbnail;
+		width: 100%;
 	}
 	.classified_images {
 		border: none;
@@ -46,7 +56,8 @@
 	.classified_contact {
 		margin-top: rem-calc(20);
 	}
-	.contact-details {
+	.contact_details {
+		display: block !important;
 		background: $light-gray;
 		padding: 1rem;
 		margin-bottom: rem-calc(20);
@@ -54,11 +65,39 @@
 	.classified-listing-meta {
 		border: none;
 	}
+	.classified-listing-meta {
+		padding: 0;
+		li {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.the_champ_horizontal_sharing {
+		margin-bottom: rem-calc(20);
+	}
 	.meta {
 		li {
 			display: block;
 			float: none;
 		}
 	}
+	.seller-profile {
+		margin-bottom: rem-calc(20);
+	}
+
+	.classified_images_gallery {
+		margin-bottom: rem-calc(20);
+	}
+
+	.classified-manager-form .classified_images_gallery a:first-of-type, .single_classified_listing .classified_images_gallery a:first-of-type {
+   		border: none;
+   		background: none;
+	}
+
+	.classified-manager-form .classified_images_gallery a:not(:first-of-type), .single_classified_listing .classified_images_gallery a:not(:first-of-type) {
+    	padding-top: 0;
+	}
+
+
 }
 

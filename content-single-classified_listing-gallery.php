@@ -8,7 +8,7 @@
 </div>
 
 <div class="classified_images_gallery" itemscope itemtype="http://data-vocabulary.org/Organization">
-	<?php the_classified_images(); ?>
+	<?php the_classified_images(0, 'featured-xsmall'); ?>
 </div>
 
 <?php do_action( 'single_classified_listing_gallery_end' ); ?>
