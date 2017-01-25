@@ -57,6 +57,7 @@ Template Name: Front Page Community
         
         </div>
          <div class="entry-content clearfix">
+          <div class="row column">
              <?php
              $link_text = esc_html( get_field('dgm_community_link_text') );
              $link_url = esc_url( get_field('dgm_community_page_link_url') );
@@ -64,7 +65,8 @@ Template Name: Front Page Community
               echo "<a id='community-link' class='button float-right' href='{$link_url}'>{$link_text} <i class='fa fa-arrow-right' aria-hidden='true'></i></a>";
              }
               ?>
-             <?php the_content(); ?>
+            </div> 
+            <?php the_content(); ?>
              <?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
          </div>
          <footer>
