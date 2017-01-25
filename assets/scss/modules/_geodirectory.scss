@@ -25,9 +25,47 @@
 	display: none;
 }
 
+
+#geodir-sidebar-left {
+	.geodir_location_listing {
+		@include font-size(0.75);
+	}
+	.gd-post-gd_place {
+		margin-bottom: rem-calc(20);
+	}
+}
+
+// Custom component for details page category list
+.geodir-categories-horizontal-list {
+	margin-bottom: rem-calc(20);
+	li {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding-right: 1rem;
+		img {
+			width: rem-calc(24);
+		}
+	}
+	li:last-child {
+		padding-right: 0;
+	}
+}
+
 // Latest places widget
 .geodir_category_list_view li {
-	border-bottom: 0;
+	border-bottom: none;
+}
+
+
+.geodir_category_list_view {
+	li {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	.geodir-gridview {
+		border: none !important;
+	}
 }
 
 .geodir-loc-bar {

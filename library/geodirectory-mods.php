@@ -56,11 +56,71 @@ remove_action( 'geodir_details_main_content','geodir_action_details_slider',30);
 // remove listing detail page tabs
 remove_action( 'geodir_details_main_content', 'geodir_show_detail_page_tabs',60);
 
+// show additional info for each listing on gridview
+add_action('geodir_before_listing_post_excerpt', 'dogium_print_details' );
+
+
+function dogium_print_details( $echo = true ) {
+	global $post;
+	$output = array();
+
+	$phone = esc_attr( $post->geodir_contact );
+	$address = esc_html( $post->post_address );
+	$zip = esc_html( $post->post_zip );
+	$city = esc_html( $post->post_city );
+	$website = esc_url( $post->geodir_website );
+
+	if ( $address ) {
+		$output[] = $address;
+	}
+
+	if ( !$city && !$zip ) {
+		continue;
+	} elseif ( $city && $zip ) {
+		$output[] = $zip . ' ' . $city;
+	} elseif ( $city ) {
+		$output[] = $city;
+	} elseif ( $zip ) {
+		$output[] = $zip;
+	}
+
+	if ( $phone ) {
+		$output[] = "<a href='tel:{$phone}'>" . $phone . "</a>";
+	}
+
+	if ( $website ) {
+		$output[] = "<a href='{$website}' target='_blank'>www</a>";
+	}
+
+	if ( $echo ) {
+		echo '<ul class="no-margin">';
+		foreach($output as $item) {
+			echo '<li>' . $item . '</li>';
+		}
+		echo '</ul>';
+	} else {
+		// just return the whole array if we choose not to echo
+		return $output;
+	}
+
+}
+
 // add featured image to listing detail page
 add_action( 'geodir_details_main_content','dogium_details',30);
 
 function dogium_details($post) {
 	global $post;
+	$terms = wp_get_post_terms($post->ID, 'gd_placecategory');
+	$term_icons = geodir_get_term_icon();
+
+	if ($terms) {
+		echo '<ul class="menu geodir-categories-horizontal-list">';
+		foreach ($terms as $term) {
+			$term_link = esc_url( $term_icons[$term->term_id] );
+			echo "<li><img src='{$term_link}'/> {$term->name}</li>";
+		}
+		echo '</ul>';
+	}
 	
 	$phone = esc_attr( $post->post_contact );
 	$address = esc_html( $post->post_address );
@@ -73,24 +133,21 @@ function dogium_details($post) {
 	$output = '';
 	$output .= '<div class="row collapse">';
 	$output .= '<div class="medium-9 columns">';
-	$output .= '<div class="thumbnail">';
-	if ( has_post_thumbnail($post) ) :
-		$output .= get_the_post_thumbnail($post, 'featured-small');
-	endif;
-	$output .= '</div>';
-	$output .= apply_filters('the_content', get_the_content() );
-	$output .= '</div>';
-	$output .= '<div class="medium-3 columns">';
-	$output .= '<div class="callout" style="border:none;">';
 	$output .= '<ul class="geodir-detail-list">';
 	$output .= '' != $phone ? sprintf( '<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:%s">%s </a></li>', $phone, $phone) : '';
 	
 	$output .= '' != $address ? sprintf( '<li>%s</li>', $address) : '';
 	$output .= '' != $zip ? sprintf( '<li>%s</li>', $zip) : '';
 	$output .= '' != $city ? sprintf( '<li>%s</li>', $city) : '';
-	$output .= '' != $website ? sprintf( '<li><i class="fa fa-globe" aria-hidden="true"></i> <a href="%s">%s</a></li>', $website, __('Website', 'dogium')) : '';
+	$output .= '' != $website ? sprintf( '<li><a href="%s">%s</a></li>', $website, __('www', 'dogium')) : '';
 	$output .= '</ul>';
+	$output .= apply_filters('the_content', get_the_content() );
+	$output .= '<div class="thumbnail">';
+	if ( has_post_thumbnail($post) ) :
+		$output .= get_the_post_thumbnail($post, 'featured-small');
+	endif;
 	$output .= '</div>';
+	
 	$output .= '</div>';
 	$output .= '</div>';
 	ob_get_clean();
