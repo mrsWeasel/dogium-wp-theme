@@ -6,7 +6,7 @@
 
 // Secondary typography
 
-.widget .widget-title {
+.widget-title {
 	@include font-size(1.25);
 	text-transform: uppercase;
 	font-weight: bold;
@@ -14,9 +14,18 @@
 	color: $primary-color;
 }
 
-.geodir_category_list_view h3 {
-	@include font-size(1.25);
+
+.widget h3, .geodir_category_list_view h3 {
+	@include font-size(1);
 	text-transform: uppercase !important;
+}
+
+.no-margin {
+	list-style-type: none;
+	margin-left: 0;
+	li {
+		margin-left: 0;
+	}
 }
 
 // Header intro paragraph
