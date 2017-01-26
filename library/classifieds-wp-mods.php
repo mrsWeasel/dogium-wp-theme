@@ -22,7 +22,6 @@ add_filter( 'submit_classified_form_fields', 'dogium_disable_classifieds_fields'
 function dogium_disable_classifieds_fields( $fields ) {
 	unset( $fields['classified']['classified_type'] );
 	unset( $fields['classified']['classified_website'] );
-
 	// Make item price required
 	$fields['classified']['classified_price']['required'] = true;
 
