@@ -8,16 +8,20 @@
 class DogiumClassifiedForms {
 
 	public function __construct() {
-		// Allow posting for both logged in / not logged in users
+		// Allow posting to item author for both logged in / not logged in users
 		add_action('admin_post_nopriv_seller_message', array($this, 'seller_form_handler'));
 		add_action('admin_post_seller_message', array($this, 'seller_form_handler'));
-		add_action('admin_post_nopriv_flag_unappropriate', array($this, 'flag_unappropriate_ad'));
 		add_action('admin_post_flag_unappropriate', array($this, 'flag_unappropriate_ad'));
 		add_action('single_classified_listing_start', array($this, 'output_validation_notice'));
 
 	}
 
 	public function flag_unappropriate_ad() {
+		// This action is not allowed for non logged in users
+		if ( ! is_user_logged_in() ) {
+			return;
+		}
+
 		$post_id = $_POST['post_id'];
 
 		$nonce = $_REQUEST['_flag-unappropriate'];
@@ -49,7 +53,7 @@ class DogiumClassifiedForms {
 			$message .= "\n----\n";
 			$message .= sprintf( __('Link to the classified ad in question: %s', 'dogium'), $post_permalink );
 
-			wp_mail( 'laura@lauraheino.com', esc_html('Reporting inappropriate item (dogium.com)', 'dogium'), $message);
+			wp_mail( 'info@dogium.com', esc_html('Reporting inappropriate item (dogium.com)', 'dogium'), $message);
 			$validation['message_sent'] = true;
 
 		} else {
