@@ -9,6 +9,15 @@
 if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 function foundationpress_sidebar_widgets() {
 	register_sidebar(array(
+	  'id' => 'blog-sidebar',
+	  'name' => __( 'News Page Sidebar', 'foundationpress' ),
+	  'description' => __( 'Drag widgets to this sidebar container.', 'foundationpress' ),
+	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</article>',
+	  'before_title' => '<h3 class="widget-title">',
+	  'after_title' => '</h3>',
+	));
+	register_sidebar(array(
 	  'id' => 'home-left-sidebar',
 	  'name' => __( 'Home Left Sidebar', 'foundationpress' ),
 	  'description' => __( 'Drag widgets to this sidebar container.', 'foundationpress' ),
