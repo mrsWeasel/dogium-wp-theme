@@ -2,7 +2,7 @@
 
 	<aside id="classified-manager-single-sidebar-secondary" role="complementary">
 		<!-- Our own price formatting function (append € instead of prepending) LH -->
-		<?php dogium_the_classified_price('<span class="classified-price">', '</span>'); ?>
+		<?php dogium_the_classified_price('<div class="main-price classified-price">', '</div>'); ?>
 
 
 		<?php if ( users_can_contact() ) : ?>
