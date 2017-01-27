@@ -85,7 +85,7 @@ function dogium_print_details( $echo = true ) {
 	}
 
 	if ( $phone ) {
-		$output[] = "<a href='tel:{$phone}'>" . $phone . "</a>";
+		$output[] = "<a href='tel:{$phone}'><i class='fa fa-phone' aria-hidden='true'></i> " . $phone . "</a>";
 	}
 
 	if ( $website ) {
@@ -93,11 +93,14 @@ function dogium_print_details( $echo = true ) {
 	}
 
 	if ( $echo ) {
-		echo '<ul class="no-margin">';
+		if ( !empty($output) ) {
+		echo '<ul class="no-margin geodir-detail-list">';
+
 		foreach($output as $item) {
 			echo '<li>' . $item . '</li>';
 		}
 		echo '</ul>';
+		}
 	} else {
 		// just return the whole array if we choose not to echo
 		return $output;
@@ -121,26 +124,22 @@ function dogium_details($post) {
 		}
 		echo '</ul>';
 	}
-	
-	$phone = esc_attr( $post->post_contact );
-	$address = esc_html( $post->post_address );
-	$zip = $post->post_zip;
-	$city = $post->post_city;
-	$website = esc_url( $post->geodir_website );
 
 	// Generate output for listing detail page
 	ob_start();
 	$output = '';
 	$output .= '<div class="row collapse">';
 	$output .= '<div class="medium-9 columns">';
-	$output .= '<ul class="geodir-detail-list">';
-	$output .= '' != $phone ? sprintf( '<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:%s">%s </a></li>', $phone, $phone) : '';
-	
-	$output .= '' != $address ? sprintf( '<li>%s</li>', $address) : '';
-	$output .= '' != $zip ? sprintf( '<li>%s</li>', $zip) : '';
-	$output .= '' != $city ? sprintf( '<li>%s</li>', $city) : '';
-	$output .= '' != $website ? sprintf( '<li><a href="%s">%s</a></li>', $website, __('www', 'dogium')) : '';
-	$output .= '</ul>';
+
+	$details = dogium_print_details(false);
+	if ($details) {
+		$output .= '<ul class="geodir-detail-list">';
+		foreach ($details as $item) {
+			$output .= '<li>' . $item . '</li>';
+		}
+		$output .= '</ul>';
+	}
+
 	$output .= apply_filters('the_content', get_the_content() );
 	$output .= '<div class="thumbnail">';
 	if ( has_post_thumbnail($post) ) :
