@@ -11,8 +11,8 @@
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
 	<?php if (bbp_is_forum_archive()) {
 		dynamic_sidebar( 'community-sidebar' );
-	} else {
-		dynamic_sidebar( 'sidebar-widgets' );
+	} elseif (is_home() || is_archive() || is_singular('post')) {
+		dynamic_sidebar( 'blog-sidebar' );
 	}
 	?>
 </aside>
