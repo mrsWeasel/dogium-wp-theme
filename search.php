@@ -6,14 +6,13 @@
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+get_header(); 
+get_template_part( 'template-parts/page-header' );?>
 
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
-		<?php do_action( 'foundationpress_before_content' ); ?>
-
-		<h2><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h2>
+	<?php do_action( 'foundationpress_before_content' ); ?>
 
 	<?php if ( have_posts() ) : ?>
 

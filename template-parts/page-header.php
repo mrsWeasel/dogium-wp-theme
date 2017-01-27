@@ -1,16 +1,24 @@
   <?php
-  $id = '';
+  $id = $page_title = $page_subtitle = $dgm_background = '';
 
   // If we don't do this for news page (home), WP is going to get id from the first post in loop
   if ( is_home() ) {
     $id = get_option( 'page_for_posts' );
-  } else {
+  } elseif (!is_search() && !is_404()) {
     $id = $post->ID;
   }
 
   $dgm_background = get_field('dgm_background', $id);
 
-  $page_title = get_post_meta($id, 'dgm_custom_heading', true);
+  if ( is_search() ) :
+    $page_title = sprintf(esc_html('Search results for "%s"', 'dogium'), get_search_query() );
+  elseif ( is_404() ) :
+    $page_title = esc_html('404 – Page not found', 'dogium');
+    $page_subtitle = esc_html("Nothing was found at this location.", 'dogium'); 
+  else :  
+    $page_title = get_post_meta($id, 'dgm_custom_heading', true);
+  endif;
+
   if ( '' == $page_title && is_home() ) {
     $page_title = esc_html('News', 'dogium');
   } elseif ('' == $page_title) {
