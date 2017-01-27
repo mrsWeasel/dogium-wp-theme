@@ -1,0 +1,16 @@
+.tags {
+	padding-left: rem-calc(40);
+	position: relative;
+	min-height: rem-calc(40);
+	background-image: url(../../assets/images/icons/tag.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: rem-calc(30) auto;
+	a {
+		@include font-size(0.75);
+		color: $dark-gray;
+		text-transform: uppercase;
+		font-weight: bold;
+
+	}
+}
