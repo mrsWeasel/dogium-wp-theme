@@ -13,7 +13,8 @@
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+get_header();
+get_template_part( 'template-parts/page-header' );?>
 
 <div id="page" role="main">
 	<article class="main-content">

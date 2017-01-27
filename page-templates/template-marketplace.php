@@ -27,6 +27,30 @@ get_template_part( 'template-parts/page-header' );
      </div>
      <div class="medium-3 columns">
         <?php dynamic_sidebar('marketplace-sidebar'); ?>
+        
+        <?php 
+        $terms = get_terms(array(
+          'taxonomy' => 'classified_listing_category',
+          'hide_empty' => false
+        ));
+        
+        echo '<div class="widget classifieds-custom-cat-list">';
+        echo '<h3 class="widget-title">';
+        esc_html_e('Product categories', 'dogium');
+        echo '</h3>';
+        echo '<ul>';
+        foreach ($terms as $term) {
+          $term_link = get_term_link($term);
+          $term_id = $term->term_id;
+          ?>
+          <li><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?><a></li>
+          <?php
+        }
+        echo '</ul>';
+        echo '</div>';
+
+
+        ?>
      </div>
    </div><!-- .row -->
  </div>
