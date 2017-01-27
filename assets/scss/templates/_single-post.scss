@@ -3,8 +3,23 @@
   margin-top: 3rem;
 
   .main-content {
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
       @include grid-column(12);
     }
+
+    @include breakpoint(large) {
+      @include grid-column(8);
+    }
+  }
+
+  .entry-content {
+  	margin-bottom: rem-calc(40);
+  }
+
+  .the_champ_sharing_container {
+  	margin-bottom: rem-calc(20);
+  }
+  .the_champ_sharing_title {
+  	@extend .screen-reader-text;
   }
 }

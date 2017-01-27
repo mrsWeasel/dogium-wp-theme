@@ -2,6 +2,21 @@
 	list-style-type: none;
 }
 
+.widget_categories {
+	a {
+		display: block;
+		padding: 0.5em 1em;
+		@include font-size(0.75);
+		color: $black;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	li:nth-child(odd) a {
+		background: $light-gray;
+	}
+
+}
+
 // Login widget
 // BP Login Widget
 #bp-login-widget-form {

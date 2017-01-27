@@ -30,7 +30,7 @@
   margin: 0 1rem;
   .fa {
     line-height: 1;
-    color: $primary-color;
+    color: $black;
   }
 }
 
@@ -49,8 +49,9 @@
     color: $primary-color;
     padding-top: 0;
     padding-bottom: 0;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.25rem;
+    @include font-size(1.2);
     line-height: 4.75rem - 2rem;
 
     &:hover:not(.button) {
@@ -128,12 +129,32 @@
 
 .nav-previous {
   float:left;
+  &:before {
+    content: "\f060";
+    font-family: FontAwesome;
+    margin-right: 0.5rem;
+    color: $primary-color;
+  }
 }
 
 .nav-next {
   float:right;
+  &:after {
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-left: 0.5rem;
+    color: $primary-color;
+  }
 }
 
 .off-canvas-content {
   box-shadow: none;
+}
+
+.pagination {
+  font-weight: bold;
+  li, .current {
+    padding: 0;
+  }
+
 }

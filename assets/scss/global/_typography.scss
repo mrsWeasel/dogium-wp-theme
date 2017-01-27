@@ -6,6 +6,13 @@
 
 // Secondary typography
 
+.secondary-title {
+	@include font-size(1.25);
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $primary-color;
+}
+
 .widget-title {
 	@include font-size(1.25);
 	text-transform: uppercase;

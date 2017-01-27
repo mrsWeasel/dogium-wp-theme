@@ -89,6 +89,7 @@
 @import "modules/bbpress";
 @import "modules/geodirectory";
 @import "modules/classifieds-wp";
+@import "modules/comments";
 
 // Components
 @import "components/buttons";
@@ -96,7 +97,9 @@
 @import "components/dividers";
 @import "components/links";
 @import "components/widgets";
-@import "components/forms";
+//@import "components/forms";
+@import "components/tags";
+@import "components/post-loop";
 
 // Templates
 @import "templates/front";

@@ -1,8 +1,11 @@
 .classified_listings {
-	margin-bottom: rem-calc(20);
 	border: none;
+	.columns {
+		margin-bottom: rem-calc(20);
+	}
 	article.classified_listing {
 		border: 1px solid $light-gray;
+		
 		a {
 			padding: 0;
 			position: relative;
@@ -30,6 +33,18 @@
 	}
 }
 
+#classified-manager-single-sidebar-secondary {
+	.classified-price {
+		font-size: inherit;
+		font-weight: bold;
+	}
+	.main-price {
+		@include font-size(2);
+		display: inline-block;
+		margin-bottom: rem-calc(20);
+	}
+}
+
 .single-classified_listing {
 	.classified-price {
 		@include font-size(2);
@@ -39,6 +54,8 @@
 		color: $primary-color;
 
 	}
+
+
 
 	h2.widget-title {
 		text-align: left;
