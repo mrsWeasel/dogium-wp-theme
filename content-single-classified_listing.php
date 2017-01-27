@@ -6,7 +6,7 @@
 		<meta itemprop="title" content="<?php echo esc_attr( $post->post_title ); ?>" />
 
 		<?php if ( get_option( 'classified_manager_hide_expired_content', 1 ) && 'expired' === $post->post_status ) : ?>
-			<div class="classified-manager-info"><?php _e( 'This listing has expired.', 'classifieds-wp' ); ?></div>
+			<div class="classified-manager-info"><?php _e( 'This listing is not currently active.', 'dogium' ); ?></div>
 		<?php else : ?>
 			<?php
 				/**
@@ -28,7 +28,14 @@
 				 */
 				do_action( 'single_classified_listing_end' );
 			?>
+			<?php 
+			$body = sprintf(__('Hello! Thought you might find this item (%s) interesting: %s', 'dogium'), esc_html(get_the_title()), esc_url(get_permalink()) );
+			?>
+			<p>
+			<a href="mailto:?subject=<?php the_title();?>&body=<?php echo $body;?>"><i class="fa fa-send" aria-hidden="true"></i> <?php esc_html_e('Tell a friend', 'dogium'); ?></a>
+			&nbsp;
 			<a href="#" data-open="flag-as-unappropriate"><i style="color: red" class="fa fa-flag" aria-hidden="true"></i> <?php esc_html_e('Report unappropriate content', 'dogium'); ?></a>
+			</p>
 			<div class="reveal" id="flag-as-unappropriate" data-reveal>
 			<h3><?php esc_html_e('Report unappropriate content', 'dogium'); ?>: <?php echo get_the_title(); ?></h3>
 			<?php if (is_user_logged_in()) : ?>
