@@ -75,10 +75,6 @@
   #item-body {
     #message {
       margin-bottom: 4rem;
-      p {
-        @extend .callout;
-        @extend .warning;
-      }
     }
   }
   #group-admins {

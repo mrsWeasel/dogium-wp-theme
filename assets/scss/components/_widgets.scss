@@ -50,7 +50,7 @@
 .widget_bp_core_login_widget {
 	@include show-for(large);
 	background: $light-gray;
-	padding: 1em;
+	padding: 1em !important;
 	text-align: center;
 	.widget-title {
 		&:before {
@@ -61,6 +61,9 @@
 	}
 	.bp-login-widget-user-links>div {
 		padding-left: 0 !important;
+	}
+	.bp-login-widget-user-link {
+		margin-bottom: rem-calc(10);
 	}
 	.bp-login-widget-user-avatar {
 		float: none !important;
@@ -140,7 +143,7 @@
 	}
 	#groups-list {
 		@extend .row;
-		.bp-single-group {
+		li {
 		@extend .columns;
 		@extend .small-3;
 		@extend .medium-4;
@@ -165,6 +168,24 @@
 	}
 	}
 }
+
+.buddypress.widget {
+ 	.avatar-block {
+ 		@extend .row;
+ 		.item-avatar {
+ 		@extend .columns;
+ 		@extend .small-4;
+ 		text-align: center;
+ 		}
+ 		img {
+ 			float: none !important;
+ 			margin: 0 !important;
+ 			height: auto !important; 
+ 			width: 100%!important;
+ 			max-width: 80px;
+ 		}
+ 	}
+ }
 
 // Dogs widget
 .recent-posts-extended .dogium-new-dogs {
