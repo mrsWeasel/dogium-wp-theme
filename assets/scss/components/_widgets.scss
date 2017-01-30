@@ -116,6 +116,9 @@
 		}
 		}
 	}
+	li {
+		margin-bottom: rem-calc(10);
+	}
 	.item-options {
 		text-align: center;
 		margin-bottom: 1rem;
@@ -148,6 +151,7 @@
 		@extend .small-3;
 		@extend .medium-4;
 		text-align: center;
+		margin-bottom: rem-calc(10);
 		clear: none !important;
 		&:last-child {
 			@extend .end;
@@ -165,7 +169,7 @@
 			height: auto !important; 
 			width: 100%!important;
 			max-width: 80px;
-	}
+		}
 	}
 }
 
@@ -198,6 +202,7 @@
 			@extend .small-3;
 			@extend .medium-4;
 			text-align: center;
+			margin-bottom: rem-calc(10);
 			clear: none !important;
 			&:last-child {
 			@extend .end;
@@ -209,7 +214,7 @@
 		.rpwe-title {
 			@include font-size(0.8);
 			font-weight: normal;
-			text-transform: none;
+			text-transform: none !important;
 		}
 	}
 }
