@@ -15,7 +15,13 @@
 	}
 }
 
+.geodir_category_list_view li.geodir-gridview h3 {
+	@extend .secondary-title;
+}
 
+.geodir_category_list_view li.geodir-gridview .geodir-post-img {
+	margin-bottom: rem-calc(10);
+}
 
 .geodir-category {
 	display: none;
