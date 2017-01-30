@@ -34,7 +34,7 @@ get_template_part( 'template-parts/page-header' );
           'hide_empty' => false
         ));
         
-        echo '<div class="widget classifieds-custom-cat-list">';
+        echo '<div class="widget widget_categories classifieds-custom-cat-list">';
         echo '<h3 class="widget-title">';
         esc_html_e('Product categories', 'dogium');
         echo '</h3>';
@@ -43,7 +43,7 @@ get_template_part( 'template-parts/page-header' );
           $term_link = get_term_link($term);
           $term_id = $term->term_id;
           ?>
-          <li><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?><a></li>
+          <li><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a></li>
           <?php
         }
         echo '</ul>';
