@@ -15,16 +15,16 @@
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<div class="extended row">
-					<div class="medium-3 columns">
+					<div class="large-3 columns">
 						<?php dynamic_sidebar( 'footer-widgets-1' ); ?>
 					</div>
-					<div class="medium-3 columns">
+					<div class="large-3 columns">
 						<?php dynamic_sidebar( 'footer-widgets-2' ); ?>
 					</div>
-					<div class="medium-3 columns">
+					<div class="large-3 columns">
 						<?php dynamic_sidebar( 'footer-widgets-3' ); ?>
 					</div>
-					<div class="medium-3 columns">
+					<div class="large-3 columns">
 						<?php dynamic_sidebar( 'footer-widgets-4' ); ?>
 					</div>
 				</div>
