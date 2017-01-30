@@ -1,3 +1,30 @@
 .blogpost-entry {
 	margin-bottom: rem-calc(40);
 }
+
+.dogium-excerpt {
+	.card {
+		a {
+			color: $black;
+		}
+	}
+	.card-section {
+		height: rem-calc(170);
+		overflow: hidden;
+		position: relative;
+		.mask {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+		}
+		.dogium-read-more {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: translateY(20px);
+		}
+	}
+}	
