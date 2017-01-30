@@ -65,6 +65,12 @@ require_once( 'library/classifieds-wp-mods.php' );
 /** Custom form for handling classifieds seller messages **/
 require_once( 'library/contact-seller-custom-form.php' );
 
+/** Pretty custom excerpt for our blog posts **/
+require_once( 'library/excerpt.php' );
+
+/** Pretty custom excerpt for our blog posts **/
+require_once( 'library/events-template-tags.php' );
+
 
 add_filter( 'ajax_query_attachments_args', 'show_users_own_attachments', 1, 1 );
 function show_users_own_attachments( $query ) 
