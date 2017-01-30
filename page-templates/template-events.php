@@ -18,28 +18,43 @@ Template Name: Events
 
  <?php get_template_part( 'template-parts/featured-image' ); ?>
 
- <div id="page-full-width" role="main">
+ <div id="page" role="main">
 
  <?php do_action( 'foundationpress_before_content' ); ?>
  <?php while ( have_posts() ) : the_post(); ?>
    <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
        <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
        <div class="entry-content">
-           <?php the_content(); ?>
-           <?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
+          <?php the_content(); ?>
+
+          <div class="row">
+            <div class="large-4 columns">
+              <?php dogium_list_event_categories( 'nayttelyt' ); ?>
+              <?php dogium_list_event_categories( 'agility' ); ?>
+            </div>
+            <div class="large-4 columns">
+              <?php dogium_list_event_categories( 'kilpailut-kokeet-testit' ); ?>
+            </div>
+             <div class="large-4 columns">
+              <?php dogium_list_event_categories( 'kurssit-ja-luennot' ); ?>
+              <?php dogium_list_event_categories( 'epaviralliset' ); ?>
+            </div>
+          </div>
        </div>
        <footer>
            <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-           <p><?php the_tags(); ?></p>
        </footer>
        <?php do_action( 'foundationpress_page_before_comments' ); ?>
        <?php comments_template(); ?>
        <?php do_action( 'foundationpress_page_after_comments' ); ?>
-   </article>
+  </article>
+  <div class="medium-3 columns">
+    <?php dynamic_sidebar('events-sidebar'); ?>
+  </div>
+
  <?php endwhile;?>
 
  <?php do_action( 'foundationpress_after_content' ); ?>
- <?php get_sidebar(); ?>
 
  </div>
 
