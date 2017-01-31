@@ -1,5 +1,8 @@
 .blogpost-entry {
 	margin-bottom: rem-calc(40);
+	.author {
+		font-weight: bold;
+	}
 }
 
 .dogium-excerpt {
@@ -9,7 +12,7 @@
 		}
 	}
 	.card-section {
-		height: rem-calc(170);
+		height: rem-calc(240);
 		overflow: hidden;
 		position: relative;
 		.mask {

@@ -2,8 +2,8 @@
 /**
  * The template for displaying buddypress pages.
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
  get_header(); ?>
@@ -24,10 +24,10 @@
          <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
          <div class="entry-content">
              <?php the_content(); ?>
-             <?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
+             <?php edit_post_link( __( 'Edit', 'dogium' ), '<span class="edit-link">', '</span>' ); ?>
          </div>
          <footer>
-             <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+             <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
              <p><?php the_tags(); ?></p>
          </footer>
          <?php do_action( 'foundationpress_page_before_comments' ); ?>

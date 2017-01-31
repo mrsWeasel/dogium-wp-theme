@@ -2,8 +2,8 @@
 /**
  * Basic WooCommerce support
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
 get_header(); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 			</div>
 			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
 			<?php do_action( 'foundationpress_page_before_comments' ); ?>

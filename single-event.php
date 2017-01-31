@@ -2,11 +2,12 @@
 /**
  * The template for displaying single events
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
-get_header(); 
+get_header();
+get_template_part( 'template-parts/page-header-thin' );
 
 // We need to treat different event categories
 global $post;
@@ -27,25 +28,25 @@ if ($event_categories) {
 
 ?>
 
-<div id="single-post" role="main">
+<div id="page-full-width" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
 		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h1 class="entry-title blue"><?php the_title(); ?></h1>
+			<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_EVENTCATEGORIES[/events_list]");?>
 		</header>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div class="entry-content">
 			<?php get_template_part('template-parts/content-events', $slug); ?>
 		</div>
 		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
 		</footer>
 	</article>
 <?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
-<?php get_sidebar(); ?>
 </div>
 <?php get_footer();

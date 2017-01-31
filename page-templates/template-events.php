@@ -9,8 +9,8 @@ Template Name: Events
  * Please note that this is the WordPress construct of pages and that
  * other "pages" on your WordPress site will use a different template.
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
  get_header(); 
@@ -42,7 +42,7 @@ Template Name: Events
           </div>
        </div>
        <footer>
-           <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+           <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
        </footer>
        <?php do_action( 'foundationpress_page_before_comments' ); ?>
        <?php comments_template(); ?>

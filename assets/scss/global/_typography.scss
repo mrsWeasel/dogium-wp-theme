@@ -14,10 +14,9 @@
 }
 
 .widget-title {
-	@include font-size(1.25);
+	@include font-size(1.75);
 	text-transform: uppercase;
 	font-weight: bold;
-	text-align: center;
 	color: $primary-color;
 }
 

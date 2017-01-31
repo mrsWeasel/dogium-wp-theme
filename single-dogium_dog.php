@@ -2,8 +2,8 @@
 /**
  * The template for displaying dogs
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
 // TODO: Check if this is needed (user can edit form)
@@ -249,7 +249,7 @@ get_header();
 		</div>
 		
 		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
 		</footer>
 		<?php $edit_form = new DogForms; ?>
 		<?php $edit_form->print_delete_confirm(); ?>

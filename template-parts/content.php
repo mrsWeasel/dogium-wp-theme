@@ -4,8 +4,8 @@
  *
  * Used for both single and index/archive/search.
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
 ?>
@@ -23,6 +23,8 @@
 						<div class="mask"></div>
 						<header>
 							<h2 class="secondary-title"><?php the_title(); ?></h2>
+							<?php $author_id = $post->post_author; ?>
+							<span class="byline author"><i class="fa fa-user" aria-hidden="true"></i> <?php echo get_the_author_meta('display_name', $author_id); ?></span>
 						</header>
 						<div class="entry-content">
 							<?php the_excerpt(); ?>

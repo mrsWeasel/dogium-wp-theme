@@ -1,7 +1,9 @@
 <?php global $post; ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	<header>
+		<h1 class="entry-title blue"><?php the_title(); ?></h1>
+	</header>
 	<div class="single_classified_listing" itemscope itemtype="http://schema.org/ClassifiedPosting">
 		<meta itemprop="title" content="<?php echo esc_attr( $post->post_title ); ?>" />
 

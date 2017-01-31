@@ -2,8 +2,8 @@
 /**
  * Customize the output of menus for Foundation top bar
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
  // Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker

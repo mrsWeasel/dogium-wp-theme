@@ -6,7 +6,7 @@ $classes = get_post_meta($post->ID, 'dgm_test_classes', true);
 $judge = get_post_meta($post->ID, 'dgm_test_judge', true);
 ?>
 
-<p><strong><?php esc_html_e('Date', 'dogium'); ?></strong>: <?php echo do_shortcode('[events_list]#j.#n.#Y[/events_list]');?></p>
+<p><strong><?php esc_html_e('Date', 'dogium'); ?></strong>: <?php echo do_shortcode("[events_list post_id='{$post->ID}']#j.#n.#Y[/events_list]");?></p>
 <?php if ('' != $alternative_location) : ?>
 	<p><strong><?php esc_html_e('Location', 'dogium'); ?></strong>: <?php echo esc_html($alternative_location); ?></p>
 <?php endif; ?>

@@ -2,8 +2,8 @@
 /**
  * Entry meta information for posts
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
 if ( ! function_exists( 'foundationpress_entry_meta' ) ) :

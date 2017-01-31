@@ -57,12 +57,9 @@
 	background-position: center top;
 	background-size: cover;
 	margin-bottom: 4rem;
-  .header-entry-meta {
-    text-align: center;
-    color: $white;
-    @include font-size(1.25);
-    time {
-      margin-right: 0.5rem;
-    }
-  }
+
+}
+
+#page-header-thin {
+  border-top: 3px solid $secondary-color;
 }

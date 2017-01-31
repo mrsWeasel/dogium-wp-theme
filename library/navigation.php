@@ -3,8 +3,8 @@
  * Register Menus
  *
  * @link http://codex.wordpress.org/Function_Reference/register_nav_menus#Examples
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
 register_nav_menus(array(
@@ -40,7 +40,7 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 	function foundationpress_mobile_nav() {
 		wp_nav_menu( array(
 			'container'      => false,                         // Remove nav container
-			'menu'           => __( 'mobile-nav', 'foundationpress' ),
+			'menu'           => __( 'mobile-nav', 'dogium' ),
 			'menu_class'     => 'vertical menu',
 			'theme_location' => 'mobile-nav',
 			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
@@ -207,7 +207,7 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 			} elseif ( get_query_var('paged') ) {
 
 				// Paginated archives
-				echo '<li class="current item-current-' . get_query_var('paged') . '">' . __('Page', 'foundationpress' ) . ' ' . get_query_var('paged') . '</li>';
+				echo '<li class="current item-current-' . get_query_var('paged') . '">' . __('Page', 'dogium' ) . ' ' . get_query_var('paged') . '</li>';
 
 			} elseif ( is_search() ) {
 

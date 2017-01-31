@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part( 'template-parts/page-header' ); ?>
+<?php get_template_part( 'template-parts/page-header-thin' ); ?>
 
 <div id="classified-manager-single" <?php classified_listing_class('classified-manager-single'); ?>">
 	<div class="row">

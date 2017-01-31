@@ -71,7 +71,7 @@ class DogiumClassifiedForms {
 		if ( !isset( $nonce ) || ! wp_verify_nonce( $nonce, 'seller-message_' . $post_id ) ) {
 			die( 'Security check failed.' );
 		}
-
+		// TODO: Redirect to main classifieds page
 		$redirect = empty($_POST['_wp_http_referer']) ? get_permalink($post_id) : $_POST['_wp_http_referer'];
 
 		$post = get_post($post_id);

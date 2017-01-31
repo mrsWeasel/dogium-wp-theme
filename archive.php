@@ -2,8 +2,8 @@
 /**
  * The template for blog archives
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package Dogium
+ * @since Dogium 1.0.0
  */
 
 get_header();
@@ -15,8 +15,7 @@ $dgm_background = get_field('dgm_background', $id);
 $page_title = $page_subtitle = '';
 	// What kind of archive is it?
 	if ( is_category() ) :
-		$category = get_the_category($post->ID);
-		$page_title = $category[0]->name;
+		$page_title = single_cat_title('', false);
 		$page_subtitle = sprintf(esc_html('All posts in category "%s"', 'dogium'), $page_title);
 	elseif ( is_tag() ) :
 		$page_title = single_tag_title('', false);
@@ -77,8 +76,8 @@ $page_title = $page_subtitle = '';
 		elseif ( is_paged() ) :
 		?>
 			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'dogium' ) ); ?></div>
+				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'dogium' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
 

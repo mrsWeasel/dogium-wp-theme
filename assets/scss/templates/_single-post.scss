@@ -23,3 +23,12 @@
   	@extend .screen-reader-text;
   }
 }
+
+.header-entry-meta {
+    @include font-size(1.25);
+    color: $dark-gray;
+    margin-bottom: rem-calc(20);
+    time {
+      margin-right: 0.5rem;
+    }
+}
