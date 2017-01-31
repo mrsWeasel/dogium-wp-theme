@@ -16,8 +16,6 @@ Template Name: Events
  get_header(); 
  get_template_part( 'template-parts/page-header' );?>
 
- <?php get_template_part( 'template-parts/featured-image' ); ?>
-
  <div id="page" role="main">
 
  <?php do_action( 'foundationpress_before_content' ); ?>
