@@ -1,0 +1,12 @@
+.event-categories {
+	@extend .no-bullet;
+	margin-left: 0;
+	a {
+		display: inline-block;
+		padding: 0.5em 0;
+		@include font-size(1);
+		color: $black;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
