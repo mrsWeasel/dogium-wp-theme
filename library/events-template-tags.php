@@ -4,7 +4,14 @@ function dogium_list_event_categories( $parent_term_slug = '' ) {
   /**
    * @param string $parent_term_slug
    * @return array of term objects
+   * @author Laura Heino
    */
+
+
+  // Bail if term doesn't exist
+  if ( !term_exists($parent_term_slug) ) {
+    return;
+  }
 
   $parent_term = get_term_by( 'slug', $parent_term_slug, 'event-categories' );
   $parent_term_id = $parent_term->term_id;
