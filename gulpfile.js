@@ -73,6 +73,7 @@ var PATHS = {
   pkg: [
     '**/*',
     '!**/node_modules/**',
+    '!**/packaged',
     '!**/components/**',
     '!**/scss/**',
     '!**/bower.json',

@@ -1,8 +1,8 @@
 {
-  "name": "foundationpress",
-  "title": "FoundationPress",
+  "name": "dogium",
+  "title": "Dogium",
   "version": "2.8.0",
-  "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+  "description": "Custom theme for Dogium",
   "keywords": [
     "FoundationPress",
     "WordPress",
@@ -13,13 +13,13 @@
     "customizable",
     "responsive"
   ],
-  "homepage": "http://foundationpress.olefredrik.com/",
-  "bugs": "https://github.com/olefredrik/FoundationPress/issues",
+  "homepage": "https://dogium.com/",
+  "bugs": "https://github.com/mrsWeasel/dogium-wp-theme/issues",
   "license": "MIT",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olefredrik/FoundationPress.git"
+    "url": "https://github.com/mrsWeasel/dogium-wp-theme"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",
