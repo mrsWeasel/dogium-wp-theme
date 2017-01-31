@@ -7,7 +7,7 @@ $course_organizer = get_post_meta($post->ID, 'dgm_course_organizer', true);
 $course_info = get_post_meta($post->ID, 'dgm_course_info', true);
 ?>
 
-<strong><?php esc_html_e('Date', 'dogium'); ?></strong>: <?php echo do_shortcode("[events_list post_id='{$post->ID}']#j.#n.#Y[/events_list]");?><br>
+<strong><?php esc_html_e('Date', 'dogium'); ?></strong>: <?php echo do_shortcode("[events_list post_id='{$post->ID}']#_EVENTDATES[/events_list]");?><br>
 <?php if ('' != $course_lecturer_instructor) : ?>
 	<strong><?php esc_html_e('Lecturer / instructor', 'dogium'); ?></strong>: <?php echo esc_html($course_lecturer_instructor); ?><br>
 <?php endif; ?>
