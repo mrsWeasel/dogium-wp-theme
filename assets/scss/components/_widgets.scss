@@ -1,3 +1,10 @@
+.widget {
+	margin-bottom: rem-calc(40);
+	h3 {
+
+	}
+}
+
 .widget ul {
 	list-style-type: none;
 }
@@ -52,7 +59,10 @@
 	background: $light-gray;
 	padding: 1em !important;
 	text-align: center;
+	margin-bottom: 0;
 	.widget-title {
+		@include font-size(1.25);
+		color: $dark-gray;
 		&:before {
 			content: "\f023";
 			font-family: FontAwesome;
@@ -85,10 +95,15 @@
 .widget_thechamplogin {
 	@include show-for(large);
 	background: $light-gray;
-	padding: 0 1em 1em;
+	padding: 0 1em 1em !important;
+	.widget-title {
+		@include font-size(1.25);
+		color: $dark-gray;
+	}
 	.the_champ_login_container {
 		margin-top: 0;
 		margin-bottom: 0;
+
 		.the_champ_login_ul {
 			margin: 0 !important;
 		}
@@ -103,6 +118,9 @@
 // BP Members
 .widget_bp_core_members_widget {
 	margin-top: 1rem;
+	.widget-title {
+		text-align: center;
+	}
 	#members-list {
 		@extend .row;
 		.vcard {
@@ -128,6 +146,7 @@
 	}
 	.item-title {
 		@include font-size(0.8);
+		line-height: 1.25em;
 	}
 	.item-avatar img {
 		margin: 0;
@@ -162,6 +181,7 @@
 		}
 		.item-title {
 			@include font-size(0.8);
+			line-height: 1.25em;
 		}
 		.item-avatar img {
 			margin: 0;
@@ -192,29 +212,35 @@
  }
 
 // Dogs widget
-.recent-posts-extended .dogium-new-dogs {
-	ul {
-		list-style-type: none;
-		margin-left: 0;
-		@extend .row;
-		li {
-			@extend .columns;
-			@extend .small-3;
-			@extend .medium-4;
-			text-align: center;
-			margin-bottom: rem-calc(10);
-			clear: none !important;
-			&:last-child {
-			@extend .end;
+.recent-posts-extended {
+	.widget-title {
+		text-align: center;
+	}
+	.dogium-new-dogs {
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+			@extend .row;
+			li {
+				@extend .columns;
+				@extend .small-3;
+				@extend .medium-4;
+				text-align: center;
+				margin-bottom: rem-calc(10);
+				clear: none !important;
+				&:last-child {
+				@extend .end;
+				}
 			}
-		}
-		.rpwe-thumb {
-			border-radius: 50%;
-		}
-		.rpwe-title {
-			@include font-size(0.8);
-			font-weight: normal;
-			text-transform: none !important;
+			.rpwe-thumb {
+				border-radius: 50%;
+			}
+			.rpwe-title {
+				@include font-size(0.8);
+				line-height: 1.25em;
+				font-weight: normal;
+				text-transform: none !important;
+			}
 		}
 	}
 }
@@ -239,7 +265,9 @@
 		@include font-size(1.25);
 		text-transform: uppercase;
 		font-weight: bold;
-		color: $primary-color;
+		a {
+			color: $dark-gray;
+		}
 	}
 	.rpwe-summary {
 		margin-bottom: rem-calc(20);
