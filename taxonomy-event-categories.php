@@ -17,6 +17,7 @@ $test_cat = get_term_children($test_id, 'event-categories');
 // Show subcategories
 $show_id = get_term_by('slug', 'nayttelyt', 'event-categories')->term_id;
 $show_cat = get_term_children($show_id, 'event-categories');
+$show_cat[] = $show_id;
 
 // Course subcategories
 $course_id = get_term_by('slug', 'kurssit-ja-luennot', 'event-categories')->term_id;
@@ -33,25 +34,29 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 
 <div id="page-full-width" role="main">
 	<article class="main-content">
-	<?php if ( have_posts() ) : ?>
-
-		<?php /* Start the Loop */ ?>
 		<?php 
-				$args = array(
-					'fields' => 'ids',
-				);
-				$current_cat = wp_get_object_terms($post->ID, 'event-categories', $args);
-				$current_cat = $current_cat[0];
-				?>
+		
+		$queried_object = get_queried_object();
+		$current_cat = $queried_object->term_id;
+
+		// Category name for page title
+		$cat_title = $queried_object->name;
+		?>
+		<header>
+		<h1 class="blue"><?php echo $cat_title; ?></h1>
+		</header>		
 		<table>
 			<thead>
 				<tr>
-					<th><?php esc_html_e('Event category', 'dogium'); ?></th>
+					<th><?php esc_html_e('Date(s)', 'dogium'); ?></th>
+
 					<?php if (in_array($current_cat, $unofficial_cat)) : ?>
 					<th><?php esc_html_e('Weekday', 'dogium'); ?></th>
 					<?php endif; ?>
-					<th><?php esc_html_e('Date(s)', 'dogium'); ?></th>
+
 					<th><?php esc_html_e('Event name', 'dogium'); ?></th>
+
+					<th><?php esc_html_e('Town', 'dogium'); ?></th>
 
 					<?php if (in_array($current_cat, $course_cat)) : ?>
 					<th><?php esc_html_e('Organizer', 'dogium'); ?></th>
@@ -59,44 +64,47 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 					<th><?php esc_html_e('Course details', 'dogium'); ?></th>
 					<?php endif; ?>
 
+					<?php if (in_array($current_cat, $test_cat)) : ?>
+					<th><?php esc_html_e('Judge', 'dogium'); ?></th>
+					<?php endif; ?>
+
 					<?php if (in_array($current_cat, $show_cat)) : ?>
 					<th><?php esc_html_e('Groups', 'dogium'); ?></th>
-					<?php endif; ?>
-
-					<?php if (!in_array($current_cat, $test_cat)) : ?>
-					<th><?php esc_html_e('Event website', 'dogium'); ?></th>
-					<?php endif; ?>
-
-					<?php if (in_array($current_cat, $show_cat) || $current_cat == $agility_id) : ?>
-					<th><?php esc_html_e('Venue', 'dogium'); ?></th>
-					<th><?php esc_html_e('Address', 'dogium'); ?></th>
-					<th><?php esc_html_e('Zip code', 'dogium'); ?></th>
-					<th><?php esc_html_e('Town', 'dogium'); ?></th>
-					<?php else : ?>
-					<?php if (!in_array($current_cat, $test_cat)) : ?>	
-					<th><?php esc_html_e('Venue', 'dogium'); ?></th>
-					<?php endif; ?>
-					<th><?php esc_html_e('Location', 'dogium'); ?></th>	
 					<?php endif; ?>
 
 					<?php if (in_array($current_cat, $show_cat)) : ?>
 					<th><?php esc_html_e('Last cheapest enrollment', 'dogium'); ?></th>
 					<th><?php esc_html_e('Last enrollment', 'dogium'); ?></th>
 					<?php endif; ?>
+
+					<?php if (!in_array($current_cat, $test_cat)) : ?>
+					<th><?php esc_html_e('Event website', 'dogium'); ?></th>
+					<?php endif; ?>
 				</tr>
 			</thead>
 			<tbody>
+	<?php if ( have_posts() ) : ?>
+
+		<?php /* Start the Loop */ ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 				
 				<tr id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_CATEGORYNAME[/events_list]"); ?></td>
+					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_EVENTDATES[/events_list]");?></td>
 
 					<?php if (in_array($current_cat, $unofficial_cat)) : ?>
 					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#l[/events_list]");?></td>
 					<?php endif; ?>
 
-					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_EVENTDATES[/events_list]");?></td>
 					<td><a href="<?php the_permalink(); ?>"><?php the_title();?></a></td>
+
+					<?php if (in_array($current_cat, $show_cat) || $current_cat == $agility_id) : ?>
+					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONTOWN[/events_list]");?></td>
+					<?php else : ?>
+					<?php $alternative_location = get_post_meta($post->ID, 'dgm_alternative_location', true); ?>
+					<td><?php echo esc_html($alternative_location); ?></td>
+					<?php endif; ?>
+
 
 					<?php if (in_array($current_cat, $course_cat)) : ?>
 					<?php $organizer = get_post_meta($post->ID, 'dgm_course_organizer', true); ?>
@@ -107,28 +115,14 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 					<td><?php echo esc_html( $course_info ); ?></td>
 					<?php endif; ?>
 
+					<?php if (in_array($current_cat, $test_cat)) : ?>
+					<?php $judge = get_post_meta($post->ID, 'dgm_test_judge', true); ?>
+					<td><?php echo esc_html( $judge ); ?></td>
+					<?php endif; ?>	
+
 					<?php if (in_array($current_cat, $show_cat)) : ?>
 					<?php $groups = get_post_meta($post->ID, 'dgm_show_groups', true); ?>
 					<td><?php echo esc_html( $groups ); ?></td>
-					<?php endif; ?>
-
-					<?php if (!in_array($current_cat, $test_cat)) : ?>
-					<?php $website = get_post_meta($post->ID, 'dgm_event_www', true); ?>
-					<td><a href="<?php echo esc_url($website);?>" target="_blank">www</a></td>
-					<?php endif; ?>
-
-					<?php if (in_array($current_cat, $show_cat) || $current_cat == $agility_id) : ?>
-					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONNAME[/events_list]");?></td>
-					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONADDRESS[/events_list]");?></td>
-					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONPOSTCODE[/events_list]");?></td>
-					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONTOWN[/events_list]");?></td>
-					<?php else : ?>
-					<?php if (!in_array($current_cat, $test_cat)) : ?>
-					<?php $alternative_venue = get_post_meta($post->ID, 'dgm_alternative_venue', true); ?>
-					<td><?php echo esc_html($alternative_venue); ?></td>	
-					<?php endif; ?>
-					<?php $alternative_location = get_post_meta($post->ID, 'dgm_alternative_location', true); ?>
-					<td><?php echo esc_html($alternative_location); ?></td>
 					<?php endif; ?>
 
 					<?php if (in_array($current_cat, $show_cat)) : ?>
@@ -137,15 +131,18 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 					<td><?php echo esc_html($last_cheap_enrollment) ?></td>
 					<td><?php echo esc_html($last_enrollment) ?></td>
 					<?php endif; ?>
+
+					<?php if (!in_array($current_cat, $test_cat)) : ?>
+					<?php $website = get_post_meta($post->ID, 'dgm_event_www', true); ?>
+					<td><a href="<?php echo esc_url($website);?>" target="_blank">www</a></td>
+					<?php endif; ?>
 				</tr>		
 
 			<?php endwhile; ?>
-			</tbody>
-		</table>
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; // End have_posts() check. ?>
+			</tbody>
+		</table>
 
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php
