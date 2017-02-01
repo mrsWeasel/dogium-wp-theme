@@ -62,7 +62,7 @@ Template Name: Front Page Community
              $link_text = esc_html( get_field('dgm_community_link_text') );
              $link_url = esc_url( get_field('dgm_community_page_link_url') );
              if ( !empty($link_text) && !empty($link_url) ) {  
-              echo "<a id='community-link' class='button float-right' href='{$link_url}'>{$link_text} <i class='fa fa-arrow-right' aria-hidden='true'></i></a>";
+              echo "<a id='community-link' class='button float-right' href='{$link_url}'>{$link_text}</a>";
              }
               ?>
             </div> 
