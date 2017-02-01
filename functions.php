@@ -68,9 +68,11 @@ require_once( 'library/contact-seller-custom-form.php' );
 /** Pretty custom excerpt for our blog posts **/
 require_once( 'library/excerpt.php' );
 
-/** Pretty custom excerpt for our blog posts **/
+/** Template tags for event templates **/
 require_once( 'library/events-template-tags.php' );
 
+/** Register event custom fields **/
+require_once( 'library/event-custom-fields.php');
 
 add_filter( 'ajax_query_attachments_args', 'show_users_own_attachments', 1, 1 );
 function show_users_own_attachments( $query ) 
