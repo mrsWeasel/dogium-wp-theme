@@ -73,7 +73,7 @@ var PATHS = {
   pkg: [
     '**/*',
     '!**/node_modules/**',
-    '!**/packaged',
+    '!**/packaged/**',
     '!**/components/**',
     '!**/scss/**',
     '!**/bower.json',
@@ -82,7 +82,6 @@ var PATHS = {
     '!**/composer.json',
     '!**/composer.lock',
     '!**/codesniffer.ruleset.xml',
-    '!**/packaged/*',
   ]
 };
 
