@@ -60,8 +60,6 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 
 					<?php if (in_array($current_cat, $course_cat)) : ?>
 					<th><?php esc_html_e('Organizer', 'dogium'); ?></th>
-					<th><?php esc_html_e('Lecturer / instructor', 'dogium'); ?></th>
-					<th><?php esc_html_e('Course details', 'dogium'); ?></th>
 					<?php endif; ?>
 
 					<?php if (in_array($current_cat, $test_cat)) : ?>
@@ -109,10 +107,6 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 					<?php if (in_array($current_cat, $course_cat)) : ?>
 					<?php $organizer = get_post_meta($post->ID, 'dgm_course_organizer', true); ?>
 					<td><?php echo esc_html( $organizer ); ?></td>
-					<?php $lecturer = get_post_meta($post->ID, 'dgm_course_lecturer_instructor', true); ?>
-					<td><?php echo esc_html( $lecturer ); ?></td>
-					<?php $course_info = get_post_meta($post->ID, 'dgm_course_info', true); ?>
-					<td><?php echo esc_html( $course_info ); ?></td>
 					<?php endif; ?>
 
 					<?php if (in_array($current_cat, $test_cat)) : ?>
