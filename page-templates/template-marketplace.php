@@ -19,7 +19,6 @@ get_template_part( 'template-parts/page-header' );
            </div>
            <footer>
                <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
-               <p><?php the_tags(); ?></p>
            </footer>
        </article>
      <?php endwhile;?>
@@ -28,7 +27,8 @@ get_template_part( 'template-parts/page-header' );
      <div class="medium-3 columns">
         <?php dynamic_sidebar('marketplace-sidebar'); ?>
         
-        <?php 
+        <?php
+
         $terms = get_terms(array(
           'taxonomy' => 'classified_listing_category',
           'hide_empty' => false
@@ -40,9 +40,11 @@ get_template_part( 'template-parts/page-header' );
         echo '</h3>';
         echo '<ul>';
         foreach ($terms as $term) {
-          $term_link = get_term_link($term);
-          $term_id = $term->term_id;
+          $term_taxonomy = 'classified_listing_category';
+          $term_slug = $term->slug;
+          $term_link = get_permalink() . '?qcm=1&taxonomy=classified_listing_category&term=' . $term->slug;
           ?>
+          
           <li><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a></li>
           <?php
         }
