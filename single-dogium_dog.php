@@ -10,7 +10,6 @@
 acf_form_head();
 get_header();
 get_template_part( 'template-parts/page-header-thin' );?>
-?>
 
 <div id="single-dog" role="main">
 
@@ -46,7 +45,6 @@ get_template_part( 'template-parts/page-header-thin' );?>
 			        	if ( !empty($official_name) ) : ?>
 			        		<h2 class="blue subheader"><?php echo esc_html( $official_name ); ?></h2>
 			        	<?php endif; ?>
-		        		?>	
 					</header> 
 						<div class="thumbnail">
 						<?php if (has_post_thumbnail($post)) : ?>
