@@ -9,23 +9,8 @@
 // TODO: Check if this is needed (user can edit form)
 acf_form_head();
 get_header();
-
+get_template_part( 'template-parts/page-header-thin' );?>
 ?>
-
-<header id="page-header" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/koiraprofiili_bg.jpg'; ?>);">
-    <div class="row">
-        <div class="medium-8 medium-centered columns">
-        	<h1 class="text-center white text-shadow"><?php the_title();?></h1>
-        	<?php 
-        	$official_name = get_post_meta($post->ID, 'dgm_official_name', true);
-        	if ( !empty($official_name) ) : ?>
-        		<h2 class="text-center white text-shadow subheader"><?php echo esc_html( $official_name ); ?></h2>
-        	<?php endif; ?>
-        	?>	
-        </div>
-    </div>
-
-</header> 
 
 <div id="single-dog" role="main">
 
@@ -54,6 +39,15 @@ get_header();
 			<div class="medium-6 columns">
 				<div class="row collapse">
 					<div class="small-12 columns">
+					<header>
+    					<h1 class="entry-title blue"><?php the_title();?></h1>
+			        	<?php 
+			        	$official_name = get_post_meta($post->ID, 'dgm_official_name', true);
+			        	if ( !empty($official_name) ) : ?>
+			        		<h2 class="blue subheader"><?php echo esc_html( $official_name ); ?></h2>
+			        	<?php endif; ?>
+		        		?>	
+					</header> 
 						<div class="thumbnail">
 						<?php if (has_post_thumbnail($post)) : ?>
 								<?php the_post_thumbnail('featured-medium');?>
