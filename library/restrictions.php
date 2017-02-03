@@ -24,6 +24,10 @@ function dogium_doing_admin_post() {
 add_action( 'init', 'dogium_block_users_from_admin' );
 
 function dogium_block_users_from_admin() {
+	// We do not wish to block access to wp-admin if user hasn't even logged in yet
+	if (!is_user_logged_in()) {
+		return;
+	}
 	// Redirect basic users from admin area
 	// wp_doing_ajax() works from version 4.7 - we should not need support for legacy WP versions.
 	if ( is_admin() && ! current_user_can( 'manage_options' ) && ! wp_doing_ajax() && ! dogium_doing_admin_post() ) {
