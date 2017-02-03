@@ -74,6 +74,32 @@ require_once( 'library/events-template-tags.php' );
 /** Register event custom fields **/
 require_once( 'library/event-custom-fields.php');
 
+
+function dogium_doing_admin_post() {
+	/**
+	  * @param array | $output | Initialize empty output array for our regex pattern
+	  * @param string | $requerst_uri
+	  * @return bool | True if request made to admin-post.php, false otherwise
+	  */
+	$output = array();
+	$request_uri = $_SERVER['REQUEST_URI'];
+	preg_match( "/[\/\-a-zA-Z0-0]*wp-admin\/admin-post.php(\/)?$/", $request_uri, $output );
+	if (!empty($output) && $output[0] !== '') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+add_action( 'init', 'blockusers_init' );
+function blockusers_init() {
+	// 
+	if ( is_admin() && ! current_user_can( 'manage_options' ) && ! wp_doing_ajax() && ! dogium_doing_admin_post() ) {
+		wp_redirect( home_url() );
+		exit;
+	}
+}
+
 add_filter( 'ajax_query_attachments_args', 'show_users_own_attachments', 1, 1 );
 function show_users_own_attachments( $query ) 
 {
@@ -89,15 +115,6 @@ function remove_admin_bar() {
 	if (!current_user_can('manage_options') && !is_admin()) {
 	  show_admin_bar(false);
 	}
-}
-
-function show_more_posts($query) {
-	if ( empty( $query->query_vars['suppress_filters'] ) ) {
-		if( geodir_is_page('listing') || geodir_is_page('author') || geodir_is_page('search') ) {
-			$query->set( 'posts_per_page', -1 );
-		}
-	}
-	return $query;
 }
 
 // Testing: remove medialibrary tab
