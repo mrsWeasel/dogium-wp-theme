@@ -1,6 +1,6 @@
 <?php
 /**
- * Modify some BuddyBoss Wall Privacy options through plugin hooks
+ * Modify some BuddyBoss Wall Privacy options + relocate activity likes count through plugin hooks
  * @author Laura Heino
  * @since 1.0.0
  */
@@ -10,10 +10,14 @@ function dogium_profile_activity_visibility() {
 	$html = '<select name="bbwall-activity-privacy" id="bbwall-activity-privacy">';
 
 	$options = buddyboss_wall_get_visibility_lists();
-	// unset 'onlyme'
+	// unset 'onlyme' and 'loggedin'
 	if (isset($options['onlyme'])) {
 		unset($options['onlyme']);
 	}
+	if (isset($options['loggedin'])) {
+		unset($options['loggedin']);
+	}
+
 	
 	foreach ( $options as $key => $val ) {
 		$html .= "<option value='" . esc_attr( $key ) . "'>$val</option>";
@@ -58,6 +62,39 @@ function dogium_wall_get_groups_activity_visibility() {
 
 add_filter( 'buddyboss_wall_get_groups_activity_visibility', 'dogium_wall_get_groups_activity_visibility');
 
+// Just to be on the safe side. Never trust your users.
+function dogium_add_visibility_to_activity($content, $user_id, $activity_id) {
+	$visibility = 'friends';
+
+	$options = buddyboss_wall_get_visibility_lists();
+	// unset 'onlyme'
+	if (isset($options['onlyme'])) {
+		unset($options['onlyme']);
+	}
+	if (isset($options['loggedin'])) {
+		unset($options['loggedin']);
+	}
+
+	if ( isset( $_POST[ 'visibility' ] ) && in_array( esc_attr( $_POST[ 'visibility' ] ), array_keys( $options ) ) ) {
+		$visibility = esc_attr( $_POST[ 'visibility' ] );
+	}
+	
+	bp_activity_update_meta( $activity_id, 'bbwall-activity-privacy', $visibility );
+
+}
+
+
+
+function dogium_remove_activity_posted_update() {
+	remove_action( 'bp_activity_posted_update', 'buddyboss_wall_add_visibility_to_activity', 10);
+}
+add_action( 'wp_loaded', 'dogium_remove_activity_posted_update');
+
+
+
+if ( buddyboss_wall()->is_wall_privacy_enabled() ):
+	add_action( 'bp_activity_posted_update', 'dogium_add_visibility_to_activity', 20, 3 );
+endif;
 /**
  * Privacy selectbox html
  * @return type String
@@ -77,7 +114,11 @@ function dogium_editing_privacy_script_template() {
 		$options = buddyboss_wall_get_visibility_lists();
 		// unset 'onlyme'
 		if (isset($options['onlyme'])) {
-		unset($options['onlyme']);
+			unset($options['onlyme']);
+		}
+		// unset 'loggedin'
+		if (isset($options['loggedin'])) {
+			unset($options['loggedin']);
 		}
 	}
 	?>
