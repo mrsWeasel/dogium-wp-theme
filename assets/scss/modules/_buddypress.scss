@@ -5,7 +5,10 @@ body.no-js #buddypress form#whats-new-form textarea {
 
 
 #buddypress {
-
+	// Media 
+	.buddyboss-media-photos-wrap-container {
+    	max-width: 100%;
+	}
 	// Pages
 	#header-cover-image {
 		background-color: $light-gray;
@@ -24,27 +27,42 @@ body.no-js #buddypress form#whats-new-form textarea {
 	}
 	.acomment-options {
     	float: none;
-    	margin-bottom: 1rem;
+    	margin-bottom: rem-calc(10);
     	ul {
     		margin-left: 0;
     	}
 	}
-	.button {
-		@extend .small;
-		@extend .hollow;
-		@extend .secondary;
-		padding: 0.5em 1em;
+	.activity-meta {
+		
+		.button {
+			background: none;
+			color: $dark-gray;
+			padding: 0;
+			margin-right: 1rem;
+			font-weight: normal;
+			margin-bottom: 0;
+		}
+		.comments-toggle {
+			@include font-size(0.8);
+			font-weight: bold;
+		}
 	}
-	.fav {
+	.fav, .fav-comment {
+		font-size: 0;
+		margin-right: 1rem;
 		&:before {
+		@include font-size(1);
 		content: "\f087";
 		font-family: FontAwesome;
 		margin-right: 0.5rem;
 		}
 	}
 
-	.unfav {
+	.unfav, .unfav-comment {
+		font-size: 0;
+		margin-right: 1rem;
 		&:before {
+		@include font-size(1);
 		content: "\f164";
 		font-family: FontAwesome;
 		color: $primary-color;
@@ -52,8 +70,30 @@ body.no-js #buddypress form#whats-new-form textarea {
 		}
 	}
 
-	.delete-activity {
+	.acomment-reply {
+		font-size: 0;
+		margin-right: 1rem;
 		&:before {
+			@include font-size(1);
+			content: "\f112";
+			font-family: FontAwesome;
+			color: $dark-gray;
+			margin-right: 0.5rem;
+		}
+	}
+
+	a[href*=ac-form-] {
+		background: none;
+		@include font-size(0.8);
+		color: $dark-gray;
+	}
+
+	.delete-activity, .acomment-delete {
+		font-size: 0;
+		margin-right: 1rem;
+		&:before {
+			color: $alert-color;
+			@include font-size(1);
 			content: "\f014";
 			font-family: FontAwesome;
 			margin-right: 0.5rem;
@@ -61,7 +101,9 @@ body.no-js #buddypress form#whats-new-form textarea {
 	}
 
 	.buddyboss_privacy_filter {
+		font-size: 0;
 		&:before {
+			@include font-size(1);
 			content: "\f023";
 			font-family: FontAwesome;
 			margin-right: 0.5rem;
@@ -84,6 +126,13 @@ body.no-js #buddypress form#whats-new-form textarea {
 	.avatar {
 		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
 	}
+	.activity-header {
+		@include font-size(0.8);
+		p {
+			color: $dark-gray;
+			font-weight: bold;
+		}	
+	}
 	.activity-avatar {
 		display: inline-block;
 		transform: translate(-50%,-50%);
@@ -96,10 +145,24 @@ body.no-js #buddypress form#whats-new-form textarea {
 		padding: 0 1em;
 		margin-top: rem-calc(-40);
 	}
+	.activity-inner {
+		@include font-size(1.25);
+	}
 	.activity-comments {
-		margin-left: 0 !important;
+		li[id*=acomment-] {
+			border-left: 1px solid $medium-gray;
+			padding-left: rem-calc(10);
+			.acomment-meta {
+				@include font-size(0.8);
+				color: $dark-gray;
+				font-weight: bold;	
+			}
+			.acomment-content {
+				@include font-size(1.25);
+			}
+		}
 		.activity-like-count {
-			margin-bottom: 1rem;
+			margin-bottom: rem-calc(20);
 			@include font-size(0.8);
 		}
 		.activity-like-count:first-child:before {
@@ -112,16 +175,8 @@ body.no-js #buddypress form#whats-new-form textarea {
 			width: rem-calc(40) !important;
 			height: rem-calc(40) !important;
 		}
-		.ac-form {
-			margin-top: 1rem;
-			margin-left: rem-calc(40);
-			.ac-reply-avatar {
-				display: inline-block;
-				transform: translate(-50%,-50%);
-			}
-			.ac-reply-content {
-				margin-top: rem-calc(-40);
-			}
+		.ac-form:last-child {
+			//display: block !important;
 		}
 	}
 
@@ -133,9 +188,8 @@ body.no-js #buddypress form#whats-new-form textarea {
 
 
 #whats-new-form {
-	background: $light-gray;
+	//background: $light-gray;
 	margin-bottom: 4rem;
-	margin-left: 0.5rem;
 	textarea {
 		background: #fff;
 		box-sizing: border-box;
@@ -145,11 +199,14 @@ body.no-js #buddypress form#whats-new-form textarea {
 		height: 2.2em;
 		line-height: 1.4;
 		padding: 6px;
+		box-shadow: none;
+		border: 1px solid $medium-gray;
 		width: 100%;
 	}
 	.activity-greeting {
-		//padding-top: 1.5em;
+		@include font-size(1.25);
 		margin-left: 0 !important;
+		margin-bottom: 0;
 		text-align: center;
 		&:after {
 			content: "\f040";

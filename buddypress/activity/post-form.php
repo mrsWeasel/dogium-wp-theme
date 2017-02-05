@@ -11,19 +11,12 @@
 <form action="<?php bp_activity_post_form_action(); ?>" method="post" id="whats-new-form" name="whats-new-form" role="complementary">
 
 	<?php
-
 	/**
 	 * Fires before the activity post form.
 	 *
 	 * @since 1.2.0
 	 */
 	do_action( 'bp_before_activity_post_form' ); ?>
-
-	<div id="whats-new-avatar">
-		<a href="<?php echo bp_loggedin_user_domain(); ?>">
-			<?php bp_loggedin_user_avatar( 'width=' . bp_core_avatar_thumb_width() . '&height=' . bp_core_avatar_thumb_height() ); ?>
-		</a>
-	</div>
 
 	<p class="activity-greeting"><?php if ( bp_is_group() )
 		printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname( bp_get_loggedin_user_fullname() ) );

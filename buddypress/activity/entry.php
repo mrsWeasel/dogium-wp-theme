@@ -63,8 +63,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 			<?php if ( is_user_logged_in() ) : ?>
 
 				<?php if ( bp_activity_can_comment() ) : ?>
-
-					<a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment %s', 'buddypress' ), '<span>' . bp_activity_get_comment_count() . '</span>' ); ?></a>
+					<button class="button comments-toggle" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comments (%s)', 'dogium' ), '<span>' . bp_activity_get_comment_count() . '</span>' ); ?></button>
 
 				<?php endif; ?>
 
@@ -107,47 +106,47 @@ do_action( 'bp_before_activity_entry' ); ?>
 	 * @since 1.2.0
 	 */
 	do_action( 'bp_before_activity_entry_comments' ); ?>
-
+	
 	<?php if ( ( bp_activity_get_comment_count() || bp_activity_can_comment() ) || bp_is_single_activity() ) : ?>
 
-		<div class="activity-comments">
-
+		<div class="activity-comments dogium-toggle-comments">
+			<div class="activity-comments-container" aria-hidden="true">
 			<?php bp_activity_comments(); ?>
-
 			<?php if ( is_user_logged_in() && bp_activity_can_comment() ) : ?>
-
-				<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>
-					<div class="ac-reply-avatar"><?php bp_loggedin_user_avatar( 'width=' . BP_AVATAR_THUMB_WIDTH . '&height=' . BP_AVATAR_THUMB_HEIGHT ); ?></div>
-					<div class="ac-reply-content">
-						<div class="ac-textarea">
-							<label for="ac-input-<?php bp_activity_id(); ?>" class="bp-screen-reader-text"><?php
-								/* translators: accessibility text */
-								_e( 'Comment', 'buddypress' );
-							?></label>
-							<textarea id="ac-input-<?php bp_activity_id(); ?>" class="ac-input bp-suggestions" name="ac_input_<?php bp_activity_id(); ?>"></textarea>
+				<div class="ac-form-container">
+					<a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Join this conversation', 'dogium' ), '<span>' . bp_activity_get_comment_count() . '</span>' ); ?></a>
+					<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>
+						<div class="ac-reply-content">
+							<div class="ac-textarea">
+								<label for="ac-input-<?php bp_activity_id(); ?>" class="bp-screen-reader-text"><?php
+									/* translators: accessibility text */
+									_e( 'Comment', 'buddypress' );
+								?></label>
+								<textarea id="ac-input-<?php bp_activity_id(); ?>" class="ac-input bp-suggestions" name="ac_input_<?php bp_activity_id(); ?>"></textarea>
+							</div>
+							<input type="submit" name="ac_form_submit" value="<?php esc_attr_e( 'Post', 'buddypress' ); ?>" /> &nbsp; <a href="#" class="ac-reply-cancel"><?php _e( 'Cancel', 'buddypress' ); ?></a>
+							<input type="hidden" name="comment_form_id" value="<?php bp_activity_id(); ?>" />
 						</div>
-						<input type="submit" name="ac_form_submit" value="<?php esc_attr_e( 'Post', 'buddypress' ); ?>" /> &nbsp; <a href="#" class="ac-reply-cancel"><?php _e( 'Cancel', 'buddypress' ); ?></a>
-						<input type="hidden" name="comment_form_id" value="<?php bp_activity_id(); ?>" />
-					</div>
 
-					<?php
+						<?php
 
-					/**
-					 * Fires after the activity entry comment form.
-					 *
-					 * @since 1.5.0
-					 */
-					do_action( 'bp_activity_entry_comments' ); ?>
+						/**
+						 * Fires after the activity entry comment form.
+						 *
+						 * @since 1.5.0
+						 */
+						do_action( 'bp_activity_entry_comments' ); ?>
 
-					<?php wp_nonce_field( 'new_activity_comment', '_wpnonce_new_activity_comment' ); ?>
+						<?php wp_nonce_field( 'new_activity_comment', '_wpnonce_new_activity_comment' ); ?>
 
-				</form>
-
+					</form>
+				</div>	
 			<?php endif; ?>
-
+			</div><!-- .activity-comments-container -->
 		</div>
 
 	<?php endif; ?>
+
 
 	<?php
 
