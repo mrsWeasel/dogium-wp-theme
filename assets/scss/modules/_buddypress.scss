@@ -92,7 +92,7 @@ body.no-js #buddypress form#whats-new-form textarea {
 		font-size: 0;
 		margin-right: 1rem;
 		&:before {
-			color: $alert-color;
+			color: $dark-gray;
 			@include font-size(1);
 			content: "\f014";
 			font-family: FontAwesome;
