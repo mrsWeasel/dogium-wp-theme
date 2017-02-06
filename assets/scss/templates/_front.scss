@@ -7,6 +7,10 @@
 }
 
 .page-template-front-community {
-	
+	.entry-content {
+		img {
+			border: 1px solid $medium-gray;
+		}
+	}
 }
 
