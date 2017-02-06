@@ -3,17 +3,27 @@
   // This is used for groups header as well
   #dogium-member-cover {
   	position: relative;
-  	padding: 6rem 0 3rem;
+  	padding: 6rem 0 0;
   	background: $light-gray;
   	background-repeat: no-repeat;
   	background-size: cover;
   	background-position: center center;
 
   }
+  .item-header-container-wrap {
+    position: relative;
+    min-height: rem-calc(250);
+    transform: translateY(rem-calc(15));
+  }
   #item-header-container {
-  	float: left;
-  	padding: 1em;
-  	background: rgba(255,255,255,0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    h2 {
+      vertical-align: bottom;
+    }
+    
   }
   #item-header-avatar {
   	float: left;
@@ -21,6 +31,7 @@
   #item-header-content {
   	float: left;
   	margin-left: 1rem;
+
     .highlight {
       @extend .label;
     }

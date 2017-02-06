@@ -27,10 +27,11 @@ do_action( 'bp_before_member_header' ); ?>
 <div id="dogium-member-cover" class="clearfix" style="background-image: url(<?php echo esc_url($cover_image_url);?>)">
 	<?php
 	if ( bp_displayed_user_id() === get_current_user_id() ) : ?>
-	<a id="change-cover-link" title="<?php esc_attr_e('Change cover image', 'dogium');?>" href="<?php echo esc_attr( $change_cover_link );?>"><span class="screen-reader-text"><?php esc_html_e('Change cover image', 'dogium');?></span><i class="fa fa-photo" aria-hidden="true"></i></a>
+	<a id="change-cover-link" title="<?php esc_attr_e('Change cover image', 'dogium');?>" href="<?php echo esc_url( $change_cover_link );?>"><span class="screen-reader-text"><?php esc_html_e('Change cover image', 'dogium');?></span><i class="fa fa-photo" aria-hidden="true"></i></a>
+
 	<?php endif; ?>
 	<div class="row">
-		<div class="medium-10 columns medium-centered">
+		<div class="item-header-container-wrap medium-10 columns medium-centered">
 			<div id="item-header-container">
 			<div id="item-header-avatar">
 				<a href="<?php bp_displayed_user_link(); ?>">
@@ -42,7 +43,9 @@ do_action( 'bp_before_member_header' ); ?>
 			<div id="item-header-content">
 
 				<?php if ( bp_is_active( 'activity' ) && bp_activity_do_mentions() ) : ?>
-					<h2 class="user-nicename">@<?php bp_displayed_user_mentionname(); ?></h2>
+					<h1 class="white text-shadow"><?php echo bp_core_get_user_displayname( bp_displayed_user_id() ); ?>
+					<small>@<?php bp_displayed_user_mentionname(); ?></small></h1>
+
 				<?php endif; ?>
 
 				<div id="item-buttons"><?php
@@ -53,7 +56,6 @@ do_action( 'bp_before_member_header' ); ?>
 					 * @since 1.2.6
 					 */
 					do_action( 'bp_member_header_actions' ); ?></div><!-- #item-buttons -->
-				<span class="activity" data-livestamp="<?php bp_core_iso8601_date( bp_get_user_last_activity( bp_displayed_user_id() ) ); ?>"><?php bp_last_activity( bp_displayed_user_id() ); ?></span>
 
 				<?php
 
@@ -65,15 +67,6 @@ do_action( 'bp_before_member_header' ); ?>
 				do_action( 'bp_before_member_header_meta' ); ?>
 
 				<div id="item-meta">
-
-					<?php if ( bp_is_active( 'activity' ) ) : ?>
-
-						<div id="latest-update">
-							<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>
-
-						</div>
-
-					<?php endif; ?>
 
 					<?php
 
