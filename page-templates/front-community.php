@@ -54,18 +54,15 @@ Template Name: Front Page Community
          <div class="activity">
          <?php get_template_part( 'buddypress/activity/activity-loop' ); ?>
          </div>
-        
-        </div>
-         <div class="entry-content clearfix">
-          <div class="row column">
-             <?php
+           <?php
              $link_text = esc_html( get_field('dgm_community_link_text') );
              $link_url = esc_url( get_field('dgm_community_page_link_url') );
              if ( !empty($link_text) && !empty($link_url) ) {  
               echo "<a id='community-link' class='button float-right' href='{$link_url}'>{$link_text}</a>";
              }
-              ?>
-            </div> 
+            ?> 
+        </div>
+         <div class="entry-content clearfix">
             <?php the_content(); ?>
              <?php edit_post_link( __( 'Edit', 'dogium' ), '<span class="edit-link">', '</span>' ); ?>
          </div>
