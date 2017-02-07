@@ -7,10 +7,13 @@
  */
 
 get_header(); 
-get_template_part( 'template-parts/page-header' );?>
+get_template_part( 'template-parts/page-header-thin' );?>
 
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
+	<header>
+      <h1 class="entry-title"><?php echo sprintf(esc_html('Search results for "%s"', 'dogium'), get_search_query() ); ?></h1>
+    </header>
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
 

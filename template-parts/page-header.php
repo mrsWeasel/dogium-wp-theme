@@ -4,20 +4,13 @@
   // If we don't do this for news page (home), WP is going to get id from the first post in loop
   if ( is_home() ) {
     $id = get_option( 'page_for_posts' );
-  } elseif (!is_search() && !is_404()) {
+  } else {
     $id = $post->ID;
   }
 
   $dgm_background = get_field('dgm_background', $id);
-
-  if ( is_search() ) :
-    $page_title = sprintf(esc_html('Search results for "%s"', 'dogium'), get_search_query() );
-  elseif ( is_404() ) :
-    $page_title = esc_html('404 – Page not found', 'dogium');
-    $page_subtitle = esc_html("Nothing was found at this location.", 'dogium'); 
-  else :  
-    $page_title = get_post_meta($id, 'dgm_custom_heading', true);
-  endif;
+ 
+  $page_title = get_post_meta($id, 'dgm_custom_heading', true);
 
   if ( '' == $page_title && is_home() ) {
     $page_title = esc_html('News', 'dogium');
@@ -25,15 +18,6 @@
     $page_title = get_the_title();
   }
   $page_subtitle = get_post_meta($id, 'dgm_subheading', true);
-
-  // bbPress forum header
-  if ( function_exists('bbp_get_forum_archive_title') && function_exists( 'bbp_get_topic_archive_title' )) {
-    if ( bbp_is_forum_archive() ) {
-      $page_title = bbp_get_forum_archive_title();
-    } elseif ( bbp_is_topic_archive() ) {
-      $page_title = bbp_topic_archive_title();
-    }
-  }
 
   ?>
 <?php if ('' != $dgm_background) : ?>
