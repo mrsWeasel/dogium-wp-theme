@@ -96,7 +96,7 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 
 					<td><a href="<?php the_permalink(); ?>"><?php the_title();?></a></td>
 
-					<?php if (in_array($current_cat, $show_cat) || $current_cat == $agility_id) : ?>
+					<?php if (in_array($current_cat, $show_cat)) : ?>
 					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONTOWN[/events_list]");?></td>
 					<?php else : ?>
 					<?php $alternative_location = get_post_meta($post->ID, 'dgm_alternative_location', true); ?>

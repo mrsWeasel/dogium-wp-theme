@@ -151,6 +151,59 @@ acf_add_local_field_group(array (
 ));
 
 acf_add_local_field_group(array (
+	'key' => 'group_588f12a29dasdf',
+	'title' => 'Agility',
+	'fields' => array (
+		array (
+			'display_format' => 'j.n.Y',
+			'return_format' => 'j.n.Y',
+			'first_day' => 1,
+			'key' => 'field_5890337754ao1',
+			'label' => 'Viimeinen ilmoittautumispäivä',
+			'name' => 'dgm_agility_last_day',
+			'type' => 'date_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+		),
+	),	
+	'location' => array (
+		array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'event',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'acf_after_title',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => array (
+		0 => 'permalink',
+		1 => 'the_content',
+		2 => 'excerpt',
+		3 => 'custom_fields',
+		4 => 'comments',
+		5 => 'revisions',
+		6 => 'slug',
+		7 => 'format',
+		8 => 'page_attributes',
+		9 => 'featured_image',
+	),
+	'active' => 1,
+	'description' => 'Täytä nämä, jos tapahtuma kuuluu luokkaan Agility. Jos tapahtuman tyyppi on jokin muu, näitä tietoja ei näytetä julkisella puolella.',
+));
+
+
+acf_add_local_field_group(array (
 	'key' => 'group_5890595d16554',
 	'title' => 'Kurssit ja luennot',
 	'fields' => array (
@@ -257,6 +310,25 @@ acf_add_local_field_group(array (
 			'key' => 'field_5890311018be6',
 			'label' => 'Ryhmät',
 			'name' => 'dgm_show_groups',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+		),
+		array (
+			'default_value' => '',
+			'maxlength' => 100,
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'key' => 'field_5890311018cf7',
+			'label' => 'Järjestäjä',
+			'name' => 'dgm_show_organizer',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
