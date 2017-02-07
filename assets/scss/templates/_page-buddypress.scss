@@ -137,16 +137,7 @@
       height: rem-calc(40);
     }
   }
-  .group-button {
-    a {
-      @extend .button; 
-      @extend .small;
-    }
-    .leave-group {
-      @extend .hollow;
-      @extend .alert;
-    }
-  }
+
   #item-buttons {
     @extend .small;
     @extend .button-group;
@@ -155,7 +146,15 @@
       @extend .button;
       @extend .secondary;
     }
-   
+    a {
+      color: $white;
+    }
+    .group-button {
+    
+    .leave-group {
+        @extend .secondary;
+      }
+    }
     .friendship-button.add {
       @extend .secondary;
     }
@@ -173,14 +172,35 @@
   	}
   	li {
   		float: left;
-  		padding: 0.5em 0.75em;
   	}
-     #group_members-order-select {
-    float: right;
+    a {
+      font-weight: bold;
+      color: $dark-gray;
+      padding: 0.3em 0.75em;
+      background: $light-gray;
+      &:hover, &:focus {
+        background: $secondary-color;
+        color: $white;
+      }
+    }
+    .current {
+      a {
+        background: $secondary-color;
+        color: $white;
+      }
+    }
+    #group_members-order-select {
+      float: right;
     }
   	#activity-filter-select {
   		float: right;
   	}
+    #groups-order-select {
+      float: right;
+    }
+    #members-order-select {
+      float: right;
+    }
   }
 	.activity {
 		.load-more a {
