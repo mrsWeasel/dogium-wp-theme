@@ -66,6 +66,9 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+		<div id="search-container" aria-hidden="true" data-visible="false">
+			<?php get_search_form(); ?>
+		</div>
 	</header>
 
 	<section class="container">

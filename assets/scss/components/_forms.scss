@@ -4,3 +4,80 @@
 		@extend .button;
 	}
 }
+
+.search-form {
+	font-size: 0; // whitespace hack
+	//margin-bottom: 80px;
+	position: relative;
+
+	input[type="search"] {
+		height: 50px;
+		width: 100%;
+		vertical-align: top;
+		&:active, &:focus {
+		outline: none;
+		}
+	}
+	.search-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: rem-calc(50);
+		height: rem-calc(50);
+		padding: 0;
+		background-color: $primary-color;
+		vertical-align: top;
+		margin-left: rem-calc(-50);
+		&:focus, &:hover {
+		//background-color: $dark-pink;
+		}
+		.fa {
+			color: $white;
+			@include font-size(2);
+		}
+	}
+}
+
+#search-container {
+	background: $light-gray;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 100%;
+	padding: rem-calc(10) rem-calc(15);
+	font-size: 0; // whitespace hack
+	z-index: 99;
+	.search-form {
+		margin-bottom: 0;
+	}
+	input[type="search"] {
+		width: 100%;
+	}
+
+}
+
+#mobile-search-container {
+	.search-form {
+	
+	}
+}
+
+#search-container[aria-hidden="true"] {
+	opacity: 1;
+}
+
+#search-container[data-visible="false"] {
+	transition: opacity, 0.5s, ease-in-out;
+	opacity: 0;
+}
+
+#search-container[data-visible="true"] {
+	transition: opacity, 0.5s, ease-in-out;
+	opacity: 1;
+}
+
+@include breakpoint(small only) {
+	#search-toggle {
+		display: none;
+	}
+}
