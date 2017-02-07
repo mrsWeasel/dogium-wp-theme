@@ -20,7 +20,7 @@ get_template_part( 'template-parts/page-header-thin' );?>
 				<?php the_post_thumbnail('featured-medium'); ?>
 			</div>
 			<?php endif; ?>
-			<h1 class="entry-title blue"><?php the_title(); ?></h1>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<div class="header-entry-meta"><?php foundationpress_entry_meta(); ?></div>
 		</header>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
