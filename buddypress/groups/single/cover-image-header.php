@@ -21,13 +21,13 @@ do_action( 'bp_before_group_header' ); ?>
     $change_cover_link = bp_get_group_permalink() . 'admin/group-cover-image/';
 ?>
 
-<div id="dogium-member-cover" class="clearfix" style="background-image: url(<?php echo esc_url($cover_image_url);?>)">
+<div id="dogium-member-cover" style="background-image: url(<?php echo esc_url($cover_image_url);?>)">
 <?php
 	if ( bp_group_is_admin() ) : ?>
 	<a id="change-cover-link" title="<?php esc_attr_e('Change cover image', 'dogium');?>" href="<?php echo esc_attr( $change_cover_link );?>"><span class="screen-reader-text"><?php esc_html_e('Change cover image', 'dogium');?></span><i class="fa fa-photo" aria-hidden="true"></i></a>
 	<?php endif; ?>
 			<div class="row">
-				<div class="medium-10 columns medium-centered">
+				<div class="item-header-container-wrap medium-10 columns medium-centered">
 					<div id="item-header-container">
 						<?php if ( ! bp_disable_group_avatar_uploads() ) : ?>
 						<div id="item-header-avatar">
@@ -39,85 +39,77 @@ do_action( 'bp_before_group_header' ); ?>
 						</div><!-- #item-header-avatar -->
 						<?php endif; ?>
 
-		<div id="item-header-content">
+					<div id="item-header-content">
+						<h1 class="white text-shadow"><?php echo esc_html( bp_get_group_name() ); ?></h1>
+						<p class="white text-shadow"><span class="highlight"><?php bp_group_type(); ?></span> <?php echo strip_tags( bp_get_group_description() ); ?></p>
 
-			<div id="item-buttons"><?php
-				/**
-				 * Fires in the group header actions section.
-				 *
-				 * @since 1.2.6
-				 */
-				do_action( 'bp_group_header_actions' ); ?></div><!-- #item-buttons -->
+						<div id="item-buttons"><?php
+							/**
+							 * Fires in the group header actions section.
+							 *
+							 * @since 1.2.6
+							 */
+							do_action( 'bp_group_header_actions' ); ?>
+					
+						</div><!-- #item-buttons -->
 
-			<?php
-			/**
-			 * Fires before the display of the group's header meta.
-			 *
-			 * @since 1.2.0
-			 */
-			do_action( 'bp_before_group_header_meta' ); ?>
+						<?php
+						/**
+						 * Fires before the display of the group's header meta.
+						 *
+						 * @since 1.2.0
+						 */
+						do_action( 'bp_before_group_header_meta' ); ?>
 
-			<div id="item-meta">
+						<div id="item-meta">
 
-				<?php
+							<?php
 
-				/**
-				 * Fires after the group header actions section.
-				 *
-				 * @since 1.2.0
-				 */
-				do_action( 'bp_group_header_meta' ); ?>
+							/**
+							 * Fires after the group header actions section.
+							 *
+							 * @since 1.2.0
+							 */
+							do_action( 'bp_group_header_meta' ); ?>
 
-				<span class="highlight"><?php bp_group_type(); ?></span>
-				<span class="activity" data-livestamp="<?php bp_core_iso8601_date( bp_get_group_last_active( 0, array( 'relative' => false ) ) ); ?>"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span>
+							
 
-				<?php bp_group_description(); ?>
+							<?php bp_group_type_list(); ?>
+						</div>
+						<div id="item-actions">
 
-				<?php bp_group_type_list(); ?>
-			</div>
-		</div><!-- #item-header-content -->
+						<?php if ( bp_group_is_visible() ) : ?>
+							<?php 
+							/**
+							 * Fires after the display of the group's administrators.
+							 *
+							 * @since 1.1.0
+							 */
+							do_action( 'bp_after_group_menu_admins' );
+							if ( bp_group_has_moderators() ) :
 
-		<div id="item-actions">
+								/**
+								 * Fires before the display of the group's moderators, if there are any.
+								 *
+								 * @since 1.1.0
+								 */
+								do_action( 'bp_before_group_menu_mods' ); ?>
 
-			<?php if ( bp_group_is_visible() ) : ?>
+								<?php
 
-				<h2><?php _e( 'Group Admins', 'buddypress' ); ?></h2>
+								/**
+								 * Fires after the display of the group's moderators, if there are any.
+								 *
+								 * @since 1.1.0
+								 */
+								do_action( 'bp_after_group_menu_mods' );
 
-				<?php bp_group_list_admins();
-
-				/**
-				 * Fires after the display of the group's administrators.
-				 *
-				 * @since 1.1.0
-				 */
-				do_action( 'bp_after_group_menu_admins' );
-
-				if ( bp_group_has_moderators() ) :
-
-					/**
-					 * Fires before the display of the group's moderators, if there are any.
-					 *
-					 * @since 1.1.0
-					 */
-					do_action( 'bp_before_group_menu_mods' ); ?>
-
-					<h2><?php _e( 'Group Mods' , 'buddypress' ); ?></h2>
-
-					<?php bp_group_list_mods();
-
-					/**
-					 * Fires after the display of the group's moderators, if there are any.
-					 *
-					 * @since 1.1.0
-					 */
-					do_action( 'bp_after_group_menu_mods' );
-
-				endif;
-
-			endif; ?>
-			</div>
+							endif;
+						endif; ?>
+					</div><!-- #item-actions -->
+				</div><!-- #item-header-content -->
 		</div>	
-	</div><!-- #item-actions -->
+	</div>
 </div><!-- #dogium-member-header -->
 
 <?php
