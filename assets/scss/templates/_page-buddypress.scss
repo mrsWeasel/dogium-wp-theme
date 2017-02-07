@@ -2,6 +2,8 @@
   #buddypress {
     @extend .clearfix;
   }
+
+
   // This is used for groups header as well
   #dogium-member-cover {
   	position: relative;
@@ -173,6 +175,9 @@
   		float: left;
   		padding: 0.5em 0.75em;
   	}
+     #group_members-order-select {
+    float: right;
+    }
   	#activity-filter-select {
   		float: right;
   	}
