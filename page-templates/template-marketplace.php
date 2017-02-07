@@ -35,9 +35,9 @@ get_template_part( 'template-parts/page-header' );
         ));
         
         echo '<div class="widget widget_categories classifieds-custom-cat-list">';
-        echo '<h3 class="widget-title">';
+        echo '<h2 class="widget-title">';
         esc_html_e('Product categories', 'dogium');
-        echo '</h3>';
+        echo '</h2>';
         echo '<ul>';
         foreach ($terms as $term) {
           $term_taxonomy = 'classified_listing_category';
