@@ -146,22 +146,21 @@
     }
   }
   #item-buttons {
+    @extend .small;
     @extend .button-group;
     div {
       display: inline-block;
-    }
-    a {
       @extend .button;
-      @extend .tiny;
+      @extend .secondary;
     }
+   
     .friendship-button.add {
-      @extend .success;
+      @extend .secondary;
     }
     .friendship-button.remove {
-      @extend .alert;
+      @extend .secondary;
     }
     #post-mention a, #send-private-message a {
-      @extend .hollow;
       @extend .secondary;
     }
   }
