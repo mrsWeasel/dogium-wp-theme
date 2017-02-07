@@ -8,13 +8,14 @@
 
 #login-bar {
   @include hide-for(large);
-  background: $primary-color;
+  background: $secondary-color;
   padding: 0.5rem 0;
   color: $white;
   text-align: right;
   font-weight: bold;
   a {
     color: $white;
+    font-weight: bold;
     text-decoration: underline;
   }
 }
@@ -50,7 +51,7 @@
 }
 
 #page-header {
-	padding: rem-calc(60) 0;
+	padding: rem-calc(70) 0 rem-calc(90);
 	background: $medium-gray;
   background-image: url(../../assets/images/koiraprofiili_bg.jpg);
 	background-repeat: no-repeat;
