@@ -1,0 +1,74 @@
+
+// Make that tiny font-size a bit bigger
+#bbpress-forums {
+	@include font-size(1);
+}
+
+div.bbp-template-notice p {
+	@include font-size(1);
+}
+
+.wp-editor-area {
+	border: 1px solid $medium-gray !important;
+}
+
+.bbp-breadcrumb {
+	margin-right: rem-calc(10);
+}
+
+.bbp-form legend {
+	font-weight: bold;
+}
+
+.widget_display_topics {
+	margin-top: rem-calc(40);
+	.topic-author {
+		.bbp-author-avatar {
+			display: none;
+		}
+	}
+	ul {
+		margin-left: 0;
+	}
+}
+
+.bbp-topic-meta {
+
+	.bbp-author-avatar {
+		display: none;
+	}
+
+}
+
+.bbp-forum-description {
+	.bbp-author-avatar {
+		display: none;
+	}
+}
+
+.bbp-template-notice.info {
+	display: none;
+}
+
+#bbpress-forums div.bbp-forum-author .bbp-author-role, #bbpress-forums div.bbp-topic-author .bbp-author-role, #bbpress-forums div.bbp-reply-author .bbp-author-role {
+    @include font-size(0.8);
+    font-style: normal;
+
+}
+
+div.bbp-breadcrumb, div.bbp-topic-tags {
+    @include font-size(1);
+}
+
+#bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results {
+    @include font-size(1);
+}
+
+// Fix non aligned search input + submit
+#bbpress-forums #bbp-search-form {
+	font-size: 0; // whitespace hack
+	#bbp_search {
+    	vertical-align: top;
+    	@include font-size(0.8);
+	}
+}	

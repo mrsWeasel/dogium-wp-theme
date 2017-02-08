@@ -11,9 +11,27 @@
  */
 
  get_header(); 
- get_template_part( 'template-parts/page-header-thin' );?>
 
- <div id="page-full-width" role="main">
+ $page_title = '';
+  if ( bbp_is_forum_archive() ) {
+      $page_title = bbp_get_forum_archive_title();
+  } elseif ( bbp_is_single_forum() ) {
+      $page_title = bbp_get_forum_title();    
+  } elseif ( bbp_is_topic_archive() ) {
+      $page_title = bbp_topic_archive_title();
+  }
+
+
+ ?>
+  <header id="page-header">
+      <div class="row">
+          <div class="medium-8 medium-centered columns">    
+              <h1 class="text-center white text-shadow entry-title"><?php echo esc_html($page_title); ?></h1>
+          </div>
+      </div>
+  </header> 
+
+ <div id="page" role="main">
 
  <?php do_action( 'foundationpress_before_content' ); ?>
  <?php while ( have_posts() ) : the_post(); ?>
@@ -30,8 +48,10 @@
  <?php endwhile;?>
 
  <?php do_action( 'foundationpress_after_content' ); ?>
- <?php get_sidebar(); ?>
-
+  <div class="medium-3 columns">
+    <?php dynamic_sidebar('forum-sidebar'); ?>
  </div>
+ </div>
+
 
  <?php get_footer();

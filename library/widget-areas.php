@@ -27,6 +27,15 @@ function foundationpress_sidebar_widgets() {
 	  'after_title' => '</h2>',
 	));
 	register_sidebar(array(
+	  'id' => 'forum-sidebar',
+	  'name' => __( 'Forums Sidebar', 'dogium' ),
+	  'description' => __( 'Drag widgets to this sidebar container.', 'dogium' ),
+	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</article>',
+	  'before_title' => '<h2 class="widget-title">',
+	  'after_title' => '</h2>',
+	));
+	register_sidebar(array(
 	  'id' => 'home-left-sidebar',
 	  'name' => __( 'Home Left Sidebar', 'dogium' ),
 	  'description' => __( 'Drag widgets to this sidebar container.', 'dogium' ),
