@@ -27,7 +27,7 @@ if ($event_categories) {
 }
 
 ?>
-
+<?php var_dump($post); ?>
 <div id="page-full-width" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
