@@ -10,3 +10,26 @@
 		font-weight: bold;
 	}
 }
+
+.event-details {
+	margin-bottom: rem-calc(20);
+	img {
+		border: 1px solid $medium-gray;
+	}
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+		li {
+			vertical-align: top;
+			display: inline-block;
+			margin-right: rem-calc(10);
+		}
+	}
+}
+
+div.time-picker {
+	width: 10em;
+	li {
+		@include font-size(0.8);
+	}
+}
