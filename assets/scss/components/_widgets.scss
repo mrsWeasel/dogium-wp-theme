@@ -125,16 +125,13 @@
 		text-align: center;
 	}
 	#members-list {
-		@extend .row;
+		font-size: 0; // whitespace hack
 		.vcard {
-		@extend .columns;
-		@extend .small-3;
-		@extend .medium-4;
+		display: inline-block;
+		vertical-align: top;
+		width: 33.33%;
 		text-align: center;
 		clear: none !important;
-		&:last-child {
-			@extend .end;
-		}
 		}
 	}
 	li {
@@ -162,22 +159,22 @@
 
 // BP Groups
 .widget_bp_groups_widget {
-	text-align: center;
+	.widget-title {
+		text-align: center;
+	}
 	.item-options {
+		text-align: center;
 		margin-bottom: 1rem;
 	}
 	#groups-list {
-		@extend .row;
+		font-size: 0;
 		li {
-		@extend .columns;
-		@extend .small-3;
-		@extend .medium-4;
+		vertical-align: top;
+		display: inline-block;
+		width: 33.33%;
 		text-align: center;
 		margin-bottom: rem-calc(10);
 		clear: none !important;
-		&:last-child {
-			@extend .end;
-			}
 		}
 		.item-meta {
 			display: none;
@@ -198,10 +195,10 @@
 
 .buddypress.widget {
  	.avatar-block {
- 		@extend .row;
+ 		font-size: 0; // whitespace hack
  		.item-avatar {
- 		@extend .columns;
- 		@extend .small-4;
+ 		display: inline-block;
+ 		width: 33.33%;
  		text-align: center;
  		}
  		img {
@@ -223,17 +220,14 @@
 		ul {
 			list-style-type: none;
 			margin-left: 0;
-			@extend .row;
+			
 			li {
-				@extend .columns;
-				@extend .small-3;
-				@extend .medium-4;
+				vertical-align: top;
+				display: inline-block;
+				width: 33.33%;
 				text-align: center;
 				margin-bottom: rem-calc(10);
 				clear: none !important;
-				&:last-child {
-				@extend .end;
-				}
 			}
 			.rpwe-thumb {
 				border-radius: 50%;
