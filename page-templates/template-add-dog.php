@@ -17,22 +17,17 @@ if ( is_user_logged_in() ) {
 }
 
 get_header();
+get_template_part( 'template-parts/page-header-thin' );?>
 ?>
-<header id="page-header">
-    <div class="row">
-        <div class="medium-8 medium-centered columns">
-            <h1 class="text-center white text-shadow"><?php the_title();?></h1>
-        </div>
-    </div>
-</header>
 
-<div id="page-full-width" role="main">	
+<div id="page" role="main">	
 
  <?php while ( have_posts() ) : the_post(); ?>
    <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+      <header>
+      <h1 class="entry-title"><?php the_title(); ?></h1>
+      </header>
        <div class="entry-content">
-          <div class="row">
-            <div class="medium-6 medium-centered columns">
              <?php if (!is_user_logged_in()) : ?>
              		<div class="callout warning">
              			<p><?php echo sprintf(
@@ -49,8 +44,6 @@ get_header();
              }
              ?>	
              <?php endif; ?>
-             </div>
-           </div>
 
        </div>
    </article>
