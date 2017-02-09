@@ -21,15 +21,13 @@ if ( bp_is_group() ) {
 	$group_name = bp_get_current_group_name();
 	$group_id = bp_get_current_group_id(); ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
-	<?
+	<?php
 } elseif ( get_query_var('event_id') ) {
 	$group_id = get_query_var('event_id'); ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
-	<?
-} elseif ( count($user_groups) > 0 ){ 
+	<?php
+} elseif ( count($user_groups) > 0 ) { 
 	?>
-	<p>
-	
 	<select name="group_id">
 		<?php
 		//in case user isn't a group mod, but can edit other users' events
