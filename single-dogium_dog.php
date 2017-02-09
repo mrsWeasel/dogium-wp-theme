@@ -36,20 +36,21 @@ get_template_part( 'template-parts/page-header-thin' );?>
 		<?php endif; ?>
 		<div class="row">
 			<div class="medium-6 columns">
-				<div class="row collapse">
+				<div class="row">
 					<div class="small-12 columns">
-						<div class="thumbnail">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail('featured-medium');?>
-						<?php else: ?>
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/paw.jpg';?>">
-						<?php endif; ?>
-						</div><!-- .thumbnail -->
-						<?php the_meta(); ?>
-						<?php the_post_thumbnail_url( 'featured-medium' ); ?> 
+						<div class="image-box">
+							
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail('fp-medium-height');?>
+							<?php else: ?>
+								<img class="aligncenter" src="<?php echo get_template_directory_uri() . '/assets/images/paw.jpg';?>">
+							<?php endif; ?>
+							
+						</div>
+						
 					</div><!-- .small-12 -->
 				</div><!-- .row -->	
-				<div class="row collapse">
+				<div class="row valign-middle">
 				<?php 
 				$gallery = get_field('dgm_image_gallery');
 				if ($gallery) : ?>
@@ -64,16 +65,16 @@ get_template_part( 'template-parts/page-header-thin' );?>
 						<?php 
 						$row_start = $row_end = '';
 
-						if ($counter % 3 == 0) {
-							$row_start = '<div class="row collapse">';
+						if ($counter != 0 && $counter % 3 == 0) {
+							$row_start = '<div class="row valign-middle">';
 							$row_end = '</div>';
 						}
 						?>
 						<?php echo $row_end; ?>
 						<?php echo $row_start; ?>
 							<div class="large-4 columns end">
-							<div class="thumbnail" id="<?php echo $id; ?>">
-								<img src="<?php echo $gallery_item['sizes']['fp-xsmall']; ?>">
+							<div class="image-box" id="<?php echo $id; ?>">
+								<img src="<?php echo $gallery_item['sizes']['fp-xsmall-height']; ?>">
 							</div>
 							</div>
 						<?php $counter++; ?>
