@@ -1,0 +1,15 @@
+@include breakpoint(large) {
+	.valign-middle {
+    display: table;
+
+	    > .columns {
+	        display: table-cell;
+	        vertical-align: middle;
+	        position: relative;
+	    }
+
+	    > .columns, > [class*="column"] + [class*="column"]:last-child {
+	        float: none;
+	    }
+	}
+}
