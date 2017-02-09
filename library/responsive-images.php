@@ -21,6 +21,9 @@ add_image_size( 'featured-medium', 900, 590, true ); // name, width, height, cro
 add_image_size( 'fp-xsmall', 360 );
 add_image_size( 'fp-small', 620 );
 add_image_size( 'fp-medium', 900 );
+add_image_size( 'fp-medium-height', 9999, 590, false);
+add_image_size( 'fp-small-height', 9999, 472, false);
+add_image_size( 'fp-xsmall-height', 9999, 236, false);
 
 // Register the new image sizes for use in the add media modal in wp-admin
 function foundationpress_custom_sizes( $sizes ) {
