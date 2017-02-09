@@ -3,7 +3,6 @@
   width: 100%;
   background: $light-gray;
   margin: 0 auto;
-  border-top: 1px solid #ccc;
   margin-top: rem-calc(60);
 
   #footer {
@@ -14,6 +13,13 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+      li {
+        display: block;
+        border-bottom: 1px solid $medium-gray;
+      }
+      li:last-child {
+        border-bottom-width: 0;
+      }
     }
   }
 }
