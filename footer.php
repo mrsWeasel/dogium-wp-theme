@@ -25,7 +25,19 @@
 						<?php dynamic_sidebar( 'footer-widgets-3' ); ?>
 					</div>
 					<div class="large-3 columns">
-						<?php dynamic_sidebar( 'footer-widgets-4' ); ?>
+						<div class="widget">
+							<ul class="menu">
+							<?php
+							if (is_user_logged_in()) : ?>
+
+								<li class="menu-item"><a href="<?php echo esc_url( bp_loggedin_user_domain() ); ?>"><i class="fa fa-user"></i> <?php esc_html_e('My profile', 'dogium'); ?></a></li>
+								<li class="menu-item"><a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php esc_attr_e('Logout', 'dogium'); ?>"><i class="fa fa-lock"></i> <?php esc_html_e('Logout', 'dogium'); ?></a></li>
+							<?php else: ?>
+								<li class="menu-item"><a href="<?php echo wp_login_url( get_permalink() ); ?>" title="<?php esc_attr_e('Login', 'dogium'); ?>"><?php esc_html_e('Login', 'dogium')?></a></li>
+								<li class="menu-item"><a href="<?php echo wp_registration_url(); ?> " title="<?php esc_attr_e('Register', 'dogium'); ?>"><?php esc_html_e('Register', 'dogium'); ?></a></li>	
+	 						<?php endif; ?>
+	 						</ul>
+ 						</div>
 					</div>
 				</div>
 				<?php do_action( 'foundationpress_after_footer' ); ?>

@@ -94,16 +94,6 @@ function foundationpress_sidebar_widgets() {
 	  'before_title' => '<h2 class="widget-title">',
 	  'after_title' => '</h2>',
 	));
-
-	register_sidebar(array(
-	  'id' => 'footer-widgets-4',
-	  'name' => __( 'Footer widgets 4', 'dogium' ),
-	  'description' => __( 'Drag widgets to this footer container', 'dogium' ),
-	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
-	  'after_widget' => '</article>',
-	  'before_title' => '<h2 class="widget-title">',
-	  'after_title' => '</h2>',
-	));
 }
 
 add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );
