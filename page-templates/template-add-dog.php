@@ -20,7 +20,7 @@ get_header();
 get_template_part( 'template-parts/page-header-thin' );?>
 ?>
 
-<div id="page" role="main">	
+<div id="page-narrow" role="main">	
 
  <?php while ( have_posts() ) : the_post(); ?>
    <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
