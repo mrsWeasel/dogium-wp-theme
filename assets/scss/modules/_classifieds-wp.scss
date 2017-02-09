@@ -45,6 +45,15 @@
 	}
 }
 
+.field.account-sign-in {
+	a {
+		background: none;
+		padding: 0;
+		margin: 0;
+		color: $primary-color;
+	}
+}
+
 .single-classified_listing {
 	.classified-price {
 		@include font-size(2);
@@ -60,11 +69,21 @@
 	h2.widget-title {
 		text-align: left;
 	}
-	
-	.classified_featured_image {
-		@extend .thumbnail;
-		width: 100%;
+	#featured-classified-image {
+		position: relative;
+		background: $light-gray;
+		.classified_featured_image {
+			//width: 100%;
+		}
+		.main-price {
+			@include font-size(2);
+			font-weight: bold;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
+	
 	.classified_images {
 		border: none;
 	}
