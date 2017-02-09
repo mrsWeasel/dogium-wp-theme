@@ -38,21 +38,15 @@ get_template_part( 'template-parts/page-header-thin' );?>
 			<div class="medium-6 columns">
 				<div class="row collapse">
 					<div class="small-12 columns">
-					<header>
-    					<h1 class="entry-title blue"><?php the_title();?></h1>
-			        	<?php 
-			        	$official_name = get_post_meta($post->ID, 'dgm_official_name', true);
-			        	if ( !empty($official_name) ) : ?>
-			        		<h2 class="blue subheader"><?php echo esc_html( $official_name ); ?></h2>
-			        	<?php endif; ?>
-					</header> 
 						<div class="thumbnail">
-						<?php if (has_post_thumbnail($post)) : ?>
-								<?php the_post_thumbnail('featured-medium');?>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail('featured-medium');?>
 						<?php else: ?>
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/paw.jpg';?>">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/paw.jpg';?>">
 						<?php endif; ?>
 						</div><!-- .thumbnail -->
+						<?php the_meta(); ?>
+						<?php the_post_thumbnail_url( 'featured-medium' ); ?> 
 					</div><!-- .small-12 -->
 				</div><!-- .row -->	
 				<div class="row collapse">
@@ -92,14 +86,22 @@ get_template_part( 'template-parts/page-header-thin' );?>
 				
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 					<div class="entry-content">
+						<header>
+    					<h1 class="entry-title"><?php the_title();?></h1>
+			        	<?php 
+			        	$official_name = get_post_meta($post->ID, 'dgm_official_name', true);
+			        	if ( !empty($official_name) ) : ?>
+			        		<h2 class="subheader"><?php echo esc_html( $official_name ); ?></h2>
+			        	<?php endif; ?>
+						</header> 
 						<table>
 						<tbody>
 						<?php
-
+						
 						$term_other = dogium_get_dog_terms($post->ID);
 						$breed = get_post_meta($post->ID, 'dgm_other_what', true);
 						$terms = wp_get_post_terms($post->ID, 'dogium_breed');
-						
+				
 						if ( '' != $breed && $term_other ) : ?>
 						<tr>
 							<th><i class="fa fa-paw" aria-hidden="true"></i> <?php esc_html_e('Breed:', 'dogium'); ?></th> <td><?php echo esc_html($breed); ?></td>
