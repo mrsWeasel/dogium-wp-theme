@@ -22,16 +22,15 @@ if ( bp_is_group() ) {
 	$group_id = bp_get_current_group_id(); ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
 	<?
-} elseif ( bp_is_member() ) {
+} elseif ( get_query_var('event_id') ) {
 	$group_id = get_query_var('event_id'); ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
 	<?
-} elseif( count($user_groups) > 0 ){ 
+} elseif ( count($user_groups) > 0 ){ 
 	?>
 	<p>
 	
 	<select name="group_id">
-		<option value=""><?php _e('Not a Group Event', 'events-manager'); ?></option>
 		<?php
 		//in case user isn't a group mod, but can edit other users' events
 		if( !empty($EM_Event->group_id) && !in_array($EM_Event->group_id, $group_data['groups']) ){
@@ -49,10 +48,7 @@ if ( bp_is_group() ) {
 		?>
 	</select>
 	</p>
-	<?php if( is_super_admin() ): ?>
-	<p><em><?php _e ( 'As a site admin, you see all group events, users will only be able to choose groups they are admins of.', 'events-manager')?></em></p>
-	<?php endif; 
 	
-}else{
+<?php } else {
 	?><p><em><?php _e('No groups defined yet.','events-manager'); ?></em></p><?php
 }
