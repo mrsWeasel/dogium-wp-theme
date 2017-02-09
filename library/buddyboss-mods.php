@@ -5,6 +5,46 @@
  * @since 1.0.0
  */
 
+
+// Media upload visibility: unset some options
+function dogium_profile_media_visibility() {
+	    $is_single_group = bp_is_group();
+    if ( $is_single_group ) {
+		/*
+		 * if group is hidden or private, we shouldn't show activity privacy options
+		 * as the privacy is determined on group level anyway.
+		 */
+		global $groups_template;
+		$group = & $groups_template->group;
+		if ( !empty( $group ) ) {
+			// do not show this for groups at all
+			return '';
+		}
+	}
+    $html = '<select name="bbm-media-privacy" id="bbm-media-privacy">';
+
+    $options = bbm_get_visibility_lists( $is_single_group );
+    // unset 'onlyme'
+	if (isset($options['onlyme'])) {
+		unset($options['onlyme']);
+	}
+	if (isset($options['loggedin'])) {
+		unset($options['loggedin']);
+	}
+
+
+    foreach( $options as $key=>$val ){
+        $html .= "<option value='" . esc_attr( $key ) . "'>$val</option>";
+    }
+    $html .= '</select>';
+
+    return $html;
+}
+
+add_filter('bbm_get_media_visibility_filter', 'dogium_profile_media_visibility');
+
+
+
 // Profile visibility : unset option 'onlyme'
 function dogium_profile_activity_visibility() {
 	$html = '<select name="bbwall-activity-privacy" id="bbwall-activity-privacy">';
@@ -32,14 +72,13 @@ add_filter('buddyboss_wall_get_profile_activity_visibility_filter', 'dogium_prof
 function dogium_wall_get_groups_activity_visibility() {
 	if ( bp_is_group() ) {
 		/*
-		 * if group is hidden or private, we shouldn't show activity privacy options
-		 * as the privacy is determined on group level anyway.
+		 * no need for this as groups don't need the setting at all
 		 */
 		global $groups_template;
 		$group = & $groups_template->group;
-		if ( !empty( $group ) && ( 'hidden' == $group->status || 'private' == $group->status ) ) {
+		if ( !empty( $group ) ) {
 			//this is a hidden/private group. dont show the privacy UI
-			return apply_filters( 'buddyboss_wall_get_groups_activity_visibility', '' );
+			return '';
 		}
 	}
 	$html = '<select name="bbwall-activity-privacy" id="bbwall-activity-privacy">';
@@ -62,9 +101,10 @@ function dogium_wall_get_groups_activity_visibility() {
 
 add_filter( 'buddyboss_wall_get_groups_activity_visibility', 'dogium_wall_get_groups_activity_visibility');
 
+
 // Just to be on the safe side. Never trust your users.
 function dogium_add_visibility_to_activity($content, $user_id, $activity_id) {
-	$visibility = 'friends';
+	$visibility = 'public';
 
 	$options = buddyboss_wall_get_visibility_lists();
 	// unset 'onlyme'
@@ -73,6 +113,9 @@ function dogium_add_visibility_to_activity($content, $user_id, $activity_id) {
 	}
 	if (isset($options['loggedin'])) {
 		unset($options['loggedin']);
+	}
+	if (isset($options['grouponly'])) {
+		unset($options['grouponly']);
 	}
 
 	if ( isset( $_POST[ 'visibility' ] ) && in_array( esc_attr( $_POST[ 'visibility' ] ), array_keys( $options ) ) ) {
