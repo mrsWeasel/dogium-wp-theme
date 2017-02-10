@@ -23,8 +23,8 @@ if ( bp_is_group() ) {
 	 ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
 	<?php
-} elseif ( get_query_var('event_id') ) {
-	$group_id = get_query_var('event_id'); ?>
+} elseif ( $EM_Event->group_id != '' ) {
+	$group_id = $EM_Event->group_id; ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
 	<?php
 } elseif ( count($user_groups) > 0 ) { 
