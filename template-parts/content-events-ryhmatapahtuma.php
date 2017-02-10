@@ -23,7 +23,12 @@
 	<div class="large-5 columns">
 		
 		<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONMAP[/events_list]");?>
-
+		<?php global $EM_Event; ?>
+		Laura muista poistaa nämä
+		<p>Omistaja (kirjoittaja)</p>
+		<?php var_dump($EM_Event->event_owner); ?>
+		<p>Ryhmä</p>
+		<?php var_dump($EM_Event->group_id); ?>
 	</div>
 
 </div>

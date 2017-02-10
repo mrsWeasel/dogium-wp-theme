@@ -8,7 +8,9 @@ if ( !is_admin() && !current_user_can('administrator')) {
 	    $EM_Event->add_error( __('You are only allowed to create group events.', 'dogium') );
 	    $result = false;
 	}
-
+	/**
+	 * @return string
+	 */
 	$allowed_category = get_term_by('slug', 'ryhmatapahtuma', 'event-categories')->term_id;
 
 

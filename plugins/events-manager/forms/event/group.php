@@ -19,7 +19,8 @@ if( !is_super_admin() ){
 
 if ( bp_is_group() ) {
 	$group_name = bp_get_current_group_name();
-	$group_id = bp_get_current_group_id(); ?>
+	$group_id = bp_get_current_group_id();
+	 ?>
 	<input type="hidden" name="group_id" value="<?php echo $group_id; ?>">
 	<?php
 } elseif ( get_query_var('event_id') ) {
