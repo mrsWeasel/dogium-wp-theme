@@ -1,6 +1,8 @@
 <?php
 
 function dogium_validate_em($result, $EM_Event){
+global $col_count, $EM_Ticket;
+$col_count = absint($col_count); //now we know it's a number
 
 if ( !current_user_can('administrator')) {
 	// Standard users can only submit group events
@@ -9,13 +11,8 @@ if ( !current_user_can('administrator')) {
 	    $result = false;
 	}
 
-	if ( ! isset ( $_REQUEST['em_tickets'][1]['ticket_type'] ) || $_REQUEST['em_tickets'][1]['ticket_type'] !== 'members' ) {
+	if ( ! isset ( $_REQUEST['em_tickets'][$col_count]['ticket_type'] ) || $_REQUEST['em_tickets'][$col_count]['ticket_type'] !== 'members' ) {
 		$EM_Event->add_error( __('Only members are allowed to attend group events.', 'dogium') );
-		$result = false;
-	}
-
-	if ( ! isset ( $_REQUEST['em_tickets'][1]['ticket_members_roles'] ) || sizeof( $_REQUEST['em_tickets'][1]['ticket_members_roles'] ) > 1 || $_REQUEST['em_tickets'][1]['ticket_members_roles'][0] !== 'subscriber' ) {
-		$EM_Event->add_error( __('Only logged in users are allowed to attend group events.', 'dogium') );
 		$result = false;
 	}
 
@@ -46,9 +43,8 @@ if ( !current_user_can('administrator')) {
 
 
 }
-//echo '<pre>';
-//print_r($_REQUEST);
-//echo '</pre>';
+
 return $result;
+
 }
 add_filter('em_event_validate','dogium_validate_em', 1, 2);

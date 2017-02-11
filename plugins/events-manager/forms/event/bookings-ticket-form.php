@@ -10,8 +10,8 @@ $col_count = absint($col_count); //now we know it's a number
 	<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_id]" class="ticket_id" value="<?php echo esc_attr($EM_Ticket->ticket_id) ?>" />
 	<div class="em-ticket-form-main">
 		<div class="ticket-name">
-			<?php $date = new DateTime(); ?>
-			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_name]" value="<?php echo sprintf( esc_attr('group_ticket_%d', 'dogium'), date_timestamp_get($date) );?>">
+			
+			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_name]" value="<?php esc_attr_e('Group Ticket', 'dogium' );?>">
 		</div>
 		<div class="ticket-price">
 			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_price]" value="0">
@@ -71,9 +71,7 @@ $col_count = absint($col_count); //now we know it's a number
 		<div class="ticket-type">
 			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_type]" value="members">
 		</div>
-		<div class="ticket-roles">
-			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_members_roles][]" value="subscriber">
-		</div>
+		
 		
 		<?php do_action('em_ticket_edit_form_fields', $col_count, $EM_Ticket); //do not delete, add your extra fields this way, remember to save them too! ?>
 	</div>
