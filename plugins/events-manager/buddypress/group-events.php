@@ -62,11 +62,13 @@
 			    $user = get_current_user_id();
 			    // Get group with ownership of this event
 			    $group_id = $EM_Event->group_id;
-			    $group = groups_get_group( array( 'group_id' => $group_id ) );
-				$is_member = groups_is_user_member($user, $group_id);
+			    
+				$is_member = groups_is_user_member( bp_loggedin_user_id(), $group_id );
+
 				// Initialize
 				$user_can_book = false;
 
+				$group = groups_get_group( array( 'group_id' => $group_id ) );
 				$group_visibility = $group->status;
 				switch ($group_visibility) {
 					case 'hidden':
@@ -172,7 +174,7 @@
 						</td>
 						<td>
 						<?php
-							if ($EM_Event->bookings && $user_can_book ) :
+							if ( $user_can_book ) :
 								echo $EM_Event->output('#_BOOKINGBUTTON');
 							else : 
 								esc_html_e('Booking not available', 'dogium');
