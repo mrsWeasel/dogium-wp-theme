@@ -2,12 +2,23 @@
 
 function dogium_validate_em($result, $EM_Event){
 
-if ( !is_admin() && !current_user_can('administrator')) {
+//if ( !current_user_can('administrator')) {
 	// Standard users can only submit group events
 	if ( ! isset( $_REQUEST['group_id'] ) || $_REQUEST['group_id'] == '' ) {
 	    $EM_Event->add_error( __('You are only allowed to create group events.', 'dogium') );
 	    $result = false;
 	}
+
+	if ( ! isset ( $_REQUEST['ticket_type'] ) || $_REQUEST['ticket_type'] == '' | $_REQUEST['ticket_type'] !== 'members' ) {
+		$EM_Event->add_error( __('Only members are allowed to attend group events.', 'dogium') );
+		$result = false;
+	}
+
+	if ( ! isset ( $_REQUEST['ticket_member_roles'] ) || $_REQUEST['ticket_member_roles'] !== 'subscriber' ) {
+		$EM_Event->add_error( __('Only logged in users are allowed to attend group events.', 'dogium') );
+		$result = false;
+	}
+
 	/**
 	 * @return string
 	 */
@@ -32,8 +43,10 @@ if ( !is_admin() && !current_user_can('administrator')) {
 			$result = false;
 		}	
 	}
-}
 
+
+//}
+//var_dump($_REQUEST);
 return $result;
 }
 add_filter('em_event_validate','dogium_validate_em', 1, 2);

@@ -69,26 +69,12 @@ $col_count = absint($col_count); //now we know it's a number
 		</div>
 		<?php endif; ?>
 		<div class="ticket-type">
-			<label><?php esc_html_e('Available for','events-manager') ?></label>
-			<select name="em_tickets[<?php echo $col_count; ?>][ticket_type]" class="ticket_type">
-				<option value=""><?php _e('Everyone','events-manager'); ?></option>
-				<option value="members" <?php if($EM_Ticket->ticket_members) echo 'selected="selected"'; ?>><?php esc_html_e('Logged In Users','events-manager'); ?></option>
-				<option value="guests" <?php if($EM_Ticket->ticket_guests) echo 'selected="selected"'; ?>><?php esc_html_e('Guest Users','events-manager'); ?></option>
-			</select>
+			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_type]" value="members">
 		</div>
-		<div class="ticket-roles" <?php if( !$EM_Ticket->ticket_members ): ?>style="display:none;"<?php endif; ?>>
-			<label><?php _e('Restrict to','events-manager'); ?></label>
-			<div>
-				<?php 
-				$WP_Roles = new WP_Roles();
-				foreach($WP_Roles->roles as $role => $role_data){ /* @var $WP_Role WP_Role */
-					?>
-					<input type="checkbox" name="em_tickets[<?php echo $col_count; ?>][ticket_members_roles][]" value="<?php echo esc_attr($role); ?>" <?php if( in_array($role, $EM_Ticket->ticket_members_roles) ) echo 'checked="checked"' ?> class="ticket_members_roles" /> <?php echo esc_html($role_data['name']); ?><br />
-					<?php
-				}
-				?>
-			</div>
+		<div class="ticket-roles">
+			<input type="hidden" name="em_tickets[<?php echo $col_count; ?>][ticket_members_roles][]" value="subscriber">
 		</div>
+		
 		<?php do_action('em_ticket_edit_form_fields', $col_count, $EM_Ticket); //do not delete, add your extra fields this way, remember to save them too! ?>
 	</div>
 	<div class="ticket-options">
