@@ -12,21 +12,26 @@
 
  get_header(); 
 
- $page_title = '';
+ $page_title = $page_subtitle = '';
   if ( bbp_is_forum_archive() ) {
       $page_title = bbp_get_forum_archive_title();
+      $page_subtitle = esc_html('Please keep up good spirit and polite language', 'dogium');
   } elseif ( bbp_is_single_forum() ) {
-      $page_title = bbp_get_forum_title();    
+      $page_title = bbp_get_forum_title();   
   } elseif ( bbp_is_topic_archive() ) {
       $page_title = bbp_topic_archive_title();
+  } elseif ( bbp_is_single_topic() )  {
+      $page_title = bbp_get_topic_title(); 
   }
 
-
  ?>
-  <header id="page-header">
+  <header id="page-header-forum">
       <div class="row">
           <div class="medium-8 medium-centered columns">    
               <h1 class="text-center white text-shadow entry-title"><?php echo esc_html($page_title); ?></h1>
+                <?php if ('' != $page_subtitle) : ?>
+              <p class="intro text-center white text-shadow"><?php echo esc_html($page_subtitle);?></p>
+              <?php endif; ?> 
           </div>
       </div>
   </header> 
