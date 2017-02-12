@@ -18,7 +18,6 @@ if ( is_user_logged_in() ) {
 
 get_header();
 get_template_part( 'template-parts/page-header-thin' );?>
-?>
 
 <div id="page-narrow" role="main">	
 
