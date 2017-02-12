@@ -11,6 +11,7 @@ var colors      = require('colors');
 var dateFormat  = require('dateformat');
 var del         = require('del');
 var cleanCSS    = require('gulp-clean-css');
+var wpPot       = require('gulp-wp-pot');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
@@ -244,6 +245,15 @@ gulp.task('clean:css', function() {
       'assets/stylesheets/foundation.css',
       'assets/stylesheets/foundation.css.map'
     ]);
+});
+
+gulp.task('pot', function () {
+    return gulp.src('**/*.php')
+        .pipe(wpPot( {
+            domain: 'dogium',
+            package: 'Dogium'
+        } ))
+        .pipe(gulp.dest('languages/dogium.pot'));
 });
 
 // Default gulp task

@@ -209,7 +209,7 @@ get_template_part( 'template-parts/page-header-thin' );?>
 						$all_breeders = implode(', ', $all_breeders);
 						if ('' != $all_breeders) : ?>
 						<tr>
-							<th><i class="fa fa-group" aria-hidden="true"></i> <?php esc_html_e('Breeders:' , 'dogium'); ?></th> 
+							<th><i class="fa fa-group" aria-hidden="true"></i> <?php esc_html_e('Breeder:' , 'dogium'); ?></th> 
 							<td><?php echo $all_breeders; ?></td>
 						</tr>
 						<?php endif; ?>
