@@ -16,7 +16,7 @@
 <?php
  if ( ! bp_is_user() && ! bp_is_group() ) : ?>
   <div class="row">
-   <div class="medium-9 columns">
+   <div class="large-9 columns">
      <?php endif; ?>  
      <?php do_action( 'foundationpress_before_content' ); ?>
      <?php while ( have_posts() ) : the_post(); ?>
@@ -39,7 +39,7 @@
    <?php
    if ( ! bp_is_user() && ! bp_is_group() ) : ?>
   </div><!---->
- <div class="medium-3 columns">
+ <div class="large-3 columns">
    <?php dynamic_sidebar('community-sidebar'); ?> 
  </div>
  </div>
