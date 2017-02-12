@@ -5,6 +5,10 @@
  * @since 1.0.0
  */
 
+// In case the plugin gets deactivated
+if (! class_exists('BuddyBoss_Wall_Plugin')) {
+	return;
+}
 
 // Media upload visibility: unset some options
 function dogium_profile_media_visibility() {

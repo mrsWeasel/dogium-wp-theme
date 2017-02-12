@@ -3,29 +3,29 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dogium\n"
+"POT-Creation-Date: 2017-02-12 21:40+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.11\n"
-"Last-Translator: \n"
-"Language: fi\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:17, packaged/dogium_2017-02-12_14-43/404.php:17
+#: 404.php:17 packaged/dogium_2017-02-12_14-43/404.php:17
 msgid "Page not found"
 msgstr "Sivua ei löydy"
 
-#: 404.php:21, packaged/dogium_2017-02-12_14-43/404.php:21
+#: 404.php:21 packaged/dogium_2017-02-12_14-43/404.php:21
 msgid ""
 "The page you are looking for might have been removed, had its name changed, "
 "or is temporarily unavailable."
@@ -33,208 +33,343 @@ msgstr ""
 "Etsimäsi sivu on saatettu poistaa, sen nimi on voinut vaihtua tai se on "
 "tilapäisesti poissa käytöstä."
 
-#: archive.php:79, home.php:40, index.php:40, search.php:40,
-#: taxonomy-event-categories.php:148,
-#: packaged/dogium_2017-02-12_14-43/archive.php:79,
-#: packaged/dogium_2017-02-12_14-43/home.php:40,
-#: packaged/dogium_2017-02-12_14-43/index.php:40,
-#: packaged/dogium_2017-02-12_14-43/search.php:40,
+#: archive.php:79 home.php:40 index.php:40
+#: packaged/dogium_2017-02-12_14-43/archive.php:79
+#: packaged/dogium_2017-02-12_14-43/home.php:40
+#: packaged/dogium_2017-02-12_14-43/index.php:40
+#: packaged/dogium_2017-02-12_14-43/search.php:40
 #: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:148
+#: search.php:40 taxonomy-event-categories.php:148
 msgid "&larr; Older posts"
 msgstr "&larr; Vanhemmat artikkelit"
 
-#: archive.php:80, home.php:41, index.php:41, search.php:41,
-#: taxonomy-event-categories.php:149,
-#: packaged/dogium_2017-02-12_14-43/archive.php:80,
-#: packaged/dogium_2017-02-12_14-43/home.php:41,
-#: packaged/dogium_2017-02-12_14-43/index.php:41,
-#: packaged/dogium_2017-02-12_14-43/search.php:41,
+#: archive.php:80 home.php:41 index.php:41
+#: packaged/dogium_2017-02-12_14-43/archive.php:80
+#: packaged/dogium_2017-02-12_14-43/home.php:41
+#: packaged/dogium_2017-02-12_14-43/index.php:41
+#: packaged/dogium_2017-02-12_14-43/search.php:41
 #: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:149
+#: search.php:41 taxonomy-event-categories.php:149
 msgid "Newer posts &rarr;"
 msgstr "Uudemmat artikkelit &rarr;"
 
-#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:235,
-#: page-templates/front-community.php:67,
-#: page-templates/template-marketplace.php:18,
-#: packaged/dogium_2017-02-12_14-43/bbpress.php:47,
-#: packaged/dogium_2017-02-12_14-43/buddypress.php:27,
-#: packaged/dogium_2017-02-12_14-43/page.php:24,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:235,
-#: packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:67,
-#: packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:18,
-#: plugins/events-manager/buddypress/group-events.php:119,
-#: plugins/events-manager/tables/events.php:98,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:119,
+#: bbpress.php:47 buddypress.php:27
+#: packaged/dogium_2017-02-12_14-43/bbpress.php:47
+#: packaged/dogium_2017-02-12_14-43/buddypress.php:27
+#: packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:67
+#: packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:18
+#: packaged/dogium_2017-02-12_14-43/page.php:24
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:119
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:64
 #: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:98
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:235
+#: page-templates/front-community.php:67
+#: page-templates/template-marketplace.php:18 page.php:24
+#: plugins/events-manager/buddypress/group-events.php:119
+#: plugins/events-manager/forms/event/bookings.php:64
+#: plugins/events-manager/tables/events.php:98 single-dogium_dog.php:233
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:247,
-#: single-event.php:57, single.php:31, page-templates/front-community.php:70,
-#: page-templates/page-full-width.php:18,
-#: page-templates/page-sidebar-left.php:22, page-templates/system-page.php:21,
-#: page-templates/template-events.php:43,
-#: page-templates/template-marketplace.php:21,
-#: packaged/dogium_2017-02-12_14-43/bbpress.php:50,
-#: packaged/dogium_2017-02-12_14-43/buddypress.php:30,
-#: packaged/dogium_2017-02-12_14-43/page.php:27,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:247,
-#: packaged/dogium_2017-02-12_14-43/single-event.php:57,
-#: packaged/dogium_2017-02-12_14-43/single.php:31,
-#: packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:70,
-#: packaged/dogium_2017-02-12_14-43/page-templates/page-full-width.php:18,
-#: packaged/dogium_2017-02-12_14-43/page-templates/page-sidebar-left.php:22,
-#: packaged/dogium_2017-02-12_14-43/page-templates/system-page.php:21,
-#: packaged/dogium_2017-02-12_14-43/page-templates/template-events.php:43,
+#: bbpress.php:50 buddypress.php:30
+#: packaged/dogium_2017-02-12_14-43/bbpress.php:50
+#: packaged/dogium_2017-02-12_14-43/buddypress.php:30
+#: packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:70
+#: packaged/dogium_2017-02-12_14-43/page-templates/page-full-width.php:18
+#: packaged/dogium_2017-02-12_14-43/page-templates/page-sidebar-left.php:22
+#: packaged/dogium_2017-02-12_14-43/page-templates/system-page.php:21
+#: packaged/dogium_2017-02-12_14-43/page-templates/template-events.php:43
 #: packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:21
+#: packaged/dogium_2017-02-12_14-43/page.php:27
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:247
+#: packaged/dogium_2017-02-12_14-43/single-event.php:57
+#: packaged/dogium_2017-02-12_14-43/single.php:31
+#: page-templates/front-community.php:70 page-templates/page-full-width.php:18
+#: page-templates/page-sidebar-left.php:22 page-templates/system-page.php:21
+#: page-templates/template-events.php:43
+#: page-templates/template-marketplace.php:21 page.php:27
+#: single-dogium_dog.php:245 single-event.php:57 single.php:31
 msgid "Pages:"
 msgstr "Sivut:"
 
-#: classified-contact.php:9,
+#: buddypress/activity/activity-loop.php:54
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/activity-loop.php:54
+msgid "Load More"
+msgstr "Lataa lisää"
+
+#: buddypress/activity/activity-loop.php:68
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/activity-loop.php:68
+msgid "Sorry, there was no activity found. Please try a different filter."
+msgstr ""
+"Pahoittelut, toimintaa ei löytynyt. Ole hyvä ja kokeile jotain muuta "
+"suodatinta."
+
+#: buddypress/activity/entry.php:59
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:59
+msgid "View Conversation"
+msgstr "Näytä keskustelu"
+
+#: buddypress/activity/entry.php:66
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:66
+#, php-format
+msgid "Comments (%s)"
+msgstr "Kommentit (%s)"
+
+#: buddypress/activity/entry.php:74
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:74
+msgid "Favorite"
+msgstr "Suosikki"
+
+#: buddypress/activity/entry.php:78
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:78
+msgid "Remove Favorite"
+msgstr "Poista suosikeista"
+
+#: buddypress/activity/entry.php:117
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:117
+msgid "Join this conversation"
+msgstr "Liity keskusteluun"
+
+#: buddypress/activity/entry.php:123 comments.php:109
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:123
+#: packaged/dogium_2017-02-12_14-43/comments.php:109
+msgid "Comment"
+msgstr "Kommentti"
+
+#: buddypress/activity/entry.php:127
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:127
+msgid "Post"
+msgstr "Lähetä"
+
+#: buddypress/activity/entry.php:127 library/buddyboss-mods.php:194
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:127
+#: packaged/dogium_2017-02-12_14-43/library/buddyboss-mods.php:190
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: buddypress/activity/post-form.php:22
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/post-form.php:22
+#, php-format
+msgid "What's new in %s, %s?"
+msgstr "Mitä uutta ryhmässä %s, %s?"
+
+#: buddypress/activity/post-form.php:24
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/post-form.php:24
+#, php-format
+msgid "What's new, %s?"
+msgstr "Mitä uutta, %s?"
+
+#: buddypress/activity/post-form.php:31
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/post-form.php:31
+msgid "Post what's new"
+msgstr "Lähetä päivitys"
+
+#: buddypress/activity/post-form.php:40
+#: packaged/dogium_2017-02-12_14-43/buddypress/activity/post-form.php:40
+msgid "Post Update"
+msgstr "Lähetä päivitys"
+
+#: buddypress/groups/single/cover-image-header.php:27
+#: buddypress/members/single/cover-image-header.php:32
+#: packaged/dogium_2017-02-12_14-43/buddypress/groups/single/cover-image-header.php:27
+#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:32
+msgid "Change cover image"
+msgstr "Vaihda kansikuva"
+
+#: buddypress/members/single/cover-image-header.php:34
+#: buddypress/members/single/cover-image-header.php:35
+#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:34
+#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:35
+msgid "Edit profile fields"
+msgstr "Muokkaa profiilin tietoja"
+
+#: buddypress/members/single/cover-image-header.php:35
+#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:35
+msgid "Privacy / login settings"
+msgstr "Yksityisyys / kirjautumisasetukset"
+
+#: classified-contact-phone.php:1
+#: packaged/dogium_2017-02-12_14-43/classified-contact-phone.php:1
+msgid "To contact the listing author, please phone:"
+msgstr "Ottaaksesi yhteyttä myyjään, soita:"
+
+#: classified-contact.php:9
 #: packaged/dogium_2017-02-12_14-43/classified-contact.php:9
 msgid "Contact seller"
 msgstr "Ota yhteyttä myyjään"
 
-#: classified-contact.php:26,
+#: classified-contact.php:26
 #: packaged/dogium_2017-02-12_14-43/classified-contact.php:26
 msgid "Send message"
 msgstr "Lähetä viesti"
 
-#: classified-contact.php:29,
+#: classified-contact.php:29
 #: packaged/dogium_2017-02-12_14-43/classified-contact.php:29
 msgid "Subject"
 msgstr "Aihe"
 
-#: classified-contact.php:32,
+#: classified-contact.php:32
 #: packaged/dogium_2017-02-12_14-43/classified-contact.php:32
 msgid "Your name (required)"
 msgstr "Nimesi (pakollinen)"
 
-#: classified-contact.php:34,
+#: classified-contact.php:34
 #: packaged/dogium_2017-02-12_14-43/classified-contact.php:34
 msgid "Your email (required)"
 msgstr "Sähköpostiosoitteesi (pakollinen)"
 
-#: classified-contact.php:36, content-single-classified_listing.php:46,
-#: packaged/dogium_2017-02-12_14-43/classified-contact.php:36,
+#: classified-contact.php:36 content-single-classified_listing.php:46
+#: packaged/dogium_2017-02-12_14-43/classified-contact.php:36
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:46
 msgid "Message (required)"
 msgstr "Viesti (pakollinen)"
 
-#: classified-contact.php:38, content-single-classified_listing.php:48,
-#: packaged/dogium_2017-02-12_14-43/classified-contact.php:38,
+#: classified-contact.php:38 content-single-classified_listing.php:48
+#: packaged/dogium_2017-02-12_14-43/classified-contact.php:38
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:48
 msgid "How much is 1 + 1?"
 msgstr "Paljonko on 1 + 1?"
 
-#: classified-contact.php:40, content-single-classified_listing.php:50,
-#: packaged/dogium_2017-02-12_14-43/classified-contact.php:40,
+#: classified-contact.php:40 content-single-classified_listing.php:50
+#: packaged/dogium_2017-02-12_14-43/classified-contact.php:40
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:50
 msgid "Submit"
 msgstr "Lähetä"
 
-#: classified-contact.php:46, content-single-classified_listing.php:69,
-#: packaged/dogium_2017-02-12_14-43/classified-contact.php:46,
+#: classified-contact.php:46 content-single-classified_listing.php:69
+#: packaged/dogium_2017-02-12_14-43/classified-contact.php:46
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:69
 msgid "Close modal"
 msgstr "Sulje ikkuna"
 
-#: comments.php:26, packaged/dogium_2017-02-12_14-43/comments.php:26
+#: comments.php:26 packaged/dogium_2017-02-12_14-43/comments.php:26
 msgid "Reply"
 msgstr "Vastaa"
 
-#: comments.php:35, packaged/dogium_2017-02-12_14-43/comments.php:35
+#: comments.php:35 library/foundation.php:157
+#: packaged/dogium_2017-02-12_14-43/comments.php:35
+#: packaged/dogium_2017-02-12_14-43/library/foundation.php:157
 msgid "Your comment is awaiting moderation."
 msgstr "Kommenttisi odottaa tarkistusta."
 
-#: comments.php:59, packaged/dogium_2017-02-12_14-43/comments.php:59
+#: comments.php:54 packaged/dogium_2017-02-12_14-43/comments.php:54
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Älä lataa tätä sivua suoraan. Kiitti!"
+
+#: comments.php:59 packaged/dogium_2017-02-12_14-43/comments.php:59
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 "Tämä artikkeli on salasanasuojattu. Kirjoita salasanasi näyttääksesi "
 "kommentit."
 
-#: comments.php:72, packaged/dogium_2017-02-12_14-43/comments.php:72
+#: comments.php:72 packaged/dogium_2017-02-12_14-43/comments.php:72
 msgid "Leave a Reply"
 msgstr "Jätä kommentti"
 
-#: comments.php:72, packaged/dogium_2017-02-12_14-43/comments.php:72
+#: comments.php:72 packaged/dogium_2017-02-12_14-43/comments.php:72
+#, php-format
 msgid "Leave a Reply to %s"
 msgstr "Jätä kommentti artikkeliin %s"
 
-#: comments.php:75, packaged/dogium_2017-02-12_14-43/comments.php:75
+#: comments.php:75 packaged/dogium_2017-02-12_14-43/comments.php:75
+#, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 "Sinun täytyy <a href=\"%s\">kirjautua sisään</a> lähettääksesi kommentin."
 
-#: comments.php:79, packaged/dogium_2017-02-12_14-43/comments.php:79
+#: comments.php:79 packaged/dogium_2017-02-12_14-43/comments.php:79
+#, php-format
 msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
 msgstr ""
-"Kirjautunut sisään käyttäjänä <a href=\"%1$s/wp-admin/profile.php\">%2$s</"
-"a>."
+"Kirjautunut sisään käyttäjänä <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
 
-#: comments.php:79, packaged/dogium_2017-02-12_14-43/comments.php:79
+#: comments.php:79 packaged/dogium_2017-02-12_14-43/comments.php:79
 msgid "Log out of this account"
 msgstr "Kirjaudu ulos tältä tililtä."
 
-#: comments.php:79, packaged/dogium_2017-02-12_14-43/comments.php:79
+#: comments.php:79 packaged/dogium_2017-02-12_14-43/comments.php:79
 msgid "Log out &raquo;"
 msgstr "Kirjaudu ulos &raquo;"
 
-#: comments.php:84, packaged/dogium_2017-02-12_14-43/comments.php:84
+#: comments.php:84 packaged/dogium_2017-02-12_14-43/comments.php:84
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:42
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:33
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:62
+#: plugins/events-manager/buddypress/group-events.php:42
+#: plugins/events-manager/forms/event-editor.php:33
+#: plugins/events-manager/tables/events.php:62
 msgid "Name"
 msgstr "Nimi"
 
-#: comments.php:84, comments.php:92,
-#: packaged/dogium_2017-02-12_14-43/comments.php:84,
+#: comments.php:84 comments.php:92
+#: packaged/dogium_2017-02-12_14-43/comments.php:84
 #: packaged/dogium_2017-02-12_14-43/comments.php:92
 msgid " (required)"
 msgstr "(Pakollinen)"
 
-#: comments.php:92, packaged/dogium_2017-02-12_14-43/comments.php:92
+#: comments.php:92 packaged/dogium_2017-02-12_14-43/comments.php:92
 msgid "Email (will not be published)"
 msgstr "Sähköposti (ei julkaista)"
 
-#: comments.php:100, packaged/dogium_2017-02-12_14-43/comments.php:100
+#: comments.php:100 content-single-classified_listing-meta.php:22
+#: packaged/dogium_2017-02-12_14-43/comments.php:100
+#: packaged/dogium_2017-02-12_14-43/content-single-classified_listing-meta.php:22
 msgid "Website"
 msgstr "Verkkosivusto"
 
-#: comments.php:109, packaged/dogium_2017-02-12_14-43/comments.php:109
-msgid "Comment"
-msgstr "Kommentti"
-
-#: comments.php:115, packaged/dogium_2017-02-12_14-43/comments.php:115
+#: comments.php:115 packaged/dogium_2017-02-12_14-43/comments.php:115
 msgid "Submit Comment"
 msgstr "Lähetä kommentti"
 
-#: content-single-classified_listing.php:11,
+#: content-classified_listing.php:48
+#: packaged/dogium_2017-02-12_14-43/content-classified_listing.php:48
+#, php-format
+msgid "%s ago"
+msgstr "%s sitten"
+
+#: content-single-classified_listing-meta.php:17
+#: packaged/dogium_2017-02-12_14-43/content-single-classified_listing-meta.php:17
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:32
+#: plugins/events-manager/forms/event/location.php:32
+msgid "Location:"
+msgstr "Sijainti:"
+
+#: content-single-classified_listing-meta.php:19
+#: packaged/dogium_2017-02-12_14-43/content-single-classified_listing-meta.php:19
+msgid "Classified posted:"
+msgstr "Ilmoitus lähetetty:"
+
+#: content-single-classified_listing.php:11
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:11
 msgid "This listing is not currently active."
 msgstr "Tämä ilmoitus ei ole tällä hetkellä voimassa."
 
-#: content-single-classified_listing.php:34,
+#: content-single-classified_listing.php:34
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:34
+#, fuzzy, php-format
 msgid "Hello! Thought you might find this item (%s) interesting: %s"
 msgstr "Hei! Ajattelin, että tämä ilmoitus saattaisi kiinnostaa sinua: %s"
 
-#: content-single-classified_listing.php:37,
+#: content-single-classified_listing.php:37
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:37
 msgid "Tell a friend"
 msgstr "Kerro kaverille"
 
-#: content-single-classified_listing.php:39,
-#: content-single-classified_listing.php:42,
-#: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:39,
+#: content-single-classified_listing.php:39
+#: content-single-classified_listing.php:42
+#: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:39
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:42
 msgid "Report unappropriate content"
 msgstr "Ilmianna asiaton ilmoitus"
 
-#: content-single-classified_listing.php:44,
+#: content-single-classified_listing.php:44
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:44
 msgid "Why do you think this item is unappropriate?"
 msgstr "Miksi tämä ilmoitus on mielestäsi epäasiallinen?"
 
-#: content-single-classified_listing.php:62,
+#: content-single-classified_listing.php:62
 #: packaged/dogium_2017-02-12_14-43/content-single-classified_listing.php:62
+#, php-format
 msgid ""
 "This action is for logged in users only. Please <a href=\"%s\">login</a> or "
 "<a href=\"%s\">register</a>."
@@ -242,201 +377,86 @@ msgstr ""
 "Tämä toiminto on käytettävissä vain kirjautuneille käyttäjille. Ole hyvä ja "
 "<a href=\"%s\">kirjaudu sisään</a> tai <a href=\"%s\">luo tili</a>."
 
-#: footer.php:33, packaged/dogium_2017-02-12_14-43/footer.php:33
+#: footer.php:33 packaged/dogium_2017-02-12_14-43/footer.php:33
 msgid "My profile"
 msgstr "Oma profiili"
 
-#: footer.php:34, header.php:38,
-#: packaged/dogium_2017-02-12_14-43/footer.php:34,
+#: footer.php:34 header.php:38 packaged/dogium_2017-02-12_14-43/footer.php:34
 #: packaged/dogium_2017-02-12_14-43/header.php:38
 msgid "Logout"
 msgstr "Kirjaudu ulos"
 
-#: footer.php:36, header.php:35,
-#: packaged/dogium_2017-02-12_14-43/footer.php:36,
-#: packaged/dogium_2017-02-12_14-43/header.php:35,
+#: footer.php:36 header.php:35 packaged/dogium_2017-02-12_14-43/footer.php:36
 #: packaged/dogium_2017-02-12_14-43/header.php:35
 msgid "Login"
 msgstr "Kirjaudu sisään"
 
-#: footer.php:37, header.php:36,
-#: packaged/dogium_2017-02-12_14-43/footer.php:37,
-#: packaged/dogium_2017-02-12_14-43/header.php:36,
+#: footer.php:37 header.php:36 packaged/dogium_2017-02-12_14-43/footer.php:37
 #: packaged/dogium_2017-02-12_14-43/header.php:36
 msgid "Register"
 msgstr "Luo tili"
 
-#: header.php:38, packaged/dogium_2017-02-12_14-43/header.php:38
+#: header.php:38 packaged/dogium_2017-02-12_14-43/header.php:38
 msgid "Logged in as"
 msgstr "Kirjautunut sisään käyttäjänä"
 
-#: header.php:38, packaged/dogium_2017-02-12_14-43/header.php:38
+#: header.php:38 packaged/dogium_2017-02-12_14-43/header.php:38
 msgid "Logout?"
 msgstr "Kirjaudutaanko ulos?"
 
-#: searchform.php:12, packaged/dogium_2017-02-12_14-43/searchform.php:12
-msgid "Search for:"
-msgstr "Hae:"
+#: library/buddyboss-mods.php:181
+#: packaged/dogium_2017-02-12_14-43/library/buddyboss-mods.php:177
+msgid "Who can see this"
+msgstr "Kuka voi nähdä tämän"
 
-#: searchform.php:15, packaged/dogium_2017-02-12_14-43/searchform.php:15
-msgid "Submit search"
-msgstr "Tee haku"
+#: library/buddyboss-mods.php:192
+#: packaged/dogium_2017-02-12_14-43/library/buddyboss-mods.php:188
+msgid "Save"
+msgstr "Tallenna"
 
-#: single-dogium_dog.php:108, single-dogium_dog.php:113,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:108,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:113
-msgid "Breed:"
-msgstr "Rotu:"
-
-#: single-dogium_dog.php:126,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:126
-msgid "Date of birth:"
-msgstr "Syntymäaika:"
-
-#: single-dogium_dog.php:135,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:135
-msgid "Gender"
-msgstr "Sukupuoli"
-
-#: single-dogium_dog.php:171,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:171
-msgid "Owners:"
-msgstr "Omistajat:"
-
-#: single-dogium_dog.php:212
-msgid "Breeder:"
-msgstr "Kasvattaja:"
-
-#: single-dogium_dog.php:236,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:236
-msgid "Delete"
-msgstr "Poista"
-
-#: single-dogium_dog.php:238,
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:238
-msgid "Publish"
-msgstr "Julkaise"
-
-#: single-event.php:44, packaged/dogium_2017-02-12_14-43/single-event.php:44
-msgid "This content is private."
-msgstr "Tämä sisältö on yksityistä."
-
-#: taxonomy-event-categories.php:51,
-#: template-parts/content-events-nayttelyt.php:11,
-#: template-parts/content-events-ryhmatapahtuma.php:13,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:51,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:11,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:13
-msgid "Date(s)"
-msgstr "Päivä(t)"
-
-#: taxonomy-event-categories.php:54,
-#: template-parts/content-events-agility.php:9,
-#: template-parts/content-events-epaviralliset.php:9,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:54,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:9,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:9
-msgid "Weekday"
-msgstr "Viikonpäivä"
-
-#: taxonomy-event-categories.php:57,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:57
-msgid "Event name"
-msgstr "Tapahtuman nimi"
-
-#: taxonomy-event-categories.php:59,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:59
-msgid "Town"
-msgstr "Kaupunki"
-
-#: taxonomy-event-categories.php:62,
-#: template-parts/content-events-kurssit-ja-luennot.php:15,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:62,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:15
-msgid "Organizer"
-msgstr "Järjestäjä"
-
-#: taxonomy-event-categories.php:66,
-#: template-parts/content-events-kilpailut-kokeet-testit.php:23,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:66,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:23
-msgid "Judge"
-msgstr "Tuomari"
-
-#: taxonomy-event-categories.php:70,
-#: template-parts/content-events-nayttelyt.php:13,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:70,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:13
-msgid "Groups"
-msgstr "Ryhmät"
-
-#: taxonomy-event-categories.php:74,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:74
-msgid "Last cheapest enrollment"
-msgstr "Viimeinen halvimman hinnan ilmoittautuminen"
-
-#: taxonomy-event-categories.php:75,
-#: template-parts/content-events-agility.php:17,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:75,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:17
-msgid "Last enrollment"
-msgstr "Viimeinen ilmoittautumispäivä"
-
-#: taxonomy-event-categories.php:79,
-#: template-parts/content-events-agility.php:20,
-#: template-parts/content-events-epaviralliset.php:20,
-#: template-parts/content-events-kurssit-ja-luennot.php:27,
-#: template-parts/content-events-nayttelyt.php:26,
-#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:79,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:20,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:20,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:27,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:26
-msgid "Event website"
-msgstr "Tapahtuman verkkosivusto"
-
-#: library/contact-seller-custom-form.php:54,
+#: library/contact-seller-custom-form.php:54
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:54
+#, php-format
 msgid "Link to the classified ad in question: %s"
 msgstr "Linkki kyseessä olevaan ilmoitukseen: %s"
 
-#: library/contact-seller-custom-form.php:126,
+#: library/contact-seller-custom-form.php:126
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:126
+#, php-format
 msgid "This email was sent from your classified ad \"%s\" contact form (%s)"
 msgstr ""
-"Tämä viesti lähetettiin sinulle ilmoituksen ”%s” yhteydenottolomakkeella "
-"(%s)"
+"Tämä viesti lähetettiin sinulle ilmoituksen ”%s” yhteydenottolomakkeella (%s)"
 
-#: library/contact-seller-custom-form.php:156,
+#: library/contact-seller-custom-form.php:156
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:156
 msgid "Message sent!"
 msgstr "Viesti lähetetty!"
 
-#: library/contact-seller-custom-form.php:159,
+#: library/contact-seller-custom-form.php:159
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:159
 msgid "There were errors in the form:"
 msgstr "Lomakkeessa oli virheitä:"
 
-#: library/contact-seller-custom-form.php:160,
+#: library/contact-seller-custom-form.php:160
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:160
 msgid ""
 "Name is required and only letters and white space characters are allowed."
 msgstr ""
 "Nimi on pakollinen tieto, ja vain kirjaimet ja välilyönnit ovat sallittuja."
 
-#: library/contact-seller-custom-form.php:161,
+#: library/contact-seller-custom-form.php:161
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:161
 msgid "Email is required and it needs to be a valid email address."
 msgstr ""
 "Sähköposti on pakollinen tieto ja sähköpostiosoitteen tulee olla "
 "kelvollisessa muodossa."
 
-#: library/contact-seller-custom-form.php:162,
+#: library/contact-seller-custom-form.php:162
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:162
 msgid "Message field cannot be empty."
 msgstr "Viestikenttä ei voi olla tyhjä."
 
-#: library/contact-seller-custom-form.php:164,
+#: library/contact-seller-custom-form.php:164
 #: packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:164
 msgid ""
 "You need to answer the math question correctly. This is necessary to avoid "
@@ -445,305 +465,966 @@ msgstr ""
 "Sinun täytyy vastata oikein laskutehtävään. Tämä on välttämätöntä "
 "roskapostin välttämiseksi."
 
-#: library/custom-nav.php:16,
+#: library/custom-nav.php:16
 #: packaged/dogium_2017-02-12_14-43/library/custom-nav.php:16
 msgid "Mobile Menu Settings"
 msgstr "Mobiilivalikon asetukset"
 
-#: library/custom-nav.php:17,
+#: library/custom-nav.php:17
 #: packaged/dogium_2017-02-12_14-43/library/custom-nav.php:17
 msgid "Controls the mobile menu"
 msgstr ""
 
-#: library/custom-nav.php:22,
+#: library/custom-nav.php:22
 #: packaged/dogium_2017-02-12_14-43/library/custom-nav.php:22
 msgid "Mobile navigation layout"
 msgstr ""
 
-#: library/custom-nav.php:31,
+#: library/custom-nav.php:31
 #: packaged/dogium_2017-02-12_14-43/library/custom-nav.php:31
 msgid "topbar"
 msgstr ""
 
-#: library/events-custom-validation.php:10,
+#: library/events-custom-validation.php:10
 #: packaged/dogium_2017-02-12_14-43/library/events-custom-validation.php:10
 msgid "You are only allowed to create group events."
 msgstr "Sinulla on oikeus luoda ainostaan ryhmätapahtumia."
 
-#: library/events-custom-validation.php:15,
+#: library/events-custom-validation.php:15
 #: packaged/dogium_2017-02-12_14-43/library/events-custom-validation.php:15
 msgid "Only members are allowed to attend group events."
 msgstr "Vain jäsenet voivat osallistua ryhmätapahtumiin."
 
-#: library/events-custom-validation.php:26,
+#: library/events-custom-validation.php:26
 #: packaged/dogium_2017-02-12_14-43/library/events-custom-validation.php:26
 msgid "Category is required."
 msgstr "Kategoria on pakollinen tieto."
 
-#: library/events-custom-validation.php:31,
+#: library/events-custom-validation.php:31
 #: packaged/dogium_2017-02-12_14-43/library/events-custom-validation.php:31
 msgid "Only a single category is allowed."
 msgstr "Vain yksi kategoria sallitaan."
 
-#: library/events-custom-validation.php:39,
+#: library/events-custom-validation.php:39
 #: packaged/dogium_2017-02-12_14-43/library/events-custom-validation.php:39
 msgid "You must use the correct category for group events."
 msgstr "Sinun on käytettävä oikeaa kategoriaa ryhmätapahtumille."
 
-#: library/excerpt.php:12,
+#: library/excerpt.php:12
 #: packaged/dogium_2017-02-12_14-43/library/excerpt.php:12
 msgid "Read more"
 msgstr "Lue lisää"
 
-#: library/foundation.php:24,
+#: library/foundation.php:24
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:24
 msgid "&laquo;"
 msgstr ""
 
-#: library/foundation.php:25,
+#: library/foundation.php:25
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:25
 msgid "&raquo;"
 msgstr ""
 
-#: library/foundation.php:53,
+#: library/foundation.php:53
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:53
+#, php-format
 msgid ""
 "Please assign a menu to the primary menu location under %1$s or %2$s the "
 "design."
 msgstr ""
 
-#: library/foundation.php:54,
+#: library/foundation.php:54
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:54
+#, php-format
 msgid "<a href=\"%s\">Menus</a>"
 msgstr ""
 
-#: library/foundation.php:57,
+#: library/foundation.php:57
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:57
+#, php-format
 msgid "<a href=\"%s\">Customize</a>"
 msgstr ""
 
-#: library/foundation.php:107,
+#: library/foundation.php:107
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:107
 msgid "No Responses to"
 msgstr "Ei kommentteja artikkeliin"
 
-#: library/foundation.php:107,
+#: library/foundation.php:107
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:107
 msgid "One Response to"
 msgstr "Yksi kommentti artikkeliin"
 
-#: library/foundation.php:107,
+#: library/foundation.php:107
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:107
 msgid "% Responses to"
 msgstr "% kommenttia artikkeliin"
 
-#: library/foundation.php:147,
+#: library/foundation.php:147
 #: packaged/dogium_2017-02-12_14-43/library/foundation.php:147
+#, php-format
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: library/geodirectory-mods.php:13,
+#: library/geodirectory-mods.php:13
 #: packaged/dogium_2017-02-12_14-43/library/geodirectory-mods.php:13
 msgid "Add new listing"
 msgstr "Lisää uusi ilmoitus"
 
-#: library/geodirectory-mods.php:31,
+#: library/geodirectory-mods.php:31
 #: packaged/dogium_2017-02-12_14-43/library/geodirectory-mods.php:31
 msgid "Place categories"
 msgstr "Palvelukategoriat"
 
-#: library/navigation.php:43,
+#: library/navigation.php:43
 #: packaged/dogium_2017-02-12_14-43/library/navigation.php:43
 msgid "mobile-nav"
 msgstr ""
 
-#: library/navigation.php:210,
+#: library/navigation.php:210
 #: packaged/dogium_2017-02-12_14-43/library/navigation.php:210
 msgid "Page"
 msgstr "Sivu"
 
-#: library/widget-areas.php:13,
+#: library/responsive-images.php:31
+#: packaged/dogium_2017-02-12_14-43/library/responsive-images.php:31
+msgid "FP XSmall"
+msgstr ""
+
+#: library/responsive-images.php:32
+#: packaged/dogium_2017-02-12_14-43/library/responsive-images.php:32
+msgid "FP Small"
+msgstr ""
+
+#: library/responsive-images.php:33
+#: packaged/dogium_2017-02-12_14-43/library/responsive-images.php:33
+msgid "FP Medium"
+msgstr ""
+
+#: library/widget-areas.php:13
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:13
 msgid "News Page Sidebar"
 msgstr "Uutisten sivupalkki"
 
-#: library/widget-areas.php:14, library/widget-areas.php:23,
-#: library/widget-areas.php:32, library/widget-areas.php:41,
-#: library/widget-areas.php:51, library/widget-areas.php:61,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:14,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:23,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:32,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:41,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:51,
+#: library/widget-areas.php:14 library/widget-areas.php:23
+#: library/widget-areas.php:32 library/widget-areas.php:41
+#: library/widget-areas.php:51 library/widget-areas.php:61
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:14
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:23
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:32
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:41
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:51
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:61
 msgid "Drag widgets to this sidebar container."
 msgstr "Lisää vimpaimia tähän sivupalkkiin."
 
-#: library/widget-areas.php:22,
+#: library/widget-areas.php:22
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:22
 msgid "Events Home Sidebar"
 msgstr "Tapahtumien pääsivun sivupalkki"
 
-#: library/widget-areas.php:31,
+#: library/widget-areas.php:31
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:31
 msgid "Forums Sidebar"
 msgstr "Keskustelualueen sivupalkki"
 
-#: library/widget-areas.php:40,
+#: library/widget-areas.php:40
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:40
 msgid "Home Left Sidebar"
 msgstr "Etusivun vasen sivupalkki"
 
-#: library/widget-areas.php:50,
+#: library/widget-areas.php:50
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:50
 msgid "Community Sidebar"
 msgstr "Yhteisön sivupalkki"
 
-#: library/widget-areas.php:60,
+#: library/widget-areas.php:60
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:60
 msgid "Marketplace Sidebar"
 msgstr "Torin sivupalkki"
 
-#: library/widget-areas.php:70,
+#: library/widget-areas.php:70
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:70
 msgid "Footer widgets 1"
 msgstr "Alapalkin vimpaimet 1"
 
-#: library/widget-areas.php:71, library/widget-areas.php:81,
-#: library/widget-areas.php:91,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:71,
-#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:81,
+#: library/widget-areas.php:71 library/widget-areas.php:81
+#: library/widget-areas.php:91
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:71
+#: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:81
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:91
 msgid "Drag widgets to this footer container"
 msgstr "Lisää vimpaimia tähän sivupalkkiin"
 
-#: library/widget-areas.php:80,
+#: library/widget-areas.php:80
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:80
 msgid "Footer widgets 2"
 msgstr "Alapalkin vimpaimet 2"
 
-#: library/widget-areas.php:90,
+#: library/widget-areas.php:90
 #: packaged/dogium_2017-02-12_14-43/library/widget-areas.php:90
 msgid "Footer widgets 3"
 msgstr "Alapalkin vimpaimet 3"
 
-#: page-templates/template-marketplace.php:39,
+#: packaged/dogium_2017-02-12_14-43/page-templates/template-add-dog.php:34
+#: page-templates/template-add-dog.php:34
+#, php-format
+msgid ""
+"Only logged in users are allowed to add dogs. Please <a href=\"%s\">log in</"
+"a> or register."
+msgstr ""
+"Vain kirjautuneet käyttäjät voivat lisätä koiria. Ole hyvä ja <a href=\"%s"
+"\">kirjaudu sisään</a> tai luo tili."
+
 #: packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:39
+#: page-templates/template-marketplace.php:39
 msgid "Product categories"
 msgstr "Ilmoitusten kategoriat"
 
-#: template-parts/content-events-agility.php:8,
-#: template-parts/content-events-epaviralliset.php:8,
-#: template-parts/content-events-kilpailut-kokeet-testit.php:9,
-#: template-parts/content-events-kurssit-ja-luennot.php:10,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:8,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:8,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:9,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:10
-msgid "Date"
-msgstr "Päivämäärä"
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:29
+#: plugins/events-manager/buddypress/group-events.php:29
+msgid "No Events"
+msgstr "Ei tapahtumia"
 
-#: template-parts/content-events-agility.php:11,
-#: template-parts/content-events-epaviralliset.php:14,
-#: template-parts/content-events-kilpailut-kokeet-testit.php:14,
-#: template-parts/content-events-kurssit-ja-luennot.php:21,
-#: template-parts/content-events-nayttelyt.php:21,
-#: template-parts/content-events-ryhmatapahtuma.php:16,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:11,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:14,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:14,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:21,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:21,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:16
-msgid "Venue"
-msgstr "Tapahtumapaikka"
-
-#: template-parts/content-events-agility.php:14,
-#: template-parts/content-events-epaviralliset.php:17,
-#: template-parts/content-events-kilpailut-kokeet-testit.php:11,
-#: template-parts/content-events-kurssit-ja-luennot.php:24,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:14,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:17,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:11,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:24,
-#: plugins/events-manager/forms/event-editor.php:65,
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:43
 #: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:65
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:64
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:14
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:17
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:11
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:24
+#: plugins/events-manager/buddypress/group-events.php:43
+#: plugins/events-manager/forms/event-editor.php:65
+#: plugins/events-manager/tables/events.php:64
+#: template-parts/content-events-agility.php:14
+#: template-parts/content-events-epaviralliset.php:17
+#: template-parts/content-events-kilpailut-kokeet-testit.php:11
+#: template-parts/content-events-kurssit-ja-luennot.php:24
 msgid "Location"
 msgstr "Sijainti"
 
-#: template-parts/content-events-epaviralliset.php:11,
-#: template-parts/content-events-kurssit-ja-luennot.php:18,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:11,
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:44
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:65
+#: plugins/events-manager/buddypress/group-events.php:44
+#: plugins/events-manager/tables/events.php:65
+msgid "Date and time"
+msgstr "Päivä ja aika"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:45
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:104
+#: plugins/events-manager/buddypress/group-events.php:45
+#: plugins/events-manager/tables/events.php:104
+msgid "Bookings"
+msgstr "Ilmoittautumiset"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:97
+#: plugins/events-manager/buddypress/group-events.php:97
+msgid "This event has no location"
+msgstr "Tällä tapahtumalla ei ole sijaintia"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:131
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:105
+#: plugins/events-manager/buddypress/group-events.php:131
+#: plugins/events-manager/tables/events.php:105
+msgid "Booked"
+msgstr "Varattu"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:133
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:23
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:107
+#: plugins/events-manager/buddypress/group-events.php:133
+#: plugins/events-manager/tables/events.php:23
+#: plugins/events-manager/tables/events.php:107
+msgid "Pending"
+msgstr "Odottaa"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:139
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:66
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:113
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:147
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:236
+#: plugins/events-manager/buddypress/group-events.php:139
+#: plugins/events-manager/forms/event/bookings.php:66
+#: plugins/events-manager/tables/events.php:113
+#: plugins/events-manager/tables/events.php:147 single-dogium_dog.php:234
+msgid "Delete"
+msgstr "Poista"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:143
+#: plugins/events-manager/buddypress/group-events.php:143
+#, php-format
+msgid "Duplicate %s"
+msgstr "Kopioi %s"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:143
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:12
+#: plugins/events-manager/buddypress/group-events.php:143
+#: plugins/events-manager/forms/event-editor.php:12
+msgid "Event"
+msgstr "Tapahtuma"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:144
+#: plugins/events-manager/buddypress/group-events.php:144
+msgid "Duplicate"
+msgstr "Kopioi"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:165
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:141
+#: plugins/events-manager/buddypress/group-events.php:165
+#: plugins/events-manager/tables/events.php:141
+msgid ""
+"WARNING! You will delete ALL recurrences of this event, including booking "
+"history associated with any event in this recurrence. To keep booking "
+"information, go to the relevant single event and save it to detach it from "
+"this recurrence series."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:169
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:145
+#: plugins/events-manager/buddypress/group-events.php:169
+#: plugins/events-manager/tables/events.php:145
+msgid "Edit Recurring Events"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:180
+#: plugins/events-manager/buddypress/group-events.php:180
+msgid "Booking not available"
+msgstr "Ilmoittautuminen ei ole käytössä"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:12
+#: plugins/events-manager/forms/event-editor.php:12
+msgid "Unauthorized Access"
+msgstr "Pääsy kielletty"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:12
+#: plugins/events-manager/forms/event-editor.php:12
+#, php-format
+msgid "You do not have the rights to manage this %s."
+msgstr "Sinulla ei ole oikeutta muokata tätä %s."
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:30
+#: plugins/events-manager/forms/event-editor.php:30
+msgid "Your Details"
+msgstr "Tietosi"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:37
+#: plugins/events-manager/forms/event-editor.php:37
+msgid "Email"
+msgstr "Sähköposti"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:44
+#: plugins/events-manager/forms/event-editor.php:44
+msgid "Event Name"
+msgstr "Tapahtuman nimi"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:51
+#: plugins/events-manager/forms/event-editor.php:51
+msgid "Dates and time"
+msgstr "Päivämäärät ja aika"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:71
+#: plugins/events-manager/forms/event-editor.php:71
+msgid "Details"
+msgstr "Tiedot"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:79
+#: plugins/events-manager/forms/event-editor.php:79
+msgid "Details about the event."
+msgstr "Tietoja tapahtumasta."
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:79
+#: plugins/events-manager/forms/event-editor.php:79
+msgid "HTML allowed."
+msgstr "HTML sallittu."
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:89
+#: plugins/events-manager/forms/event-editor.php:89
+msgid "Event Image"
+msgstr "Tapahtumakuva"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:97
+#: plugins/events-manager/forms/event-editor.php:97
+msgid "Bookings/Registration"
+msgstr "Ilmoittautumiset"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:14
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:14
+msgid "Group Ticket"
+msgstr "Ryhmälippu"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:20
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:20
+msgid "Enter a maximum number of spaces (required)."
+msgstr "Anna osallistujien maksimimäärä (pakollinen)."
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:20
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:20
+msgid "Enter a maximum number of attendees (required)."
+msgstr "Anna osallistujien maksimimäärä (pakollinen)."
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:27
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:46
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:27
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:46
+msgid ""
+"Add a start or end date (or both) to impose time constraints on ticket "
+"availability. Leave either blank for no upper/lower limit."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:28
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:28
+msgid "Tickets available from"
+msgstr "Ilmoittautuminen avoinna alkaen"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:36
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:55
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:84
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:89
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:143
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:36
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:55
+#: plugins/events-manager/forms/event/bookings.php:84
+#: plugins/events-manager/forms/event/bookings.php:89
+#: plugins/events-manager/forms/event/bookings.php:143
+msgid "day(s)"
+msgstr "päivä(ä)"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:38
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:39
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:57
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:58
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:145
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:146
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:38
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:39
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:57
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:58
+#: plugins/events-manager/forms/event/bookings.php:145
+#: plugins/events-manager/forms/event/bookings.php:146
+#, php-format
+msgctxt "before or after"
+msgid "%s the event starts"
+msgstr "%s tapahtuman alkuun"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:38
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:57
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:145
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:38
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:57
+#: plugins/events-manager/forms/event/bookings.php:145
+msgid "Before"
+msgstr "Ennen"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:39
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:58
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:146
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:39
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:58
+#: plugins/events-manager/forms/event/bookings.php:146
+msgid "After"
+msgstr "Jälkeen"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:42
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:61
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:42
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:61
+msgctxt "time"
+msgid "at"
+msgstr "klo"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:47
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:47
+msgid "Tickets available until"
+msgstr "Ilmoittautuminen päättyy"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:67
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:67
+msgid ""
+"If checked every booking must select one or the minimum number of this "
+"ticket."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:67
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:67
+msgid "Required?"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:79
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:79
+msgid "Show Advanced Options"
+msgstr "Näytä edistyneet vaihtoehdot"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:79
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:79
+msgid "Hide Advanced Options"
+msgstr "Piilota edistyneet vaihtoehdot"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:7
+#: plugins/events-manager/forms/event/bookings.php:7
+msgid "Enable registration for this event"
+msgstr "Salli ilmoittautuminen tähän tapahtumaan"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:21
+#: plugins/events-manager/forms/event/bookings.php:21
+msgid "Booking options"
+msgstr "Ilmoittautumisen vaihtoehdot"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:28
+#: plugins/events-manager/forms/event/bookings.php:28
+msgid "Tickets"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:29
+#: plugins/events-manager/forms/event/bookings.php:29
+msgid ""
+"You can have single or multiple tickets, where certain tickets become "
+"available under certain conditions, e.g. early bookings, group discounts, "
+"maximum bookings per ticket, etc."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:29
+#: plugins/events-manager/forms/event/bookings.php:29
+msgid "Basic HTML is allowed in ticket labels and descriptions."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:33
+#: plugins/events-manager/forms/event/bookings.php:33
+msgid "Ticket Name"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:34
+#: plugins/events-manager/forms/event/bookings.php:34
+msgid "Price"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:35
+#: plugins/events-manager/forms/event/bookings.php:35
+msgid "Min/Max"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:36
+#: plugins/events-manager/forms/event/bookings.php:36
+msgid "Start/End"
+msgstr "Alku/loppu"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:37
+#: plugins/events-manager/forms/event/bookings.php:37
+msgid "Avail. Spaces"
+msgstr "Vapaat paikat"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:38
+#: plugins/events-manager/forms/event/bookings.php:38
+msgid "Booked Spaces"
+msgstr "Varatut paikat"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:45
+#: plugins/events-manager/forms/event/bookings.php:45
+msgid "Add new ticket"
+msgstr "Lisää uusi lippu"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:68
+#: plugins/events-manager/forms/event/bookings.php:68
+msgid "View Bookings"
+msgstr "Näytä varaukset"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:73
+#: plugins/events-manager/forms/event/bookings.php:73
+msgid "Free"
+msgstr "Ilmainen"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:105
+#: plugins/events-manager/forms/event/bookings.php:105
+msgid "Close Ticket Editor"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:122
+#: plugins/events-manager/forms/event/bookings.php:122
+msgid "Event Options"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:124
+#: plugins/events-manager/forms/event/bookings.php:124
+msgid "Total Spaces"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:126
+#: plugins/events-manager/forms/event/bookings.php:126
+msgid ""
+"Individual tickets with remaining spaces will not be available if total "
+"booking spaces reach this limit. Leave blank for no limit."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:129
+#: plugins/events-manager/forms/event/bookings.php:129
+msgid "Maximum Spaces Per Booking"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:131
+#: plugins/events-manager/forms/event/bookings.php:131
+msgid ""
+"If set, the total number of spaces for a single booking to this event cannot "
+"exceed this amount."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:131
+#: plugins/events-manager/forms/event/bookings.php:131
+msgid "Leave blank for no limit."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:134
+#: plugins/events-manager/forms/event/bookings.php:134
+msgid "Booking Cut-Off Date"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:148
+#: plugins/events-manager/forms/event/bookings.php:148
+msgid "at"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:152
+#: plugins/events-manager/forms/event/bookings.php:152
+msgid ""
+"This is the definite date after which bookings will be closed for this "
+"event, regardless of individual ticket settings above. Default value will be "
+"the event start date."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/group.php:32
+#: plugins/events-manager/forms/event/group.php:32
+msgid "Select group"
+msgstr "Valitse ryhmä"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/group.php:53
+#: plugins/events-manager/forms/event/group.php:53
+msgid "No groups defined yet."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:9
+#: plugins/events-manager/forms/event/location.php:9
+msgid "This event does not have a physical location."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:35
+#: plugins/events-manager/forms/event/location.php:35
+msgid "No Location"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:74
+#: plugins/events-manager/forms/event/location.php:74
+msgid "Location Name:"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:78
+#: plugins/events-manager/forms/event/location.php:78
+msgid "You cannot edit saved locations here."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:78
+#: plugins/events-manager/forms/event/location.php:78
+msgid "Reset this form to create a location or search again."
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:82
+#: plugins/events-manager/forms/event/location.php:82
+msgid "Address:"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:88
+#: plugins/events-manager/forms/event/location.php:88
+msgid "City/Town:"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:94
+#: plugins/events-manager/forms/event/location.php:94
+msgid "Postcode:"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:100
+#: plugins/events-manager/forms/event/location.php:100
+msgid "Country:"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/location.php:103
+#: plugins/events-manager/forms/event/location.php:103
+msgid "none selected"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:8
+#: plugins/events-manager/forms/event/when.php:8
+msgid "Start date"
+msgstr "Alkupäivä"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:11
+#: plugins/events-manager/forms/event/when.php:11
+msgid "End date"
+msgstr "Päättymispäivä"
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:16
+#: plugins/events-manager/forms/event/when.php:16
+msgid "Event starts at"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:18
+#: plugins/events-manager/forms/event/when.php:18
+msgid "to"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:20
+#: plugins/events-manager/forms/event/when.php:20
+msgid "All day"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:14
+#: plugins/events-manager/tables/events.php:14
+msgid "Add New"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:21
+#: plugins/events-manager/tables/events.php:21
+msgid "Upcoming"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:26
+#: plugins/events-manager/tables/events.php:26
+msgid "Draft"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:28
+#: plugins/events-manager/tables/events.php:28
+msgid "Past Events"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:31
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:36
+#: plugins/events-manager/tables/events.php:31
+#: plugins/events-manager/tables/events.php:36
+msgid "Search Events"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:118
+#: plugins/events-manager/tables/events.php:118
+msgid "Duplicate this event"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/searchform.php:12 searchform.php:12
+msgid "Search for:"
+msgstr "Hae:"
+
+#: packaged/dogium_2017-02-12_14-43/searchform.php:13 searchform.php:13
+msgid "Search"
+msgstr ""
+
+#: packaged/dogium_2017-02-12_14-43/searchform.php:15 searchform.php:15
+msgid "Submit search"
+msgstr "Tee haku"
+
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:108
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:113
+#: single-dogium_dog.php:106 single-dogium_dog.php:111
+msgid "Breed:"
+msgstr "Rotu:"
+
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:126
+#: single-dogium_dog.php:124
+msgid "Date of birth:"
+msgstr "Syntymäaika:"
+
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:135
+#: single-dogium_dog.php:133
+msgid "Gender"
+msgstr "Sukupuoli"
+
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:171
+#: single-dogium_dog.php:169
+msgid "Owners:"
+msgstr "Omistajat:"
+
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:212
+msgid "Breeders:"
+msgstr "Kasvattajat:"
+
+#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:238
+#: single-dogium_dog.php:236
+msgid "Publish"
+msgstr "Julkaise"
+
+#: packaged/dogium_2017-02-12_14-43/single-event.php:44 single-event.php:44
+msgid "This content is private."
+msgstr "Tämä sisältö on yksityistä."
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:51
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:11
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:13
+#: taxonomy-event-categories.php:51
+#: template-parts/content-events-nayttelyt.php:11
+#: template-parts/content-events-ryhmatapahtuma.php:13
+msgid "Date(s)"
+msgstr "Päivä(t)"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:54
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:9
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:9
+#: taxonomy-event-categories.php:54 template-parts/content-events-agility.php:9
+#: template-parts/content-events-epaviralliset.php:9
+msgid "Weekday"
+msgstr "Viikonpäivä"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:57
+#: taxonomy-event-categories.php:57
+msgid "Event name"
+msgstr "Tapahtuman nimi"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:59
+#: taxonomy-event-categories.php:59
+msgid "Town"
+msgstr "Kaupunki"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:62
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:15
+#: taxonomy-event-categories.php:62
+#: template-parts/content-events-kurssit-ja-luennot.php:15
+msgid "Organizer"
+msgstr "Järjestäjä"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:66
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:23
+#: taxonomy-event-categories.php:66
+#: template-parts/content-events-kilpailut-kokeet-testit.php:23
+msgid "Judge"
+msgstr "Tuomari"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:70
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:13
+#: taxonomy-event-categories.php:70
+#: template-parts/content-events-nayttelyt.php:13
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:74
+#: taxonomy-event-categories.php:74
+msgid "Last cheapest enrollment"
+msgstr "Viimeinen halvimman hinnan ilmoittautuminen"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:75
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:17
+#: taxonomy-event-categories.php:75
+#: template-parts/content-events-agility.php:17
+msgid "Last enrollment"
+msgstr "Viimeinen ilmoittautumispäivä"
+
+#: packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:79
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:20
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:20
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:27
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:26
+#: taxonomy-event-categories.php:79
+#: template-parts/content-events-agility.php:20
+#: template-parts/content-events-epaviralliset.php:20
+#: template-parts/content-events-kurssit-ja-luennot.php:27
+#: template-parts/content-events-nayttelyt.php:26
+msgid "Event website"
+msgstr "Tapahtuman verkkosivusto"
+
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:8
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:8
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:9
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:10
+#: template-parts/content-events-agility.php:8
+#: template-parts/content-events-epaviralliset.php:8
+#: template-parts/content-events-kilpailut-kokeet-testit.php:9
+#: template-parts/content-events-kurssit-ja-luennot.php:10
+msgid "Date"
+msgstr "Päivämäärä"
+
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:11
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:14
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:14
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:21
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:21
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:16
+#: template-parts/content-events-agility.php:11
+#: template-parts/content-events-epaviralliset.php:14
+#: template-parts/content-events-kilpailut-kokeet-testit.php:14
+#: template-parts/content-events-kurssit-ja-luennot.php:21
+#: template-parts/content-events-nayttelyt.php:21
+#: template-parts/content-events-ryhmatapahtuma.php:16
+msgid "Venue"
+msgstr "Tapahtumapaikka"
+
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:11
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:18
+#: template-parts/content-events-epaviralliset.php:11
+#: template-parts/content-events-kurssit-ja-luennot.php:18
 msgid "Info"
 msgstr "Info"
 
-#: template-parts/content-events-kilpailut-kokeet-testit.php:17,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:17
+#: template-parts/content-events-kilpailut-kokeet-testit.php:17
 msgid "Type of test"
 msgstr "Kokeen tyyppi"
 
-#: template-parts/content-events-kilpailut-kokeet-testit.php:20,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kilpailut-kokeet-testit.php:20
+#: template-parts/content-events-kilpailut-kokeet-testit.php:20
 msgid "Classes"
 msgstr "Luokat"
 
-#: template-parts/content-events-kurssit-ja-luennot.php:12,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:12
+#: template-parts/content-events-kurssit-ja-luennot.php:12
 msgid "Lecturer / instructor"
 msgstr "Luennoija / ohjaaja"
 
-#: template-parts/content-events-nayttelyt.php:16,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:16
+#: template-parts/content-events-nayttelyt.php:16
 msgid "Last enrollment day with cheapest price"
 msgstr "Viimeinen halvimman hinnan ilmoittautuminen"
 
-#: template-parts/content-events-nayttelyt.php:19,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:19
+#: template-parts/content-events-nayttelyt.php:19
 msgid "Last enrollment day"
 msgstr "Viimeinen ilmoittautumispäivä"
 
-#: template-parts/content-events-nayttelyt.php:22,
-#: template-parts/content-events-ryhmatapahtuma.php:17,
-#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:22,
+#: packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:22
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:17
+#: template-parts/content-events-nayttelyt.php:22
+#: template-parts/content-events-ryhmatapahtuma.php:17
 msgid "Contact information"
 msgstr "Yhteystiedot"
 
-#: template-parts/content-events-ryhmatapahtuma.php:23,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:23
+#: template-parts/content-events-ryhmatapahtuma.php:23
 msgid "Attendees"
 msgstr "Osallistujat"
 
-#: template-parts/content-events-ryhmatapahtuma.php:27,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-events-ryhmatapahtuma.php:27
+#: template-parts/content-events-ryhmatapahtuma.php:27
 msgid "Available spaces:"
 msgstr "Vapaat paikat:"
 
-#: template-parts/content-none.php:14,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-none.php:14
+#: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Mitään ei löytynyt"
 
-#: template-parts/content-none.php:20,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-none.php:20
+#: template-parts/content-none.php:20
+#, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "Valmiina julkaisemaan ensimmäisen artikkelisi? <a href=\"%1$s\">Aloita "
 "täältä</a>."
 
-#: template-parts/content-none.php:24,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-none.php:24
+#: template-parts/content-none.php:24
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Pahoittelut, mutta hakutermejäsi vastaavia tuloksia ei löytynyt. Ole hyvä "
-"ja yritä uudelleen eri hakusanoilla."
+"Pahoittelut, mutta hakutermejäsi vastaavia tuloksia ei löytynyt. Ole hyvä ja "
+"yritä uudelleen eri hakusanoilla."
 
-#: template-parts/content-none.php:29,
 #: packaged/dogium_2017-02-12_14-43/template-parts/content-none.php:29
+#: template-parts/content-none.php:29
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -751,96 +1432,19 @@ msgstr ""
 "Näyttää siltä, että hakemaasi sisältöä ei löydy. Ehkä hakutoiminnon käyttö "
 "saattaisi auttaa."
 
-#: buddypress/activity/entry.php:66,
-#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:66
-msgid "Comments (%s)"
-msgstr "Kommentit (%s)"
+#: single-dogium_dog.php:25
+#, php-format
+msgid ""
+"Your dog %s has been saved as a draft, meaning it's not visible to other "
+"users. You can add images, basic information like date of birth, gender etc. "
+"You can also add additional owners to %s. Have fun and once you're ready to "
+"go live, hit 'Publish'."
+msgstr ""
+"Koirasi %s on tallennettu luonnoksena, tarkoittaen, että se ei näy vielä "
+"muille käyttäjille. Voit lisätä kuvia, perustietoja kuten syntymäajan, "
+"sukupuolen ym. Voit myös lisätä koirallesi %s muita omistajia. Pidä hauskaa "
+"ja kun olet valmis, paina ’Julkaise’."
 
-#: buddypress/activity/entry.php:117,
-#: packaged/dogium_2017-02-12_14-43/buddypress/activity/entry.php:117
-msgid "Join this conversation"
-msgstr "Liity keskusteluun"
-
-#: packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:212
-msgid "Breeders:"
-msgstr "Kasvattajat:"
-
-#: buddypress/groups/single/cover-image-header.php:27,
-#: buddypress/members/single/cover-image-header.php:32,
-#: packaged/dogium_2017-02-12_14-43/buddypress/groups/single/cover-image-header.php:27,
-#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:32,
-#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:32
-msgid "Change cover image"
-msgstr "Vaihda kansikuva"
-
-#: buddypress/members/single/cover-image-header.php:34,
-#: buddypress/members/single/cover-image-header.php:35,
-#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:34,
-#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:35
-msgid "Edit profile fields"
-msgstr "Muokkaa profiilin tietoja"
-
-#: buddypress/members/single/cover-image-header.php:35,
-#: packaged/dogium_2017-02-12_14-43/buddypress/members/single/cover-image-header.php:35
-msgid "Privacy / login settings"
-msgstr "Yksityisyys / kirjautumisasetukset"
-
-#: plugins/events-manager/buddypress/group-events.php:45,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:45
-msgid "Bookings"
-msgstr "Ilmoittautumiset"
-
-#: plugins/events-manager/buddypress/group-events.php:97,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:97
-msgid "This event has no location"
-msgstr "Tällä tapahtumalla ei ole sijaintia"
-
-#: plugins/events-manager/buddypress/group-events.php:180,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:180
-msgid "Booking not available"
-msgstr "Ilmoittautuminen ei ole käytössä"
-
-#: plugins/events-manager/forms/event-editor.php:51,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event-editor.php:51
-msgid "Dates and time"
-msgstr "Päivämäärät ja aika"
-
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:14,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:14
-msgid "Group Ticket"
-msgstr "Ryhmälippu"
-
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:20,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:20
-msgid "Enter a maximum number of attendees (required)."
-msgstr "Anna osallistujien maksimimäärä (pakollinen)."
-
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:28,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:28
-msgid "Tickets available from"
-msgstr "Ilmoittautuminen avoinna alkaen"
-
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:47,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings-ticket-form.php:47
-msgid "Tickets available until"
-msgstr "Ilmoittautuminen päättyy"
-
-#: plugins/events-manager/forms/event/bookings.php:21,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/bookings.php:21
-msgid "Booking options"
-msgstr "Ilmoittautumisen vaihtoehdot"
-
-#: plugins/events-manager/forms/event/group.php:32,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/group.php:32
-msgid "Select group"
-msgstr "Valitse ryhmä"
-
-#: plugins/events-manager/forms/event/when.php:8,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:8
-msgid "Start date"
-msgstr "Alkupäivä"
-
-#: plugins/events-manager/forms/event/when.php:11,
-#: packaged/dogium_2017-02-12_14-43/plugins/events-manager/forms/event/when.php:11
-msgid "End date"
-msgstr "Päättymispäivä"
+#: single-dogium_dog.php:210
+msgid "Breeder:"
+msgstr "Kasvattaja:"

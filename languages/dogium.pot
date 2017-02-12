@@ -261,6 +261,14 @@ msgstr ""
 msgid "Event website"
 msgstr ""
 
+#: library/buddyboss-mods.php:21
+msgid "Personal Feed"
+msgstr ""
+
+#: library/buddyboss-mods.php:26
+msgid "Newsfeed"
+msgstr ""
+
 #: library/contact-seller-custom-form.php:54, packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:54
 msgid "Link to the classified ad in question: %s"
 msgstr ""
