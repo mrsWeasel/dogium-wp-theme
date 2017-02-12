@@ -159,6 +159,9 @@ select#bbm-media-privacy {
 	}
 	.activity-header {
 		@include font-size(0.8);
+		.avatar {
+			display: none;
+		}
 		p {
 			color: $dark-gray;
 			font-weight: bold;
