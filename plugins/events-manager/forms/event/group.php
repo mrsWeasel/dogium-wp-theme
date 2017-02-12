@@ -29,6 +29,7 @@ if ( bp_is_group() ) {
 	<?php
 } elseif ( count($user_groups) > 0 ) { 
 	?>
+	<?php esc_html_e('Select group', 'dogium'); ?><br>
 	<select name="group_id">
 		<?php
 		//in case user isn't a group mod, but can edit other users' events

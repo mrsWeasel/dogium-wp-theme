@@ -63,10 +63,6 @@ $EM_Event = em_get_event($post->ID, 'post_id');
 	</div>
 	</div>
 	<div class="large-5 columns">
-		<?php
-		echo '<pre>';
-		print_r( $EM_Event );
-		echo '</pre>'; ?>
 		<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONMAP[/events_list]");?>
 
 	</div>

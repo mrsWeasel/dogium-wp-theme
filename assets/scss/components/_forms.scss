@@ -38,12 +38,33 @@
 	}
 }
 
+#em-wrapper form {
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	select,
+	textarea {
+		width: 80%;
+		margin-bottom: 0;
+	}
+	i {
+		display: none;
+	}
+	td {
+		vertical-align: middle;
+	}
+	.ticket-options {
+		margin-top: rem-calc(10);
+		margin-bottom: rem-calc(20);
+	}
+}
+
 #search-container {
 	background: $light-gray;
 	position: absolute;
 	top: 100%;
 	right: 0;
-	width: 100%;
+	width: 50%;
 	padding: rem-calc(10) rem-calc(15);
 	font-size: 0; // whitespace hack
 	z-index: 99;
