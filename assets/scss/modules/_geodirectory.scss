@@ -2,6 +2,14 @@
 	display: none;
 }
 
+.geodir_category_list_view li.geodir-gridview h3 {
+    
+    line-height: $global-lineheight;
+    text-overflow: initial;
+    overflow: visible;
+    white-space: initial;
+}
+
 .geodir_map_container {
 	margin-bottom: 0;
 	img {

@@ -46,6 +46,8 @@ function dogium_geodir_list_output() {
 
 add_action('geodir_home_sidebar_left', 'dogium_geodir_list_output', 1);
 add_action('geodir_detail_sidebar_inside', 'dogium_geodir_list_output', 1);
+add_action('geodir_search_sidebar_right', 'dogium_geodir_list_output', 1);
+add_action('geodir_listings_sidebar_right', 'dogium_geodir_list_output', 1);
 
 // remove place details from sidebar
 remove_action('geodir_detail_sidebar_inside', 'geodir_details_sidebar_place_details', 10);
