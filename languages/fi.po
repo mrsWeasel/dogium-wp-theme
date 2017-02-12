@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dogium\n"
-"POT-Creation-Date: 2017-02-12 21:40+0200\n"
+"POT-Creation-Date: 2017-02-12 23:28+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,6 +33,33 @@ msgstr ""
 "Etsimäsi sivu on saatettu poistaa, sen nimi on voinut vaihtua tai se on "
 "tilapäisesti poissa käytöstä."
 
+#: archive.php:19
+#, php-format
+msgid "All posts in category \"%s\""
+msgstr "Kaikki artikkelit kategoriassa ”%s”"
+
+#: archive.php:22
+#, php-format
+msgid "All posts tagged \"%s\""
+msgstr "Kaikki artikkelit, joissa on tunniste ”%s”"
+
+#: archive.php:26
+#, php-format
+msgid "All posts written by %s"
+msgstr "Kaikki artikkelit, joiden kirjoittaja on %s"
+
+#: archive.php:29
+msgid "Daily archive"
+msgstr "Päiväkohtainen arkisto"
+
+#: archive.php:32
+msgid "Monthly archive"
+msgstr "Kuukausikohtainen arkisto"
+
+#: archive.php:35
+msgid "Yearly archive"
+msgstr "Vuosikohtainen arkisto"
+
 #: archive.php:79 home.php:40 index.php:40
 #: packaged/dogium_2017-02-12_14-43/archive.php:79
 #: packaged/dogium_2017-02-12_14-43/home.php:40
@@ -52,6 +79,14 @@ msgstr "&larr; Vanhemmat artikkelit"
 #: search.php:41 taxonomy-event-categories.php:149
 msgid "Newer posts &rarr;"
 msgstr "Uudemmat artikkelit &rarr;"
+
+#: bbpress.php:17
+msgid "Discussion"
+msgstr "Keskustelu"
+
+#: bbpress.php:18
+msgid "Please keep up good spirit and polite language"
+msgstr "Keskustelualueella vaalitaan hyvää henkeä ja kohteliasta käytöstä"
 
 #: bbpress.php:47 buddypress.php:27
 #: packaged/dogium_2017-02-12_14-43/bbpress.php:47
@@ -569,7 +604,7 @@ msgstr ""
 #: library/geodirectory-mods.php:13
 #: packaged/dogium_2017-02-12_14-43/library/geodirectory-mods.php:13
 msgid "Add new listing"
-msgstr "Lisää uusi ilmoitus"
+msgstr "Lisää uusi palvelu"
 
 #: library/geodirectory-mods.php:31
 #: packaged/dogium_2017-02-12_14-43/library/geodirectory-mods.php:31
@@ -667,7 +702,7 @@ msgid "Footer widgets 3"
 msgstr "Alapalkin vimpaimet 3"
 
 #: packaged/dogium_2017-02-12_14-43/page-templates/template-add-dog.php:34
-#: page-templates/template-add-dog.php:34
+#: page-templates/template-add-dog.php:33
 #, php-format
 msgid ""
 "Only logged in users are allowed to add dogs. Please <a href=\"%s\">log in</"

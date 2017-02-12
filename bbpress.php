@@ -14,8 +14,8 @@
 
  $page_title = $page_subtitle = '';
   if ( bbp_is_forum_archive() ) {
-      $page_title = bbp_get_forum_archive_title();
-      $page_subtitle = esc_html('Please keep up good spirit and polite language', 'dogium');
+      $page_title = esc_html__('Discussion', 'dogium');
+      $page_subtitle = esc_html__('Please keep up good spirit and polite language', 'dogium');
   } elseif ( bbp_is_single_forum() ) {
       $page_title = bbp_get_forum_title();   
   } elseif ( bbp_is_topic_archive() ) {

@@ -21,6 +21,30 @@ msgstr ""
 msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
 msgstr ""
 
+#: archive.php:19
+msgid "All posts in category \"%s\""
+msgstr ""
+
+#: archive.php:22
+msgid "All posts tagged \"%s\""
+msgstr ""
+
+#: archive.php:26
+msgid "All posts written by %s"
+msgstr ""
+
+#: archive.php:29
+msgid "Daily archive"
+msgstr ""
+
+#: archive.php:32
+msgid "Monthly archive"
+msgstr ""
+
+#: archive.php:35
+msgid "Yearly archive"
+msgstr ""
+
 #: archive.php:79, home.php:40, index.php:40, search.php:40, taxonomy-event-categories.php:148, packaged/dogium_2017-02-12_14-43/archive.php:79, packaged/dogium_2017-02-12_14-43/home.php:40, packaged/dogium_2017-02-12_14-43/index.php:40, packaged/dogium_2017-02-12_14-43/search.php:40, packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:148
 msgid "&larr; Older posts"
 msgstr ""
@@ -29,11 +53,19 @@ msgstr ""
 msgid "Newer posts &rarr;"
 msgstr ""
 
-#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:235, page-templates/front-community.php:67, page-templates/template-marketplace.php:18, packaged/dogium_2017-02-12_14-43/bbpress.php:47, packaged/dogium_2017-02-12_14-43/buddypress.php:27, packaged/dogium_2017-02-12_14-43/page.php:24, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:235, packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:67, packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:18, plugins/events-manager/buddypress/group-events.php:119, plugins/events-manager/tables/events.php:98, packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:119, packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:98
+#: bbpress.php:17
+msgid "Discussion"
+msgstr ""
+
+#: bbpress.php:18
+msgid "Please keep up good spirit and polite language"
+msgstr ""
+
+#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:233, page-templates/front-community.php:67, page-templates/template-marketplace.php:18, packaged/dogium_2017-02-12_14-43/bbpress.php:47, packaged/dogium_2017-02-12_14-43/buddypress.php:27, packaged/dogium_2017-02-12_14-43/page.php:24, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:235, packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:67, packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:18, plugins/events-manager/buddypress/group-events.php:119, plugins/events-manager/tables/events.php:98, packaged/dogium_2017-02-12_14-43/plugins/events-manager/buddypress/group-events.php:119, packaged/dogium_2017-02-12_14-43/plugins/events-manager/tables/events.php:98
 msgid "Edit"
 msgstr ""
 
-#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:247, single-event.php:57, single.php:31, page-templates/front-community.php:70, page-templates/page-full-width.php:18, page-templates/page-sidebar-left.php:22, page-templates/system-page.php:21, page-templates/template-events.php:43, page-templates/template-marketplace.php:21, packaged/dogium_2017-02-12_14-43/bbpress.php:50, packaged/dogium_2017-02-12_14-43/buddypress.php:30, packaged/dogium_2017-02-12_14-43/page.php:27, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:247, packaged/dogium_2017-02-12_14-43/single-event.php:57, packaged/dogium_2017-02-12_14-43/single.php:31, packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:70, packaged/dogium_2017-02-12_14-43/page-templates/page-full-width.php:18, packaged/dogium_2017-02-12_14-43/page-templates/page-sidebar-left.php:22, packaged/dogium_2017-02-12_14-43/page-templates/system-page.php:21, packaged/dogium_2017-02-12_14-43/page-templates/template-events.php:43, packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:21
+#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:245, single-event.php:57, single.php:31, page-templates/front-community.php:70, page-templates/page-full-width.php:18, page-templates/page-sidebar-left.php:22, page-templates/system-page.php:21, page-templates/template-events.php:43, page-templates/template-marketplace.php:21, packaged/dogium_2017-02-12_14-43/bbpress.php:50, packaged/dogium_2017-02-12_14-43/buddypress.php:30, packaged/dogium_2017-02-12_14-43/page.php:27, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:247, packaged/dogium_2017-02-12_14-43/single-event.php:57, packaged/dogium_2017-02-12_14-43/single.php:31, packaged/dogium_2017-02-12_14-43/page-templates/front-community.php:70, packaged/dogium_2017-02-12_14-43/page-templates/page-full-width.php:18, packaged/dogium_2017-02-12_14-43/page-templates/page-sidebar-left.php:22, packaged/dogium_2017-02-12_14-43/page-templates/system-page.php:21, packaged/dogium_2017-02-12_14-43/page-templates/template-events.php:43, packaged/dogium_2017-02-12_14-43/page-templates/template-marketplace.php:21
 msgid "Pages:"
 msgstr ""
 
@@ -189,31 +221,35 @@ msgstr ""
 msgid "Submit search"
 msgstr ""
 
-#: single-dogium_dog.php:108, single-dogium_dog.php:113, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:108, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:113
+#: single-dogium_dog.php:25
+msgid "Your dog %s has been saved as a draft, meaning it's not visible to other users. You can add images, basic information like date of birth, gender etc. You can also add additional owners to %s. Have fun and once you're ready to go live, hit 'Publish'."
+msgstr ""
+
+#: single-dogium_dog.php:106, single-dogium_dog.php:111, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:108, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:113
 msgid "Breed:"
 msgstr ""
 
-#: single-dogium_dog.php:126, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:126
+#: single-dogium_dog.php:124, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:126
 msgid "Date of birth:"
 msgstr ""
 
-#: single-dogium_dog.php:135, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:135
+#: single-dogium_dog.php:133, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:135
 msgid "Gender"
 msgstr ""
 
-#: single-dogium_dog.php:171, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:171
+#: single-dogium_dog.php:169, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:171
 msgid "Owners:"
 msgstr ""
 
-#: single-dogium_dog.php:212
+#: single-dogium_dog.php:210
 msgid "Breeder:"
 msgstr ""
 
-#: single-dogium_dog.php:236, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:236
+#: single-dogium_dog.php:234, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:236
 msgid "Delete"
 msgstr ""
 
-#: single-dogium_dog.php:238, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:238
+#: single-dogium_dog.php:236, packaged/dogium_2017-02-12_14-43/single-dogium_dog.php:238
 msgid "Publish"
 msgstr ""
 
@@ -259,14 +295,6 @@ msgstr ""
 
 #: taxonomy-event-categories.php:79, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kurssit-ja-luennot.php:27, template-parts/content-events-nayttelyt.php:26, packaged/dogium_2017-02-12_14-43/taxonomy-event-categories.php:79, packaged/dogium_2017-02-12_14-43/template-parts/content-events-agility.php:20, packaged/dogium_2017-02-12_14-43/template-parts/content-events-epaviralliset.php:20, packaged/dogium_2017-02-12_14-43/template-parts/content-events-kurssit-ja-luennot.php:27, packaged/dogium_2017-02-12_14-43/template-parts/content-events-nayttelyt.php:26
 msgid "Event website"
-msgstr ""
-
-#: library/buddyboss-mods.php:21
-msgid "Personal Feed"
-msgstr ""
-
-#: library/buddyboss-mods.php:26
-msgid "Newsfeed"
 msgstr ""
 
 #: library/contact-seller-custom-form.php:54, packaged/dogium_2017-02-12_14-43/library/contact-seller-custom-form.php:54

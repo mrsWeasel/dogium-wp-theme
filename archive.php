@@ -16,23 +16,23 @@ $page_title = $page_subtitle = '';
 	// What kind of archive is it?
 	if ( is_category() ) :
 		$page_title = single_cat_title('', false);
-		$page_subtitle = sprintf(esc_html('All posts in category "%s"', 'dogium'), $page_title);
+		$page_subtitle = sprintf(esc_html__('All posts in category "%s"', 'dogium'), $page_title);
 	elseif ( is_tag() ) :
 		$page_title = single_tag_title('', false);
-		$page_subtitle = sprintf(esc_html('All posts tagged "%s"', 'dogium'), $page_title);
+		$page_subtitle = sprintf(esc_html__('All posts tagged "%s"', 'dogium'), $page_title);
 	elseif ( is_author() ) :
 		$author = get_userdata( get_query_var('author') );
 		$page_title = $author->nickname;
-		$page_subtitle = sprintf(esc_html('All posts written by %s', 'dogium'), $page_title);
+		$page_subtitle = sprintf(esc_html__('All posts written by %s', 'dogium'), $page_title);
 	elseif (is_day()) :
 		$page_title = get_the_date();
-		$page_subtitle = esc_html('Daily archive', 'dogium'); 
+		$page_subtitle = esc_html__('Daily archive', 'dogium'); 
 	elseif (is_month()) :
 		$page_title = get_the_date('F Y');
-		$page_subtitle = esc_html('Monthly archive', 'dogium'); 
+		$page_subtitle = esc_html__('Monthly archive', 'dogium'); 
 	elseif (is_year()) :
 		$page_title = get_the_date('Y');
-		$page_subtitle = esc_html('Yearly archive', 'dogium'); 
+		$page_subtitle = esc_html__('Yearly archive', 'dogium'); 
 	endif; 	
 ?>
 <?php if ('' != $dgm_background) : ?>
