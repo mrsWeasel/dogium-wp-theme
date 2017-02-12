@@ -127,7 +127,7 @@ get_template_part( 'template-parts/page-header-thin' );?>
 
 							<?php endif; ?>
 						<?php
-						$gender = get_post_meta($post->ID, 'dgm_gender', true);
+						$gender = get_field('dgm_gender');
 						if ( !empty($gender) ) : ?>
 							<tr>
 							<th><i class="fa fa-venus-mars" aria-hidden="true"></i> <?php esc_html_e('Gender', 'dogium'); ?></th>
