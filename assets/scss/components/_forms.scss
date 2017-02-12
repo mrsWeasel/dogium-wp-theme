@@ -3,6 +3,9 @@
 	input[type="submit"] {
 		@extend .button;
 	}
+	textarea {
+		height: rem-calc(100);
+	}
 }
 
 .search-form {
