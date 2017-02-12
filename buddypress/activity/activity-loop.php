@@ -28,7 +28,7 @@ $parameters = '';
 	if ( is_front_page() ) {
 		$parameters .= '&max=5';
 	} else {
-		$parameters .= '&per_page=8';
+		$parameters .= '&per_page=20';
 	}
 //}
 
