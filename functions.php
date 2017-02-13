@@ -75,5 +75,8 @@ require_once( 'library/restrictions.php');
 /** Add some restrictions to basic users **/
 require_once( 'library/events-custom-validation.php');
 
+/** Get more events **/
+require_once( 'library/events-manager-mods.php');
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
