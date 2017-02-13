@@ -2,6 +2,10 @@
 	display: none;
 }
 
+#geodir-wrapper .entry-header {
+	display: none;
+}
+
 .geodir_category_list_view li.geodir-gridview h3 {
     
     line-height: $global-lineheight;
@@ -40,6 +44,7 @@
 .geodir_list_heading {
 	display: none;
 }
+
 
 
 #geodir-sidebar-left {
