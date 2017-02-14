@@ -11,6 +11,7 @@
 
 
 	$('.comments-toggle').on('click', function(event) {
+		console.log('lsdkjlskfd');
 		event.stopPropagation();
 		$(this).closest('.activity-item').find('.activity-comments-container li[id*=acomment-]').slideToggle();
 		$(this).closest('.activity-item').find('.activity-comments-container .ac-form-container').slideToggle();

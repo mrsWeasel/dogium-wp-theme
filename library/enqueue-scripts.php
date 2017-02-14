@@ -20,9 +20,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to gulpfile.js and see lines 35-54.
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
-	if ( is_singular('dogium_dog')) {
+
 		wp_enqueue_script( 'swipebox', get_template_directory_uri() . '/assets/javascript/jquery.swipebox.min.js', array('jquery'), $version, true );
-	}
+
 	
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery', 'swipebox'), $version, true );
 
