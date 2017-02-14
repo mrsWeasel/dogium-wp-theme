@@ -11,6 +11,7 @@
 //
 // Sizes are optimized and cropped for landscape aspect ratio
 // and optimized for HiDPI displays on 'small' and 'medium' screen sizes.
+add_image_size( 'featured-xxsmall', 180, 118, true );
 add_image_size( 'featured-xsmall', 360, 236, true );
 add_image_size( 'featured-small', 620, 472, true );
 add_image_size( 'featured-medium', 900, 590, true ); // name, width, height, crop

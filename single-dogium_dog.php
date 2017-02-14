@@ -33,55 +33,7 @@ get_template_part( 'template-parts/page-header-thin' );?>
 		</div>	
 		<?php endif; ?>
 		<div class="row">
-			<div class="medium-6 columns">
-				<div class="row">
-					<div class="small-12 columns">
-						<div class="image-box">
-							
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail('fp-medium-height');?>
-							<?php else: ?>
-								<img class="aligncenter" src="<?php echo get_template_directory_uri() . '/assets/images/paw.jpg';?>">
-							<?php endif; ?>
-							
-						</div>
-						
-					</div><!-- .small-12 -->
-				</div><!-- .row -->	
-				<div class="row valign-middle">
-				<?php 
-				$gallery = get_field('dgm_image_gallery');
-				if ($gallery) : ?>
-
-					<?php
-					
-					$counter = 0;
-					foreach ( $gallery as $gallery_item ) : ?>
-						<?php
-						$id = 'gallery-00' . $counter; 
-						?>
-						<?php 
-						$row_start = $row_end = '';
-
-						if ($counter != 0 && $counter % 3 == 0) {
-							$row_start = '<div class="row valign-middle">';
-							$row_end = '</div>';
-						}
-						?>
-						<?php echo $row_end; ?>
-						<?php echo $row_start; ?>
-							<div class="large-4 columns end">
-							<div class="image-box" id="<?php echo $id; ?>">
-								<img src="<?php echo $gallery_item['sizes']['fp-xsmall-height']; ?>">
-							</div>
-							</div>
-						<?php $counter++; ?>
-					<?php endforeach; ?>
-				<?php endif; ?>
-					
-				</div>
-			</div>
-			<div class="medium-6 columns">
+			<div class="large-6 large-push-6 columns">
 				
 				<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 					<div class="entry-content">
@@ -237,6 +189,59 @@ get_template_part( 'template-parts/page-header-thin' );?>
 								<?php endif; ?>
 							<?php endif; ?>
 								
+				</div>
+			</div>
+				<div class="large-6 large-pull-6 columns">
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="image-box">
+							
+							<?php if ( has_post_thumbnail() ) : ?>
+								<a href="<?php the_post_thumbnail_url(); ?>" class="swipebox">
+								<?php the_post_thumbnail('fp-medium-height');?>
+								</a>
+							<?php else: ?>
+								<img class="aligncenter" src="<?php echo get_template_directory_uri() . '/assets/images/paw.jpg';?>">
+							<?php endif; ?>
+							
+						</div>
+						
+					</div><!-- .small-12 -->
+				</div><!-- .row -->	
+				<div class="row">
+				<?php 
+				$gallery = get_field('dgm_image_gallery');
+				if ($gallery) : ?>
+
+					<?php
+					
+					$counter = 0;
+					foreach ( $gallery as $gallery_item ) : ?>
+						<?php
+						$id = 'gallery-00' . $counter; 
+						?>
+						<?php 
+						$row_start = $row_end = '';
+
+						if ($counter != 0 && $counter % 3 == 0) {
+							$row_start = '<div class="row">';
+							$row_end = '</div>';
+						}
+						?>
+						<?php echo $row_end; ?>
+						<?php echo $row_start; ?>
+							<div class="small-4 columns end">
+							<div class="image-box" id="<?php echo $id; ?>">
+								<?php //var_dump($gallery_item['sizes']); ?>
+								<a href="<?php echo $gallery_item['sizes']['fp-medium']; ?>" class="swipebox">
+								<img src="<?php echo $gallery_item['sizes']['featured-xxsmall']; ?>">
+								</a>
+							</div>
+							</div>
+						<?php $counter++; ?>
+					<?php endforeach; ?>
+				<?php endif; ?>
+					
 				</div>
 			</div>
 		</div>
