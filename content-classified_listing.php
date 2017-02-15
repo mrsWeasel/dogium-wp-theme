@@ -23,6 +23,7 @@
 
 <?php endif; ?>
 	
+
 	<?php 
 		// Modify column classes to fit our theme
 		$col_classes[] = 'medium-' . ( 12 / $per_row );
@@ -54,3 +55,7 @@
 	</article>
 	</div>	
 <?php $wpcm_wrap++; ?>
+<?php if ($wpcm_wrap % 3 == 0) : ?>
+	
+	<div class="clearfix"></div>
+<?php endif;	

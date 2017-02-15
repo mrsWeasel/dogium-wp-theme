@@ -5,7 +5,10 @@
 	}
 	article.classified_listing {
 		border: 1px solid $light-gray;
-		
+		display: block;
+		h3 {
+			word-wrap: break-word;
+		}
 		a {
 			padding: 0;
 			position: relative;

@@ -82,7 +82,8 @@ class DogiumClassifiedForms {
 		$validation = array();
 		
 		// Let's use the classified title as subject line for our email
-		$subject = esc_html( $post->post_title );
+		$subject = $post->post_title;
+		$subject = preg_replace('/[^a-zA-Z0-9-_\.]/','', $subject);
 		if ('' == $subject) {
 			$validation['subject_error'] = true;
 		} else {
