@@ -9,9 +9,19 @@
 
 // Mobile menu
 .off-canvas {
+  height: 100vh;
+  padding: 0.5rem;
   > ul.menu {
-    height: 100vh;
-    padding: 1rem;
+    margin-bottom: rem-calc(10);
+    a {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $dark-gray;
+      border-bottom: 1px solid $medium-gray;
+    }
+    li:last-child a {
+      border-bottom-width: 0;
+    }
   }
 }
 

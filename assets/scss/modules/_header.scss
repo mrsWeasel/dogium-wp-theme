@@ -17,23 +17,24 @@
 
 #login-bar {
   @include hide-for(large);
-  background: $secondary-color;
+  background: $light-gray;
   padding: 0.5rem 0;
-  color: $white;
+  color: $dark-gray;
   text-align: right;
   font-weight: bold;
+  border-bottom: 1px solid $medium-gray;
   a {
-    color: $white;
+    color: $dark-gray;
     font-weight: bold;
     text-decoration: underline;
   }
 }
 
-#dogium-notifications {
+.dogium-notifications {
   position: relative;
+  margin: 0 0 0 1rem;
   display: inline-block;
   vertical-align: top;
-  margin: 1.5rem 1rem 0;
   font-weight: bold;
   img {
     max-width: rem-calc(25);
@@ -52,6 +53,22 @@
     color: $white;
     border-radius: 50%;
   }
+}
+
+.top-bar-right {
+  .dogium-notifications {
+    display: none;
+    margin: 1.5rem 1rem 0;
+  }
+}
+
+@include breakpoint(large) {
+  .top-bar-right {
+      .dogium-notifications {
+        display: inline-block;
+    }
+  }
+
 }
 
 .top-bar-left img {

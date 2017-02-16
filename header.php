@@ -35,7 +35,9 @@
 					<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="<?php esc_attr_e('Login', 'dogium'); ?>"><?php esc_html_e('Login', 'dogium')?></a>
 					| <a href="<?php echo wp_registration_url(); ?> " title="<?php esc_attr_e('Register', 'dogium'); ?>"><?php esc_html_e('Register', 'dogium'); ?></a>
 					<?php else : ?>
-						<p><?php esc_html_e('Logged in as', 'dogium'); ?> <a href="<?php echo bp_loggedin_user_domain(); ?>"><?php echo bp_core_get_user_displayname( get_current_user_id() ); ?></a>. <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php esc_attr_e('Logout', 'dogium'); ?>"><?php esc_html_e('Logout?', 'dogium'); ?></a></p>
+						<p><a href="<?php echo bp_loggedin_user_domain(); ?>"><?php esc_html_e( 'My profile', 'dogium');?></a> | <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php esc_attr_e('Logout', 'dogium'); ?>"><?php esc_html_e('Logout', 'dogium'); ?></a>
+						<?php dogium_display_unread_notifications(); ?></p>
+
 					<?php endif; ?>
 				</div>
 			</div>
@@ -47,6 +49,7 @@
 					<img src="<?php echo get_template_directory_uri() . '/assets/images/dogium-logo.png';?>"/>
 				</a>
 			</div>
+
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
