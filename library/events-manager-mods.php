@@ -9,7 +9,7 @@ function dogium_show_more_events( $query ) {
 	if (is_admin() || ! $query->is_main_query() ) {
 		return;
 	}
-	if (is_taxonomy('event-categories')) {
+	if (is_tax('event-categories')) {
 		$query->set('posts_per_page', 50);
 		return;
 	}
