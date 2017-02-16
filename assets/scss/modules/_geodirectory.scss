@@ -14,6 +14,15 @@
     white-space: initial;
 }
 
+.geodir-bubble_image {
+	margin-bottom: rem-calc(10);
+}
+
+.geodir-bubble-meta-bottom,
+.geodir-bubble-meta-fade {
+	display: none;
+}
+
 .geodir_map_container {
 	margin-bottom: 0;
 	img {
@@ -22,8 +31,20 @@
 }
 
 .treeview {
+
 	input[type="checkbox"] {
 		margin-bottom: 0;
+	}
+}
+
+.map-category-listing {
+	display: none;
+}
+
+@include breakpoint(medium) {
+	.map-category-listing {
+		display: block;
+		width: 40%;
 	}
 }
 
