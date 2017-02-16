@@ -48,7 +48,7 @@ $is_member = groups_is_user_member($user, $group_id); ?>
 
 				<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_EVENTCATEGORIES[/events_list]");?>
 			</header>
-		<?php endif; ?>
+		
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div class="entry-content">
 			<?php get_template_part('template-parts/content-events', $slug); ?>
@@ -56,6 +56,7 @@ $is_member = groups_is_user_member($user, $group_id); ?>
 		<footer>
 			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
 		</footer>
+		<?php endif; ?>
 	</article>
 <?php endwhile;?>
 
