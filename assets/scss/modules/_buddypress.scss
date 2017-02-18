@@ -6,9 +6,17 @@ select#bbm-media-privacy {
    height: auto !important;
 }
 
+.status-publish {
+	.activity {
+		margin-top: rem-calc(60);
+		margin-left: rem-calc(20);
+	}
+}
 
 #buddypress {
 	@extend .clearfix;
+	// Single status
+
 	//Groups + members archive
 	#groups-list, #members-list {
 		font-size: 0;
