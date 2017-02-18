@@ -5,6 +5,13 @@
 #geodir-wrapper .entry-header {
 	display: none;
 }
+aside .geodir-listview {
+	margin-bottom: rem-calc(20) !important;
+}
+
+aside .geodir-entry-content {
+	display: none;
+}
 
 .geodir_category_list_view li.geodir-gridview h3 {
     
@@ -12,6 +19,10 @@
     text-overflow: initial;
     overflow: visible;
     white-space: initial;
+}
+
+#geodir-wrapper .gd_place .entry-header {
+	display: block;
 }
 
 .geodir-bubble_image {
@@ -77,11 +88,6 @@
 	}
 }
 
-#geodir-sidebar {
-	.geodir-detail-list {
-		display: none;
-	}
-}
 
 // Custom component for details page category list
 .geodir-categories-horizontal-list {
