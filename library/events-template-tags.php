@@ -18,7 +18,8 @@ function dogium_list_event_categories( $parent_term_slug ) {
   $event_cats = get_terms( array(
   'taxonomy' => 'event-categories',
   'hide_empty' => false,
-  'parent' => intval( $parent_term_id )
+  'parent' => intval( $parent_term_id ),
+  'orderby' => 'term_order'
   ) );
 
   $title = get_term( $parent_term )->name; ?>
