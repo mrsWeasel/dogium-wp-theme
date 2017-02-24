@@ -16,7 +16,7 @@ Template Name: Events
  get_header(); 
  get_template_part( 'template-parts/page-header' );?>
 
- <div id="page" role="main">
+ <div id="page-three-columns" role="main">
  <div class="large-6 large-push-3 columns"> 
  <?php do_action( 'foundationpress_before_content' ); ?>
  <?php while ( have_posts() ) : the_post(); ?>

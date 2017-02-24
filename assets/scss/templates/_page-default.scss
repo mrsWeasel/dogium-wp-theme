@@ -28,3 +28,9 @@
     }
   }
 }
+
+#page-three-columns {
+  @include grid-row();
+  margin-top: 3rem;
+
+}
