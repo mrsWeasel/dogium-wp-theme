@@ -24,14 +24,14 @@ Template Name: Events
    <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
        <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
        <div class="entry-content">
-          <?php the_content(); ?>
-    
-              <?php dogium_list_event_categories( 'nayttelyt' ); ?>
-              <?php dogium_list_event_categories( 'agility' ); ?>
-              <?php dogium_list_event_categories( 'kilpailut-kokeet-testit' ); ?>
-              <?php dogium_list_event_categories( 'kurssit-ja-luennot' ); ?>
-              <?php dogium_list_event_categories( 'epaviralliset' ); ?>
-          
+          <div class="clearfix">
+          <?php dogium_list_event_categories( 'nayttelyt' ); ?>
+          <?php dogium_list_event_categories( 'agility' ); ?>
+          <?php dogium_list_event_categories( 'kilpailut-kokeet-testit' ); ?>
+          <?php dogium_list_event_categories( 'kurssit-ja-luennot' ); ?>
+          <?php dogium_list_event_categories( 'epaviralliset' ); ?>
+          </div>
+          <?php the_content(); ?>      
        </div>
        <footer>
            <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'dogium' ), 'after' => '</p></nav>' ) ); ?>
