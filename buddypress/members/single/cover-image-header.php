@@ -23,6 +23,7 @@ do_action( 'bp_before_member_header' ); ?>
           'item_id' => bp_displayed_user_id(),
         ));
 	$change_cover_link = bp_loggedin_user_domain() . 'profile/change-cover-image/';
+	$change_profilepic_link = bp_loggedin_user_domain() . 'profile/change-avatar/';
 	$profile_link = bp_loggedin_user_domain() . 'profile/';
 	$settings_link = bp_loggedin_user_domain() . 'settings/';
 	?>
@@ -44,6 +45,10 @@ do_action( 'bp_before_member_header' ); ?>
 						<?php bp_displayed_user_avatar( 'type=full' ); ?>
 
 					</a>
+					<?php
+					if ( bp_displayed_user_id() === get_current_user_id() ) : ?>
+					<a id="change-profilepic-link" title="<?php esc_attr_e('Change profile image', 'dogium');?>" href="<?php echo esc_url( $change_profilepic_link );?>"><span class="screen-reader-text"><?php esc_html_e('Change profile image', 'dogium');?></span><i class="fa fa-photo" aria-hidden="true"></i></a>
+					<?php endif; ?>
 				</div><!-- #item-header-avatar -->
 				<div id="item-header-content">
 

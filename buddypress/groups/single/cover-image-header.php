@@ -19,6 +19,7 @@ do_action( 'bp_before_group_header' ); ?>
           'item_id' => bp_get_group_id(),
     ));
     $change_cover_link = bp_get_group_permalink() . 'admin/group-cover-image/';
+    $change_profilepic_link = bp_get_group_permalink() . 'admin/group-avatar/';
 ?>
 
 <div id="dogium-member-cover" style="background-image: url(<?php echo esc_url($cover_image_url);?>)">
@@ -36,6 +37,10 @@ do_action( 'bp_before_group_header' ); ?>
 								<?php bp_group_avatar(); ?>
 
 							</a>
+							<?php
+							if ( bp_group_is_admin() ) : ?>
+							<a id="change-profilepic-link" title="<?php esc_attr_e('Change group image', 'dogium');?>" href="<?php echo esc_url( $change_profilepic_link );?>"><span class="screen-reader-text"><?php esc_html_e('Change group image', 'dogium');?></span><i class="fa fa-photo" aria-hidden="true"></i></a>
+							<?php endif; ?>
 						</div><!-- #item-header-avatar -->
 						<?php endif; ?>
 
