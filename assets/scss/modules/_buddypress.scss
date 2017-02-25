@@ -17,14 +17,14 @@ select#bbm-media-privacy {
 	@extend .clearfix;
 	// Single status
 
-
+	.pagination a, .pagination button {
+		display: inline-block;
+	}
 	//Groups + members archive
 	#groups-list, #members-list {
 
 		font-size: 0;
-		.pagination a, .pagination button {
-		    display: inline-block;
-		}
+		
 		.item-meta {
 			display: none;
 		}
