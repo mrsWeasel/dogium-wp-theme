@@ -75,7 +75,7 @@ msgstr "Keskustelu"
 msgid "Please keep up good spirit and polite language"
 msgstr "Keskustelualueella vaalitaan hyvää henkeä ja asiallista käytöstä"
 
-#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:185,
+#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:182,
 #: page-templates/front-community.php:67,
 #: page-templates/template-marketplace.php:18,
 #: plugins/events-manager/buddypress/group-events.php:119,
@@ -83,11 +83,11 @@ msgstr "Keskustelualueella vaalitaan hyvää henkeä ja asiallista käytöstä"
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:250,
+#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:247,
 #: single-event.php:57, single.php:31, page-templates/front-community.php:70,
 #: page-templates/page-full-width.php:18,
 #: page-templates/page-sidebar-left.php:22, page-templates/system-page.php:21,
-#: page-templates/template-events.php:43,
+#: page-templates/template-events.php:37,
 #: page-templates/template-marketplace.php:21
 msgid "Pages:"
 msgstr "Sivut:"
@@ -238,6 +238,10 @@ msgstr "Kirjaudu sisään"
 msgid "Register"
 msgstr "Luo tili"
 
+#: search.php:15
+msgid "Search results for \"%s\""
+msgstr "Hakutulokset hakutermille ”%s”"
+
 #: searchform.php:12
 msgid "Search for:"
 msgstr "Hae:"
@@ -252,41 +256,36 @@ msgstr "Tee haku"
 
 #: single-dogium_dog.php:25
 msgid ""
-"Your dog %s has been saved as a draft, meaning it's not visible to other "
-"users. You can add images, basic information like date of birth, gender etc. "
-"You can also add additional owners to %s. Have fun and once you're ready to "
-"go live, hit 'Publish'."
+"You may add photos and information of your dog. Once you're ready, hit "
+"'Publish'."
 msgstr ""
-"Koirasi %s on tallennettu luonnoksena, tarkoittaen, että se ei näy vielä "
-"muille käyttäjille. Voit lisätä kuvia, perustietoja kuten syntymäajan, "
-"sukupuolen ym. Voit myös lisätä koirallesi %s muita omistajia. Pidä hauskaa "
-"ja kun olet valmis, paina ’Julkaise’."
+"Voit lisätä koirallesi kuvia sekä tietoja. Sen jälkeen paina 'Julkaise'."
 
-#: single-dogium_dog.php:58, single-dogium_dog.php:63
+#: single-dogium_dog.php:55, single-dogium_dog.php:60
 msgid "Breed:"
 msgstr "Rotu:"
 
-#: single-dogium_dog.php:76
+#: single-dogium_dog.php:73
 msgid "Date of birth:"
 msgstr "Syntymäaika:"
 
-#: single-dogium_dog.php:85
+#: single-dogium_dog.php:82
 msgid "Gender"
 msgstr "Sukupuoli"
 
-#: single-dogium_dog.php:121
+#: single-dogium_dog.php:118
 msgid "Owners:"
 msgstr "Omistajat:"
 
-#: single-dogium_dog.php:162
+#: single-dogium_dog.php:159
 msgid "Breeder:"
 msgstr "Kasvattaja:"
 
-#: single-dogium_dog.php:186
+#: single-dogium_dog.php:183
 msgid "Delete"
 msgstr "Poista"
 
-#: single-dogium_dog.php:188
+#: single-dogium_dog.php:185
 msgid "Publish"
 msgstr "Julkaise"
 
@@ -487,7 +486,8 @@ msgstr "Uutisten sivupalkki"
 
 #: library/widget-areas.php:14, library/widget-areas.php:23,
 #: library/widget-areas.php:32, library/widget-areas.php:41,
-#: library/widget-areas.php:51, library/widget-areas.php:61
+#: library/widget-areas.php:50, library/widget-areas.php:60,
+#: library/widget-areas.php:70
 msgid "Drag widgets to this sidebar container."
 msgstr "Lisää vimpaimia tähän sivupalkkiin."
 
@@ -496,37 +496,53 @@ msgid "Events Home Sidebar"
 msgstr "Tapahtumien pääsivun sivupalkki"
 
 #: library/widget-areas.php:31
+msgid "Events Home Left Sidebar"
+msgstr "Tapahtumien pääsivun vasen sivupalkki"
+
+#: library/widget-areas.php:40
 msgid "Forums Sidebar"
 msgstr "Keskustelualueen sivupalkki"
 
-#: library/widget-areas.php:40
+#: library/widget-areas.php:49
 msgid "Home Left Sidebar"
 msgstr "Etusivun vasen sivupalkki"
 
-#: library/widget-areas.php:50
+#: library/widget-areas.php:59
 msgid "Community Sidebar"
 msgstr "Yhteisön sivupalkki"
 
-#: library/widget-areas.php:60
+#: library/widget-areas.php:69
 msgid "Marketplace Sidebar"
 msgstr "Torin sivupalkki"
 
-#: library/widget-areas.php:70
+#: library/widget-areas.php:79
 msgid "Footer widgets 1"
 msgstr "Alapalkin vimpaimet 1"
 
-#: library/widget-areas.php:71, library/widget-areas.php:81,
-#: library/widget-areas.php:91
+#: library/widget-areas.php:80, library/widget-areas.php:90,
+#: library/widget-areas.php:100, library/widget-areas.php:110
 msgid "Drag widgets to this footer container"
 msgstr "Lisää vimpaimia tähän sivupalkkiin"
 
-#: library/widget-areas.php:80
+#: library/widget-areas.php:89
 msgid "Footer widgets 2"
 msgstr "Alapalkin vimpaimet 2"
 
-#: library/widget-areas.php:90
+#: library/widget-areas.php:99
 msgid "Footer widgets 3"
 msgstr "Alapalkin vimpaimet 3"
+
+#: library/widget-areas.php:109
+msgid "Search sidebar"
+msgstr "Hakusivun sivupalkki"
+
+#: page-templates/template-add-dog.php:33
+msgid ""
+"Only logged in users are allowed to add dogs. Please <a href=\"%s\">log in</"
+"a> or register."
+msgstr ""
+"Vain kirjautuneet käyttäjät voivat lisätä koiria. Ole hyvä ja <a href=\"%s"
+"\">kirjaudu sisään</a> tai luo tili."
 
 #: page-templates/template-marketplace.php:39
 msgid "Product categories"
@@ -692,6 +708,17 @@ msgstr "Alkupäivä"
 msgid "End date"
 msgstr "Päättymispäivä"
 
+#~ msgid ""
+#~ "Your dog %s has been saved as a draft, meaning it's not visible to other "
+#~ "users. You can add images, basic information like date of birth, gender "
+#~ "etc. You can also add additional owners to %s. Have fun and once you're "
+#~ "ready to go live, hit 'Publish'."
+#~ msgstr ""
+#~ "Koirasi %s on tallennettu luonnoksena, tarkoittaen, että se ei näy vielä "
+#~ "muille käyttäjille. Voit lisätä kuvia, perustietoja kuten syntymäajan, "
+#~ "sukupuolen ym. Voit myös lisätä koirallesi %s muita omistajia. Pidä "
+#~ "hauskaa ja kun olet valmis, paina ’Julkaise’."
+
 #~ msgid "Logged in as"
 #~ msgstr "Kirjautunut sisään käyttäjänä"
 
@@ -756,13 +783,6 @@ msgstr "Päättymispäivä"
 
 #~ msgid "Save"
 #~ msgstr "Tallenna"
-
-#~ msgid ""
-#~ "Only logged in users are allowed to add dogs. Please <a href=\"%s\">log "
-#~ "in</a> or register."
-#~ msgstr ""
-#~ "Vain kirjautuneet käyttäjät voivat lisätä koiria. Ole hyvä ja <a href=\"%s"
-#~ "\">kirjaudu sisään</a> tai luo tili."
 
 #~ msgid "No Events"
 #~ msgstr "Ei tapahtumia"
