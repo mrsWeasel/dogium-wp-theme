@@ -91,11 +91,9 @@
 					$localised_end_date = date_i18n(get_option('dbem_date_format'), $EM_Event->end);
 					$style = "";
 					$today = date ( "Y-m-d" );
-					if ( $EM_Event->has_location ) {
+					
 						$location_summary = "<b>" . $EM_Event->get_location()->name . "</b><br/>" . $EM_Event->get_location()->address . " - " . $EM_Event->get_location()->town;
-					} else {
-						$location_summary = __('This event has no location', 'dogium');
-					}
+					
 					
 					
 					if ($EM_Event->start_date < $today && $EM_Event->end_date < $today){

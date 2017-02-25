@@ -105,9 +105,9 @@ if( !empty($_REQUEST['success']) ){
 	</div>
 	<p class="submit">
 	    <?php if( empty($EM_Event->event_id) ): ?>
-	    <input type='submit' class='button small' value='<?php echo esc_attr('Submit event', 'dogium'); ?>' />
+	    <input type='submit' class='button small' value='<?php echo esc_attr__('Submit event', 'dogium'); ?>' />
 	    <?php else: ?>
-	    <input type='submit' class='button small' value='<?php echo esc_attr('Update event', 'dogium'); ?>' />
+	    <input type='submit' class='button small' value='<?php echo esc_attr__('Update event', 'dogium'); ?>' />
 	    <?php endif; ?>
 	</p>
 	<input type="hidden" name="event_id" value="<?php echo $EM_Event->event_id; ?>" />

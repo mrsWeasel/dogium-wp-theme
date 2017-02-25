@@ -61,7 +61,7 @@ msgstr ""
 msgid "Please keep up good spirit and polite language"
 msgstr ""
 
-#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:182, page-templates/front-community.php:67, page-templates/template-marketplace.php:18, packaged/dogium_2017-02-25_13-35/bbpress.php:47, packaged/dogium_2017-02-25_13-35/buddypress.php:27, packaged/dogium_2017-02-25_13-35/page.php:24, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:182, packaged/dogium_2017-02-25_13-35/page-templates/front-community.php:67, packaged/dogium_2017-02-25_13-35/page-templates/template-marketplace.php:18, plugins/events-manager/buddypress/group-events.php:119, plugins/events-manager/tables/events.php:98, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:119, packaged/dogium_2017-02-25_13-35/plugins/events-manager/tables/events.php:98
+#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:182, page-templates/front-community.php:67, page-templates/template-marketplace.php:18, packaged/dogium_2017-02-25_13-35/bbpress.php:47, packaged/dogium_2017-02-25_13-35/buddypress.php:27, packaged/dogium_2017-02-25_13-35/page.php:24, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:182, packaged/dogium_2017-02-25_13-35/page-templates/front-community.php:67, packaged/dogium_2017-02-25_13-35/page-templates/template-marketplace.php:18, plugins/events-manager/buddypress/group-events.php:117, plugins/events-manager/tables/events.php:98, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:119, packaged/dogium_2017-02-25_13-35/plugins/events-manager/tables/events.php:98
 msgid "Edit"
 msgstr ""
 
@@ -425,7 +425,7 @@ msgstr ""
 msgid "News Page Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:14, library/widget-areas.php:23, library/widget-areas.php:32, library/widget-areas.php:41, library/widget-areas.php:50, library/widget-areas.php:60, library/widget-areas.php:70, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:14, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:23, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:32, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:41, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:50, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:60, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:70
+#: library/widget-areas.php:14, library/widget-areas.php:23, library/widget-areas.php:32, library/widget-areas.php:41, library/widget-areas.php:50, library/widget-areas.php:60, library/widget-areas.php:70, library/widget-areas.php:80, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:14, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:23, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:32, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:41, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:50, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:60, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:70
 msgid "Drag widgets to this sidebar container."
 msgstr ""
 
@@ -449,27 +449,31 @@ msgstr ""
 msgid "Community Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:69, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:69
+#: library/widget-areas.php:69
+msgid "Community Ads"
+msgstr ""
+
+#: library/widget-areas.php:79, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:69
 msgid "Marketplace Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:79, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:79
+#: library/widget-areas.php:89, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:79
 msgid "Footer widgets 1"
 msgstr ""
 
-#: library/widget-areas.php:80, library/widget-areas.php:90, library/widget-areas.php:100, library/widget-areas.php:110, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:80, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:90, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:100, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:110
+#: library/widget-areas.php:90, library/widget-areas.php:100, library/widget-areas.php:110, library/widget-areas.php:120, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:80, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:90, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:100, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:110
 msgid "Drag widgets to this footer container"
 msgstr ""
 
-#: library/widget-areas.php:89, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:89
+#: library/widget-areas.php:99, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:89
 msgid "Footer widgets 2"
 msgstr ""
 
-#: library/widget-areas.php:99, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:99
+#: library/widget-areas.php:109, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:99
 msgid "Footer widgets 3"
 msgstr ""
 
-#: library/widget-areas.php:109, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:109
+#: library/widget-areas.php:119, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:109
 msgid "Search sidebar"
 msgstr ""
 
@@ -577,16 +581,20 @@ msgstr ""
 msgid "Bookings"
 msgstr ""
 
-#: plugins/events-manager/buddypress/group-events.php:97, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:97
-msgid "This event has no location"
-msgstr ""
-
-#: plugins/events-manager/buddypress/group-events.php:180, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:180
+#: plugins/events-manager/buddypress/group-events.php:178, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:180
 msgid "Booking not available"
 msgstr ""
 
 #: plugins/events-manager/forms/event-editor.php:51, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event-editor.php:51
 msgid "Dates and time"
+msgstr ""
+
+#: plugins/events-manager/forms/event-editor.php:108
+msgid "Submit event"
+msgstr ""
+
+#: plugins/events-manager/forms/event-editor.php:110
+msgid "Update event"
 msgstr ""
 
 #: plugins/events-manager/forms/event/bookings-ticket-form.php:14, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings-ticket-form.php:14
@@ -619,4 +627,8 @@ msgstr ""
 
 #: plugins/events-manager/forms/event/when.php:11, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/when.php:11
 msgid "End date"
+msgstr ""
+
+#: packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:97
+msgid "This event has no location"
 msgstr ""

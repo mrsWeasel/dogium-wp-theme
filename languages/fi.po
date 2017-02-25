@@ -94,7 +94,7 @@ msgstr "Keskustelualueella vaalitaan hyvää henkeä ja asiallista käytöstä"
 #: packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:182,
 #: packaged/dogium_2017-02-25_13-35/page-templates/front-community.php:67,
 #: packaged/dogium_2017-02-25_13-35/page-templates/template-marketplace.php:18,
-#: plugins/events-manager/buddypress/group-events.php:119,
+#: plugins/events-manager/buddypress/group-events.php:117,
 #: plugins/events-manager/tables/events.php:98,
 #: packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:119,
 #: packaged/dogium_2017-02-25_13-35/plugins/events-manager/tables/events.php:98
@@ -613,7 +613,7 @@ msgstr "Uutisten sivupalkki"
 #: library/widget-areas.php:14, library/widget-areas.php:23,
 #: library/widget-areas.php:32, library/widget-areas.php:41,
 #: library/widget-areas.php:50, library/widget-areas.php:60,
-#: library/widget-areas.php:70,
+#: library/widget-areas.php:70, library/widget-areas.php:80,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:14,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:23,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:32,
@@ -649,18 +649,22 @@ msgstr "Etusivun vasen sivupalkki"
 msgid "Community Sidebar"
 msgstr "Yhteisön sivupalkki"
 
-#: library/widget-areas.php:69,
+#: library/widget-areas.php:69
+msgid "Community Ads"
+msgstr ""
+
+#: library/widget-areas.php:79,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:69
 msgid "Marketplace Sidebar"
 msgstr "Torin sivupalkki"
 
-#: library/widget-areas.php:79,
+#: library/widget-areas.php:89,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:79
 msgid "Footer widgets 1"
 msgstr "Alapalkin vimpaimet 1"
 
-#: library/widget-areas.php:80, library/widget-areas.php:90,
-#: library/widget-areas.php:100, library/widget-areas.php:110,
+#: library/widget-areas.php:90, library/widget-areas.php:100,
+#: library/widget-areas.php:110, library/widget-areas.php:120,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:80,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:90,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:100,
@@ -668,17 +672,17 @@ msgstr "Alapalkin vimpaimet 1"
 msgid "Drag widgets to this footer container"
 msgstr "Lisää vimpaimia tähän sivupalkkiin"
 
-#: library/widget-areas.php:89,
+#: library/widget-areas.php:99,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:89
 msgid "Footer widgets 2"
 msgstr "Alapalkin vimpaimet 2"
 
-#: library/widget-areas.php:99,
+#: library/widget-areas.php:109,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:99
 msgid "Footer widgets 3"
 msgstr "Alapalkin vimpaimet 3"
 
-#: library/widget-areas.php:109,
+#: library/widget-areas.php:119,
 #: packaged/dogium_2017-02-25_13-35/library/widget-areas.php:109
 msgid "Search sidebar"
 msgstr "Hakusivun sivupalkki"
@@ -861,12 +865,7 @@ msgstr "Vaihda profiilikuva"
 msgid "Bookings"
 msgstr "Ilmoittautumiset"
 
-#: plugins/events-manager/buddypress/group-events.php:97,
-#: packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:97
-msgid "This event has no location"
-msgstr "Tällä tapahtumalla ei ole sijaintia"
-
-#: plugins/events-manager/buddypress/group-events.php:180,
+#: plugins/events-manager/buddypress/group-events.php:178,
 #: packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:180
 msgid "Booking not available"
 msgstr "Ilmoittautuminen ei ole käytössä"
@@ -875,6 +874,14 @@ msgstr "Ilmoittautuminen ei ole käytössä"
 #: packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event-editor.php:51
 msgid "Dates and time"
 msgstr "Päivämäärät ja aika"
+
+#: plugins/events-manager/forms/event-editor.php:108
+msgid "Submit event"
+msgstr "Luo tapahtuma"
+
+#: plugins/events-manager/forms/event-editor.php:110
+msgid "Update event"
+msgstr "Päivitä tapahtuma"
 
 #: plugins/events-manager/forms/event/bookings-ticket-form.php:14,
 #: packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings-ticket-form.php:14
@@ -915,6 +922,10 @@ msgstr "Alkupäivä"
 #: packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/when.php:11
 msgid "End date"
 msgstr "Päättymispäivä"
+
+#: packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:97
+msgid "This event has no location"
+msgstr "Tällä tapahtumalla ei ole sijaintia"
 
 #~ msgid ""
 #~ "Your dog %s has been saved as a draft, meaning it's not visible to other "
