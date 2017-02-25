@@ -213,6 +213,7 @@ select#bbm-media-privacy {
 	}
 	.activity-inner {
 		@include font-size(1.25);
+		@extend .clearfix;
 	}
 	.activity-comments {
 		li[id*=acomment-] {
