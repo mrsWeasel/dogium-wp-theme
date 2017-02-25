@@ -22,10 +22,7 @@ get_template_part( 'template-parts/page-header-thin' );?>
 				<div class="callout primary">
 					<p><?php
 					$dog_name = get_the_title();
-						echo sprintf( __("Your dog %s has been saved as a draft, meaning it's not visible to other users. You can add images, basic information like date of birth, gender etc. You can also add additional owners to %s. Have fun and once you're ready to go live, hit 'Publish'.", 'dogium'),
-							$dog_name,
-							$dog_name
-						);?>
+						esc_html_e("You may add photos and information of your dog. Once you're ready, hit 'Publish'.", 'dogium');?>
 						
 					</p>
 				</div>
