@@ -65,6 +65,16 @@ function foundationpress_sidebar_widgets() {
 	));
 
 	register_sidebar(array(
+	  'id' => 'community-ads',
+	  'name' => __( 'Community Ads', 'dogium' ),
+	  'description' => __( 'Drag widgets to this sidebar container.', 'dogium' ),
+	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+	  'after_widget' => '</article>',
+	  'before_title' => '<h2 class="widget-title">',
+	  'after_title' => '</h2>',
+	));
+
+	register_sidebar(array(
 	  'id' => 'marketplace-sidebar',
 	  'name' => __( 'Marketplace Sidebar', 'dogium' ),
 	  'description' => __( 'Drag widgets to this sidebar container.', 'dogium' ),

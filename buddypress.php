@@ -39,8 +39,9 @@
    <?php
    if ( ! bp_is_user() && ! bp_is_group() ) : ?>
   </div><!---->
- <div class="large-3 columns">
-   <?php dynamic_sidebar('community-sidebar'); ?> 
+ <div class="large-3 columns">  
+   <?php dynamic_sidebar('community-sidebar'); ?>
+   <?php dynamic_sidebar('community-ads'); ?> 
  </div>
  </div>
 <?php endif; ?>
