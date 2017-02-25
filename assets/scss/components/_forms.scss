@@ -14,7 +14,7 @@
 	position: relative;
 
 	input[type="search"] {
-		height: 50px;
+		height: rem-calc(50);
 		width: 100%;
 		vertical-align: top;
 		&:active, &:focus {
@@ -32,12 +32,48 @@
 		vertical-align: top;
 		margin-left: rem-calc(-50);
 		&:focus, &:hover {
-		//background-color: $dark-pink;
+		
 		}
 		.fa {
 			color: $white;
 			@include font-size(2);
 		}
+	}
+}
+
+#search-members-form,
+#search-groups-form {
+	font-size: 0; // whitespace hack
+	//margin-bottom: 80px;
+	position: relative;
+
+	input[type="search"],
+	input[type="text"] {
+		height: rem-calc(50);
+		width: 100%;
+		vertical-align: top;
+		&:active, &:focus {
+		outline: none;
+		}
+	}
+	input[type="submit"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: rem-calc(100);
+		height: rem-calc(50);
+		@include font-size(1);
+		font-weight: bold;
+		color: $white;
+		padding: 0;
+		border: none;
+		background-color: $primary-color;
+		vertical-align: top;
+		margin-left: rem-calc(-100);
+		&:focus, &:hover {
+		
+		}
+		
 	}
 }
 

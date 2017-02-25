@@ -17,9 +17,22 @@ select#bbm-media-privacy {
 	@extend .clearfix;
 	// Single status
 
+
 	//Groups + members archive
 	#groups-list, #members-list {
 		font-size: 0;
+		.item-meta {
+			display: none;
+		}
+		.item-title {
+			.update {
+				display: none;
+			}
+
+		}
+		.action {
+			
+		}
 		li {
 			@include font-size(1);
 			text-align: center;

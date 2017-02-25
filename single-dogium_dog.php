@@ -182,10 +182,10 @@ get_template_part( 'template-parts/page-header-thin' );?>
 							<?php 
 								// Check if current user has ability to edit / delete post
 								if (current_user_can('edit_post', $post->ID)) : ?>
-								<a class="button small" data-open="edit-dog-modal"><i class="fa fa-pencil" aria-hidden="true"></i> <?php esc_html_e('Edit', 'dogium'); ?></a>
-								<a class="button small alert" data-open="delete-dog-modal"><i class="fa fa-trash" aria-hidden="true"></i> <?php esc_html_e('Delete', 'dogium'); ?></a>
+								<a class="button small secondary" data-open="edit-dog-modal"><i class="fa fa-pencil" aria-hidden="true"></i> <?php esc_html_e('Edit', 'dogium'); ?></a>
+								<a class="button small secondary" data-open="delete-dog-modal"><i class="fa fa-trash" aria-hidden="true"></i> <?php esc_html_e('Delete', 'dogium'); ?></a>
 								<?php if ($post->post_status == 'draft') : ?>
-								<a class="button small secondary" data-open="publish-dog-modal"><i class="fa fa-send" aria-hidden="true"></i> <?php esc_html_e('Publish', 'dogium'); ?></a>
+								<a class="button small" data-open="publish-dog-modal"><i class="fa fa-send" aria-hidden="true"></i> <?php esc_html_e('Publish', 'dogium'); ?></a>
 								<?php endif; ?>
 							<?php endif; ?>
 								

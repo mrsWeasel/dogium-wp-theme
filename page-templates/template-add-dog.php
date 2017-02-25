@@ -30,7 +30,7 @@ get_template_part( 'template-parts/page-header-thin' );?>
              <?php if (!is_user_logged_in()) : ?>
              		<div class="callout warning">
              			<p><?php echo sprintf(
-             			__('Only logged in users are allowed to add dogs. Please <a href="%s">log in</a> or register.', 'dogium-dog'),
+             			__('Only logged in users are allowed to add dogs. Please <a href="%s">log in</a> or register.', 'dogium'),
              			wp_login_url( get_permalink() ) 
              			); ?></p>
              		</div>

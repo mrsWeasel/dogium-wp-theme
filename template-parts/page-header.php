@@ -4,6 +4,9 @@
   // If we don't do this for news page (home), WP is going to get id from the first post in loop
   if ( is_home() ) {
     $id = get_option( 'page_for_posts' );
+  } elseif ( bp_is_directory() ) {
+    $page = get_page_by_path( 'yhteiso' );
+    $id =  '' != $page ? $page->ID : 0;
   } else {
     $id = $post->ID;
   }

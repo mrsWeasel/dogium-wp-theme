@@ -27,6 +27,16 @@
 
 }
 
+.buddypress {
+	.item-options {
+		a {
+			@include font-size(0.8);
+			color: $dark-gray;
+			font-weight: bold;
+		}
+	}
+}
+
 // Login widget
 // BP Login Widget
 #bp-login-widget-form {
@@ -99,9 +109,14 @@
 	@include show-for(large);
 	background: $light-gray;
 	padding: 0 1em 1em !important;
+	.theChampLogin {
+		width: rem-calc(20);
+		height: rem-calc(20);
+	}
 	.widget-title {
-		@include font-size(1.25);
+		@include font-size(0.8);
 		color: $dark-gray;
+		text-transform: none;
 	}
 	.the_champ_login_container {
 		margin-top: 0;
