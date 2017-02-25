@@ -10,9 +10,9 @@ get_header();
 get_template_part( 'template-parts/page-header-thin' );?>
 
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="large-9 columns" role="main">
 	<header>
-      <h1 class="entry-title"><?php echo sprintf(esc_html('Search results for "%s"', 'dogium'), get_search_query() ); ?></h1>
+      <h1 class="entry-title"><?php echo sprintf(esc_html__('Search results for "%s"', 'dogium'), get_search_query() ); ?></h1>
     </header>
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
@@ -45,6 +45,8 @@ get_template_part( 'template-parts/page-header-thin' );?>
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+	<div class="large-3 columns">
+		<?php dynamic_sidebar('search-sidebar'); ?>	
+	</div>
 </div>
 <?php get_footer();
