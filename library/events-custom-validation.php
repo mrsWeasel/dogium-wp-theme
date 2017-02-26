@@ -4,7 +4,7 @@ function dogium_validate_em($result, $EM_Event){
 global $col_count, $EM_Ticket;
 $col_count = absint($col_count); //now we know it's a number
 
-if ( !is_admin() || !current_user_can('administrator')) {
+if ( !current_user_can('administrator')) {
 	// Standard users can only submit group events
 	if ( ! isset( $_REQUEST['group_id'] ) || $_REQUEST['group_id'] == '' ) {
 	    $EM_Event->add_error( __('You are only allowed to create group events.', 'dogium') );

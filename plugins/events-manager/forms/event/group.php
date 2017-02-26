@@ -31,6 +31,9 @@ if ( bp_is_group() ) {
 	?>
 	<?php esc_html_e('Select group', 'dogium'); ?><br>
 	<select name="group_id">
+		<?php if (is_admin() && current_user_can('administrator')) : ?>
+		<option value=""><?php _e('Not a Group Event', 'events-manager'); ?></option>
+		<?php endif; ?>
 		<?php
 		//in case user isn't a group mod, but can edit other users' events
 		if( !empty($EM_Event->group_id) && !in_array($EM_Event->group_id, $group_data['groups']) ){
