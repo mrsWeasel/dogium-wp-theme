@@ -24,12 +24,10 @@ $event_continent = get_post_meta($post->ID, 'dgm_event_continent', true);
 	<?php if ('' != $show_last_day) : ?>
 		<strong><?php esc_html_e('Last enrollment day', 'dogium'); ?></strong>: <?php echo esc_html($show_last_day); ?><br>
 	<?php endif; ?>
-	<?php if ($EM_Event->has_location) : ?>
 	<strong><?php esc_html_e('Venue', 'dogium'); ?></strong>: <?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONNAME[/events_list]"); ?><br>
 	<strong><?php esc_html_e('Contact information', 'dogium'); ?></strong>: <br>
 	<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONADDRESS[/events_list]"); ?><br>
 	<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONPOSTCODE[/events_list]"); ?> <?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONTOWN[/events_list]"); ?><br>
-	<?php endif; ?>
 	<?php if ('' != $alternative_location) : ?>
 	<strong><?php esc_html_e('Location', 'dogium'); ?></strong>: <?php echo esc_html($alternative_location); ?><br>	
 	<?php endif; ?>
@@ -44,9 +42,7 @@ $event_continent = get_post_meta($post->ID, 'dgm_event_continent', true);
 	<?php endif; ?>
 	</div>
 	<div class="large-6 columns">
-		<?php if ($EM_Event->has_location) : ?>
 		<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONMAP[/events_list]");?>
-		<?php endif; ?>
 	</div>
 
 </div>
