@@ -19,6 +19,9 @@ $show_id = get_term_by('slug', 'nayttelyt', 'event-categories')->term_id;
 $show_cat = get_term_children($show_id, 'event-categories');
 $show_cat[] = $show_id;
 
+// Foreign shows (exception)
+$foreign_show_id = get_term_by('slug', 'ulkomaiset-nayttelyt', 'event-categories')->term_id;
+
 // Course subcategories
 $course_id = get_term_by('slug', 'kurssit-ja-luennot', 'event-categories')->term_id;
 $course_cat = get_term_children($course_id, 'event-categories');
@@ -58,6 +61,11 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 
 					<th><?php esc_html_e('Town', 'dogium'); ?></th>
 
+					<?php if ($current_cat == $foreign_show_id) : ?>
+					<th><?php esc_html_e('Country', 'dogium'); ?></th>
+					<th><?php esc_html_e('Continent', 'dogium'); ?></th>		
+					<?php endif; ?>
+
 					<?php if (in_array($current_cat, $course_cat)) : ?>
 					<th><?php esc_html_e('Organizer', 'dogium'); ?></th>
 					<?php endif; ?>
@@ -66,11 +74,11 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 					<th><?php esc_html_e('Judge', 'dogium'); ?></th>
 					<?php endif; ?>
 
-					<?php if (in_array($current_cat, $show_cat)) : ?>
+					<?php if (in_array($current_cat, $show_cat) && $current_cat != $foreign_show_id ) : ?>
 					<th><?php esc_html_e('Groups', 'dogium'); ?></th>
 					<?php endif; ?>
 
-					<?php if (in_array($current_cat, $show_cat)) : ?>
+					<?php if (in_array($current_cat, $show_cat) && $current_cat != $foreign_show_id) : ?>
 					<th><?php esc_html_e('Last cheapest enrollment', 'dogium'); ?></th>
 					<th><?php esc_html_e('Last enrollment', 'dogium'); ?></th>
 					<?php endif; ?>
@@ -96,11 +104,18 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 
 					<td><a href="<?php the_permalink(); ?>"><?php the_title();?></a></td>
 
-					<?php if (in_array($current_cat, $show_cat)) : ?>
+					<?php if (in_array($current_cat, $show_cat) && $current_cat != $foreign_show_id ) : ?>
 					<td><?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONTOWN[/events_list]");?></td>
 					<?php else : ?>
 					<?php $alternative_location = get_post_meta($post->ID, 'dgm_alternative_location', true); ?>
 					<td><?php echo esc_html($alternative_location); ?></td>
+					<?php endif; ?>
+
+					<?php if ($current_cat == $foreign_show_id) : ?>
+					<?php $alternative_country = get_post_meta($post->ID, 'dgm_alternative_country', true); ?>
+					<td><?php echo esc_html($alternative_country); ?></td>
+					<?php $event_continent = get_post_meta($post->ID, 'dgm_event_continent', true); ?>
+					<td><?php echo esc_html($event_continent); ?></td>	
 					<?php endif; ?>
 
 
@@ -114,12 +129,12 @@ $agility_id = get_term_by('slug', 'agility', 'event-categories')->term_id;
 					<td><?php echo esc_html( $judge ); ?></td>
 					<?php endif; ?>	
 
-					<?php if (in_array($current_cat, $show_cat)) : ?>
+					<?php if (in_array($current_cat, $show_cat) && $current_cat != $foreign_show_id) : ?>
 					<?php $groups = get_post_meta($post->ID, 'dgm_show_groups', true); ?>
 					<td><?php echo esc_html( $groups ); ?></td>
 					<?php endif; ?>
 
-					<?php if (in_array($current_cat, $show_cat)) : ?>
+					<?php if (in_array($current_cat, $show_cat) && $current_cat != $foreign_show_id) : ?>
 					<?php $last_cheap_enrollment = get_field('dgm_show_last_cheap_day'); ?>
 					<?php $last_enrollment = get_field('dgm_show_last_day'); ?>
 					<td><?php echo esc_html($last_cheap_enrollment) ?></td>
