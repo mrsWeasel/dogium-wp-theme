@@ -13,439 +13,447 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:17, packaged/dogium_2017-02-25_13-35/404.php:17
+#: 404.php:17
 msgid "Page not found"
 msgstr ""
 
-#: 404.php:21, packaged/dogium_2017-02-25_13-35/404.php:21
+#: 404.php:21
 msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
 msgstr ""
 
-#: archive.php:19, packaged/dogium_2017-02-25_13-35/archive.php:19
+#: archive.php:19
 msgid "All posts in category \"%s\""
 msgstr ""
 
-#: archive.php:22, packaged/dogium_2017-02-25_13-35/archive.php:22
+#: archive.php:22
 msgid "All posts tagged \"%s\""
 msgstr ""
 
-#: archive.php:26, packaged/dogium_2017-02-25_13-35/archive.php:26
+#: archive.php:26
 msgid "All posts written by %s"
 msgstr ""
 
-#: archive.php:29, packaged/dogium_2017-02-25_13-35/archive.php:29
+#: archive.php:29
 msgid "Daily archive"
 msgstr ""
 
-#: archive.php:32, packaged/dogium_2017-02-25_13-35/archive.php:32
+#: archive.php:32
 msgid "Monthly archive"
 msgstr ""
 
-#: archive.php:35, packaged/dogium_2017-02-25_13-35/archive.php:35
+#: archive.php:35
 msgid "Yearly archive"
 msgstr ""
 
-#: archive.php:79, home.php:40, index.php:40, search.php:40, taxonomy-event-categories.php:148, packaged/dogium_2017-02-25_13-35/archive.php:79, packaged/dogium_2017-02-25_13-35/home.php:40, packaged/dogium_2017-02-25_13-35/index.php:40, packaged/dogium_2017-02-25_13-35/search.php:40, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:148
+#: archive.php:79, home.php:40, index.php:40, search.php:40, taxonomy-event-categories.php:163
 msgid "&larr; Older posts"
 msgstr ""
 
-#: archive.php:80, home.php:41, index.php:41, search.php:41, taxonomy-event-categories.php:149, packaged/dogium_2017-02-25_13-35/archive.php:80, packaged/dogium_2017-02-25_13-35/home.php:41, packaged/dogium_2017-02-25_13-35/index.php:41, packaged/dogium_2017-02-25_13-35/search.php:41, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:149
+#: archive.php:80, home.php:41, index.php:41, search.php:41, taxonomy-event-categories.php:164
 msgid "Newer posts &rarr;"
 msgstr ""
 
-#: bbpress.php:17, packaged/dogium_2017-02-25_13-35/bbpress.php:17
+#: bbpress.php:17
 msgid "Discussion"
 msgstr ""
 
-#: bbpress.php:18, packaged/dogium_2017-02-25_13-35/bbpress.php:18
+#: bbpress.php:18
 msgid "Please keep up good spirit and polite language"
 msgstr ""
 
-#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:182, page-templates/front-community.php:67, page-templates/template-marketplace.php:18, packaged/dogium_2017-02-25_13-35/bbpress.php:47, packaged/dogium_2017-02-25_13-35/buddypress.php:27, packaged/dogium_2017-02-25_13-35/page.php:24, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:182, packaged/dogium_2017-02-25_13-35/page-templates/front-community.php:67, packaged/dogium_2017-02-25_13-35/page-templates/template-marketplace.php:18, plugins/events-manager/buddypress/group-events.php:117, plugins/events-manager/tables/events.php:98, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:119, packaged/dogium_2017-02-25_13-35/plugins/events-manager/tables/events.php:98
+#: bbpress.php:47, buddypress.php:27, page.php:24, single-dogium_dog.php:182, page-templates/front-community.php:67, page-templates/template-marketplace.php:18, plugins/events-manager/buddypress/group-events.php:117, plugins/events-manager/tables/events.php:98
 msgid "Edit"
 msgstr ""
 
-#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:247, single-event.php:57, single.php:31, page-templates/front-community.php:70, page-templates/page-full-width.php:18, page-templates/page-sidebar-left.php:22, page-templates/system-page.php:21, page-templates/template-events.php:37, page-templates/template-marketplace.php:21, packaged/dogium_2017-02-25_13-35/bbpress.php:50, packaged/dogium_2017-02-25_13-35/buddypress.php:30, packaged/dogium_2017-02-25_13-35/page.php:27, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:247, packaged/dogium_2017-02-25_13-35/single-event.php:57, packaged/dogium_2017-02-25_13-35/single.php:31, packaged/dogium_2017-02-25_13-35/page-templates/front-community.php:70, packaged/dogium_2017-02-25_13-35/page-templates/page-full-width.php:18, packaged/dogium_2017-02-25_13-35/page-templates/page-sidebar-left.php:22, packaged/dogium_2017-02-25_13-35/page-templates/system-page.php:21, packaged/dogium_2017-02-25_13-35/page-templates/template-events.php:37, packaged/dogium_2017-02-25_13-35/page-templates/template-marketplace.php:21
+#: bbpress.php:50, buddypress.php:30, page.php:27, single-dogium_dog.php:247, single-event.php:57, single.php:31, page-templates/front-community.php:70, page-templates/page-full-width.php:18, page-templates/page-sidebar-left.php:22, page-templates/system-page.php:21, page-templates/template-events.php:37, page-templates/template-marketplace.php:21
 msgid "Pages:"
 msgstr ""
 
-#: classified-contact.php:9, packaged/dogium_2017-02-25_13-35/classified-contact.php:9
+#: classified-contact.php:9
 msgid "Contact seller"
 msgstr ""
 
-#: classified-contact.php:26, packaged/dogium_2017-02-25_13-35/classified-contact.php:26
+#: classified-contact.php:26
 msgid "Send message"
 msgstr ""
 
-#: classified-contact.php:29, packaged/dogium_2017-02-25_13-35/classified-contact.php:29
+#: classified-contact.php:29
 msgid "Subject"
 msgstr ""
 
-#: classified-contact.php:32, packaged/dogium_2017-02-25_13-35/classified-contact.php:32
+#: classified-contact.php:32
 msgid "Your name (required)"
 msgstr ""
 
-#: classified-contact.php:34, packaged/dogium_2017-02-25_13-35/classified-contact.php:34
+#: classified-contact.php:34
 msgid "Your email (required)"
 msgstr ""
 
-#: classified-contact.php:36, content-single-classified_listing.php:48, packaged/dogium_2017-02-25_13-35/classified-contact.php:36, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:48
+#: classified-contact.php:36, content-single-classified_listing.php:48
 msgid "Message (required)"
 msgstr ""
 
-#: classified-contact.php:38, content-single-classified_listing.php:50, packaged/dogium_2017-02-25_13-35/classified-contact.php:38, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:50
+#: classified-contact.php:38, content-single-classified_listing.php:50
 msgid "How much is 1 + 1?"
 msgstr ""
 
-#: classified-contact.php:40, content-single-classified_listing.php:52, packaged/dogium_2017-02-25_13-35/classified-contact.php:40, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:52
+#: classified-contact.php:40, content-single-classified_listing.php:52
 msgid "Submit"
 msgstr ""
 
-#: classified-contact.php:46, content-single-classified_listing.php:71, packaged/dogium_2017-02-25_13-35/classified-contact.php:46, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:71
+#: classified-contact.php:46, content-single-classified_listing.php:71
 msgid "Close modal"
 msgstr ""
 
-#: comments.php:26, packaged/dogium_2017-02-25_13-35/comments.php:26
+#: comments.php:26
 msgid "Reply"
 msgstr ""
 
-#: comments.php:35, packaged/dogium_2017-02-25_13-35/comments.php:35
+#: comments.php:35
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: comments.php:59, packaged/dogium_2017-02-25_13-35/comments.php:59
+#: comments.php:59
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: comments.php:72, packaged/dogium_2017-02-25_13-35/comments.php:72
+#: comments.php:72
 msgid "Leave a Reply"
 msgstr ""
 
-#: comments.php:72, packaged/dogium_2017-02-25_13-35/comments.php:72
+#: comments.php:72
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: comments.php:75, packaged/dogium_2017-02-25_13-35/comments.php:75
+#: comments.php:75
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: comments.php:79, packaged/dogium_2017-02-25_13-35/comments.php:79
+#: comments.php:79
 msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
 msgstr ""
 
-#: comments.php:79, packaged/dogium_2017-02-25_13-35/comments.php:79
+#: comments.php:79
 msgid "Log out of this account"
 msgstr ""
 
-#: comments.php:79, packaged/dogium_2017-02-25_13-35/comments.php:79
+#: comments.php:79
 msgid "Log out &raquo;"
 msgstr ""
 
-#: comments.php:84, packaged/dogium_2017-02-25_13-35/comments.php:84
+#: comments.php:84
 msgid "Name"
 msgstr ""
 
-#: comments.php:84, comments.php:92, packaged/dogium_2017-02-25_13-35/comments.php:84, packaged/dogium_2017-02-25_13-35/comments.php:92
+#: comments.php:84, comments.php:92
 msgid " (required)"
 msgstr ""
 
-#: comments.php:92, packaged/dogium_2017-02-25_13-35/comments.php:92
+#: comments.php:92
 msgid "Email (will not be published)"
 msgstr ""
 
-#: comments.php:100, packaged/dogium_2017-02-25_13-35/comments.php:100
+#: comments.php:100
 msgid "Website"
 msgstr ""
 
-#: comments.php:109, packaged/dogium_2017-02-25_13-35/comments.php:109
+#: comments.php:109
 msgid "Comment"
 msgstr ""
 
-#: comments.php:115, packaged/dogium_2017-02-25_13-35/comments.php:115
+#: comments.php:115
 msgid "Submit Comment"
 msgstr ""
 
-#: content-single-classified_listing.php:11, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:11
+#: content-single-classified_listing.php:11
 msgid "This listing is not currently active."
 msgstr ""
 
-#: content-single-classified_listing.php:36, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:36
+#: content-single-classified_listing.php:36
 msgid "Hello! Thought you might find this item (%s) interesting: %s"
 msgstr ""
 
-#: content-single-classified_listing.php:39, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:39
+#: content-single-classified_listing.php:39
 msgid "Tell a friend"
 msgstr ""
 
-#: content-single-classified_listing.php:41, content-single-classified_listing.php:44, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:41, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:44
+#: content-single-classified_listing.php:41, content-single-classified_listing.php:44
 msgid "Report unappropriate content"
 msgstr ""
 
-#: content-single-classified_listing.php:46, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:46
+#: content-single-classified_listing.php:46
 msgid "Why do you think this item is unappropriate?"
 msgstr ""
 
-#: content-single-classified_listing.php:64, packaged/dogium_2017-02-25_13-35/content-single-classified_listing.php:64
+#: content-single-classified_listing.php:64
 msgid "This action is for logged in users only. Please <a href=\"%s\">login</a> or <a href=\"%s\">register</a>."
 msgstr ""
 
-#: footer.php:33, header.php:38, packaged/dogium_2017-02-25_13-35/footer.php:33, packaged/dogium_2017-02-25_13-35/header.php:38
+#: footer.php:33, header.php:38
 msgid "My profile"
 msgstr ""
 
-#: footer.php:34, footer.php:34, header.php:38, header.php:38, packaged/dogium_2017-02-25_13-35/footer.php:34, packaged/dogium_2017-02-25_13-35/footer.php:34, packaged/dogium_2017-02-25_13-35/header.php:38, packaged/dogium_2017-02-25_13-35/header.php:38
+#: footer.php:34, footer.php:34, header.php:38, header.php:38
 msgid "Logout"
 msgstr ""
 
-#: footer.php:36, footer.php:36, header.php:35, header.php:35, packaged/dogium_2017-02-25_13-35/footer.php:36, packaged/dogium_2017-02-25_13-35/footer.php:36, packaged/dogium_2017-02-25_13-35/header.php:35, packaged/dogium_2017-02-25_13-35/header.php:35
+#: footer.php:36, footer.php:36, header.php:35, header.php:35
 msgid "Login"
 msgstr ""
 
-#: footer.php:37, footer.php:37, header.php:36, header.php:36, packaged/dogium_2017-02-25_13-35/footer.php:37, packaged/dogium_2017-02-25_13-35/footer.php:37, packaged/dogium_2017-02-25_13-35/header.php:36, packaged/dogium_2017-02-25_13-35/header.php:36
+#: footer.php:37, footer.php:37, header.php:36, header.php:36
 msgid "Register"
 msgstr ""
 
-#: search.php:15, packaged/dogium_2017-02-25_13-35/search.php:15
+#: search.php:15
 msgid "Search results for \"%s\""
 msgstr ""
 
-#: searchform.php:12, packaged/dogium_2017-02-25_13-35/searchform.php:12
+#: searchform.php:12
 msgid "Search for:"
 msgstr ""
 
-#: searchform.php:13, packaged/dogium_2017-02-25_13-35/searchform.php:13
+#: searchform.php:13
 msgid "Search"
 msgstr ""
 
-#: searchform.php:15, packaged/dogium_2017-02-25_13-35/searchform.php:15
+#: searchform.php:15
 msgid "Submit search"
 msgstr ""
 
-#: single-dogium_dog.php:25, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:25
+#: single-dogium_dog.php:25
 msgid "You may add photos and information of your dog. Once you're ready, hit 'Publish'."
 msgstr ""
 
-#: single-dogium_dog.php:55, single-dogium_dog.php:60, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:55, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:60
+#: single-dogium_dog.php:55, single-dogium_dog.php:60
 msgid "Breed:"
 msgstr ""
 
-#: single-dogium_dog.php:73, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:73
+#: single-dogium_dog.php:73
 msgid "Date of birth:"
 msgstr ""
 
-#: single-dogium_dog.php:82, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:82
+#: single-dogium_dog.php:82
 msgid "Gender"
 msgstr ""
 
-#: single-dogium_dog.php:118, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:118
+#: single-dogium_dog.php:118
 msgid "Owners:"
 msgstr ""
 
-#: single-dogium_dog.php:159, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:159
+#: single-dogium_dog.php:159
 msgid "Breeder:"
 msgstr ""
 
-#: single-dogium_dog.php:183, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:183
+#: single-dogium_dog.php:183
 msgid "Delete"
 msgstr ""
 
-#: single-dogium_dog.php:185, packaged/dogium_2017-02-25_13-35/single-dogium_dog.php:185
+#: single-dogium_dog.php:185
 msgid "Publish"
 msgstr ""
 
-#: single-event.php:44, packaged/dogium_2017-02-25_13-35/single-event.php:44
+#: single-event.php:44
 msgid "This content is private."
 msgstr ""
 
-#: taxonomy-event-categories.php:51, template-parts/content-events-nayttelyt.php:11, template-parts/content-events-ryhmatapahtuma.php:13, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:51, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:11, packaged/dogium_2017-02-25_13-35/template-parts/content-events-ryhmatapahtuma.php:13
+#: taxonomy-event-categories.php:54, template-parts/content-events-nayttelyt.php:11, template-parts/content-events-ryhmatapahtuma.php:13
 msgid "Date(s)"
 msgstr ""
 
-#: taxonomy-event-categories.php:54, template-parts/content-events-agility.php:9, template-parts/content-events-epaviralliset.php:9, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:54, packaged/dogium_2017-02-25_13-35/template-parts/content-events-agility.php:9, packaged/dogium_2017-02-25_13-35/template-parts/content-events-epaviralliset.php:9
+#: taxonomy-event-categories.php:57, template-parts/content-events-agility.php:9, template-parts/content-events-epaviralliset.php:9
 msgid "Weekday"
 msgstr ""
 
-#: taxonomy-event-categories.php:57, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:57
+#: taxonomy-event-categories.php:60
 msgid "Event name"
 msgstr ""
 
-#: taxonomy-event-categories.php:59, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:59
+#: taxonomy-event-categories.php:62
 msgid "Town"
 msgstr ""
 
-#: taxonomy-event-categories.php:62, template-parts/content-events-kurssit-ja-luennot.php:15, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:62, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:15
+#: taxonomy-event-categories.php:65
+msgid "Country"
+msgstr ""
+
+#: taxonomy-event-categories.php:66
+msgid "Continent"
+msgstr ""
+
+#: taxonomy-event-categories.php:70, template-parts/content-events-kurssit-ja-luennot.php:15
 msgid "Organizer"
 msgstr ""
 
-#: taxonomy-event-categories.php:66, template-parts/content-events-kilpailut-kokeet-testit.php:23, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:66, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kilpailut-kokeet-testit.php:23
+#: taxonomy-event-categories.php:74, template-parts/content-events-kilpailut-kokeet-testit.php:23
 msgid "Judge"
 msgstr ""
 
-#: taxonomy-event-categories.php:70, template-parts/content-events-nayttelyt.php:13, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:70, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:13
+#: taxonomy-event-categories.php:78, template-parts/content-events-nayttelyt.php:13
 msgid "Groups"
 msgstr ""
 
-#: taxonomy-event-categories.php:74, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:74
+#: taxonomy-event-categories.php:82
 msgid "Last cheapest enrollment"
 msgstr ""
 
-#: taxonomy-event-categories.php:75, template-parts/content-events-agility.php:17, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:75, packaged/dogium_2017-02-25_13-35/template-parts/content-events-agility.php:17
+#: taxonomy-event-categories.php:83, template-parts/content-events-agility.php:17
 msgid "Last enrollment"
 msgstr ""
 
-#: taxonomy-event-categories.php:79, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kurssit-ja-luennot.php:27, template-parts/content-events-nayttelyt.php:26, packaged/dogium_2017-02-25_13-35/taxonomy-event-categories.php:79, packaged/dogium_2017-02-25_13-35/template-parts/content-events-agility.php:20, packaged/dogium_2017-02-25_13-35/template-parts/content-events-epaviralliset.php:20, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:27, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:26
+#: taxonomy-event-categories.php:87, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kurssit-ja-luennot.php:27, template-parts/content-events-nayttelyt.php:26
 msgid "Event website"
 msgstr ""
 
-#: library/contact-seller-custom-form.php:54, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:54
+#: library/contact-seller-custom-form.php:54
 msgid "Link to the classified ad in question: %s"
 msgstr ""
 
-#: library/contact-seller-custom-form.php:127, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:127
+#: library/contact-seller-custom-form.php:127
 msgid "This email was sent from your classified ad \"%s\" contact form (%s)"
 msgstr ""
 
-#: library/contact-seller-custom-form.php:157, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:157
+#: library/contact-seller-custom-form.php:157
 msgid "Message sent!"
 msgstr ""
 
-#: library/contact-seller-custom-form.php:160, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:160
+#: library/contact-seller-custom-form.php:160
 msgid "There were errors in the form:"
 msgstr ""
 
-#: library/contact-seller-custom-form.php:161, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:161
+#: library/contact-seller-custom-form.php:161
 msgid "Name is required and only letters and white space characters are allowed."
 msgstr ""
 
-#: library/contact-seller-custom-form.php:162, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:162
+#: library/contact-seller-custom-form.php:162
 msgid "Email is required and it needs to be a valid email address."
 msgstr ""
 
-#: library/contact-seller-custom-form.php:163, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:163
+#: library/contact-seller-custom-form.php:163
 msgid "Message field cannot be empty."
 msgstr ""
 
-#: library/contact-seller-custom-form.php:165, packaged/dogium_2017-02-25_13-35/library/contact-seller-custom-form.php:165
+#: library/contact-seller-custom-form.php:165
 msgid "You need to answer the math question correctly. This is necessary to avoid spam."
 msgstr ""
 
-#: library/custom-nav.php:16, packaged/dogium_2017-02-25_13-35/library/custom-nav.php:16
+#: library/custom-nav.php:16
 msgid "Mobile Menu Settings"
 msgstr ""
 
-#: library/custom-nav.php:17, packaged/dogium_2017-02-25_13-35/library/custom-nav.php:17
+#: library/custom-nav.php:17
 msgid "Controls the mobile menu"
 msgstr ""
 
-#: library/custom-nav.php:22, packaged/dogium_2017-02-25_13-35/library/custom-nav.php:22
+#: library/custom-nav.php:22
 msgid "Mobile navigation layout"
 msgstr ""
 
-#: library/custom-nav.php:31, packaged/dogium_2017-02-25_13-35/library/custom-nav.php:31
+#: library/custom-nav.php:31
 msgid "topbar"
 msgstr ""
 
-#: library/events-custom-validation.php:10, packaged/dogium_2017-02-25_13-35/library/events-custom-validation.php:10
+#: library/events-custom-validation.php:10
 msgid "You are only allowed to create group events."
 msgstr ""
 
-#: library/events-custom-validation.php:15, packaged/dogium_2017-02-25_13-35/library/events-custom-validation.php:15
+#: library/events-custom-validation.php:15
 msgid "Only members are allowed to attend group events."
 msgstr ""
 
-#: library/events-custom-validation.php:26, packaged/dogium_2017-02-25_13-35/library/events-custom-validation.php:26
+#: library/events-custom-validation.php:26
 msgid "Category is required."
 msgstr ""
 
-#: library/events-custom-validation.php:31, packaged/dogium_2017-02-25_13-35/library/events-custom-validation.php:31
+#: library/events-custom-validation.php:31
 msgid "Only a single category is allowed."
 msgstr ""
 
-#: library/events-custom-validation.php:39, packaged/dogium_2017-02-25_13-35/library/events-custom-validation.php:39
+#: library/events-custom-validation.php:39
 msgid "You must use the correct category for group events."
 msgstr ""
 
-#: library/excerpt.php:12, packaged/dogium_2017-02-25_13-35/library/excerpt.php:12
+#: library/excerpt.php:12
 msgid "Read more"
 msgstr ""
 
-#: library/foundation.php:24, packaged/dogium_2017-02-25_13-35/library/foundation.php:24
+#: library/foundation.php:24
 msgid "&laquo;"
 msgstr ""
 
-#: library/foundation.php:25, packaged/dogium_2017-02-25_13-35/library/foundation.php:25
+#: library/foundation.php:25
 msgid "&raquo;"
 msgstr ""
 
-#: library/foundation.php:53, packaged/dogium_2017-02-25_13-35/library/foundation.php:53
+#: library/foundation.php:53
 msgid "Please assign a menu to the primary menu location under %1$s or %2$s the design."
 msgstr ""
 
-#: library/foundation.php:54, packaged/dogium_2017-02-25_13-35/library/foundation.php:54
+#: library/foundation.php:54
 msgid "<a href=\"%s\">Menus</a>"
 msgstr ""
 
-#: library/foundation.php:57, packaged/dogium_2017-02-25_13-35/library/foundation.php:57
+#: library/foundation.php:57
 msgid "<a href=\"%s\">Customize</a>"
 msgstr ""
 
-#: library/foundation.php:107, packaged/dogium_2017-02-25_13-35/library/foundation.php:107
+#: library/foundation.php:107
 msgid "No Responses to"
 msgstr ""
 
-#: library/foundation.php:107, packaged/dogium_2017-02-25_13-35/library/foundation.php:107
+#: library/foundation.php:107
 msgid "One Response to"
 msgstr ""
 
-#: library/foundation.php:107, packaged/dogium_2017-02-25_13-35/library/foundation.php:107
+#: library/foundation.php:107
 msgid "% Responses to"
 msgstr ""
 
-#: library/foundation.php:147, packaged/dogium_2017-02-25_13-35/library/foundation.php:147
+#: library/foundation.php:147
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: library/geodirectory-mods.php:13, packaged/dogium_2017-02-25_13-35/library/geodirectory-mods.php:13
+#: library/geodirectory-mods.php:13
 msgid "Add new listing"
 msgstr ""
 
-#: library/geodirectory-mods.php:31, packaged/dogium_2017-02-25_13-35/library/geodirectory-mods.php:31
+#: library/geodirectory-mods.php:31
 msgid "Place categories"
 msgstr ""
 
-#: library/navigation.php:43, packaged/dogium_2017-02-25_13-35/library/navigation.php:43
+#: library/navigation.php:43
 msgid "mobile-nav"
 msgstr ""
 
-#: library/navigation.php:210, packaged/dogium_2017-02-25_13-35/library/navigation.php:210
+#: library/navigation.php:210
 msgid "Page"
 msgstr ""
 
-#: library/widget-areas.php:13, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:13
+#: library/widget-areas.php:13
 msgid "News Page Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:14, library/widget-areas.php:23, library/widget-areas.php:32, library/widget-areas.php:41, library/widget-areas.php:50, library/widget-areas.php:60, library/widget-areas.php:70, library/widget-areas.php:80, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:14, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:23, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:32, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:41, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:50, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:60, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:70
+#: library/widget-areas.php:14, library/widget-areas.php:23, library/widget-areas.php:32, library/widget-areas.php:41, library/widget-areas.php:50, library/widget-areas.php:60, library/widget-areas.php:70, library/widget-areas.php:80
 msgid "Drag widgets to this sidebar container."
 msgstr ""
 
-#: library/widget-areas.php:22, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:22
+#: library/widget-areas.php:22
 msgid "Events Home Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:31, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:31
+#: library/widget-areas.php:31
 msgid "Events Home Left Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:40, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:40
+#: library/widget-areas.php:40
 msgid "Forums Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:49, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:49
+#: library/widget-areas.php:49
 msgid "Home Left Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:59, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:59
+#: library/widget-areas.php:59
 msgid "Community Sidebar"
 msgstr ""
 
@@ -453,111 +461,111 @@ msgstr ""
 msgid "Community Ads"
 msgstr ""
 
-#: library/widget-areas.php:79, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:69
+#: library/widget-areas.php:79
 msgid "Marketplace Sidebar"
 msgstr ""
 
-#: library/widget-areas.php:89, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:79
+#: library/widget-areas.php:89
 msgid "Footer widgets 1"
 msgstr ""
 
-#: library/widget-areas.php:90, library/widget-areas.php:100, library/widget-areas.php:110, library/widget-areas.php:120, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:80, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:90, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:100, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:110
+#: library/widget-areas.php:90, library/widget-areas.php:100, library/widget-areas.php:110, library/widget-areas.php:120
 msgid "Drag widgets to this footer container"
 msgstr ""
 
-#: library/widget-areas.php:99, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:89
+#: library/widget-areas.php:99
 msgid "Footer widgets 2"
 msgstr ""
 
-#: library/widget-areas.php:109, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:99
+#: library/widget-areas.php:109
 msgid "Footer widgets 3"
 msgstr ""
 
-#: library/widget-areas.php:119, packaged/dogium_2017-02-25_13-35/library/widget-areas.php:109
+#: library/widget-areas.php:119
 msgid "Search sidebar"
 msgstr ""
 
-#: page-templates/template-add-dog.php:33, packaged/dogium_2017-02-25_13-35/page-templates/template-add-dog.php:33
+#: page-templates/template-add-dog.php:33
 msgid "Only logged in users are allowed to add dogs. Please <a href=\"%s\">log in</a> or register."
 msgstr ""
 
-#: page-templates/template-marketplace.php:39, packaged/dogium_2017-02-25_13-35/page-templates/template-marketplace.php:39
+#: page-templates/template-marketplace.php:39
 msgid "Product categories"
 msgstr ""
 
-#: template-parts/content-events-agility.php:8, template-parts/content-events-epaviralliset.php:8, template-parts/content-events-kilpailut-kokeet-testit.php:9, template-parts/content-events-kurssit-ja-luennot.php:10, packaged/dogium_2017-02-25_13-35/template-parts/content-events-agility.php:8, packaged/dogium_2017-02-25_13-35/template-parts/content-events-epaviralliset.php:8, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kilpailut-kokeet-testit.php:9, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:10
+#: template-parts/content-events-agility.php:8, template-parts/content-events-epaviralliset.php:8, template-parts/content-events-kilpailut-kokeet-testit.php:9, template-parts/content-events-kurssit-ja-luennot.php:10
 msgid "Date"
 msgstr ""
 
-#: template-parts/content-events-agility.php:11, template-parts/content-events-epaviralliset.php:14, template-parts/content-events-kilpailut-kokeet-testit.php:14, template-parts/content-events-kurssit-ja-luennot.php:21, template-parts/content-events-nayttelyt.php:21, template-parts/content-events-ryhmatapahtuma.php:16, packaged/dogium_2017-02-25_13-35/template-parts/content-events-agility.php:11, packaged/dogium_2017-02-25_13-35/template-parts/content-events-epaviralliset.php:14, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kilpailut-kokeet-testit.php:14, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:21, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:21, packaged/dogium_2017-02-25_13-35/template-parts/content-events-ryhmatapahtuma.php:16
+#: template-parts/content-events-agility.php:11, template-parts/content-events-epaviralliset.php:14, template-parts/content-events-kilpailut-kokeet-testit.php:14, template-parts/content-events-kurssit-ja-luennot.php:21, template-parts/content-events-nayttelyt.php:21, template-parts/content-events-ryhmatapahtuma.php:16
 msgid "Venue"
 msgstr ""
 
-#: template-parts/content-events-agility.php:14, template-parts/content-events-epaviralliset.php:17, template-parts/content-events-kilpailut-kokeet-testit.php:11, template-parts/content-events-kurssit-ja-luennot.php:24, packaged/dogium_2017-02-25_13-35/template-parts/content-events-agility.php:14, packaged/dogium_2017-02-25_13-35/template-parts/content-events-epaviralliset.php:17, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kilpailut-kokeet-testit.php:11, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:24, plugins/events-manager/forms/event-editor.php:65, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event-editor.php:65
+#: template-parts/content-events-agility.php:14, template-parts/content-events-epaviralliset.php:17, template-parts/content-events-kilpailut-kokeet-testit.php:11, template-parts/content-events-kurssit-ja-luennot.php:24, plugins/events-manager/forms/event-editor.php:65
 msgid "Location"
 msgstr ""
 
-#: template-parts/content-events-epaviralliset.php:11, template-parts/content-events-kurssit-ja-luennot.php:18, packaged/dogium_2017-02-25_13-35/template-parts/content-events-epaviralliset.php:11, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:18
+#: template-parts/content-events-epaviralliset.php:11, template-parts/content-events-kurssit-ja-luennot.php:18
 msgid "Info"
 msgstr ""
 
-#: template-parts/content-events-kilpailut-kokeet-testit.php:17, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kilpailut-kokeet-testit.php:17
+#: template-parts/content-events-kilpailut-kokeet-testit.php:17
 msgid "Type of test"
 msgstr ""
 
-#: template-parts/content-events-kilpailut-kokeet-testit.php:20, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kilpailut-kokeet-testit.php:20
+#: template-parts/content-events-kilpailut-kokeet-testit.php:20
 msgid "Classes"
 msgstr ""
 
-#: template-parts/content-events-kurssit-ja-luennot.php:12, packaged/dogium_2017-02-25_13-35/template-parts/content-events-kurssit-ja-luennot.php:12
+#: template-parts/content-events-kurssit-ja-luennot.php:12
 msgid "Lecturer / instructor"
 msgstr ""
 
-#: template-parts/content-events-nayttelyt.php:16, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:16
+#: template-parts/content-events-nayttelyt.php:16
 msgid "Last enrollment day with cheapest price"
 msgstr ""
 
-#: template-parts/content-events-nayttelyt.php:19, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:19
+#: template-parts/content-events-nayttelyt.php:19
 msgid "Last enrollment day"
 msgstr ""
 
-#: template-parts/content-events-nayttelyt.php:22, template-parts/content-events-ryhmatapahtuma.php:17, packaged/dogium_2017-02-25_13-35/template-parts/content-events-nayttelyt.php:22, packaged/dogium_2017-02-25_13-35/template-parts/content-events-ryhmatapahtuma.php:17
+#: template-parts/content-events-nayttelyt.php:22, template-parts/content-events-ryhmatapahtuma.php:17
 msgid "Contact information"
 msgstr ""
 
-#: template-parts/content-events-ryhmatapahtuma.php:23, packaged/dogium_2017-02-25_13-35/template-parts/content-events-ryhmatapahtuma.php:23
+#: template-parts/content-events-ryhmatapahtuma.php:23
 msgid "Attendees"
 msgstr ""
 
-#: template-parts/content-events-ryhmatapahtuma.php:27, packaged/dogium_2017-02-25_13-35/template-parts/content-events-ryhmatapahtuma.php:27
+#: template-parts/content-events-ryhmatapahtuma.php:27
 msgid "Available spaces:"
 msgstr ""
 
-#: template-parts/content-none.php:14, packaged/dogium_2017-02-25_13-35/template-parts/content-none.php:14
+#: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:20, packaged/dogium_2017-02-25_13-35/template-parts/content-none.php:20
+#: template-parts/content-none.php:20
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:24, packaged/dogium_2017-02-25_13-35/template-parts/content-none.php:24
+#: template-parts/content-none.php:24
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:29, packaged/dogium_2017-02-25_13-35/template-parts/content-none.php:29
+#: template-parts/content-none.php:29
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: buddypress/activity/entry.php:66, packaged/dogium_2017-02-25_13-35/buddypress/activity/entry.php:66
+#: buddypress/activity/entry.php:66
 msgid "Comments (%s)"
 msgstr ""
 
-#: buddypress/activity/entry.php:117, packaged/dogium_2017-02-25_13-35/buddypress/activity/entry.php:117
+#: buddypress/activity/entry.php:117
 msgid "Join this conversation"
 msgstr ""
 
-#: buddypress/groups/single/cover-image-header.php:28, buddypress/groups/single/cover-image-header.php:28, buddypress/members/single/cover-image-header.php:33, buddypress/members/single/cover-image-header.php:33, packaged/dogium_2017-02-25_13-35/buddypress/groups/single/cover-image-header.php:27, packaged/dogium_2017-02-25_13-35/buddypress/groups/single/cover-image-header.php:27, packaged/dogium_2017-02-25_13-35/buddypress/members/single/cover-image-header.php:32, packaged/dogium_2017-02-25_13-35/buddypress/members/single/cover-image-header.php:32
+#: buddypress/groups/single/cover-image-header.php:28, buddypress/groups/single/cover-image-header.php:28, buddypress/members/single/cover-image-header.php:33, buddypress/members/single/cover-image-header.php:33
 msgid "Change cover image"
 msgstr ""
 
@@ -565,11 +573,11 @@ msgstr ""
 msgid "Change group image"
 msgstr ""
 
-#: buddypress/members/single/cover-image-header.php:35, buddypress/members/single/cover-image-header.php:35, buddypress/members/single/cover-image-header.php:36, packaged/dogium_2017-02-25_13-35/buddypress/members/single/cover-image-header.php:34, packaged/dogium_2017-02-25_13-35/buddypress/members/single/cover-image-header.php:34, packaged/dogium_2017-02-25_13-35/buddypress/members/single/cover-image-header.php:35
+#: buddypress/members/single/cover-image-header.php:35, buddypress/members/single/cover-image-header.php:35, buddypress/members/single/cover-image-header.php:36
 msgid "Edit profile fields"
 msgstr ""
 
-#: buddypress/members/single/cover-image-header.php:36, packaged/dogium_2017-02-25_13-35/buddypress/members/single/cover-image-header.php:35
+#: buddypress/members/single/cover-image-header.php:36
 msgid "Privacy / login settings"
 msgstr ""
 
@@ -577,15 +585,15 @@ msgstr ""
 msgid "Change profile image"
 msgstr ""
 
-#: plugins/events-manager/buddypress/group-events.php:45, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:45
+#: plugins/events-manager/buddypress/group-events.php:45
 msgid "Bookings"
 msgstr ""
 
-#: plugins/events-manager/buddypress/group-events.php:178, packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:180
+#: plugins/events-manager/buddypress/group-events.php:178
 msgid "Booking not available"
 msgstr ""
 
-#: plugins/events-manager/forms/event-editor.php:51, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event-editor.php:51
+#: plugins/events-manager/forms/event-editor.php:51
 msgid "Dates and time"
 msgstr ""
 
@@ -597,38 +605,34 @@ msgstr ""
 msgid "Update event"
 msgstr ""
 
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:14, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings-ticket-form.php:14
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:14
 msgid "Group Ticket"
 msgstr ""
 
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:20, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings-ticket-form.php:20
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:20
 msgid "Enter a maximum number of attendees (required)."
 msgstr ""
 
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:28, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings-ticket-form.php:28
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:28
 msgid "Tickets available from"
 msgstr ""
 
-#: plugins/events-manager/forms/event/bookings-ticket-form.php:47, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings-ticket-form.php:47
+#: plugins/events-manager/forms/event/bookings-ticket-form.php:47
 msgid "Tickets available until"
 msgstr ""
 
-#: plugins/events-manager/forms/event/bookings.php:21, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/bookings.php:21
+#: plugins/events-manager/forms/event/bookings.php:21
 msgid "Booking options"
 msgstr ""
 
-#: plugins/events-manager/forms/event/group.php:32, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/group.php:32
+#: plugins/events-manager/forms/event/group.php:32
 msgid "Select group"
 msgstr ""
 
-#: plugins/events-manager/forms/event/when.php:8, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/when.php:8
+#: plugins/events-manager/forms/event/when.php:8
 msgid "Start date"
 msgstr ""
 
-#: plugins/events-manager/forms/event/when.php:11, packaged/dogium_2017-02-25_13-35/plugins/events-manager/forms/event/when.php:11
+#: plugins/events-manager/forms/event/when.php:11
 msgid "End date"
-msgstr ""
-
-#: packaged/dogium_2017-02-25_13-35/plugins/events-manager/buddypress/group-events.php:97
-msgid "This event has no location"
 msgstr ""
