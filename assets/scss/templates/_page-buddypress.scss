@@ -3,6 +3,11 @@
     @extend .clearfix;
   }
 
+  #search-members-form {
+    label {
+      width: rem-calc(300);
+    }
+  }
 
   // This is used for groups header as well
   #dogium-member-cover {
