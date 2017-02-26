@@ -1,6 +1,13 @@
 <?php
 
 $EM_Event = em_get_event($post->ID, 'post_id');
+
+$event_categories = get_the_terms($post->ID, 'event-categories');
+
+if ($event_categories) {
+	$category = $event_categories[0];
+}
+
 $show_groups = get_post_meta($post->ID, 'dgm_show_groups', true);
 $event_www = get_post_meta($post->ID, 'dgm_event_www', true);
 // Use acf function to get easy formatting for dates
@@ -24,10 +31,12 @@ $event_continent = get_post_meta($post->ID, 'dgm_event_continent', true);
 	<?php if ('' != $show_last_day) : ?>
 		<strong><?php esc_html_e('Last enrollment day', 'dogium'); ?></strong>: <?php echo esc_html($show_last_day); ?><br>
 	<?php endif; ?>
+	<?php if ($category->slug !== 'ulkomaiset-nayttelyt') : ?>
 	<strong><?php esc_html_e('Venue', 'dogium'); ?></strong>: <?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONNAME[/events_list]"); ?><br>
 	<strong><?php esc_html_e('Contact information', 'dogium'); ?></strong>: <br>
 	<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONADDRESS[/events_list]"); ?><br>
 	<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONPOSTCODE[/events_list]"); ?> <?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONTOWN[/events_list]"); ?><br>
+	<?php endif; ?>
 	<?php if ('' != $alternative_location) : ?>
 	<strong><?php esc_html_e('Location', 'dogium'); ?></strong>: <?php echo esc_html($alternative_location); ?><br>	
 	<?php endif; ?>
@@ -42,7 +51,9 @@ $event_continent = get_post_meta($post->ID, 'dgm_event_continent', true);
 	<?php endif; ?>
 	</div>
 	<div class="large-6 columns">
+		<?php if ($category->slug !== 'ulkomaiset-nayttelyt') : ?>
 		<?php echo do_shortcode("[events_list post_id='{$post->ID}']#_LOCATIONMAP[/events_list]");?>
+		<?php endif; ?>
 	</div>
 
 </div>
