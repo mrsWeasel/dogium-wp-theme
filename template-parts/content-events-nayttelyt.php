@@ -44,7 +44,7 @@ $event_continent = get_post_meta($post->ID, 'dgm_event_continent', true);
 	<strong><?php esc_html_e('Country', 'dogium'); ?></strong>: <?php echo esc_html($alternative_country); ?><br>	
 	<?php endif; ?>
 	<?php if ('' != $event_continent) : ?>
-	<strong><?php esc_html_e('Country', 'dogium'); ?></strong>: <?php echo esc_html($event_continent); ?><br>	
+	<strong><?php esc_html_e('Continent', 'dogium'); ?></strong>: <?php echo esc_html($event_continent); ?><br>	
 	<?php endif; ?>		
 	<?php if ('' != $event_www) : ?>
 		<a href="<?php echo esc_url($event_www); ?>" target="_blank"><?php esc_html_e('Event website', 'dogium'); ?></a>
