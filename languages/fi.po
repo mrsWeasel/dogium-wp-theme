@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dogium\n"
-"POT-Creation-Date: 2017-02-26 13:06+0200\n"
+"POT-Creation-Date: 2017-03-11 14:48+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -104,6 +104,10 @@ msgid "Sorry, there was no activity found. Please try a different filter."
 msgstr ""
 "Pahoittelut, toimintaa ei löytynyt. Ole hyvä ja kokeile jotain muuta "
 "suodatinta."
+
+#: buddypress/activity/activity-loop.php:72
+msgid "Add some friends to see their updates here!"
+msgstr "Lisää käyttäjiä kaveriksi, niin näet heidän julkaisunsa tässä!"
 
 #: buddypress/activity/entry.php:59
 msgid "View Conversation"
@@ -332,19 +336,19 @@ msgstr ""
 "Tämä toiminto on käytettävissä vain kirjautuneille käyttäjille. Ole hyvä ja "
 "<a href=\"%s\">kirjaudu sisään</a> tai <a href=\"%s\">luo tili</a>."
 
-#: footer.php:33 header.php:38
+#: footer.php:33 header.php:48
 msgid "My profile"
 msgstr "Oma profiili"
 
-#: footer.php:34 header.php:38
+#: footer.php:34 header.php:48
 msgid "Logout"
 msgstr "Kirjaudu ulos"
 
-#: footer.php:36 header.php:35
+#: footer.php:36 header.php:45
 msgid "Login"
 msgstr "Kirjaudu sisään"
 
-#: footer.php:37 header.php:36
+#: footer.php:37 header.php:46
 msgid "Register"
 msgstr "Luo tili"
 
@@ -593,6 +597,7 @@ msgstr "Ei tapahtumia"
 #: template-parts/content-events-epaviralliset.php:17
 #: template-parts/content-events-kilpailut-kokeet-testit.php:11
 #: template-parts/content-events-kurssit-ja-luennot.php:24
+#: template-parts/content-events-nayttelyt.php:41
 msgid "Location"
 msgstr "Sijainti"
 
@@ -901,7 +906,11 @@ msgstr ""
 msgid "Select group"
 msgstr "Valitse ryhmä"
 
-#: plugins/events-manager/forms/event/group.php:53
+#: plugins/events-manager/forms/event/group.php:35
+msgid "Not a Group Event"
+msgstr ""
+
+#: plugins/events-manager/forms/event/group.php:56
 msgid "No groups defined yet."
 msgstr ""
 
@@ -1043,7 +1052,7 @@ msgid "This content is private."
 msgstr "Tämä sisältö on yksityistä."
 
 #: taxonomy-event-categories.php:54
-#: template-parts/content-events-nayttelyt.php:11
+#: template-parts/content-events-nayttelyt.php:24
 #: template-parts/content-events-ryhmatapahtuma.php:13
 msgid "Date(s)"
 msgstr "Päivä(t)"
@@ -1062,10 +1071,12 @@ msgid "Town"
 msgstr "Kaupunki"
 
 #: taxonomy-event-categories.php:65
+#: template-parts/content-events-nayttelyt.php:44
 msgid "Country"
 msgstr "Maa"
 
 #: taxonomy-event-categories.php:66
+#: template-parts/content-events-nayttelyt.php:47
 msgid "Continent"
 msgstr "Maanosa"
 
@@ -1080,7 +1091,7 @@ msgid "Judge"
 msgstr "Tuomari"
 
 #: taxonomy-event-categories.php:78
-#: template-parts/content-events-nayttelyt.php:13
+#: template-parts/content-events-nayttelyt.php:26
 msgid "Groups"
 msgstr "Ryhmät"
 
@@ -1097,7 +1108,7 @@ msgstr "Viimeinen ilmoittautumispäivä"
 #: template-parts/content-events-agility.php:20
 #: template-parts/content-events-epaviralliset.php:20
 #: template-parts/content-events-kurssit-ja-luennot.php:27
-#: template-parts/content-events-nayttelyt.php:26
+#: template-parts/content-events-nayttelyt.php:50
 msgid "Event website"
 msgstr "Tapahtuman verkkosivusto"
 
@@ -1112,7 +1123,7 @@ msgstr "Päivämäärä"
 #: template-parts/content-events-epaviralliset.php:14
 #: template-parts/content-events-kilpailut-kokeet-testit.php:14
 #: template-parts/content-events-kurssit-ja-luennot.php:21
-#: template-parts/content-events-nayttelyt.php:21
+#: template-parts/content-events-nayttelyt.php:35
 #: template-parts/content-events-ryhmatapahtuma.php:16
 msgid "Venue"
 msgstr "Tapahtumapaikka"
@@ -1134,15 +1145,15 @@ msgstr "Luokat"
 msgid "Lecturer / instructor"
 msgstr "Luennoija / ohjaaja"
 
-#: template-parts/content-events-nayttelyt.php:16
+#: template-parts/content-events-nayttelyt.php:29
 msgid "Last enrollment day with cheapest price"
 msgstr "Viimeinen halvimman hinnan ilmoittautuminen"
 
-#: template-parts/content-events-nayttelyt.php:19
+#: template-parts/content-events-nayttelyt.php:32
 msgid "Last enrollment day"
 msgstr "Viimeinen ilmoittautumispäivä"
 
-#: template-parts/content-events-nayttelyt.php:22
+#: template-parts/content-events-nayttelyt.php:36
 #: template-parts/content-events-ryhmatapahtuma.php:17
 msgid "Contact information"
 msgstr "Yhteystiedot"

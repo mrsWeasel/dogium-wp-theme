@@ -189,19 +189,19 @@ msgstr ""
 msgid "This action is for logged in users only. Please <a href=\"%s\">login</a> or <a href=\"%s\">register</a>."
 msgstr ""
 
-#: footer.php:33, header.php:38
+#: footer.php:33, header.php:48
 msgid "My profile"
 msgstr ""
 
-#: footer.php:34, footer.php:34, header.php:38, header.php:38
+#: footer.php:34, footer.php:34, header.php:48, header.php:48
 msgid "Logout"
 msgstr ""
 
-#: footer.php:36, footer.php:36, header.php:35, header.php:35
+#: footer.php:36, footer.php:36, header.php:45, header.php:45
 msgid "Login"
 msgstr ""
 
-#: footer.php:37, footer.php:37, header.php:36, header.php:36
+#: footer.php:37, footer.php:37, header.php:46, header.php:46
 msgid "Register"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "This content is private."
 msgstr ""
 
-#: taxonomy-event-categories.php:54, template-parts/content-events-nayttelyt.php:11, template-parts/content-events-ryhmatapahtuma.php:13
+#: taxonomy-event-categories.php:54, template-parts/content-events-nayttelyt.php:24, template-parts/content-events-ryhmatapahtuma.php:13
 msgid "Date(s)"
 msgstr ""
 
@@ -273,11 +273,11 @@ msgstr ""
 msgid "Town"
 msgstr ""
 
-#: taxonomy-event-categories.php:65
+#: taxonomy-event-categories.php:65, template-parts/content-events-nayttelyt.php:44
 msgid "Country"
 msgstr ""
 
-#: taxonomy-event-categories.php:66
+#: taxonomy-event-categories.php:66, template-parts/content-events-nayttelyt.php:47
 msgid "Continent"
 msgstr ""
 
@@ -289,7 +289,7 @@ msgstr ""
 msgid "Judge"
 msgstr ""
 
-#: taxonomy-event-categories.php:78, template-parts/content-events-nayttelyt.php:13
+#: taxonomy-event-categories.php:78, template-parts/content-events-nayttelyt.php:26
 msgid "Groups"
 msgstr ""
 
@@ -301,7 +301,7 @@ msgstr ""
 msgid "Last enrollment"
 msgstr ""
 
-#: taxonomy-event-categories.php:87, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kurssit-ja-luennot.php:27, template-parts/content-events-nayttelyt.php:26
+#: taxonomy-event-categories.php:87, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kurssit-ja-luennot.php:27, template-parts/content-events-nayttelyt.php:50
 msgid "Event website"
 msgstr ""
 
@@ -497,11 +497,11 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: template-parts/content-events-agility.php:11, template-parts/content-events-epaviralliset.php:14, template-parts/content-events-kilpailut-kokeet-testit.php:14, template-parts/content-events-kurssit-ja-luennot.php:21, template-parts/content-events-nayttelyt.php:21, template-parts/content-events-ryhmatapahtuma.php:16
+#: template-parts/content-events-agility.php:11, template-parts/content-events-epaviralliset.php:14, template-parts/content-events-kilpailut-kokeet-testit.php:14, template-parts/content-events-kurssit-ja-luennot.php:21, template-parts/content-events-nayttelyt.php:35, template-parts/content-events-ryhmatapahtuma.php:16
 msgid "Venue"
 msgstr ""
 
-#: template-parts/content-events-agility.php:14, template-parts/content-events-epaviralliset.php:17, template-parts/content-events-kilpailut-kokeet-testit.php:11, template-parts/content-events-kurssit-ja-luennot.php:24, plugins/events-manager/forms/event-editor.php:65
+#: template-parts/content-events-agility.php:14, template-parts/content-events-epaviralliset.php:17, template-parts/content-events-kilpailut-kokeet-testit.php:11, template-parts/content-events-kurssit-ja-luennot.php:24, template-parts/content-events-nayttelyt.php:41, plugins/events-manager/forms/event-editor.php:65
 msgid "Location"
 msgstr ""
 
@@ -521,15 +521,15 @@ msgstr ""
 msgid "Lecturer / instructor"
 msgstr ""
 
-#: template-parts/content-events-nayttelyt.php:16
+#: template-parts/content-events-nayttelyt.php:29
 msgid "Last enrollment day with cheapest price"
 msgstr ""
 
-#: template-parts/content-events-nayttelyt.php:19
+#: template-parts/content-events-nayttelyt.php:32
 msgid "Last enrollment day"
 msgstr ""
 
-#: template-parts/content-events-nayttelyt.php:22, template-parts/content-events-ryhmatapahtuma.php:17
+#: template-parts/content-events-nayttelyt.php:36, template-parts/content-events-ryhmatapahtuma.php:17
 msgid "Contact information"
 msgstr ""
 
@@ -555,6 +555,10 @@ msgstr ""
 
 #: template-parts/content-none.php:29
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: buddypress/activity/activity-loop.php:72
+msgid "Add some friends to see their updates here!"
 msgstr ""
 
 #: buddypress/activity/entry.php:66

@@ -62,11 +62,16 @@ $parameters = '';
 
 	<?php endif; ?>
 
-<?php else : ?>
-
+<?php elseif (is_user_logged_in()) : ?>
+	<?php if (bp_is_group() || bp_is_user()) : ?>
 	<div id="message" class="callout warning info">
 		<p><?php _e( 'Sorry, there was no activity found. Please try a different filter.', 'buddypress' ); ?></p>
 	</div>
+	<?php else : ?>
+	<div id="message" class="callout warning info">
+		<p><?php _e( 'Add some friends to see their updates here!', 'dogium' ); ?></p>
+	</div>
+	<?php endif; ?>
 
 <?php endif; ?>
 
