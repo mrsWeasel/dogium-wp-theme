@@ -11,7 +11,7 @@ if ( !current_user_can('administrator')) {
 	    $result = false;
 	}
 
-	if ( ! isset ( $_REQUEST['em_tickets'][$col_count]['ticket_type'] ) || $_REQUEST['em_tickets'][$col_count]['ticket_type'] !== 'members' ) {
+	if ( isset ( $_REQUEST['event_rsvp'] ) && (! isset ( $_REQUEST['em_tickets'][$col_count]['ticket_type'] ) || $_REQUEST['em_tickets'][$col_count]['ticket_type'] !== 'members' )) {
 		$EM_Event->add_error( __('Only members are allowed to attend group events.', 'dogium') );
 		$result = false;
 	}
