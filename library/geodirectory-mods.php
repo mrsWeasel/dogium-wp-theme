@@ -6,6 +6,7 @@
   * @author Laura Heino
   */
 
+
 function dogium_add_geodir_listing_button() {
 	$output = '';
 	$output .= '<div class="large-2 columns"><div style="padding: 5px">';
