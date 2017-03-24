@@ -5,6 +5,17 @@ $event_www = get_post_meta($post->ID, 'dgm_event_www', true);
 $course_lecturer_instructor = get_post_meta($post->ID, 'dgm_course_lecturer_instructor', true);
 $course_organizer = get_post_meta($post->ID, 'dgm_course_organizer', true);
 $course_info = get_post_meta($post->ID, 'dgm_course_info', true);
+
+$allowed_html = array(
+    'a' => array(
+        'href' => array(),
+        'title' => array()
+    ),
+    'br' => array(),
+    'em' => array(),
+    'strong' => array(),
+    'p' => array(),
+);
 ?>
 
 <strong><?php esc_html_e('Date', 'dogium'); ?></strong>: <?php echo do_shortcode("[events_list post_id='{$post->ID}']#_EVENTDATES[/events_list]");?><br>
@@ -15,7 +26,7 @@ $course_info = get_post_meta($post->ID, 'dgm_course_info', true);
 	<strong><?php esc_html_e('Organizer', 'dogium'); ?></strong>: <?php echo esc_html($course_organizer); ?><br>
 <?php endif; ?>
 <?php if ('' != $course_info) : ?>
-	<strong><?php esc_html_e('Info', 'dogium'); ?></strong>: <?php echo esc_html($course_info); ?><br>
+	<strong><?php esc_html_e('Info', 'dogium'); ?></strong>: <?php echo wp_kses($course_info, $allowed_html); ?><br>
 <?php endif; ?>
 <?php if ('' != $alternative_venue) : ?>
 	<strong><?php esc_html_e('Venue', 'dogium'); ?></strong>: <?php echo esc_html($alternative_venue); ?><br>
