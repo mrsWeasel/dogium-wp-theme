@@ -18,6 +18,7 @@ do_action('geodir_wrapper_open', 'home-page', 'geodir-wrapper', '');
 
 ###### TOP CONTENT ######
 /** This action is documented in geodirectory-templates/add-listing.php */
+
 do_action('geodir_top_content', 'home-page');
 
 /**
