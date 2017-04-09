@@ -153,7 +153,7 @@ aside .geodir-entry-content {
 		.customize_filter_inner {
 			@extend .columns;
 			//@extend .large-6;
-			@extend .small-6;
+			@extend .medium-6;
 			padding-left: 0;
 			padding-right: 0;
 		}
@@ -182,7 +182,7 @@ aside .geodir-entry-content {
 
 #geodir-wrapper .geodir-loc-bar .geodir-filter-container .geodir-advance-search {
     @extend .columns;
-	@extend .small-6;
+	@extend .medium-6;
 	background: none;
 	.geodir_submit_search {
 		background: $primary-color;

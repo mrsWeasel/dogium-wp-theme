@@ -50,7 +50,7 @@ function dogium_show_users_own_attachments( $query ) {
 add_action('after_setup_theme', 'dogium_remove_admin_bar');
 
 function dogium_remove_admin_bar() {
-	if (!current_user_can('manage_options') && !is_admin()) {
+	if (!current_user_can('manage_options') ) {
 	  show_admin_bar(false);
 	}
 }

@@ -76,10 +76,7 @@ function dogium_print_details( $echo = true ) {
 	if ( $address ) {
 		$output[] = $address;
 	}
-
-	if ( !$city && !$zip ) {
-		continue;
-	} elseif ( $city && $zip ) {
+	if ( $city && $zip ) {
 		$output[] = $zip . ' ' . $city;
 	} elseif ( $city ) {
 		$output[] = $city;
