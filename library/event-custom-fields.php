@@ -232,10 +232,10 @@ acf_add_local_field_group(array (
 	'fields' => array (
 		array (
 			'default_value' => '',
-			'new_lines' => 'wpautop',
+			//'new_lines' => 'wpautop',
 			'maxlength' => '',
 			'placeholder' => '',
-			'rows' => '',
+			//'rows' => '',
 			'key' => 'field_589071c7b9d37',
 			'label' => 'Muu info',
 			'name' => 'dgm_unofficial_info',
@@ -471,10 +471,10 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'default_value' => '',
-			'new_lines' => 'wpautop',
+			//'new_lines' => 'wpautop',
 			'maxlength' => '',
 			'placeholder' => '',
-			'rows' => '',
+			//'rows' => '',
 			'key' => 'field_58905b3e8a817',
 			'label' => 'Info',
 			'name' => 'dgm_course_info',
