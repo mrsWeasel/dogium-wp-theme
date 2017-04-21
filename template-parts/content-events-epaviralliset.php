@@ -2,7 +2,7 @@
 $alternative_location = get_post_meta($post->ID, 'dgm_alternative_location', true);
 $alternative_venue = get_post_meta($post->ID, 'dgm_alternative_venue', true);
 $event_www = get_post_meta($post->ID, 'dgm_event_www', true);
-$unofficial_info = get_post_meta($post->ID, 'dgm_unofficial_info', true);
+$unofficial_info = get_field('dgm_unofficial_info');
 
 $allowed_html = array(
     'a' => array(

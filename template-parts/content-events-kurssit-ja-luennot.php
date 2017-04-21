@@ -4,7 +4,7 @@ $alternative_venue = get_post_meta($post->ID, 'dgm_alternative_venue', true);
 $event_www = get_post_meta($post->ID, 'dgm_event_www', true);
 $course_lecturer_instructor = get_post_meta($post->ID, 'dgm_course_lecturer_instructor', true);
 $course_organizer = get_post_meta($post->ID, 'dgm_course_organizer', true);
-$course_info = get_post_meta($post->ID, 'dgm_course_info', true);
+$course_info = get_field('dgm_course_info');
 
 $allowed_html = array(
     'a' => array(
