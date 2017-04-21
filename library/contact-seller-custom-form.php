@@ -53,7 +53,7 @@ class DogiumClassifiedForms {
 			$message .= "\n----\n";
 			$message .= sprintf( __('Link to the classified ad in question: %s', 'dogium'), $post_permalink );
 
-			wp_mail( 'info@dogium.com', esc_html('Reporting inappropriate item (dogium.com)', 'dogium'), $message);
+			wp_mail( 'info@dogium.com', esc_html__('Reporting inappropriate item (dogium.com)', 'dogium'), $message);
 			$validation['message_sent'] = true;
 
 		} else {

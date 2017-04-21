@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dogium\n"
-"POT-Creation-Date: 2017-03-11 14:48+0200\n"
+"POT-Creation-Date: 2017-04-21 22:29+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -206,19 +206,19 @@ msgstr "Nimesi (pakollinen)"
 msgid "Your email (required)"
 msgstr "Sähköpostiosoitteesi (pakollinen)"
 
-#: classified-contact.php:36 content-single-classified_listing.php:48
+#: classified-contact.php:36 content-single-classified_listing.php:49
 msgid "Message (required)"
 msgstr "Viesti (pakollinen)"
 
-#: classified-contact.php:38 content-single-classified_listing.php:50
+#: classified-contact.php:38 content-single-classified_listing.php:51
 msgid "How much is 1 + 1?"
 msgstr "Paljonko on 1 + 1?"
 
-#: classified-contact.php:40 content-single-classified_listing.php:52
+#: classified-contact.php:40 content-single-classified_listing.php:53
 msgid "Submit"
 msgstr "Lähetä"
 
-#: classified-contact.php:46 content-single-classified_listing.php:71
+#: classified-contact.php:46 content-single-classified_listing.php:72
 msgid "Close modal"
 msgstr "Sulje ikkuna"
 
@@ -309,25 +309,25 @@ msgstr "Ilmoitus lähetetty:"
 msgid "This listing is not currently active."
 msgstr "Tämä ilmoitus ei ole tällä hetkellä voimassa."
 
-#: content-single-classified_listing.php:36
-#, fuzzy, php-format
+#: content-single-classified_listing.php:37
+#, php-format
 msgid "Hello! Thought you might find this item (%s) interesting: %s"
-msgstr "Hei! Ajattelin, että tämä ilmoitus saattaisi kiinnostaa sinua: %s"
+msgstr "Hei! Ajattelin, että tämä ilmoitus (%s) saattaisi kiinnostaa sinua: %s"
 
-#: content-single-classified_listing.php:39
+#: content-single-classified_listing.php:40
 msgid "Tell a friend"
 msgstr "Kerro kaverille"
 
-#: content-single-classified_listing.php:41
-#: content-single-classified_listing.php:44
+#: content-single-classified_listing.php:42
+#: content-single-classified_listing.php:45
 msgid "Report unappropriate content"
 msgstr "Ilmianna asiaton ilmoitus"
 
-#: content-single-classified_listing.php:46
+#: content-single-classified_listing.php:47
 msgid "Why do you think this item is unappropriate?"
 msgstr "Miksi tämä ilmoitus on mielestäsi epäasiallinen?"
 
-#: content-single-classified_listing.php:64
+#: content-single-classified_listing.php:65
 #, php-format
 msgid ""
 "This action is for logged in users only. Please <a href=\"%s\">login</a> or "
@@ -364,6 +364,10 @@ msgstr "Tallenna"
 #, php-format
 msgid "Link to the classified ad in question: %s"
 msgstr "Linkki kyseessä olevaan ilmoitukseen: %s"
+
+#: library/contact-seller-custom-form.php:56
+msgid "Reporting inappropriate item (dogium.com)"
+msgstr "Ilmianto sopimasta myynti-ilmoituksesta (dogium.com)"
 
 #: library/contact-seller-custom-form.php:127
 #, php-format
@@ -485,11 +489,11 @@ msgstr "% kommenttia artikkeliin"
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: library/geodirectory-mods.php:13
+#: library/geodirectory-mods.php:14
 msgid "Add new listing"
 msgstr "Lisää uusi palvelu"
 
-#: library/geodirectory-mods.php:31
+#: library/geodirectory-mods.php:32
 msgid "Place categories"
 msgstr "Palvelukategoriat"
 
@@ -594,9 +598,9 @@ msgstr "Ei tapahtumia"
 #: plugins/events-manager/forms/event-editor.php:65
 #: plugins/events-manager/tables/events.php:64
 #: template-parts/content-events-agility.php:14
-#: template-parts/content-events-epaviralliset.php:17
+#: template-parts/content-events-epaviralliset.php:29
 #: template-parts/content-events-kilpailut-kokeet-testit.php:11
-#: template-parts/content-events-kurssit-ja-luennot.php:24
+#: template-parts/content-events-kurssit-ja-luennot.php:35
 #: template-parts/content-events-nayttelyt.php:41
 msgid "Location"
 msgstr "Sijainti"
@@ -1058,7 +1062,7 @@ msgid "Date(s)"
 msgstr "Päivä(t)"
 
 #: taxonomy-event-categories.php:57 template-parts/content-events-agility.php:9
-#: template-parts/content-events-epaviralliset.php:9
+#: template-parts/content-events-epaviralliset.php:21
 msgid "Weekday"
 msgstr "Viikonpäivä"
 
@@ -1081,7 +1085,7 @@ msgid "Continent"
 msgstr "Maanosa"
 
 #: taxonomy-event-categories.php:70
-#: template-parts/content-events-kurssit-ja-luennot.php:15
+#: template-parts/content-events-kurssit-ja-luennot.php:26
 msgid "Organizer"
 msgstr "Järjestäjä"
 
@@ -1106,30 +1110,30 @@ msgstr "Viimeinen ilmoittautumispäivä"
 
 #: taxonomy-event-categories.php:87
 #: template-parts/content-events-agility.php:20
-#: template-parts/content-events-epaviralliset.php:20
-#: template-parts/content-events-kurssit-ja-luennot.php:27
+#: template-parts/content-events-epaviralliset.php:32
+#: template-parts/content-events-kurssit-ja-luennot.php:38
 #: template-parts/content-events-nayttelyt.php:50
 msgid "Event website"
 msgstr "Tapahtuman verkkosivusto"
 
 #: template-parts/content-events-agility.php:8
-#: template-parts/content-events-epaviralliset.php:8
+#: template-parts/content-events-epaviralliset.php:20
 #: template-parts/content-events-kilpailut-kokeet-testit.php:9
-#: template-parts/content-events-kurssit-ja-luennot.php:10
+#: template-parts/content-events-kurssit-ja-luennot.php:21
 msgid "Date"
 msgstr "Päivämäärä"
 
 #: template-parts/content-events-agility.php:11
-#: template-parts/content-events-epaviralliset.php:14
+#: template-parts/content-events-epaviralliset.php:26
 #: template-parts/content-events-kilpailut-kokeet-testit.php:14
-#: template-parts/content-events-kurssit-ja-luennot.php:21
+#: template-parts/content-events-kurssit-ja-luennot.php:32
 #: template-parts/content-events-nayttelyt.php:35
 #: template-parts/content-events-ryhmatapahtuma.php:16
 msgid "Venue"
 msgstr "Tapahtumapaikka"
 
-#: template-parts/content-events-epaviralliset.php:11
-#: template-parts/content-events-kurssit-ja-luennot.php:18
+#: template-parts/content-events-epaviralliset.php:23
+#: template-parts/content-events-kurssit-ja-luennot.php:29
 msgid "Info"
 msgstr "Info"
 
@@ -1141,7 +1145,7 @@ msgstr "Kokeen tyyppi"
 msgid "Classes"
 msgstr "Luokat"
 
-#: template-parts/content-events-kurssit-ja-luennot.php:12
+#: template-parts/content-events-kurssit-ja-luennot.php:23
 msgid "Lecturer / instructor"
 msgstr "Luennoija / ohjaaja"
 

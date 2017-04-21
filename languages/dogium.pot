@@ -89,19 +89,19 @@ msgstr ""
 msgid "Your email (required)"
 msgstr ""
 
-#: classified-contact.php:36, content-single-classified_listing.php:48
+#: classified-contact.php:36, content-single-classified_listing.php:49
 msgid "Message (required)"
 msgstr ""
 
-#: classified-contact.php:38, content-single-classified_listing.php:50
+#: classified-contact.php:38, content-single-classified_listing.php:51
 msgid "How much is 1 + 1?"
 msgstr ""
 
-#: classified-contact.php:40, content-single-classified_listing.php:52
+#: classified-contact.php:40, content-single-classified_listing.php:53
 msgid "Submit"
 msgstr ""
 
-#: classified-contact.php:46, content-single-classified_listing.php:71
+#: classified-contact.php:46, content-single-classified_listing.php:72
 msgid "Close modal"
 msgstr ""
 
@@ -169,23 +169,23 @@ msgstr ""
 msgid "This listing is not currently active."
 msgstr ""
 
-#: content-single-classified_listing.php:36
+#: content-single-classified_listing.php:37
 msgid "Hello! Thought you might find this item (%s) interesting: %s"
 msgstr ""
 
-#: content-single-classified_listing.php:39
+#: content-single-classified_listing.php:40
 msgid "Tell a friend"
 msgstr ""
 
-#: content-single-classified_listing.php:41, content-single-classified_listing.php:44
+#: content-single-classified_listing.php:42, content-single-classified_listing.php:45
 msgid "Report unappropriate content"
 msgstr ""
 
-#: content-single-classified_listing.php:46
+#: content-single-classified_listing.php:47
 msgid "Why do you think this item is unappropriate?"
 msgstr ""
 
-#: content-single-classified_listing.php:64
+#: content-single-classified_listing.php:65
 msgid "This action is for logged in users only. Please <a href=\"%s\">login</a> or <a href=\"%s\">register</a>."
 msgstr ""
 
@@ -261,7 +261,7 @@ msgstr ""
 msgid "Date(s)"
 msgstr ""
 
-#: taxonomy-event-categories.php:57, template-parts/content-events-agility.php:9, template-parts/content-events-epaviralliset.php:9
+#: taxonomy-event-categories.php:57, template-parts/content-events-agility.php:9, template-parts/content-events-epaviralliset.php:21
 msgid "Weekday"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgstr ""
 msgid "Continent"
 msgstr ""
 
-#: taxonomy-event-categories.php:70, template-parts/content-events-kurssit-ja-luennot.php:15
+#: taxonomy-event-categories.php:70, template-parts/content-events-kurssit-ja-luennot.php:26
 msgid "Organizer"
 msgstr ""
 
@@ -301,12 +301,16 @@ msgstr ""
 msgid "Last enrollment"
 msgstr ""
 
-#: taxonomy-event-categories.php:87, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kurssit-ja-luennot.php:27, template-parts/content-events-nayttelyt.php:50
+#: taxonomy-event-categories.php:87, template-parts/content-events-agility.php:20, template-parts/content-events-epaviralliset.php:32, template-parts/content-events-kurssit-ja-luennot.php:38, template-parts/content-events-nayttelyt.php:50
 msgid "Event website"
 msgstr ""
 
 #: library/contact-seller-custom-form.php:54
 msgid "Link to the classified ad in question: %s"
+msgstr ""
+
+#: library/contact-seller-custom-form.php:56
+msgid "Reporting inappropriate item (dogium.com)"
 msgstr ""
 
 #: library/contact-seller-custom-form.php:127
@@ -413,11 +417,11 @@ msgstr ""
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: library/geodirectory-mods.php:13
+#: library/geodirectory-mods.php:14
 msgid "Add new listing"
 msgstr ""
 
-#: library/geodirectory-mods.php:31
+#: library/geodirectory-mods.php:32
 msgid "Place categories"
 msgstr ""
 
@@ -493,19 +497,19 @@ msgstr ""
 msgid "Product categories"
 msgstr ""
 
-#: template-parts/content-events-agility.php:8, template-parts/content-events-epaviralliset.php:8, template-parts/content-events-kilpailut-kokeet-testit.php:9, template-parts/content-events-kurssit-ja-luennot.php:10
+#: template-parts/content-events-agility.php:8, template-parts/content-events-epaviralliset.php:20, template-parts/content-events-kilpailut-kokeet-testit.php:9, template-parts/content-events-kurssit-ja-luennot.php:21
 msgid "Date"
 msgstr ""
 
-#: template-parts/content-events-agility.php:11, template-parts/content-events-epaviralliset.php:14, template-parts/content-events-kilpailut-kokeet-testit.php:14, template-parts/content-events-kurssit-ja-luennot.php:21, template-parts/content-events-nayttelyt.php:35, template-parts/content-events-ryhmatapahtuma.php:16
+#: template-parts/content-events-agility.php:11, template-parts/content-events-epaviralliset.php:26, template-parts/content-events-kilpailut-kokeet-testit.php:14, template-parts/content-events-kurssit-ja-luennot.php:32, template-parts/content-events-nayttelyt.php:35, template-parts/content-events-ryhmatapahtuma.php:16
 msgid "Venue"
 msgstr ""
 
-#: template-parts/content-events-agility.php:14, template-parts/content-events-epaviralliset.php:17, template-parts/content-events-kilpailut-kokeet-testit.php:11, template-parts/content-events-kurssit-ja-luennot.php:24, template-parts/content-events-nayttelyt.php:41, plugins/events-manager/forms/event-editor.php:65
+#: template-parts/content-events-agility.php:14, template-parts/content-events-epaviralliset.php:29, template-parts/content-events-kilpailut-kokeet-testit.php:11, template-parts/content-events-kurssit-ja-luennot.php:35, template-parts/content-events-nayttelyt.php:41, plugins/events-manager/forms/event-editor.php:65
 msgid "Location"
 msgstr ""
 
-#: template-parts/content-events-epaviralliset.php:11, template-parts/content-events-kurssit-ja-luennot.php:18
+#: template-parts/content-events-epaviralliset.php:23, template-parts/content-events-kurssit-ja-luennot.php:29
 msgid "Info"
 msgstr ""
 
@@ -517,7 +521,7 @@ msgstr ""
 msgid "Classes"
 msgstr ""
 
-#: template-parts/content-events-kurssit-ja-luennot.php:12
+#: template-parts/content-events-kurssit-ja-luennot.php:23
 msgid "Lecturer / instructor"
 msgstr ""
 

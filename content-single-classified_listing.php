@@ -32,8 +32,9 @@
 			?>
 			<?php
 			$item_title = preg_replace( '/[^a-zA-Z0-9\s]/','', get_the_title() );
+			$item_link = esc_url( get_permalink() );
 
-			$body = sprintf(__('Hello! Thought you might find this item (%s) interesting: %s', 'dogium'), $item_title, esc_url(get_permalink()) );
+			$body = sprintf( __('Hello! Thought you might find this item (%s) interesting: %s', 'dogium'), $item_title, $item_link );
 			?>
 			<p>
 			<a href="mailto:?subject=<?php echo $item_title;?>&body=<?php echo $body;?>"><i class="fa fa-send" aria-hidden="true"></i> <?php esc_html_e('Tell a friend', 'dogium'); ?></a>
